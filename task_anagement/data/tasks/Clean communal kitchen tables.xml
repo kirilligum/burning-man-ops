@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clean communal kitchen tables</name>
+
+  <checklists>
+    <checklist>Morning</checklist>
+    <checklist>Afternoon</checklist>
+  </checklists>
+
+  <why/>
+
+  <when>Once or more per shift</when>
+
+  <time/>
+
+  <resources>
+    <resource>Communal Kitchen Tables</resource>
+    <resource>Kitchen Cleaning Kit</resource>
+    <resource>Kitchen Lost and Found</resource>
+    <resource>Gray-Water IBC</resource>
+    <resource>Kitchen Waste Station</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Ask people using the tables to remove their belongings.</action>
+      <expectedResult>The tables are available for cleaning.</expectedResult>
+    </step>
+
+    <step number="2">
+      <action>Place abandoned personal belongings in Kitchen Lost and Found.</action>
+    </step>
+
+    <step number="3">
+      <action>Pick up MOOP from the tables, under the tables, and around the tables.</action>
+      <expectedResult>No MOOP remains on, under, or around the tables.</expectedResult>
+    </step>
+
+    <step number="4">
+      <action>Put the collected MOOP in the correct Kitchen Waste Station container.</action>
+    </step>
+
+    <step number="5">
+      <action>Brush crumbs and dry debris into the Kitchen Cleaning Kit dustpan.</action>
+      <expectedResult>No crumbs or dry debris remain on the tables.</expectedResult>
+    </step>
+
+    <step number="6">
+      <action>Wipe each tabletop and edge with the approved cleaner.</action>
+      <expectedResult>No visible food, dirt, oil, or sticky residue remains.</expectedResult>
+    </step>
+
+    <step number="7">
+      <action>Apply the approved sanitizer evenly to each tabletop.</action>
+      <expectedResult>Each tabletop is evenly wet.</expectedResult>
+    </step>
+
+    <step number="8">
+      <action>Keep each tabletop wet for the sanitizer label's contact time.</action>
+    </step>
+
+    <step number="9">
+      <action>Leave each tabletop untouched until it is dry.</action>
+      <expectedResult>The tables are dry and immediately usable.</expectedResult>
+    </step>
+
+    <step number="10">
+      <action>Put all used cleaning liquid into the Gray-Water IBC.</action>
+      <expectedResult>No cleaning liquid or wastewater reaches the playa.</expectedResult>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No food, crumbs, dirt, oil, or sticky residue is visible.</criterion>
+    <criterion>No MOOP is visible on, under, or around the tables.</criterion>
+    <criterion>Every tabletop and edge is dry.</criterion>
+    <criterion>The tables are immediately usable.</criterion>
+    <criterion>No cleaning liquid or wastewater reached the playa.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

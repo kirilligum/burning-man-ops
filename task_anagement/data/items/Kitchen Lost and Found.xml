@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Kitchen Lost and Found</name>
+
+  <location>
+    Kitchen, container labeled Kitchen Lost and Found.
+  </location>
+
+  <readyBeforeUse>
+    The container is available and has space for abandoned personal belongings.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    Abandoned belongings are inside the container. Nothing is left on the
+    ground around it.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Do not place belongings outside the container. Tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The container is full.</condition>
+      <response>Do not pile belongings around it. Tell the Dominatrix.</response>
+    </problem>
+  </commonProblems>
+</item>

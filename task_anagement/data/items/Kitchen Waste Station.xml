@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Kitchen Waste Station</name>
+
+  <location>
+    Kitchen, containers labeled Kitchen Waste Station.
+  </location>
+
+  <readyBeforeUse>
+    Each container is labeled, lined where required, and below its marked full
+    line.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    Waste is inside the correct labeled containers. Lids are closed. No loose
+    waste or MOOP is present around the station.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Do not overflow a container or mix waste categories. Tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>A container reaches its marked full line.</condition>
+      <response>Do not add more waste. Tell the Dominatrix.</response>
+    </problem>
+
+    <problem>
+      <condition>A container is missing a label or required liner.</condition>
+      <response>Do not use that container. Tell the Dominatrix.</response>
+    </problem>
+  </commonProblems>
+</item>
