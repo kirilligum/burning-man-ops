@@ -230,7 +230,7 @@ Example:
 
 | Checklist | Task | Status | Initials | Time |
 | --- | --- | --- | --- | --- |
-| `MORNING` | Clean communal eating tables |  |  |  |
+| `MORNING` | Clean communal kitchen tables |  |  |  |
 | `MORNING` | Clean cooking surfaces |  |  |  |
 | `MORNING` | Empty dry waste |  |  |  |
 | `MORNING` | Inspect EMT shade |  |  |  |
@@ -289,6 +289,11 @@ The name is the identifier for both tasks and items. Checklist memberships are
 stored directly in each task. One global-instructions file provides behavior
 that applies to every task.
 
+Every task starts in its minimum complete form. A resource, step, expected
+result, PASS criterion, or problem is included only when it is needed to
+perform or verify the task. Detail is added after a demonstrated operational
+need, not by default.
+
 Locations are deliberately not separate records. Each item stores its exact
 physical location directly.
 
@@ -330,14 +335,14 @@ describe the same information without creating duplicate identifiers.
 
 | Sheet column | XML | Description and entry guidance |
 | --- | --- | --- |
-| **Task** | `task/name` | Unique task name and identifier. Start with a verb and name the outcome and place when needed, such as `Clean communal eating tables`. |
+| **Task** | `task/name` | Unique task name and identifier. Start with a verb and name the outcome and place when needed, such as `Clean communal kitchen tables`. |
 | **Checklist columns** | `checklists/checklist` | One Boolean column per approved checklist. Check every list on which the task must appear. |
 | **Why** | `why` | Explain a non-obvious practical reason or consequence. Leave blank when the text would only restate the task. |
 | **When** | `when` | State the time, event, or observable trigger for starting the task, such as `After dinner` or `When the bin reaches the marked line`. |
 | **Time** | `time` | Realistic completion time under normal conditions, such as `10 minutes`. Leave blank until a useful value is known. |
-| **What you need** | `resources/resource` | Everything required before starting: exact item names, consumables, help from other people, or a required expert. Use one resource per line, such as `Two additional people`. |
-| **Steps** | `steps/step` | Numbered actions in execution order. Each step contains one physical action or observation. Include an expected result when it is not obvious and place IF/THEN text where the decision occurs. |
-| **PASS when** | `passWhen/criterion` | Observable final conditions that must all be true before marking PASS. Use one criterion per line. |
+| **What you need** | `resources/resource` | Only what is required to complete the task: exact, directly recognizable item names, consumables, helpers, or required presence. If a kit name hides required components, list those components separately. Use one resource per line. |
+| **Steps** | `steps/step` | The fewest numbered actions needed, in execution order. Each step contains one physical action or observation. Include an expected result only when it is not obvious and place IF/THEN text where the decision occurs. |
+| **PASS when** | `passWhen/criterion` | The minimum observable conditions needed to verify completion. Use one criterion per line. |
 | **Common problems** | `commonProblems/problem` | Likely problems not tied to one particular step. Pair each condition with a direct response, preferably as IF/THEN. |
 | **Who to ask** | `expert` | Person to ask about the task. Leave blank to use **Dominatrix**. This appears after Common problems on the task card. |
 
@@ -374,7 +379,7 @@ The `ITEMS` Sheet presents these columns in this order:
 
 | Sheet column | XML | Description and entry guidance |
 | --- | --- | --- |
-| **Item** | `item/name` | Unique item name and identifier. Use the exact name printed on the physical item. |
+| **Item** | `item/name` | Unique item name and identifier. For a purchased item, use its exact product title, size, and manufacturer or store product number when available. For a camp-made item, use its exact physical label and document ingredients, quantities, and preparation in the task that makes it. |
 | **Location** | `location` | Exact storage location using visible landmarks, container names, and shelf or side information. |
 | **Ready before use** | `readyBeforeUse` | Observable condition required before someone starts using the item. |
 | **Ready for next person** | `readyForNextPerson` | Observable condition in which the item must be returned, including cleaning, closing, charging, or restocking. |
@@ -431,34 +436,37 @@ Illustrative example:
 
   <resources>
     <resource>Communal Kitchen Tables</resource>
-    <resource>Kitchen Cleaning Kit</resource>
+    <resource>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)</resource>
+    <resource>WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701)</resource>
     <resource>Kitchen Lost and Found</resource>
-    <resource>Gray-Water IBC</resource>
     <resource>Kitchen Waste Station</resource>
   </resources>
 
   <steps>
     <step number="1">
-      <action>Remove abandoned items from the table.</action>
-      <ifThen>
-        IF an item has no identifiable owner, THEN put it in Kitchen Lost and Found.
-      </ifThen>
+      <action>Ask people using the tables to remove their belongings.</action>
     </step>
     <step number="2">
-      <action>Pick up MOOP from the tables, under the tables, and around the tables.</action>
-      <expectedResult>No MOOP remains on, under, or around the tables.</expectedResult>
+      <action>Put unattended belongings in Kitchen Lost and Found.</action>
     </step>
     <step number="3">
-      <action>Brush crumbs into the dustpan.</action>
-      <expectedResult>No loose food remains.</expectedResult>
+      <action>Put MOOP from on, under, and around the tables in Kitchen Waste Station.</action>
+    </step>
+    <step number="4">
+      <action>Spray soiled table areas with Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).</action>
+    </step>
+    <step number="5">
+      <action>Wipe the sprayed areas with one WypAll PowerClean L40 Extra Absorbent Towel until no food, visible dirt, or sticky residue remains.</action>
+    </step>
+    <step number="6">
+      <action>Put the used towel in the trash container at Kitchen Waste Station.</action>
     </step>
   </steps>
 
   <passWhen>
-    <criterion>No food or crumbs are visible.</criterion>
-    <criterion>No MOOP is visible on, under, or around the tables.</criterion>
-    <criterion>The table is dry.</criterion>
-    <criterion>The Kitchen Cleaning Kit is ready for the next person.</criterion>
+    <criterion>No food, visible dirt, or sticky residue remains on the tables.</criterion>
+    <criterion>No MOOP remains on, under, or around the tables.</criterion>
+    <criterion>The tables are dry.</criterion>
   </passWhen>
 
   <commonProblems/>
@@ -469,23 +477,31 @@ Illustrative example:
 The task omits `<expert>`, so **Dominatrix** is used. Item-specific failures are
 kept in their item records rather than repeated in task Common problems.
 
-Illustrative item:
+Illustrative items:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-  <name>Kitchen Cleaning Kit</name>
-  <location>Kitchen west wall, lower shelf, blue tote</location>
-  <readyBeforeUse>Cleaner labeled and cloths clean</readyBeforeUse>
-  <readyForNextPerson>All bottles closed and consumables stocked</readyForNextPerson>
-  <ifNotReady>Stop using the kit and tell the Food Lead</ifNotReady>
-  <responsible>Food Lead</responsible>
-  <commonProblems>
-    <problem>
-      <condition>A bottle is leaking.</condition>
-      <response>Stop using the kit and tell the Food Lead.</response>
-    </problem>
-  </commonProblems>
+  <name>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)</name>
+  <location>Kitchen, item labeled Clorox Free &amp; Clear Multi Surface Cleaner.</location>
+  <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
+  <readyForNextPerson>The nozzle is set to OFF and the bottle contains cleaner.</readyForNextPerson>
+  <ifNotReady>Replace it with the same product. If none is available, tell the Dominatrix.</ifNotReady>
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701)</name>
+  <location>Kitchen, pack labeled WypAll PowerClean L40 Extra Absorbent Towels.</location>
+  <readyBeforeUse>At least one clean, dry towel remains in the pack.</readyBeforeUse>
+  <readyForNextPerson>At least one clean, dry towel remains in the pack.</readyForNextPerson>
+  <ifNotReady>Replace it with the same product. If none is available, tell the Dominatrix.</ifNotReady>
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
 </item>
 ```
 
@@ -503,7 +519,8 @@ task_anagement/
 │   ├── tasks/
 │   │   └── Clean communal kitchen tables.xml
 │   ├── items/
-│   │   └── Kitchen Cleaning Kit.xml
+│   │   ├── Clorox Free & Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).xml
+│   │   └── WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701).xml
 │   └── global-instructions.xml
 ├── scripts/
 │   ├── import-google-sheet
@@ -542,13 +559,12 @@ sections.
 
 ### Keep on the task card
 
-- exact item names;
-- checklist memberships;
-- observable physical instructions;
-- visible or measurable PASS conditions;
-- one-line Why and specific When;
-- realistic Time and complete resources;
-- common problems and who to ask.
+- task name and checklist memberships;
+- a specific When;
+- only required resources and actions;
+- only the PASS conditions needed to verify completion;
+- Why, Time, expected results, problems, and a non-default expert only when they
+  add useful information.
 
 ### Move to shared records
 
@@ -570,7 +586,7 @@ item. That name is also its identifier; do not add a second code.
 
 Weak: `Kitchen tables`
 
-Better: `Clean communal eating tables — kitchen`
+Better: `Clean communal kitchen tables`
 
 ### 3. Start steps with an action verb
 
@@ -585,8 +601,8 @@ Weak:
 
 Better:
 
-1. Wipe the tabletop with the approved cleaner.
-2. Return the `Kitchen Cleaning Kit` to its listed location.
+1. Wipe the tabletop with cleaner.
+2. Return the exact cleaner to its listed location.
 3. Report missing supplies to the Shift Lead.
 
 ### 5. Do not use “check” by itself
@@ -715,9 +731,8 @@ Every printed page should show its task name.
 
 ## Pilot 1: Clean communal kitchen tables
 
-This is the recommended first pilot because it is frequent, observable, and
-relatively low-risk. It will expose problems with labels, locations, chemicals,
-gray water, lost-and-found rules, PASS when conditions, restocking, and handoff.
+This is the recommended first pilot because it is frequent and observable. It
+will test whether a minimum task card is enough for a newcomer.
 
 The following is a prototype, not an approved procedure.
 
@@ -740,54 +755,54 @@ _Blank._
 
 #### What you need
 
-- Kitchen Cleaning Kit
-- Brush and dustpan
-- MOOP bag
-- Gray-Water IBC
+- Communal Kitchen Tables
+- Clorox Free & Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free,
+  32 fl oz (UPC 044600603346)
+- WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in,
+  56 Count (05701)
 - Kitchen Lost and Found
+- Kitchen Waste Station
 
 #### Steps
 
 1. Ask active users to remove their belongings.
-2. Move eligible abandoned items according to the camp lost-and-found rule.
-3. Pick up MOOP from the tables, under the tables, and around the tables. Put it
-   in the correct waste container.
-4. Brush dry crumbs and dust into the dustpan. Do not brush debris onto the
-   playa.
-5. Clean the tabletop and edges with the approved product until visible dirt,
-   food, oil, and sticky residue are gone.
-6. Sanitize designated food-contact surfaces with the camp-approved product and
-   observe its required contact time.
-7. Allow the surface to dry as directed by the product label.
-8. Put all used liquid into the gray-water system. Do not put wastewater on the
-   playa.
-9. Return every item to its listed location.
-10. Report low, empty, missing, leaking, or damaged supplies.
+2. Put unattended belongings in Kitchen Lost and Found.
+3. Put MOOP from on, under, and around the tables in Kitchen Waste Station.
+4. Spray soiled table areas with Clorox Free & Clear Multi Surface Cleaner,
+   Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).
+5. Wipe the sprayed areas with one WypAll PowerClean L40 Extra Absorbent Towel
+   until no food, visible dirt, or sticky residue remains.
+6. Put the used towel in the trash container at Kitchen Waste Station.
 
 #### PASS when
 
-- No food, crumbs, oil, or sticky residue is visible on the tables.
-- No MOOP is visible on, under, or around the tables.
-- The table is dry and immediately usable.
-- Only approved communal items remain on the table.
-- No cleaning equipment remains in the eating area.
-- No cleaning liquid or wastewater reached the playa.
-- The cleaning kit is returned and ready for the next shift.
-- Missing or damaged supplies were reported.
+- No food, visible dirt, or sticky residue remains on the tables.
+- No MOOP remains on, under, or around the tables.
+- The tables are dry.
 
 #### Common problems
 
-No task-specific common problems are currently defined. Problems with the
-tables, cleaning kit, lost-and-found container, gray-water container, or waste
-station belong to those item records.
+_Blank._
 
 #### Who to ask
 
 Dominatrix
 
-Before field use, the Food Lead must resolve the exact products, contact times,
-locations, lost-and-found exceptions, gray-water method, and food-service
-requirements.
+### Pilot product selection
+
+The table cleaner is **Clorox Free & Clear Multi Surface Cleaner, Spray Bottle,
+Fragrance Free, 32 fl oz (UPC 044600603346)**. [Clorox directs users](https://www.clorox.com/products/clorox-free-clear-multi-surface-cleaner/)
+to spray soiled areas and wipe with a towel or cloth; no rinse is required.
+[Walmart sells this exact product](https://www.walmart.com/ip/2691727553)
+individually.
+
+The disposable towel is **WypAll PowerClean L40 Extra Absorbent Towels, White,
+12 x 12.5 in, 56 Count (05701)**. [Kimberly-Clark identifies product `05701`](https://www.kcprofessional.com/en-us/products/wiping-and-cleaning/process-cleaning/heavy-duty-cleaning-cloth/wypall%C2%AE-powerclean%E2%84%A2-l40-extra-absorbent-towels/05701)
+as a 56-count pack suitable for food-preparation cleaning. [Home Depot sells
+the same pack](https://www.homedepot.com/p/205705246) as model `KIM05701PK`.
+
+This task claims only that the tables are clean. It does not claim that they
+are sanitized or disinfected.
 
 ## EMT shade procedures
 
@@ -998,8 +1013,8 @@ changes.
 
 1. Preserve the ODS unchanged as source evidence.
 2. Create a contradiction and open-decision register.
-3. Define the minimum XML schema needed for `Clean communal eating tables`.
-4. Create `Clean communal eating tables.xml` with unresolved values clearly
+3. Define the minimum XML schema needed for `Clean communal kitchen tables`.
+4. Create `Clean communal kitchen tables.xml` with unresolved values clearly
    marked.
 5. Implement one XML-to-Google-Sheets export path.
 6. Implement the matching Google-Sheets-to-XML import path.
@@ -1022,8 +1037,6 @@ These must be resolved by the relevant experts rather than guessed by Codex:
 - the exact scope of propane inspection versus tank replacement;
 - lost-and-found exceptions for food, trash, chemicals, sharps, and unsafe
   objects;
-- approved kitchen cleaning and sanitizing products;
-- chemical contact times and required protective equipment;
 - gray-water routing and full-capacity response;
 - actual shade geometry, hardware, anchors, and build sequence;
 - actual flame-effect component names and operating procedures;

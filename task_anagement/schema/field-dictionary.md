@@ -17,9 +17,9 @@ reference and its XML filename to change together.
 | **Why** | `/task/why` | Text | No | One short sentence describing a non-obvious practical benefit or consequence. Leave blank when it would only restate the task. |
 | **When** | `/task/when` | Text | Yes | Time, event, or observable trigger for starting the task. |
 | **Time** | `/task/time` | Text duration | No | Realistic duration under normal conditions, such as `10 minutes`. Leave blank until a useful value is known. |
-| **What you need** | `/task/resources/resource` | Multiline text | No | Items, materials, helpers, or required presence. Use one resource per line. An exact item name links to that item. |
-| **Steps** | `/task/steps/step` | Ordered multiline structure | Yes | Read-do actions in execution order. At least one step is required. |
-| **PASS when** | `/task/passWhen/criterion` | Multiline text | Yes | Observable conditions that must all be true before marking PASS. Use one criterion per line. |
+| **What you need** | `/task/resources/resource` | Multiline text | No | Only items, materials, helpers, or required presence without which the task cannot be completed. Name physical resources so each can be recognized directly. If a kit name hides required components, list those components separately. Use one resource per line. An exact item name links to that item. |
+| **Steps** | `/task/steps/step` | Ordered multiline structure | Yes | The fewest read-do actions needed, in execution order. At least one step is required. |
+| **PASS when** | `/task/passWhen/criterion` | Multiline text | Yes | The minimum observable conditions needed to verify completion. Use one criterion per line. |
 | **Common problems** | `/task/commonProblems/problem` | Multiline IF/THEN text | No | Likely task-level problems not owned by an item or tied to one step. Use one condition and response per line. |
 | **Who to ask** | `/task/expert` | Text | No | Person to ask about the task. Blank or an omitted element means **Dominatrix**. Do not include contact information. |
 
@@ -75,7 +75,7 @@ The **Steps** Sheet cell uses this deterministic layout:
 
 | Sheet column | XML path | Type | Required | Definition |
 | --- | --- | --- | --- | --- |
-| **Item** | `/item/name` | Text | Yes | Unique item name and identifier, matching the physical label. |
+| **Item** | `/item/name` | Text | Yes | Unique item name and identifier, matching the physical label. For a purchased item, use its exact product title, size, and manufacturer or store product number when available. For a camp-made item, use its exact physical label and document preparation in the task that makes it. |
 | **Location** | `/item/location` | Text | Yes | Storage location using visible labels and landmarks. |
 | **Ready before use** | `/item/readyBeforeUse` | Text | Yes | Observable state required before someone uses the item. |
 | **Ready for next person** | `/item/readyForNextPerson` | Text | Yes | Observable state in which the item must be returned. |

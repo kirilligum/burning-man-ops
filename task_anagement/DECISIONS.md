@@ -68,6 +68,37 @@ tentative suggestions.
 - **Effect:** Do not rename or reorder categories for theoretical consistency.
   If a normalized task name is needed, explain it once and use it everywhere.
 
+### D-006 — Tasks are minimum by default
+
+- **Date:** 2026-08-17
+- **Status:** Accepted
+- **Decision:** Start every task with the minimum resources, actions, and PASS
+  criteria needed to complete and verify it.
+- **Effect:** Add detail only for a concrete operational need. Do not add
+  supplies, steps, expected results, problems, or safety text by default.
+
+### D-007 — Make physical resources directly recognizable
+
+- **Date:** 2026-08-17
+- **Status:** Accepted
+- **Decision:** Name required physical resources at the level at which a worker
+  can recognize them directly. Do not use a kit name that hides the components
+  needed for the task.
+- **Effect:** A worker can identify every resource directly from the task.
+  Create a separate item record for each component named by the task. A visibly
+  identifiable station or group does not need to be split unnecessarily.
+
+### D-008 — Identify exact products or exact preparation processes
+
+- **Date:** 2026-08-17
+- **Status:** Accepted
+- **Decision:** Identify a purchased item with the manufacturer or store
+  product title, size, and product number when available. If an item is made by
+  camp, document its exact ingredients, quantities, and preparation steps.
+- **Effect:** Do not use generic names such as `table cleaner` when a specific
+  product must be obtained. Put multi-step preparation in its own task rather
+  than hiding it in an item name.
+
 ## System decisions
 
 ### D-101 — XML is the repository source of truth

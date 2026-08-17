@@ -22,6 +22,13 @@ Do not record tentative agent suggestions as decisions.
 Apply KISS. Use the smallest direct representation that meets an accepted need.
 Do not introduce separate IDs, lookup entities, relationship tables, workflow
 states, risk matrices, or abstraction layers without an explicit requirement.
+Default every task to its minimum complete form. Include a resource, step,
+expected result, PASS criterion, or problem only when it is needed to perform
+or verify the task. Name required physical resources so workers can recognize
+them directly; do not hide required components behind a kit name. Identify a
+purchased item with its exact product title, size, and product number when one
+is available. For camp-made items, document exact ingredients, quantities, and
+preparation steps instead of inventing a generic substitute.
 
 Ground procedures in the workbook, existing XML, and facts supplied by the
 user. Do not invent locations, equipment details, timings, quantities,

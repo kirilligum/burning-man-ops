@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)</name>
+
+  <location>
+    Kitchen, item labeled Clorox Free &amp; Clear Multi Surface Cleaner.
+  </location>
+
+  <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The nozzle is set to OFF and the bottle contains cleaner.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Replace it with the same product. If none is available, tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems/>
+</item>

@@ -15,67 +15,42 @@
 
   <resources>
     <resource>Communal Kitchen Tables</resource>
-    <resource>Kitchen Cleaning Kit</resource>
+    <resource>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)</resource>
+    <resource>WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701)</resource>
     <resource>Kitchen Lost and Found</resource>
-    <resource>Gray-Water IBC</resource>
     <resource>Kitchen Waste Station</resource>
   </resources>
 
   <steps>
     <step number="1">
       <action>Ask people using the tables to remove their belongings.</action>
-      <expectedResult>The tables are available for cleaning.</expectedResult>
     </step>
 
     <step number="2">
-      <action>Place abandoned personal belongings in Kitchen Lost and Found.</action>
+      <action>Put unattended belongings in Kitchen Lost and Found.</action>
     </step>
 
     <step number="3">
-      <action>Pick up MOOP from the tables, under the tables, and around the tables.</action>
-      <expectedResult>No MOOP remains on, under, or around the tables.</expectedResult>
+      <action>Put MOOP from on, under, and around the tables in Kitchen Waste Station.</action>
     </step>
 
     <step number="4">
-      <action>Put the collected MOOP in the correct Kitchen Waste Station container.</action>
+      <action>Spray soiled table areas with Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).</action>
     </step>
 
     <step number="5">
-      <action>Brush crumbs and dry debris into the Kitchen Cleaning Kit dustpan.</action>
-      <expectedResult>No crumbs or dry debris remain on the tables.</expectedResult>
+      <action>Wipe the sprayed areas with one WypAll PowerClean L40 Extra Absorbent Towel until no food, visible dirt, or sticky residue remains.</action>
     </step>
 
     <step number="6">
-      <action>Wipe each tabletop and edge with the approved cleaner.</action>
-      <expectedResult>No visible food, dirt, oil, or sticky residue remains.</expectedResult>
-    </step>
-
-    <step number="7">
-      <action>Apply the approved sanitizer evenly to each tabletop.</action>
-      <expectedResult>Each tabletop is evenly wet.</expectedResult>
-    </step>
-
-    <step number="8">
-      <action>Keep each tabletop wet for the sanitizer label's contact time.</action>
-    </step>
-
-    <step number="9">
-      <action>Leave each tabletop untouched until it is dry.</action>
-      <expectedResult>The tables are dry and immediately usable.</expectedResult>
-    </step>
-
-    <step number="10">
-      <action>Put all used cleaning liquid into the Gray-Water IBC.</action>
-      <expectedResult>No cleaning liquid or wastewater reaches the playa.</expectedResult>
+      <action>Put the used towel in the trash container at Kitchen Waste Station.</action>
     </step>
   </steps>
 
   <passWhen>
-    <criterion>No food, crumbs, dirt, oil, or sticky residue is visible.</criterion>
-    <criterion>No MOOP is visible on, under, or around the tables.</criterion>
-    <criterion>Every tabletop and edge is dry.</criterion>
-    <criterion>The tables are immediately usable.</criterion>
-    <criterion>No cleaning liquid or wastewater reached the playa.</criterion>
+    <criterion>No food, visible dirt, or sticky residue remains on the tables.</criterion>
+    <criterion>No MOOP remains on, under, or around the tables.</criterion>
+    <criterion>The tables are dry.</criterion>
   </passWhen>
 
   <commonProblems/>
