@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_and_clean_camp_sink</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Once per Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Sink</resource>
+    <resource>🍳 Multisurface_Cleaner</resource>
+    <resource>🍳 Disposable_Towels</resource>
+    <resource>🔧 Out_of_Service_Sign</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Open the sink tap briefly.</action>
+    </step>
+    <step number="2">
+      <action>Observe whether water flows into the basin and drains without leaking.</action>
+      <ifThen>IF water does not flow or drain normally, or a leak is present, THEN close the tap, display 🔧 Out_of_Service_Sign, stop the task, and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="3">
+      <action>Remove debris from the basin and drain with 🍳 Disposable_Towels.</action>
+    </step>
+    <step number="4">
+      <action>Spray visible residue with 🍳 Multisurface_Cleaner.</action>
+    </step>
+    <step number="5">
+      <action>Wipe the sprayed residue with 🍳 Disposable_Towels.</action>
+    </step>
+    <step number="6">
+      <action>Put used towels in 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Potable water flows and drains into the gray-water system.</criterion>
+    <criterion>The basin and drain are clear of debris and visible residue.</criterion>
+    <criterion>No water is leaking or pooled around the sink.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

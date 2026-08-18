@@ -52,6 +52,13 @@ Current provisional products:
 
 ## Public service
 
+- [Burning Man Survival Guide 2026: on-playa resources and emergency services](https://survival.burningman.org/city-infrastructure/on-playa-resources/)
+  — current medical-station and Ranger-station locations and ways to summon
+  help in Black Rock City.
+- [Burning Man Survival Guide 2026: city plan](https://survival.burningman.org/city-infrastructure/2026-city-plan/)
+  — current official city layout and plaza locations.
+- [FDA 2026 NARCAN naloxone nasal-spray label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/208411Orig1s011lbl.pdf)
+  — 4 mg single-dose product identity, storage, and emergency-use directions.
 - [Burning Man Survival Guide 2026: alcohol service](https://survival.burningman.org/law-enforcement/specific-laws-to-be-aware-of/)
   — verify that every person served alcohol is at least 21.
 - [Nevada Revised Statutes 202.055](https://www.leg.state.nv.us/nrs/nrs-202.html#NRS202Sec055)

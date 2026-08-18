@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fire_Blankets</name>
+
+  <description>Camp fire blankets in their quick-release containers.</description>
+  <location>At the locations marked on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    Each blanket is sealed in its container, visible, and unobstructed.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Member_Roster</name>
+
+  <description>
+    Offline arrival roster used only on playa. Personal roster data is not
+    stored in this repository.
+  </description>
+  <location>Posted in the communal kitchen.</location>
+
+  <readyForNextPerson>
+    The roster reflects completed arrivals and remains at its designated
+    location.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

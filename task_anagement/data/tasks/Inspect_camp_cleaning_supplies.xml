@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_camp_cleaning_supplies</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At shift start and before Post-event cleanup</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Multisurface_Cleaner</resource>
+    <resource>🍳 Disposable_Towels</resource>
+    <resource>🍳 Dish_Soap</resource>
+    <resource>🍳 Sanitizer_Tablets</resource>
+    <resource>🍳 Sanitizer_Test_Strips</resource>
+    <resource>🍷 Multisurface_Cleaner</resource>
+    <resource>🍷 Disposable_Towels</resource>
+    <resource>🍷 Food_Surface_Sanitizer</resource>
+    <resource>🔧 Shower_Cleaner</resource>
+    <resource>🔧 Disposable_Towels</resource>
+    <resource>📦 Trash_Bins</resource>
+    <resource>📦 Camp_Issue_Log</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect every listed cleaning resource at its location.</action>
+      <ifThen>IF a resource does not meet its ready-before-use condition, THEN record the shortage in 📦 Camp_Issue_Log and tell the Dominatrix.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every listed cleaning resource meets its ready-before-use condition.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+</task>

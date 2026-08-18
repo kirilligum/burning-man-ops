@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Sound_System</name>
+
+  <description>Camp stage sound system operated by the sound team.</description>
+  <location>Public stage.</location>
+
+  <readyForNextPerson>
+    The system remains in the state set by the sound team and has no reported
+    fault.
+  </readyForNextPerson>
+
+  <ifNotReady>Tell the Sound Lead. Do not change connections or controls unless authorized.</ifNotReady>
+  <responsible>Sound Lead</responsible>
+  <commonProblems/>
+</item>

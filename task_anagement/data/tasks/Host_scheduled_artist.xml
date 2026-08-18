@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Host_scheduled_artist</name>
+
+  <checklist_types>
+    <checklist_type>Liaison</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>Starting 30 minutes before each scheduled artist's set and ending after handoff to the next artist</when>
+  <time/>
+
+  <resources>
+    <resource>🌐 Artist_Schedule</resource>
+    <resource>🌐 Artist_Rider</resource>
+    <resource>🌐 Sound_System</resource>
+    <resource>🌐 DJ_Recorder</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
+    <resource>🏕️ Buffer_Bush</resource>
+    <resource>Sound team</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Read the current artist's set time and 🌐 Artist_Rider.</action>
+    </step>
+    <step number="2">
+      <action>Confirm with the sound team that the rider's approved technical needs are ready.</action>
+    </step>
+    <step number="3">
+      <action>Locate the artist at least 30 minutes before the set.</action>
+      <ifThen>IF the artist cannot be located, THEN tell the Music Lead, Dominatrix, and sound team and ask the current artist or on-call camp DJ to cover only when the Music Lead approves.</ifThen>
+    </step>
+    <step number="4">
+      <action>Greet the artist and introduce them to the sound team.</action>
+    </step>
+    <step number="5">
+      <action>Offer the artist drinking water from 🍳 Drinking_Water_Dispensers.</action>
+    </step>
+    <step number="6">
+      <action>Ask the artist whether they need another approved rider item.</action>
+    </step>
+    <step number="7">
+      <action>Start 🌐 DJ_Recorder before the set begins.</action>
+    </step>
+    <step number="8">
+      <action>Record the actual set start time.</action>
+    </step>
+    <step number="9">
+      <action>Remain available near the artist without taking a bar assignment.</action>
+    </step>
+    <step number="10">
+      <action>Locate the next artist before the current set ends.</action>
+    </step>
+    <step number="11">
+      <action>Record the actual set end time.</action>
+    </step>
+    <step number="12">
+      <action>Thank the artist and offer water and an optional 🏕️ Buffer_Bush visit.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The artist was introduced to the sound team and received approved hospitality support.</criterion>
+    <criterion>The set recording contains the actual start and end times.</criterion>
+    <criterion>The next artist or approved substitute was ready before handoff.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Music Lead</expert>
+
+  <reasoning>
+    <entry>Named people from the source checklist are replaced by stable Music Lead and Dominatrix roles.</entry>
+    <entry>Unspecified wine and cheese gifts are omitted until the camp defines an approved product and service method.</entry>
+  </reasoning>
+</task>

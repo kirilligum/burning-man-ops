@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Begin_Dominatrix_shift</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At the start of each Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>📦 Camp_Issue_Log</resource>
+    <resource>📦 Black_Rock_City_Map</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+    <resource>📦 Fire_Blankets</resource>
+    <resource>📦 First_Aid_Kits</resource>
+    <resource>📦 Naloxone_Nasal_Spray</resource>
+    <resource>🔧 Camp_Radios</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Receive the outgoing Dominatrix's verbal handoff.</action>
+    </step>
+    <step number="2">
+      <action>Read every unresolved entry in 📦 Camp_Issue_Log.</action>
+    </step>
+    <step number="3">
+      <action>Take one charged radio from 🔧 Camp_Radios.</action>
+    </step>
+    <step number="4">
+      <action>Use 📦 Black_Rock_City_Map to identify the nearest medical station and Ranger outpost.</action>
+      <expectedResult>Medical stations are at 5:15 and Esplanade, 3:00 and C, and 9:00 and C; Ranger stations are at 6:30 and Esplanade, 3:00 and C, and 9:00 and C.</expectedResult>
+    </step>
+    <step number="5">
+      <action>Physically locate 📦 Fire_Extinguishers, 📦 Fire_Blankets, 📦 First_Aid_Kits, and 📦 Naloxone_Nasal_Spray using 📦 Camp_Map.</action>
+    </step>
+    <step number="6">
+      <action>Read the directions supplied with 📦 Naloxone_Nasal_Spray.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The outgoing handoff and unresolved issues were reviewed.</criterion>
+    <criterion>The Dominatrix has a charged radio.</criterion>
+    <criterion>The Dominatrix can identify the nearest medical and Ranger stations.</criterion>
+    <criterion>The Dominatrix can point to every listed camp emergency resource.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Camp Lead</expert>
+
+  <reasoning>
+    <entry>The workbook's emergency-orientation rows are combined because they form one start-of-shift readiness outcome.</entry>
+    <entry>Current 2026 official locations replace prior-year station locations.</entry>
+  </reasoning>
+</task>

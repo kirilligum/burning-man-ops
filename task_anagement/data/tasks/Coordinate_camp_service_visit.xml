@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Coordinate_camp_service_visit</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+    <checklist_type>Infra Lead</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>When the Dominatrix requests fresh-water, gray-water, porta-potty, or RV service</when>
+  <time/>
+
+  <resources>
+    <resource>Service target and approved request method from the Dominatrix</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Issue_Log</resource>
+    <resource>🔧 Camp_Radios</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the exact service type and target with the Dominatrix.</action>
+    </step>
+    <step number="2">
+      <action>Request the approved service using the current on-playa method supplied by the Dominatrix.</action>
+    </step>
+    <step number="3">
+      <action>Keep the service lane and route to the target clear.</action>
+    </step>
+    <step number="4">
+      <action>Meet the service provider at the camp boundary.</action>
+    </step>
+    <step number="5">
+      <action>Guide the provider to the confirmed target without blocking a service lane.</action>
+    </step>
+    <step number="6">
+      <action>Observe the target after service.</action>
+      <ifThen>IF the requested service is incomplete or a leak or spill is present, THEN keep people away, tell the Dominatrix, and record the issue in 📦 Camp_Issue_Log.</ifThen>
+    </step>
+    <step number="7">
+      <action>Record completion in 📦 Camp_Issue_Log.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The confirmed target received the requested service.</criterion>
+    <criterion>No service lane remains blocked.</criterion>
+    <criterion>Completion or the unresolved problem is recorded.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Infra Lead</expert>
+
+  <reasoning>
+    <entry>One service-visit task covers the shared coordination flow without storing vendor contacts, payments, or private RV records.</entry>
+  </reasoning>
+</task>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Coordinate_camp_shift</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Before and after every scheduled Morning, Afternoon, Pre-event, Bar, Liaison, Cheese, and Post-event shift</when>
+  <time/>
+
+  <resources>
+    <resource>📦 Shift_Assignment_Sheet</resource>
+    <resource>📦 Generated_Checklists</resource>
+    <resource>📦 Camp_Issue_Log</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Identify the checklist types starting next.</action>
+    </step>
+    <step number="2">
+      <action>Confirm that each assigned worker is present.</action>
+      <ifThen>IF an assigned worker is absent, THEN find a willing replacement and update 📦 Shift_Assignment_Sheet. IF no replacement is available, THEN record the coverage gap in 📦 Camp_Issue_Log and tell the Camp Lead.</ifThen>
+    </step>
+    <step number="3">
+      <action>Give each worker the applicable generated checklist and task cards.</action>
+    </step>
+    <step number="4">
+      <action>Brief the workers on unresolved issues that affect their tasks.</action>
+    </step>
+    <step number="5">
+      <action>Review every checklist line after the shift.</action>
+    </step>
+    <step number="6">
+      <action>Record every BLOCKED, ESCALATED, or incomplete line in 📦 Camp_Issue_Log.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every shift has workers or a recorded coverage gap.</criterion>
+    <criterion>Every worker received the applicable checklist and task cards.</criterion>
+    <criterion>Every completed checklist line has status, initials, and completion time.</criterion>
+    <criterion>Every unresolved result is in the issue log.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Camp Lead</expert>
+</task>

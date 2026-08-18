@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Hand_off_Dominatrix_shift</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At the end of each Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>📦 Camp_Issue_Log</resource>
+    <resource>📦 Generated_Checklists</resource>
+    <resource>🔧 Camp_Radios</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Review every BLOCKED, ESCALATED, and incomplete checklist line.</action>
+    </step>
+    <step number="2">
+      <action>Record each unresolved issue and next action in 📦 Camp_Issue_Log.</action>
+    </step>
+    <step number="3">
+      <action>Record proposed instruction changes in 📦 Camp_Issue_Log without editing the printed task card or checklist.</action>
+    </step>
+    <step number="4">
+      <action>Brief the incoming Dominatrix on each unresolved issue and next action.</action>
+    </step>
+    <step number="5">
+      <action>Return the radio to 🔧 Camp_Radios.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every unresolved issue and proposed documentation change is recorded.</criterion>
+    <criterion>The incoming Dominatrix received the handoff.</criterion>
+    <criterion>The radio is returned and charging or fully charged.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Camp Lead</expert>
+
+  <reasoning>
+    <entry>The workbook tells workers to add checklist items during a shift; controlled instructions remain unchanged and proposed edits go into the issue log for later review.</entry>
+  </reasoning>
+</task>

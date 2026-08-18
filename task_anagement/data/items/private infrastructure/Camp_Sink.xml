@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Sink</name>
+
+  <description>Camp sink connected to the fresh-water and gray-water systems.</description>
+  <location>Private infrastructure area (see the map).</location>
+
+  <readyBeforeUse>
+    Potable water flows into the basin and drains into the gray-water system
+    without leaking.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    The basin and drain are clear, the water is off, and no water is leaking or
+    pooled around the sink.
+  </readyForNextPerson>
+
+  <ifNotReady>Stop using the sink and tell the Dominatrix.</ifNotReady>
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

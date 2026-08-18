@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>First_Aid_Kits</name>
+
+  <description>Camp first-aid supplies for minor injuries.</description>
+  <location>At the locations marked on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    Each kit is closed, visible, unobstructed, and contains its posted minimum
+    supplies.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

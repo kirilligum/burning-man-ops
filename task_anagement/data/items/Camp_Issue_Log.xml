@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Issue_Log</name>
+
+  <description>
+    On-playa log for unresolved task, supply, safety, and service issues. Do
+    not record private incident or health details.
+  </description>
+  <location>At the Dominatrix station.</location>
+
+  <readyForNextPerson>
+    Every unresolved operational issue has a current status and next action.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

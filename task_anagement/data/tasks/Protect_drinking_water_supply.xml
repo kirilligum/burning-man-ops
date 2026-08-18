@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Protect_drinking_water_supply</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>When the Dominatrix determines that the fresh-water supply is too low for showers</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Shower</resource>
+    <resource>🔧 Out_of_Service_Sign</resource>
+    <resource>📋 Fill_kitchen_drinking_water_dispensers</resource>
+    <resource>📦 Camp_Issue_Log</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Close the camp shower to users.</action>
+    </step>
+    <step number="2">
+      <action>Display 🔧 Out_of_Service_Sign at the shower entrance.</action>
+    </step>
+    <step number="3">
+      <action>Complete 📋 Fill_kitchen_drinking_water_dispensers.</action>
+    </step>
+    <step number="4">
+      <action>Record the shower closure and water-service need in 📦 Camp_Issue_Log.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The shower is closed and visibly marked out of service.</criterion>
+    <criterion>Both kitchen drinking-water dispensers are full.</criterion>
+    <criterion>The water-service need is recorded.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+</task>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Artist_Rider</name>
+
+  <description>Current artist's approved technical and hospitality requirements.</description>
+  <location>At the liaison station.</location>
+
+  <readyForNextPerson>
+    The current rider is available to the liaison and sound team.
+  </readyForNextPerson>
+
+  <responsible>Music Lead</responsible>
+  <commonProblems/>
+</item>

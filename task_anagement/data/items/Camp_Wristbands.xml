@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Wristbands</name>
+
+  <description>Current Treble Makers camp wristbands.</description>
+  <location>At the Dominatrix station.</location>
+  <readyBeforeUse>At least one unissued wristband is available.</readyBeforeUse>
+
+  <readyForNextPerson>Unused wristbands remain at the Dominatrix station.</readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

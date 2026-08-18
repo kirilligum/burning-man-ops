@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Shift_Assignment_Sheet</name>
+
+  <description>
+    On-playa assignment sheet showing who is scheduled for each shift. Personal
+    assignments are not stored in this repository.
+  </description>
+  <location>At the Dominatrix station.</location>
+
+  <readyForNextPerson>
+    Every current shift has an assigned worker or a recorded coverage gap.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

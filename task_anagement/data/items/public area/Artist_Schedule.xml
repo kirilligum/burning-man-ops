@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Artist_Schedule</name>
+
+  <description>Current public performance schedule and set times.</description>
+  <location>At the liaison station.</location>
+
+  <readyForNextPerson>The current and next artist and set times are legible.</readyForNextPerson>
+
+  <responsible>Music Lead</responsible>
+  <commonProblems/>
+</item>

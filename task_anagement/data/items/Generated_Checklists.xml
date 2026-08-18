@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Generated_Checklists</name>
+
+  <description>
+    Printed shift checklists generated from the canonical task checklist types.
+  </description>
+  <location>At the Dominatrix station and each applicable work station.</location>
+
+  <readyForNextPerson>
+    Each completed line shows status, initials, and completion time; unresolved
+    lines identify the next action.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

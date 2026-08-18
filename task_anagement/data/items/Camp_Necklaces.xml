@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Necklaces</name>
+
+  <description>Optional camp necklaces issued when the current arrival plan requires one.</description>
+  <location>At the Dominatrix station.</location>
+
+  <readyForNextPerson>Unused necklaces remain at the Dominatrix station.</readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

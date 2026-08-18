@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fire_Extinguishers</name>
+
+  <description>Camp fire extinguishers mounted near identified fire hazards.</description>
+  <location>At the locations marked on 📦 Camp_Map.</location>
+  <readyBeforeUse>The gauge is in the operable range and access is clear.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Each extinguisher is mounted, visible, unobstructed, and in the operable
+    range.
+  </readyForNextPerson>
+
+  <ifNotReady>Tell the Dominatrix immediately.</ifNotReady>
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

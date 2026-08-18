@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Welcome_new_camp_arrival</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>When a new camper arrives</when>
+  <time/>
+
+  <resources>
+    <resource>📦 Camp_Member_Roster</resource>
+    <resource>📦 Camp_Wristbands</resource>
+    <resource>📦 Camp_Necklaces</resource>
+    <resource>📦 Camp_Map</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Match the arriving person's name and face to 📦 Camp_Member_Roster.</action>
+      <ifThen>IF the person does not match the roster, THEN pause the arrival and ask the Dominatrix.</ifThen>
+    </step>
+    <step number="2">
+      <action>Mark the person's arrival on 📦 Camp_Member_Roster.</action>
+    </step>
+    <step number="3">
+      <action>Give the person one wristband from 📦 Camp_Wristbands.</action>
+    </step>
+    <step number="4">
+      <action>Give the person one necklace from 📦 Camp_Necklaces when the current arrival plan calls for one.</action>
+    </step>
+    <step number="5">
+      <action>Show the person the kitchen, drinking water, shower, toilets, common area, and Dominatrix station.</action>
+    </step>
+    <step number="6">
+      <action>Show the person their tent or sleeping location on 📦 Camp_Map.</action>
+    </step>
+    <step number="7">
+      <action>Show the person the parking area, service lanes, and emergency exits on 📦 Camp_Map.</action>
+    </step>
+    <step number="8">
+      <action>Tell the person not to park or leave belongings in a service lane or emergency exit.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The person's roster entry shows arrival.</criterion>
+    <criterion>The person has the required camp identifier.</criterion>
+    <criterion>The person can locate camp services, their sleeping location, parking, service lanes, and emergency exits.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+</task>

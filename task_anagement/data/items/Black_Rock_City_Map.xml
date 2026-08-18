@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Black_Rock_City_Map</name>
+
+  <description>Current official Black Rock City map and guide.</description>
+  <location>At the Dominatrix station.</location>
+
+  <readyForNextPerson>The current map is readable and available.</readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>
