@@ -14,6 +14,7 @@ CARD = "task_anagement/build/task-cards/Clean_communal_kitchen_tables.md"
 FUEL_CARD = "task_anagement/build/task-cards/Coordinate_generator_refueling.md"
 PROPANE_CARD = "task_anagement/build/task-cards/Replace_kitchen_propane_cylinder.md"
 CHECKLIST = "task_anagement/build/checklists/Morning.md"
+PRINT_CHECKLIST = "task_anagement/morning-checklist.md"
 
 
 def run_script(*arguments: str) -> subprocess.CompletedProcess[str]:
@@ -105,6 +106,44 @@ class TaskManagementScriptsTest(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertIn("After 📋 Strike sound system passes", strike)
         self.assertNotIn("📋 Strike_sound_system", strike)
+
+    def test_morning_print_checklist_is_current_and_concise(self) -> None:
+        result = run_script(
+            "task_anagement/scripts/render-morning-checklist.py",
+            "--check",
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Morning print checklist is current", result.stdout)
+
+        checklist = (REPOSITORY / PRINT_CHECKLIST).read_text(encoding="utf-8")
+        self.assertIn("## Clean communal kitchen tables", checklist)
+        self.assertIn("#### Communal Tables", checklist)
+        self.assertIn("#### Lost and Found", checklist)
+        self.assertIn("#### Dustpan and Brush", checklist)
+        self.assertIn("#### Multisurface Cleaner", checklist)
+        self.assertIn("#### Disposable Towels", checklist)
+        self.assertIn("#### Trash Bins", checklist)
+        self.assertIn("Small hand brush and dustpan used on communal tables", checklist)
+        self.assertIn("Turn the nozzle to ON", checklist)
+        self.assertIn("Get another empty container", checklist)
+        self.assertIn("Before marking PASS, return each used item", checklist)
+        self.assertIn("Once or more per shift", checklist)
+        self.assertNotIn("☐", checklist)
+        self.assertNotIn("\n\n", checklist)
+        self.assertNotIn("📋", checklist)
+        self.assertNotIn("📦", checklist)
+        self.assertNotIn("🍳", checklist)
+        self.assertNotIn("Clean_communal_kitchen_tables", checklist)
+        self.assertNotIn("Communal_Tables", checklist)
+        self.assertNotIn("**Checklist types:**", checklist)
+        self.assertNotIn("**Who is responsible:** Dominatrix", checklist)
+        self.assertNotIn("see task Clean communal kitchen tables", checklist)
+        self.assertNotIn("**Why:**", checklist)
+        self.assertNotIn("**Time:**", checklist)
+        self.assertNotIn("### Common problems", checklist)
+        self.assertNotIn("### Who to ask", checklist)
+        self.assertNotIn("### Reasoning", checklist)
+        self.assertNotIn("### Decisions", checklist)
 
     def test_historical_lookup_accepts_reference_only_decision(self) -> None:
         result = run_script(

@@ -111,3 +111,14 @@ and prints only the matching records from this file.
   in `ask_me/README.md`, ordered from highest to lowest operational priority.
 - **Effect:** D-133 replaces the single generic queue with multiple descriptive,
   timestamped question files under `ask_me/`.
+
+### D-134 — Generate concise print checklists from task XML
+
+- **Date:** 2026-08-18
+- **Status:** Superseded by D-135
+- **Decision:** Generate field checklist Markdown programmatically from selected
+  canonical task XML. Use no checkboxes, omit empty worker-facing fields and
+  maintainer metadata, preserve non-empty XML text and references, and avoid
+  blank lines between sections.
+- **Effect:** D-135 replaces repository references with self-contained task,
+  item, and global-instruction text for the worker.

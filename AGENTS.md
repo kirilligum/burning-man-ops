@@ -108,6 +108,7 @@ python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
 python3 task_anagement/scripts/validate.py
 python3 task_anagement/scripts/render-task-card.py --all --check
 python3 task_anagement/scripts/render-checklists.py --check
+python3 task_anagement/scripts/render-morning-checklist.py --check
 git diff --check
 git status --short
 ```

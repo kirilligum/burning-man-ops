@@ -276,6 +276,17 @@ task card and provides its When condition plus the runtime Status, Initials,
 and Completion time fields. Rows form an assignment and status index, not an
 execution sequence; ordered actions remain in the task card.
 
+`scripts/render-morning-checklist.py` creates the concise field handout at
+`morning-checklist.md` directly from selected canonical task XML. The initial
+handout contains only `Clean_communal_kitchen_tables`. It resolves each task
+item and the shared finish instructions from canonical XML, prints the useful
+item fields below the task, and humanizes repository references so a tired
+worker does not need to open other files. It uses no checkboxes, omits empty
+worker-facing fields, circular current-task references, and maintainer
+metadata, and adds no blank lines between sections. The repeated default
+Dominatrix responsibility is omitted because the shared finish instruction
+already gives that escalation path; a non-default responsible role is shown.
+
 Example:
 
 | Checklist | Task | When | Status | Initials | Time |
@@ -900,6 +911,9 @@ The same separation applies to generator work:
 - troubleshooting and repair are separate authorized tasks.
 
 ## Validation
+
+Run `scripts/render-morning-checklist.py --check` with the other renderer
+checks so the print handout cannot drift from its task XML.
 
 `scripts/validate.py` currently rejects practical errors that would make a task
 ambiguous or impossible to render, including:

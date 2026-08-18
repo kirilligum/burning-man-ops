@@ -352,6 +352,23 @@ lookup command documented in `AGENTS.md`.
   decisions or canonical operational data. Do not store protected runtime
   details in them.
 
+### D-135 — Make generated print checklists self-contained
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Generate field checklist Markdown from selected task XML, every
+  referenced item XML, and the shared global instructions. Print concise item
+  details below each task and humanize repository references so workers do not
+  need to open other files. Use no checkboxes or blank separator lines. Omit
+  empty worker-facing fields, circular current-task references, and maintainer
+  metadata. Omit repeated default Dominatrix responsibility because the shared
+  finish instruction already provides that escalation path; show a non-default
+  responsible role.
+- **Effect:** `scripts/render-morning-checklist.py` generates the self-contained
+  `morning-checklist.md`. The initial output contains only
+  `Clean_communal_kitchen_tables`; later iterations may add tasks to the same
+  generated handout. D-135 supersedes D-134.
+
 ## Open decisions
 
 Open operational questions remain in timestamped files under `ask_me/`. They

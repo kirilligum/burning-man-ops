@@ -4,48 +4,17 @@
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+from render_helpers import humanize_references, item_for_reference, text
 
 ROOT = Path(__file__).resolve().parents[1]
-ITEMS = ROOT / "data" / "items"
-ITEM_FOLDERS = {
-    "🌐": ITEMS / "public area",
-    "🍷": ITEMS / "bar-cheese",
-    "🔥": ITEMS / "propane area",
-    "🏕️": ITEMS / "common area",
-    "🍳": ITEMS / "kitchen",
-    "🔧": ITEMS / "private infrastructure",
-    "📦": ITEMS,
-}
-REFERENCE = re.compile(
-    r"(?P<icon>📋|🌐|🍷|🔥|🏕️|🍳|🔧|📦)\s+"
-    r"(?P<name>[A-Za-z0-9][A-Za-z0-9_-]*)"
-)
-
-
-def text(element: ET.Element | None) -> str:
-    if element is None:
-        return ""
-    return " ".join("".join(element.itertext()).split())
 
 
 def humanize(value: str) -> str:
-    return REFERENCE.sub(
-        lambda match: f"{match.group('icon')} {match.group('name').replace('_', ' ')}",
-        value,
-    )
-
-
-def item_for_reference(value: str) -> ET.Element | None:
-    match = REFERENCE.fullmatch(value)
-    if not match or match.group("icon") == "📋":
-        return None
-    path = ITEM_FOLDERS[match.group("icon")] / f"{match.group('name')}.xml"
-    return ET.parse(path).getroot()
+    return humanize_references(value, keep_icons=True)
 
 
 def render(task_path: Path) -> str:
