@@ -4,6 +4,192 @@
 - Before marking PASS, return each used item to its location and leave it ready for the next person.
 - Collect all MOOP.
 - If an item, instruction, or solution is missing or unclear, ask the Dominatrix.
+## Charge_camp_radios
+**Area:** Private infrastructure
+**When:** Once per Morning shift
+### What you need
+- 🔧 Camp_Radios
+- 🔧 Radio_Chargers
+### Steps
+1. Collect every returned camp radio.
+2. Inspect each radio and battery for cracks, swelling, leaking, or unusual heat.
+   **IF/THEN:** IF damage or unusual heat is present, THEN do not charge that radio and tell the Dominatrix.
+3. Connect each safe radio to its compatible charger.
+4. Observe the charging indicator on each connected radio or charger.
+   **IF/THEN:** IF the charging indicator does not appear, THEN reconnect it once and tell the Dominatrix if it still does not charge.
+5. Leave each radio fully charged or connected to a powered compatible charger.
+### PASS when
+- [ ] Every returned radio is accounted for.
+- [ ] Every safe radio is fully charged or visibly charging.
+- [ ] No damaged or unusually hot battery is charging.
+### Items
+#### 🔧 Camp_Radios
+**Description:** Rechargeable handheld radios used for camp operations.
+**Location:** Private infrastructure area.
+**Ready for next person:** Every returned radio is fully charged or visibly charging. No damaged or unusually hot battery is charging.
+#### 🔧 Radio_Chargers
+**Description:** Powered chargers compatible with the camp radios.
+**Location:** Private infrastructure area.
+**Ready before use:** Each charger is dry, undamaged, and powered.
+**Ready for next person:** Chargers are dry, powered, and holding only compatible radios or batteries.
+**If not ready:** Unplug a damaged, wet, or unusually hot charger and tell the Dominatrix.
+## Charge_impact_driver_batteries
+**Area:** Private infrastructure
+**When:** Once per selected shift
+### What you need
+- 🔧 Impact_Drivers
+- 🔧 Impact_Driver_Batteries
+- 🔧 Impact_Driver_Chargers
+### Steps
+1. Collect every returned impact driver and battery.
+2. Inspect each battery for cracks, swelling, leaking, or unusual heat.
+   **IF/THEN:** IF damage or unusual heat is present, THEN do not charge that battery and tell the Dominatrix.
+3. Insert each safe battery into its compatible charger.
+4. Observe the charging indicator on each charger.
+   **IF/THEN:** IF the charging indicator does not appear, THEN reseat the battery once and tell the Dominatrix if it still does not charge.
+5. Return every impact driver to its storage place.
+### PASS when
+- [ ] Every returned impact driver and battery is accounted for.
+- [ ] Every safe battery is fully charged or visibly charging.
+- [ ] No damaged or unusually hot battery is charging.
+### Items
+#### 🔧 Impact_Drivers
+**Description:** Camp cordless impact drivers used during build, operation, and strike.
+**Location:** Private infrastructure area.
+**Ready for next person:** Every returned driver is clean enough to identify, switched off, and stored with no bit left loose.
+#### 🔧 Impact_Driver_Batteries
+**Description:** Rechargeable batteries compatible with the camp impact drivers.
+**Location:** Private infrastructure area.
+**Ready for next person:** Every returned safe battery is fully charged or visibly charging. No damaged or unusually hot battery is charging.
+**If not ready:** Do not charge a cracked, swollen, leaking, or unusually hot battery. Tell the Dominatrix.
+#### 🔧 Impact_Driver_Chargers
+**Description:** Powered chargers compatible with the camp impact-driver batteries.
+**Location:** Private infrastructure area.
+**Ready before use:** Each charger is dry, undamaged, and powered.
+**Ready for next person:** Chargers are dry, powered, and holding only compatible batteries.
+**If not ready:** Unplug a damaged, wet, or unusually hot charger and tell the Dominatrix.
+## Clean_bar
+**Area:** Bar/Cheese
+**When:** Once per selected shift
+### What you need
+- 🍷 Bar
+- 🍷 Lost_and_Found
+- 🍷 Dustpan_and_Brush
+- 🍷 Multisurface_Cleaner
+- 🍷 Disposable_Towels
+- 📦 Trash_Bins
+### Steps
+1. Put unattended personal belongings in 🍷 Lost_and_Found.
+2. Brush crumbs and dry debris into 🍷 Dustpan_and_Brush.
+3. Put the collected debris in 📦 Trash_Bins.
+4. Inspect the bar top for sticky or visible residue.
+   **IF/THEN:** IF residue is present, THEN do steps 5 through 7. IF none remains, THEN skip to step 8.
+5. Spray the residue with 🍷 Multisurface_Cleaner.
+6. Wipe each sprayed spot with 🍷 Disposable_Towels until the residue is gone.
+7. Put used towels in 📦 Trash_Bins.
+8. Put remaining MOOP from the bar top and floor in 📦 Trash_Bins.
+### PASS when
+- [ ] No unattended belonging, crumb, trash, MOOP, sticky spot, or visible residue remains.
+- [ ] The bar top is dry and ready for service.
+### Items
+#### 🍷 Bar
+**Description:** Treble Makers public wine-service bar.
+**Location:** Bar/Cheese area (see the map).
+**Ready before use:** The bar top is clean and dry. One lined trash bin is positioned at each side before service.
+**Ready for next person:** No unattended belonging, crumb, trash, MOOP, sticky spot, or visible residue remains. The bar top is dry.
+**Who is responsible:** Bar Lead
+#### 🍷 Lost_and_Found
+**Description:** Container for personal belongings found in the public and bar areas.
+**Location:** Bar/Cheese area.
+**Ready before use:** The container has space for found personal belongings.
+**Ready for next person:** Found personal belongings are inside the container. Nothing is on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+#### 🍷 Dustpan_and_Brush
+**Description:** Small hand brush and dustpan used at the bar.
+**Location:** Bar/Cheese area.
+**Ready for next person:** The dustpan is empty. No debris remains in the brush. Both are returned to the Bar/Cheese area.
+**Who is responsible:** Bar Lead
+#### 🍷 Multisurface_Cleaner
+**Description:** Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
+**Location:** Bar/Cheese area.
+**Ready before use:** The bottle contains cleaner and sprays.
+**Ready for next person:** The bottle contains cleaner.
+**If not ready:** Ask the Dominatrix where to find a replacement. Put the empty bottle in 📦 Trash_Bins.
+**Who is responsible:** Bar Lead
+**Common problems:**
+- **IF** The cleaner is not spraying and the nozzle is OFF. **THEN** Turn the nozzle to ON.
+#### 🍷 Disposable_Towels
+**Description:** WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
+**Location:** Bar/Cheese area.
+**Ready before use:** At least one clean, dry towel remains.
+**Ready for next person:** At least one clean, dry towel remains.
+**If not ready:** Ask the Dominatrix where to find replacement towels.
+**Who is responsible:** Bar Lead
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Clean_communal_kitchen_cooking_surfaces
+**Area:** Kitchen
+**When:** Once or more per shift
+### What you need
+- 🍳 Cooking_Surfaces
+- 🍳 Multisurface_Cleaner
+- 🍳 Food_Surface_Sanitizer
+- 🍳 Disposable_Towels
+- 🍳 Drinking_Water_Dispensers
+- 📦 Trash_Bins
+### Steps
+1. Put loose food and MOOP from 🍳 Cooking_Surfaces in 📦 Trash_Bins.
+2. Spray food, grease, visible dirt, and sticky residue with 🍳 Multisurface_Cleaner.
+3. Wipe the sprayed areas with 🍳 Disposable_Towels until no food, grease, visible dirt, or sticky residue remains.
+4. Put used towels in 📦 Trash_Bins.
+5. Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.
+6. Wipe every cleaned food-contact area with the damp towel.
+7. Put the used towel in 📦 Trash_Bins.
+8. Spray food-contact areas with 🍳 Food_Surface_Sanitizer until visibly wet.
+9. Leave the sanitized areas visibly wet for 60 seconds.
+10. Let the sanitized areas air-dry.
+### PASS when
+- [ ] No food, grease, visible dirt, sticky residue, or MOOP remains.
+- [ ] Food-contact areas were sanitized and are dry.
+### Items
+#### 🍳 Cooking_Surfaces
+**Location:** Communal kitchen cooking area.
+**Ready for next person:** Surfaces are clean, sanitized, dry, and free of food, grease, sticky residue, and MOOP.
+#### 🍳 Multisurface_Cleaner
+**Description:** Clorox Free & Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).
+**Location:** Kitchen.
+**Ready before use:** The bottle contains cleaner and sprays.
+**Ready for next person:** The bottle contains cleaner.
+**If not ready:** Ask the Dominatrix where to find a replacement. Turn the old bottle's nozzle to OFF, put the old bottle in 📦 Trash_Bins, and get the replacement.
+**Common problems:**
+- **IF** The cleaner is not spraying and the nozzle is OFF. **THEN** Turn the nozzle to ON.
+#### 🍳 Food_Surface_Sanitizer
+**Description:** PURELL Foodservice Surface Sanitizer, fragrance free, ready-to-use 32 fl oz spray bottle (3341-06). For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
+**Location:** Kitchen.
+**Ready before use:** The bottle contains sanitizer and sprays.
+**Ready for next person:** The bottle contains sanitizer.
+**If not ready:** Ask the Dominatrix where to find a replacement. Turn the old bottle's nozzle to OFF, put the old bottle in 📦 Trash_Bins, and get the replacement.
+**Common problems:**
+- **IF** The sanitizer is not spraying and the nozzle is OFF. **THEN** Turn the nozzle to ON.
+#### 🍳 Disposable_Towels
+**Description:** WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701).
+**Location:** Kitchen.
+**Ready before use:** At least one clean, dry towel remains in the pack.
+**Ready for next person:** At least one clean, dry towel remains in the pack.
+**If not ready:** Ask the Dominatrix where to find a replacement pack. Get the replacement pack.
+#### 🍳 Drinking_Water_Dispensers
+**Description:** Two Igloo-style insulated drinking-water dispensers.
+**Location:** Kitchen.
+**Ready before use:** The interiors and spigots are clean, and neither dispenser leaks.
+**Ready for next person:** Potable water is available, both lids are closed, and neither dispenser leaks.
+**If not ready:** If no potable water remains, complete 📋 Fill_kitchen_drinking_water_dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 ## Clean_communal_kitchen_tables
 **Area:** Kitchen
 **When:** Once or more per shift
@@ -62,3 +248,901 @@
 **Ready before use:** Not full.
 **Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
 **If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Clear_common_area
+**Area:** Common area
+**When:** Once per shift
+### What you need
+- 🏕️ Common_Area
+- 📦 Lost_and_Found
+- 📦 Trash_Bins
+### Steps
+1. Put personal belongings with no nearby owner in 📦 Lost_and_Found.
+2. Return communal items to their storage places.
+3. Put trash and MOOP in 📦 Trash_Bins.
+4. Move bicycles and other objects out of entrances and walking paths.
+### PASS when
+- [ ] No unattended personal belongings remain in the common area.
+- [ ] No trash or MOOP remains in the common area.
+- [ ] Entrances and walking paths are clear.
+### Items
+#### 🏕️ Common_Area
+**Location:** Treble Makers common camp area (see the map).
+**Ready for next person:** No unattended personal belonging, trash, or MOOP remains. Entrances and walking paths are clear.
+#### 📦 Lost_and_Found
+**Location:** Kitchen.
+**Ready before use:** The container is available and has space for abandoned personal belongings.
+**Ready for next person:** Abandoned belongings are inside the container. Nothing is left on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Clear_common_yurt_and_yurt_area
+**Area:** Common area
+**When:** Once per Morning shift
+### What you need
+- 🏕️ Common_Yurt
+- 📦 Lost_and_Found
+- 📦 Trash_Bins
+### Steps
+1. Put personal belongings with no nearby owner in 📦 Lost_and_Found.
+2. Return communal items to their storage places.
+3. Put trash and MOOP from inside and around 🏕️ Common_Yurt in 📦 Trash_Bins.
+4. Move objects out of the yurt entrance and walking path.
+### PASS when
+- [ ] No unattended personal belongings, trash, or MOOP remain inside or around the yurt.
+- [ ] The yurt entrance and walking path are clear.
+### Items
+#### 🏕️ Common_Yurt
+**Location:** Common area (see the map).
+**Ready for next person:** No unattended personal belonging, trash, or MOOP remains inside or around the yurt. Its entrance and walking path are clear.
+#### 📦 Lost_and_Found
+**Location:** Kitchen.
+**Ready before use:** The container is available and has space for abandoned personal belongings.
+**Ready for next person:** Abandoned belongings are inside the container. Nothing is left on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Clear_public_area_belongings
+**Area:** Public area
+**When:** Once per Morning shift
+### What you need
+- 🌐 Public_Area
+- 🍷 Lost_and_Found
+### Steps
+1. Put personal belongings with no nearby owner in 🍷 Lost_and_Found.
+2. Move bicycles blocking entrances, views, or walking paths to camp bicycle parking.
+### PASS when
+- [ ] No unattended personal belongings remain in the public area.
+- [ ] No bicycle blocks an entrance, view, or walking path.
+### Common problems
+- **IF:** A bicycle appears abandoned but does not block the public area.
+  **THEN:** Leave it where it is. Lost and Found does not accept bicycles.
+### Items
+#### 🌐 Public_Area
+**Location:** Treble Makers public-facing camp area (see the map).
+**Ready for next person:** No unattended personal belonging or MOOP remains. Entrances, views, and walking paths are clear.
+#### 🍷 Lost_and_Found
+**Description:** Container for personal belongings found in the public and bar areas.
+**Location:** Bar/Cheese area.
+**Ready before use:** The container has space for found personal belongings.
+**Ready for next person:** Found personal belongings are inside the container. Nothing is on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+## Empty_communal_kitchen_dry_trash
+**Area:** Kitchen
+**When:** Once per shift
+### What you need
+- 🍳 Dry_Trash_Bin
+- 🍳 Trash_Bags
+- 📦 Dumpster
+### Steps
+1. Remove the bag from 🍳 Dry_Trash_Bin.
+2. Tie the bag closed.
+3. Put the closed bag inside 📦 Dumpster.
+4. Install a new 🍳 Trash_Bags bag in 🍳 Dry_Trash_Bin.
+### PASS when
+- [ ] A new bag is installed in the dry-trash bin.
+- [ ] No loose trash remains in or around the bin.
+### Items
+#### 🍳 Dry_Trash_Bin
+**Description:** Kitchen bin for dry, non-recyclable trash.
+**Location:** Kitchen.
+**Ready for next person:** A trash bag is installed and no trash is in or around the bin.
+#### 🍳 Trash_Bags
+**Description:** Hefty Strong 13 Gallon Trash Bags, unscented, 80 count. Provisional size until the camp confirms the kitchen bins.
+**Location:** Kitchen.
+**Ready before use:** At least one unused bag is available.
+**Ready for next person:** At least one unused bag is available.
+**If not ready:** Ask the Dominatrix where to find replacement trash bags.
+#### 📦 Dumpster
+**Ready for next person:** All trash is inside the dumpster. No trash is on the ground around it.
+**If not ready:** If the dumpster is full, do not leave trash beside it. Tell the Dominatrix.
+## Empty_communal_kitchen_wet_trash
+**Area:** Kitchen
+**When:** Once per shift
+### What you need
+- 🍳 Wet_Trash_Bin
+- 🍳 Trash_Bags
+- 📦 Dumpster
+### Steps
+1. Inspect the bag in 🍳 Wet_Trash_Bin for leaks.
+   **IF/THEN:** IF the bag leaks, THEN place it inside a second 🍳 Trash_Bags bag before moving it.
+2. Remove the bag from 🍳 Wet_Trash_Bin.
+3. Tie the bag closed.
+4. Put the closed bag inside 📦 Dumpster.
+5. Install a new 🍳 Trash_Bags bag in 🍳 Wet_Trash_Bin.
+### PASS when
+- [ ] A new bag is installed in the wet-trash bin.
+- [ ] No wet waste or liquid remains in or around the bin.
+### Items
+#### 🍳 Wet_Trash_Bin
+**Description:** Kitchen bin for food scraps and other wet trash.
+**Location:** Kitchen.
+**Ready for next person:** A trash bag is installed and no wet waste or liquid is in or around the bin.
+#### 🍳 Trash_Bags
+**Description:** Hefty Strong 13 Gallon Trash Bags, unscented, 80 count. Provisional size until the camp confirms the kitchen bins.
+**Location:** Kitchen.
+**Ready before use:** At least one unused bag is available.
+**Ready for next person:** At least one unused bag is available.
+**If not ready:** Ask the Dominatrix where to find replacement trash bags.
+#### 📦 Dumpster
+**Ready for next person:** All trash is inside the dumpster. No trash is on the ground around it.
+**If not ready:** If the dumpster is full, do not leave trash beside it. Tell the Dominatrix.
+## Get_camp_ice
+**Area:** Bar/Cheese
+**When:** During the Morning ice run or when the Dominatrix requests ice before an event
+### What you need
+- Approved payment method from the Dominatrix
+- 📦 Handcart
+- 🍷 Ice_Storage
+### Steps
+1. Ask the Dominatrix to confirm the number of bags and give you the approved payment method.
+   **IF/THEN:** IF this is the normal Morning run and no different quantity is requested, THEN get 5 bags.
+2. Take 📦 Handcart to Arctica at 3:00 and G during its posted open hours.
+3. Purchase the confirmed number of ice bags.
+4. Secure the ice bags on 📦 Handcart.
+5. Put the ice bags in 🍷 Ice_Storage.
+6. Return the payment method and any change or receipt to the Dominatrix.
+### PASS when
+- [ ] The confirmed number of ice bags is in camp ice storage.
+- [ ] The payment method and any change or receipt were returned to the Dominatrix.
+### Common problems
+- **IF:** Arctica at 3:00 and G is closed.
+  **THEN:** Use another currently open Arctica location or return to camp and tell the Dominatrix.
+### Items
+#### 📦 Handcart
+**Description:** Hand-pulled cart used to move bags and supplies without driving.
+**Ready for next person:** The cart is empty, parked in its storage place, and cannot roll into a path.
+#### 🍷 Ice_Storage
+**Description:** Camp cooler or freezer space designated for unopened ice bags.
+**Location:** Bar/Cheese area.
+**Ready before use:** Enough clean space is available for the incoming ice bags.
+**Ready for next person:** Ice bags are inside the designated storage and no meltwater is leaking onto the playa.
+**If not ready:** Ask the Dominatrix where to put the ice before buying it.
+## Inspect_and_clean_shower
+**Area:** Private infrastructure
+**When:** Once per Morning shift
+### What you need
+- 🔧 Camp_Shower
+- 🔧 Gray-Water_Pump
+- 🔧 Shower_Cleaner
+- 🔧 Disposable_Towels
+- 🔧 Shower_Squeegee
+- 🔧 Out_of_Service_Sign
+- 📦 Lost_and_Found
+- 📦 Trash_Bins
+### Steps
+1. Put unattended belongings from 🔧 Camp_Shower in 📦 Lost_and_Found.
+2. Use 🔧 Disposable_Towels to pick up hair, trash, and MOOP.
+3. Put the used towels in 📦 Trash_Bins.
+4. Spray muddy and visibly dirty spots with 🔧 Shower_Cleaner.
+5. Wipe the sprayed spots with 🔧 Disposable_Towels until no mud or visible dirt remains.
+6. Put the used towels in 📦 Trash_Bins.
+7. Use 🔧 Shower_Squeegee to move standing water toward the drain.
+8. Run 🔧 Gray-Water_Pump until the shower basin is empty.
+   **IF/THEN:** IF the pump does not remove the water, THEN close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+9. Inspect under and around the shower for a puddle or leak.
+   **IF/THEN:** IF a puddle or leak is present, THEN close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+### PASS when
+- [ ] No hair, trash, MOOP, mud, or visible dirt remains.
+- [ ] The shower basin is empty.
+- [ ] No puddle or leak is present under or around the shower.
+- [ ] The gray-water pump removed the water.
+### Items
+#### 🔧 Camp_Shower
+**Description:** Private shower for Treble Makers camp members only.
+**Location:** Shower area (see the map).
+**Ready before use:** The shower is open, clean, empty of personal belongings, and has no leak or standing water.
+**Ready for next person:** No personal belonging, hair, trash, mud, visible dirt, leak, puddle, or standing water remains.
+**If not ready:** Close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+#### 🔧 Gray-Water_Pump
+**Description:** Pump that moves shower water into the camp gray-water system.
+**Location:** Shower area.
+**Ready before use:** The pump is available and removes water from the shower basin.
+**Ready for next person:** The pump is off after the shower basin is empty. No hose or connection leaks.
+**If not ready:** Close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+#### 🔧 Shower_Cleaner
+**Description:** Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
+**Location:** Shower area.
+**Ready before use:** The bottle contains cleaner and sprays.
+**Ready for next person:** The bottle contains cleaner.
+**If not ready:** Ask the Dominatrix where to find a replacement.
+**Common problems:**
+- **IF** The cleaner is not spraying and the nozzle is OFF. **THEN** Turn the nozzle to ON.
+#### 🔧 Disposable_Towels
+**Description:** WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
+**Location:** Shower area.
+**Ready before use:** At least one clean, dry towel remains.
+**Ready for next person:** At least one clean, dry towel remains.
+**If not ready:** Ask the Dominatrix where to find replacement towels.
+#### 🔧 Shower_Squeegee
+**Description:** Hand squeegee used only in the camp shower.
+**Location:** Shower area.
+**Ready for next person:** The squeegee has no hair or trash on it and is returned to the shower area.
+#### 🔧 Out_of_Service_Sign
+**Description:** Reusable sign used to close unsafe or nonfunctional camp equipment.
+**Location:** Private infrastructure area.
+**Ready for next person:** The sign is displayed on closed equipment or returned to its storage place.
+#### 📦 Lost_and_Found
+**Location:** Kitchen.
+**Ready before use:** The container is available and has space for abandoned personal belongings.
+**Ready for next person:** Abandoned belongings are inside the container. Nothing is left on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Inspect_camp_porta_potties
+**Area:** Private infrastructure
+**When:** Once per Morning shift
+### What you need
+- 🔧 Camp_Porta_Potties
+- 🔧 One_Ply_Toilet_Paper
+- 🔧 Disinfecting_Wipes
+- 🔧 Disposable_Nitrile_Gloves
+- 🔧 Out_of_Service_Sign
+- 📦 Handwashing_Station
+- 📦 Trash_Bins
+### Steps
+1. Look into each toilet without touching the tank contents.
+   **IF/THEN:** IF waste is near the tank opening, THEN close the toilet, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+2. Inspect the toilet-paper holder in each toilet.
+   **IF/THEN:** IF a roll is missing or empty, THEN install 🔧 One_Ply_Toilet_Paper.
+3. Inspect the seat and floor for a visible spill.
+   **IF/THEN:** IF a visible spill is present, THEN do steps 4 through 7. IF none is present, THEN skip to step 8.
+4. Put on 🔧 Disposable_Nitrile_Gloves.
+5. Wipe the spill with 🔧 Disinfecting_Wipes according to the product label.
+6. Put used wipes in 📦 Trash_Bins.
+7. Remove the gloves and put them in 📦 Trash_Bins.
+8. Wash your hands at 📦 Handwashing_Station.
+9. Close each toilet lid and door.
+### PASS when
+- [ ] No toilet is full or visibly dirty.
+- [ ] One-ply toilet paper is available in every toilet.
+- [ ] Every lid and door is closed.
+- [ ] No wipe, glove, trash, or other object was put in a toilet tank.
+### Common problems
+- **IF:** Trash, a wipe, or another object is visible inside a toilet tank.
+  **THEN:** Do not reach into the tank. Close the toilet and tell the Dominatrix.
+### Items
+#### 🔧 Camp_Porta_Potties
+**Description:** Portable toilets reserved for Treble Makers camp members.
+**Location:** Porta-potty area (see the map).
+**Ready before use:** The toilet is not full, the seat and floor are visibly clean, one-ply toilet paper is available, and the toilet is open for use.
+**Ready for next person:** The toilet is not full, the seat and floor are visibly clean, one-ply toilet paper is available, and the lid and door are closed.
+**If not ready:** Close the toilet and tell the Dominatrix.
+**Common problems:**
+- **IF** A wipe, tampon, pad, food, can, plastic, or other trash needs disposal. **THEN** Put it in 📦 Trash_Bins. Only human waste and one-ply toilet paper go in a toilet.
+- **IF** A toilet lid is open after use. **THEN** Close the lid to reduce odor and insects.
+#### 🔧 One_Ply_Toilet_Paper
+**Description:** Camco TST one-ply RV and marine toilet tissue, 4 rolls (40274).
+**Location:** Private infrastructure area.
+**Ready before use:** At least one unused roll is available.
+**Ready for next person:** At least one unused roll is available.
+**If not ready:** Ask the Dominatrix where to find replacement toilet paper.
+#### 🔧 Disinfecting_Wipes
+**Description:** Clorox Disinfecting Wipes, 75 count.
+**Location:** Private infrastructure area.
+**Ready before use:** At least one moist wipe remains.
+**Ready for next person:** The container has moist wipes and its lid is closed.
+**If not ready:** Ask the Dominatrix where to find replacement wipes.
+#### 🔧 Disposable_Nitrile_Gloves
+**Description:** HDX 6 mil disposable nitrile gloves, 100 count.
+**Location:** Private infrastructure area.
+**Ready before use:** A clean pair in the correct size is available.
+**Ready for next person:** Clean gloves remain available in the box.
+**If not ready:** Ask the Dominatrix where to find replacement gloves.
+#### 🔧 Out_of_Service_Sign
+**Description:** Reusable sign used to close unsafe or nonfunctional camp equipment.
+**Location:** Private infrastructure area.
+**Ready for next person:** The sign is displayed on closed equipment or returned to its storage place.
+#### 📦 Handwashing_Station
+**Description:** Camp handwashing station with potable water, soap, disposable towels, and a basin that contains the wastewater.
+**Ready before use:** Water, soap, and disposable towels are available. The wastewater basin has capacity and does not leak.
+**Ready for next person:** Water, soap, and disposable towels remain available. No water has reached the playa.
+**If not ready:** Stop using the station and tell the Dominatrix.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Inspect_EMT_shade
+**Area:** Common area
+**When:** Once per shift and after strong wind or rain
+### What you need
+- 🏕️ EMT_Shade
+### Steps
+1. Inspect the shade covering for tears, loose edges, and strong flapping.
+2. Inspect every visible fitting for movement, cracks, and missing fasteners.
+3. Inspect every visible tube and leg for bending, movement, and sinking.
+4. Inspect every visible strap and anchor for looseness, damage, and abrasion.
+5. Inspect the ground for puddles, softened playa, exposed hardware, and blocked paths.
+### PASS when
+- [ ] No covering, fitting, tube, leg, strap, or anchor has a visible failure.
+- [ ] No puddle, softened playa, exposed hardware, or blocked path is present.
+### Common problems
+- **IF:** Any inspection point does not pass.
+  **THEN:** Keep people out of the affected area and tell the Build Lead. Do not adjust or repair the structure.
+### Who to ask
+Build Lead
+### Items
+#### 🏕️ EMT_Shade
+**Description:** Camp shade structures built from EMT tubing and shade covering.
+**Location:** EMT shade areas (see the map).
+**Ready for next person:** The covering, fittings, tubes, legs, straps, and anchors have no visible failure. The ground is dry and paths are clear.
+**If not ready:** Keep people out of the affected area and tell the Build Lead. Do not adjust or repair the structure unless authorized.
+**Who is responsible:** Build Lead
+## Inspect_flame_effect_system
+**Area:** Propane area
+**When:** Before the first flame-effect startup each day
+### What you need
+- Licensed Flame Lead
+- One trained spotter
+- 🔥 Flame_Effect_System
+- 🔥 Zimmer_Vaporizer
+- 🔥 Flame_Effect_Burn_License
+- 🔥 Flame_Effect_Operating_Procedure
+- 🔥 Propane_Leak_Test_Solution
+- 🔥 Fire_Resistant_Clothing
+- 🔥 Flame_Effect_First_Aid_Kit
+- 🔥 Flame_Effect_SDS
+- 🔥 Flame_Effect_Log
+- 📦 Fire_Extinguishers
+### Steps
+1. Confirm that the operator and spotter are at least 21, trained for this effect, unimpaired, and wearing 🔥 Fire_Resistant_Clothing.
+   **IF/THEN:** IF any condition is not met, THEN do not operate the effect.
+2. Match 🔥 Flame_Effect_Burn_License to this installation.
+   **IF/THEN:** IF the current physical license is not present, THEN do not test or operate the effect.
+3. Confirm that 🔥 Flame_Effect_Operating_Procedure is the Flame Lead-approved current revision.
+4. Clear combustible and flammable material from the FAST-approved perimeter and at least 20 feet around the effect.
+5. Confirm that the audience boundary and operator zone match the FAST-approved layout.
+6. Observe wind direction and strength.
+   **IF/THEN:** IF wind can carry flame or heat toward people, structures, or outside the approved perimeter, THEN do not operate the effect.
+7. Inspect the effect structure, guards, anchors, and vehicle protection for movement or damage.
+8. Inspect every cylinder for current certification, upright securement, excessive rust, damage, and intact valve protection.
+9. Inspect every visible hose and fitting for cracks, abrasion, looseness, heat damage, or an unrated component.
+10. Confirm that the primary quarter-turn emergency shutoff is visible, labeled, accessible, and in the OFF position.
+11. Confirm that every other valve and control is in the pre-operation position shown in 🔥 Flame_Effect_Operating_Procedure.
+12. Confirm that the flame-effect fire extinguisher is visible, unobstructed, charged, and rated for flammable gas.
+13. Confirm that 🔥 Flame_Effect_First_Aid_Kit and 🔥 Flame_Effect_SDS are available outside the perimeter.
+14. Leak-test every connection exactly as specified in 🔥 Flame_Effect_Operating_Procedure.
+   **IF/THEN:** IF growing bubbles, propane odor, hissing, frost, or another failed inspection condition is present, THEN keep the system shut down and tell the Flame Lead.
+15. Record the inspection result in 🔥 Flame_Effect_Log.
+### PASS when
+- [ ] The licensed operator and trained spotter meet every operator requirement.
+- [ ] The current burn license and operating procedure are present.
+- [ ] The approved perimeter is clear and current wind is acceptable.
+- [ ] No structural, cylinder, hose, fitting, valve, control, or leak-test failure is present.
+- [ ] Fire suppression, first-aid supplies, SDSs, and the inspection record are ready.
+### Who to ask
+Flame Lead
+### Items
+#### 🔥 Flame_Effect_System
+**Description:** Registered Treble Makers propane flame effect, including its structure, cylinders, hoses, fittings, regulators, valves, pilots, accumulators, controls, and effect heads.
+**Location:** Propane area (see the map).
+**Ready for next person:** The system is either under continuous licensed operation or fully shut down according to its approved operating procedure.
+**If not ready:** Do not operate the system. Tell the Flame Lead.
+**Who is responsible:** Flame Lead
+#### 🔥 Zimmer_Vaporizer
+**Description:** Camp propane vaporizer identified as Zimmer in the source checklist, including its tank valve, relief valve, voltage display, thermocouples, and effect feeds.
+**Location:** Propane area (see the map).
+**Ready for next person:** The vaporizer is either under continuous licensed operation or fully shut down according to its approved operating procedure.
+**If not ready:** Do not energize or open fuel to the vaporizer. Tell the Flame Lead.
+**Who is responsible:** Flame Lead
+#### 🔥 Flame_Effect_Burn_License
+**Description:** Current FAST-issued physical burn license for this flame effect.
+**Location:** Physically held by the licensed operator while the effect is operated.
+**Ready for next person:** The license is returned to the Flame Lead.
+**If not ready:** Do not test or operate the flame effect. Tell the Flame Lead.
+**Who is responsible:** Flame Lead
+#### 🔥 Flame_Effect_Operating_Procedure
+**Description:** Current Flame Lead-approved system sheet naming every valve and control and stating the validated voltage, temperature, pressure, timing, startup, shutdown, and emergency-shutdown values for the actual installation.
+**Location:** At the flame-effect operator station.
+**Ready before use:** The current revision is legible and approved by the Flame Lead.
+**Ready for next person:** The procedure remains at the operator station.
+**If not ready:** Do not operate the flame effect. Tell the Flame Lead.
+**Who is responsible:** Flame Lead
+#### 🔥 Propane_Leak_Test_Solution
+**Description:** EASTMAN 65700B liquid gas leak detector, 2 oz, for LP-gas fittings.
+**Location:** Propane area.
+**Ready before use:** Enough solution is available for every connection being tested.
+**Ready for next person:** The cap is closed and the bottle is stored upright.
+**If not ready:** Ask the Propane Lead for replacement leak-test solution.
+**Who is responsible:** Propane Lead
+**Common problems:**
+- **IF** The applied solution forms growing bubbles. **THEN** Close the fuel supply, keep the equipment out of service, and tell the Propane Lead. Never use a flame to test for a leak.
+#### 🔥 Fire_Resistant_Clothing
+**Description:** Fire-resistant clothing approved by the Flame Lead for operators and assistants.
+**Location:** Propane area.
+**Ready before use:** The clothing is dry, intact, and fits the operator or assistant.
+**Ready for next person:** The clothing is dry and returned to its storage location.
+**Who is responsible:** Flame Lead
+#### 🔥 Flame_Effect_First_Aid_Kit
+**Description:** Flame-effect first-aid kit containing non-petroleum burn cream or aloe gel, 100% cotton gauze rolls and pads, clean water for cooling or flushing, and waterless soap.
+**Location:** At the flame-effect operator station outside the safety perimeter.
+**Ready for next person:** The listed supplies are sealed, unexpired, visible, and available to responders.
+**Who is responsible:** Flame Lead
+#### 🔥 Flame_Effect_SDS
+**Description:** Current safety data sheet for propane and each hazardous chemical at the installation.
+**Location:** At the flame-effect operator station.
+**Ready for next person:** Every current sheet is legible and available to responders.
+**Who is responsible:** Flame Lead
+#### 🔥 Flame_Effect_Log
+**Description:** On-playa inspection, operation, fuel-use, and maintenance log for the registered effect.
+**Location:** At the flame-effect operator station.
+**Ready for next person:** The latest inspection, operation, fuel use, and unresolved maintenance need are recorded without private incident details.
+**Who is responsible:** Flame Lead
+#### 📦 Fire_Extinguishers
+**Description:** Camp fire extinguishers mounted near identified fire hazards.
+**Location:** At the locations marked on 📦 Camp_Map.
+**Ready before use:** The gauge is in the operable range and access is clear.
+**Ready for next person:** Each extinguisher is mounted, visible, unobstructed, and in the operable range.
+**If not ready:** Tell the Dominatrix immediately.
+## Inspect_gray-water_IBC
+**Area:** Private infrastructure
+**When:** At shift start and every 2 hours during a Dominatrix shift
+### What you need
+- 🔧 Gray-Water_IBC
+### Steps
+1. Inspect the IBC, seams, inlets, outlets, and hoses for a visible leak.
+2. Inspect the playa under and around the IBC for moisture or a puddle.
+3. Observe the gray-water level without opening the IBC.
+4. Tell the Dominatrix the level reading.
+### PASS when
+- [ ] No leak, moisture, or puddle is visible.
+- [ ] The IBC is not visibly full.
+- [ ] The Dominatrix received the level reading.
+### Common problems
+- **IF:** A leak, puddle, or full IBC is present.
+  **THEN:** Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix immediately.
+### Items
+#### 🔧 Gray-Water_IBC
+**Description:** Camp IBC that contains used kitchen and shower water.
+**Location:** Private infrastructure area.
+**Ready before use:** The IBC has capacity for the task and has no visible leak.
+**Ready for next person:** All inlets and outlets are closed when not in use. No gray water is leaking or pooled around the IBC.
+**If not ready:** Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix. Do not let gray water reach the playa.
+## Inspect_kitchen_propane_supply
+**Area:** Propane area
+**When:** Once per shift
+### What you need
+- 🔥 Kitchen_Propane_Supply
+### Steps
+1. Look at 🔥 Kitchen_Propane_Supply without touching its valves or connections.
+2. Listen and smell for leaking propane without leaning over the supply.
+   **IF/THEN:** IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Propane Lead immediately.
+3. Read any existing fuel-level or empty-cylinder indicator.
+   **IF/THEN:** IF the supply is empty or nearly empty, THEN tell the Propane Lead. Do not replace a cylinder unless the Propane Lead authorizes you.
+### PASS when
+- [ ] The kitchen propane supply is upright and secured.
+- [ ] No hissing, propane odor, or frost is present at a connection.
+- [ ] The supply is not empty.
+### Who to ask
+Propane Lead
+### Items
+#### 🔥 Kitchen_Propane_Supply
+**Description:** Propane cylinder and connections supplying the communal kitchen.
+**Location:** At the communal kitchen cooking area.
+**Ready for next person:** The supply is not empty, is upright and secured, and has no hissing, propane odor, or frost at a connection.
+**If not ready:** Stop cooking. Do not operate a valve or replace a cylinder unless the Propane Lead authorizes you. Tell the Propane Lead immediately.
+**Who is responsible:** Propane Lead
+## Prepare_Buffer_Bush
+**Area:** Common area
+**When:** Once per selected shift before people use the Buffer Bush
+### What you need
+- 🏕️ Buffer_Bush
+- 🍷 Lost_and_Found
+- 📦 Trash_Bins
+### Steps
+1. Inspect the Buffer Bush for exposed wiring, loose or bent parts, and torn covers.
+   **IF/THEN:** IF any damage is visible, THEN keep people out, do not operate it, and tell the Dominatrix.
+2. Activate each massage buffer with no person touching it.
+3. Observe each buffer for continuous movement without stopping, grinding, or rattling.
+   **IF/THEN:** IF a buffer stops, grinds, or rattles, THEN turn it off and tell the Dominatrix.
+4. Turn off each buffer after its test.
+5. Press each mattress or pad to confirm that it remains inflated under hand pressure.
+   **IF/THEN:** IF a mattress or pad is soft or bottoms out, THEN tell the Dominatrix.
+6. Put unattended personal belongings in 🍷 Lost_and_Found.
+7. Put trash and MOOP in 📦 Trash_Bins.
+8. Straighten the fur covers and remove visible debris.
+9. Move bicycles and other objects that block the view or walking path to camp bicycle parking.
+10. Turn on the Buffer Bush lighting.
+11. Observe every Buffer Bush light.
+   **IF/THEN:** IF a light does not turn on, THEN tell the Dominatrix.
+12. Set the lighting for the current checklist.
+   **IF/THEN:** IF this is Pre-event or Post-event, THEN leave the lighting on. IF this is Morning or Afternoon, THEN turn it off after the test.
+### PASS when
+- [ ] Every massage buffer moves continuously without stopping, grinding, or rattling.
+- [ ] Every mattress or pad remains inflated under hand pressure.
+- [ ] No visible mechanical or electrical damage is present.
+- [ ] The fur, surrounding area, view, and walking path are clear.
+- [ ] The lighting works and is set for the current checklist.
+### Who to ask
+Dominatrix
+### Items
+#### 🏕️ Buffer_Bush
+**Description:** Group massage structure with powered massage buffers, inflated mattresses or pads, fur covers, and lighting.
+**Location:** Common area (see the map).
+**Ready before use:** Every buffer moves continuously without stopping, grinding, or rattling. Mattresses or pads remain inflated. No exposed wire, loose or bent part, or torn cover is visible.
+**Ready for next person:** The structure is clean, operational, free of personal belongings, and clear of blocked paths. Its lighting is set for the current checklist.
+**If not ready:** Keep people out of the affected part, turn off a failing buffer, and tell the Dominatrix. Do not improvise an electrical or mechanical repair.
+#### 🍷 Lost_and_Found
+**Description:** Container for personal belongings found in the public and bar areas.
+**Location:** Bar/Cheese area.
+**Ready before use:** The container has space for found personal belongings.
+**Ready for next person:** Found personal belongings are inside the container. Nothing is on the ground around it.
+**Common problems:**
+- **IF** The container is full. **THEN** Get another empty container and put it next to the full container.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Rake_public_dance_floor
+**Area:** Public area
+**When:** Once per Morning shift
+### What you need
+- 🌐 Dance_Floor
+- 🌐 Landscape_Rakes
+- 📦 MOOP_Buckets
+- 📦 Trash_Bins
+### Steps
+1. Walk one edge of 🌐 Dance_Floor with 🌐 Landscape_Rakes and 📦 MOOP_Buckets.
+2. Pull each rake lightly through the playa in a straight pass to the opposite edge.
+3. Put every exposed piece of MOOP in 📦 MOOP_Buckets.
+4. Repeat overlapping straight passes until the entire dance floor has been raked.
+5. Rake down ridges or piles created by the passes.
+6. Empty 📦 MOOP_Buckets into 📦 Trash_Bins.
+### PASS when
+- [ ] The entire dance floor has been covered by overlapping rake passes.
+- [ ] No visible MOOP remains.
+- [ ] No rake ridge or playa pile remains.
+### Items
+#### 🌐 Dance_Floor
+**Location:** Public area (see the map).
+**Ready for next person:** No visible MOOP, rake ridge, or playa pile remains on the dance floor.
+#### 🌐 Landscape_Rakes
+**Description:** Wide landscape rakes used to expose small MOOP on the dance floor.
+**Location:** Public area.
+**Ready for next person:** Each rake has no MOOP caught in its head and is returned to storage.
+#### 📦 MOOP_Buckets
+**Description:** Handled buckets or jugs carried during MOOP sweeps.
+**Ready for next person:** Every bucket is empty, visibly clean, and stored with the other MOOP tools.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Read_fresh_water_tank_level
+**Area:** Private infrastructure
+**When:** At shift start and every 2 hours during a Dominatrix shift
+### What you need
+- 🔧 Fresh_Water_Tank
+### Steps
+1. Inspect the tank, outlet, and ground for a visible leak.
+   **IF/THEN:** IF a leak is present, THEN stop using the tank and tell the Dominatrix immediately.
+2. Observe the fresh-water level without opening the tank.
+3. Tell the Dominatrix the level reading.
+### PASS when
+- [ ] No visible leak is present.
+- [ ] The Dominatrix received the fresh-water level reading.
+### Items
+#### 🔧 Fresh_Water_Tank
+**Description:** Camp tank containing potable water.
+**Location:** Private infrastructure area.
+**Ready before use:** The tank contains potable water and has no visible leak.
+**Ready for next person:** The outlet is closed and no water is leaking or pooled around the tank.
+**If not ready:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
+## Read_generator_fuel_level
+**Area:** Private infrastructure
+**When:** At shift start and every 2 hours during a Dominatrix shift
+### What you need
+- 🔧 Camp_Generators
+### Steps
+1. Inspect the ground and visible fuel connections around each generator for a leak.
+   **IF/THEN:** IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger.
+2. Read the fuel gauge on each generator without opening a cap or operating a control.
+3. Tell the Dominatrix each exact gauge reading.
+### PASS when
+- [ ] No visible fuel leak is present.
+- [ ] The Dominatrix received the exact reading for every generator.
+### Who to ask
+Dominatrix
+### Items
+#### 🔧 Camp_Generators
+**Description:** Camp generators and their built-in fuel gauges.
+**Location:** Private infrastructure area (see the map).
+**Ready for next person:** No visible fuel leak is present. Fuel caps remain closed and controls remain in the state set by the authorized operator.
+**If not ready:** Keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
+**Who is responsible:** Fuel Lead
+## Recycle_aluminum_cans
+**Area:** Bar/Cheese
+**When:** Between 9:00 a.m. and 5:00 p.m. when aluminum cans have accumulated
+### What you need
+- 🍷 Aluminum_Can_Collection
+- 🍷 Aluminum_Can_Mesh_Bags
+- 📦 Handcart
+- 🔧 Gray-Water_IBC
+- 📦 Trash_Bins
+### Steps
+1. Remove foil, glass, plastic, steel, paper, cardboard, and trash from 🍷 Aluminum_Can_Collection.
+2. Put removed trash in 📦 Trash_Bins.
+3. Empty liquid from every aluminum can into 🔧 Gray-Water_IBC.
+4. Crush every empty aluminum can.
+5. Put the crushed cans in 🍷 Aluminum_Can_Mesh_Bags.
+6. Secure the mesh bags to 📦 Handcart.
+7. Take the cans to Recycle Camp at 5:35 and Esplanade between 9:00 a.m. and 5:00 p.m.
+### PASS when
+- [ ] All accumulated aluminum cans are empty, crushed, and accepted by Recycle Camp.
+- [ ] No liquid reached the playa.
+- [ ] No non-aluminum material was delivered with the cans.
+### Common problems
+- **IF:** Recycle Camp is closed.
+  **THEN:** Return the secured mesh bags to camp and try again during posted hours.
+### Items
+#### 🍷 Aluminum_Can_Collection
+**Description:** Camp collection container for empty aluminum beverage cans only.
+**Location:** Bar/Cheese area.
+**Ready for next person:** The container holds only empty aluminum cans and is not overflowing.
+#### 🍷 Aluminum_Can_Mesh_Bags
+**Description:** Reusable mesh bags that let empty crushed aluminum cans dry.
+**Location:** Bar/Cheese area.
+**Ready before use:** At least one empty, dry mesh bag is available.
+**Ready for next person:** Empty mesh bags are dry and stored. Filled bags contain only empty crushed aluminum cans and are secured from wind.
+#### 📦 Handcart
+**Description:** Hand-pulled cart used to move bags and supplies without driving.
+**Ready for next person:** The cart is empty, parked in its storage place, and cannot roll into a path.
+#### 🔧 Gray-Water_IBC
+**Description:** Camp IBC that contains used kitchen and shower water.
+**Location:** Private infrastructure area.
+**Ready before use:** The IBC has capacity for the task and has no visible leak.
+**Ready for next person:** All inlets and outlets are closed when not in use. No gray water is leaking or pooled around the IBC.
+**If not ready:** Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix. Do not let gray water reach the playa.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Replace_kitchen_propane_cylinder
+**Area:** Propane area
+**When:** When 🔥 Kitchen_Propane_Supply is empty or nearly empty and the Propane Lead authorizes replacement
+### What you need
+- Propane Lead
+- 🔥 Kitchen_Propane_Supply
+- 🔥 Kitchen_Propane_Appliance_Manual
+- 🔥 Replacement_Kitchen_Propane_Cylinder
+- 🔥 Propane_Leak_Test_Solution
+- 🔥 Disposable_Towels
+- 🔧 Fresh_Water_Tank
+- 📦 Trash_Bins
+- 📦 Fire_Extinguishers
+### Steps
+1. Confirm with the Propane Lead that the replacement cylinder and connection match the kitchen appliance.
+   **IF/THEN:** IF the size, fuel, connection, or regulator does not match, THEN do not continue.
+2. Confirm that an appropriate extinguisher from 📦 Fire_Extinguishers is visible and accessible at the propane work area.
+3. Extinguish every flame and remove smoking and other ignition sources from the work area.
+4. Turn every connected kitchen appliance control to OFF.
+5. Close the connected cylinder valve.
+6. Disconnect the regulator using the method specified by 🔥 Kitchen_Propane_Appliance_Manual.
+7. Cap the disconnected cylinder valve with its supplied cap.
+8. Move the disconnected cylinder upright to the propane storage area.
+9. Place 🔥 Replacement_Kitchen_Propane_Cylinder upright in the secured operating position.
+10. Connect the appliance regulator according to 🔥 Kitchen_Propane_Appliance_Manual.
+11. Open the replacement cylinder valve slowly.
+12. Apply 🔥 Propane_Leak_Test_Solution to every connection disturbed during replacement.
+   **IF/THEN:** IF growing bubbles appear, or propane is heard or smelled, THEN close the cylinder valve, keep the appliance out of service, and tell the Propane Lead.
+13. Dampen one 🔥 Disposable_Towels towel with the minimum water needed from 🔧 Fresh_Water_Tank.
+14. Wipe the tested connections until no leak-test solution remains.
+15. Put the used towel in 📦 Trash_Bins.
+### PASS when
+- [ ] The matching replacement cylinder is upright, secured, and connected.
+- [ ] No growing bubbles, hissing, propane odor, or frost is present.
+- [ ] No leak-test solution or water remains on the connections or playa.
+- [ ] The disconnected cylinder is capped, upright, secured, and in the propane storage area.
+### Who to ask
+Propane Lead
+### Items
+#### 🔥 Kitchen_Propane_Supply
+**Description:** Propane cylinder and connections supplying the communal kitchen.
+**Location:** At the communal kitchen cooking area.
+**Ready for next person:** The supply is not empty, is upright and secured, and has no hissing, propane odor, or frost at a connection.
+**If not ready:** Stop cooking. Do not operate a valve or replace a cylinder unless the Propane Lead authorizes you. Tell the Propane Lead immediately.
+**Who is responsible:** Propane Lead
+#### 🔥 Kitchen_Propane_Appliance_Manual
+**Description:** Manufacturer instructions for the actual camp kitchen propane appliance and regulator.
+**Location:** At the kitchen propane supply.
+**Ready before use:** The manual matches the installed appliance and regulator.
+**Ready for next person:** The manual remains at the kitchen propane supply.
+**If not ready:** Do not replace or connect a cylinder. Tell the Propane Lead.
+**Who is responsible:** Propane Lead
+#### 🔥 Replacement_Kitchen_Propane_Cylinder
+**Description:** Filled DOT propane cylinder matching the kitchen appliance and regulator. The camp must replace this provisional description with its actual cylinder size and connection.
+**Location:** Propane storage area.
+**Ready before use:** The cylinder is upright, secured, filled, within its requalification date, and free of excessive rust, damage, or a missing valve collar or foot ring.
+**Ready for next person:** The cylinder is either connected and leak-free or upright, secured, capped, and stored in the propane area.
+**If not ready:** Do not connect or refill the cylinder. Tell the Propane Lead.
+**Who is responsible:** Propane Lead
+#### 🔥 Propane_Leak_Test_Solution
+**Description:** EASTMAN 65700B liquid gas leak detector, 2 oz, for LP-gas fittings.
+**Location:** Propane area.
+**Ready before use:** Enough solution is available for every connection being tested.
+**Ready for next person:** The cap is closed and the bottle is stored upright.
+**If not ready:** Ask the Propane Lead for replacement leak-test solution.
+**Who is responsible:** Propane Lead
+**Common problems:**
+- **IF** The applied solution forms growing bubbles. **THEN** Close the fuel supply, keep the equipment out of service, and tell the Propane Lead. Never use a flame to test for a leak.
+#### 🔥 Disposable_Towels
+**Description:** Plain white disposable paper towels for propane-area cleanup.
+**Location:** Propane area.
+**Ready before use:** At least two clean towels are available.
+**Ready for next person:** At least two clean towels are available.
+**If not ready:** Ask the Flame Lead where to find replacement towels.
+**Who is responsible:** Flame Lead
+#### 🔧 Fresh_Water_Tank
+**Description:** Camp tank containing potable water.
+**Location:** Private infrastructure area.
+**Ready before use:** The tank contains potable water and has no visible leak.
+**Ready for next person:** The outlet is closed and no water is leaking or pooled around the tank.
+**If not ready:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+#### 📦 Fire_Extinguishers
+**Description:** Camp fire extinguishers mounted near identified fire hazards.
+**Location:** At the locations marked on 📦 Camp_Map.
+**Ready before use:** The gauge is in the operable range and access is clear.
+**Ready for next person:** Each extinguisher is mounted, visible, unobstructed, and in the operable range.
+**If not ready:** Tell the Dominatrix immediately.
+## Service_communal_trash_bins
+**Area:** Common area
+**When:** Once per shift and whenever a bin is full
+### What you need
+- 📦 Trash_Bins
+- 📦 Dumpster
+### Steps
+1. Inspect every communal trash bin for a full bag, a missing bag, and loose trash.
+   **IF/THEN:** IF no bag is full or missing, THEN skip to step 6.
+2. Tie each full bag closed.
+3. Put each closed full bag inside 📦 Dumpster.
+4. Ask the Dominatrix where to get the correct replacement bags.
+5. Install the correct replacement bag in every bin that needs one.
+6. Put loose trash around the bins in a lined bin.
+### PASS when
+- [ ] Every communal trash bin has a bag and is not full.
+- [ ] No loose trash remains around a bin or the dumpster.
+### Items
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+#### 📦 Dumpster
+**Ready for next person:** All trash is inside the dumpster. No trash is on the ground around it.
+**If not ready:** If the dumpster is full, do not leave trash beside it. Tell the Dominatrix.
+## Sweep_camp_for_MOOP
+**Area:** Common area
+**When:** Once per shift and after camp strike
+### What you need
+- Enough people to span the sweep area at arm's-width spacing
+- 📦 MOOP_Buckets
+- 📦 Trash_Bins
+### Steps
+1. Line up at one edge of the sweep area.
+2. Spread the line until each person is about one arm's width from the next person.
+3. Walk the line forward together while scanning the playa directly ahead.
+4. Put every piece of MOOP in 📦 MOOP_Buckets.
+5. Repeat the line sweep across the camp, serving, art-car, and porta-potty areas.
+6. Empty 📦 MOOP_Buckets into 📦 Trash_Bins.
+### PASS when
+- [ ] Every assigned area was covered by an arm's-width line sweep.
+- [ ] No visible MOOP remains in the swept areas.
+### Items
+#### 📦 MOOP_Buckets
+**Description:** Handled buckets or jugs carried during MOOP sweeps.
+**Ready for next person:** Every bucket is empty, visibly clean, and stored with the other MOOP tools.
+#### 📦 Trash_Bins
+**Ready before use:** Not full.
+**Ready for next person:** A trash bag is installed and is not full. No loose trash is present around the bins.
+**If not ready:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+## Wash_communal_kitchenware
+**Area:** Kitchen
+**When:** Once per shift and after communal kitchenware is used
+### What you need
+- 🍳 Kitchenware
+- 🍳 Three_Wash_Basins
+- 🍳 Dish_Soap
+- 🍳 Sanitizer_Tablets
+- 🍳 Sanitizer_Test_Strips
+- 🍳 Drying_Rack
+- 🔧 Fresh_Water_Tank
+- 🔧 Gray-Water_IBC
+- 🍳 Wet_Trash_Bin
+### Steps
+1. Scrape food from 🍳 Kitchenware into 🍳 Wet_Trash_Bin.
+2. Arrange 🍳 Three_Wash_Basins in wash, rinse, and sanitize order.
+3. Fill the wash basin with enough potable water from 🔧 Fresh_Water_Tank to submerge the largest item.
+4. Add 🍳 Dish_Soap to the wash basin according to its label.
+5. Fill the rinse basin with enough potable water to submerge the largest item.
+6. Fill the sanitize basin with enough potable water to submerge the largest item.
+7. Add 🍳 Sanitizer_Tablets to the sanitize basin according to their label.
+8. Use 🍳 Sanitizer_Test_Strips to verify the sanitize basin is between 200 and 400 ppm.
+   **IF/THEN:** IF the result is outside 200 to 400 ppm, THEN adjust the solution according to the sanitizer label and test it again.
+9. Wash each item in the wash basin until no food or grease remains.
+10. Rinse each washed item in the rinse basin.
+11. Submerge each rinsed item in the sanitize basin for the label contact time.
+12. Place each sanitized item on 🍳 Drying_Rack to air-dry.
+13. Empty all three basins into 🔧 Gray-Water_IBC.
+14. Put dry kitchenware in its storage place.
+### PASS when
+- [ ] All communal kitchenware is clean, sanitized, dry, and stored.
+- [ ] All dishwashing water is contained in the gray-water system.
+- [ ] The wash basins and drying rack are ready for the next person.
+### Items
+#### 🍳 Kitchenware
+**Description:** Communal plates, bowls, cups, utensils, pots, and pans.
+**Location:** Kitchen.
+**Ready for next person:** All communal kitchenware is clean, sanitized, dry, and stored.
+#### 🍳 Three_Wash_Basins
+**Description:** Three Rubbermaid Commercial 7.6 gallon bus or utility boxes (FG335100GRAY) used in wash, rinse, and sanitize order.
+**Location:** Kitchen.
+**Ready for next person:** All three basins are empty, clean, dry, and stored together.
+#### 🍳 Dish_Soap
+**Description:** Dawn Professional Manual Pot and Pan Detergent, original scent, 38 fl oz (UPC 037000451129).
+**Location:** Kitchen.
+**Ready before use:** The bottle contains dish soap.
+**Ready for next person:** The bottle contains dish soap and its cap is closed.
+**If not ready:** Ask the Dominatrix where to find replacement dish soap.
+#### 🍳 Sanitizer_Tablets
+**Description:** Steramine 1-G Sanitizing Tablets, 150 count.
+**Location:** Kitchen.
+**Ready before use:** At least one tablet remains in the bottle.
+**Ready for next person:** The bottle contains tablets and its cap is closed.
+**If not ready:** Ask the Dominatrix where to find replacement sanitizer tablets.
+#### 🍳 Sanitizer_Test_Strips
+**Description:** Hydrion QT-10 Quaternary Test Paper, 0 to 400 ppm.
+**Location:** Kitchen.
+**Ready before use:** At least one dry test strip remains.
+**Ready for next person:** The dispenser contains dry test strips and is closed.
+**If not ready:** Ask the Dominatrix where to find replacement test strips.
+#### 🍳 Drying_Rack
+**Description:** Rack used to air-dry sanitized kitchenware.
+**Location:** Kitchen.
+**Ready for next person:** The rack is clean, dry, and free of kitchenware that has finished drying.
+#### 🔧 Fresh_Water_Tank
+**Description:** Camp tank containing potable water.
+**Location:** Private infrastructure area.
+**Ready before use:** The tank contains potable water and has no visible leak.
+**Ready for next person:** The outlet is closed and no water is leaking or pooled around the tank.
+**If not ready:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
+#### 🔧 Gray-Water_IBC
+**Description:** Camp IBC that contains used kitchen and shower water.
+**Location:** Private infrastructure area.
+**Ready before use:** The IBC has capacity for the task and has no visible leak.
+**Ready for next person:** All inlets and outlets are closed when not in use. No gray water is leaking or pooled around the IBC.
+**If not ready:** Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix. Do not let gray water reach the playa.
+#### 🍳 Wet_Trash_Bin
+**Description:** Kitchen bin for food scraps and other wet trash.
+**Location:** Kitchen.
+**Ready for next person:** A trash bag is installed and no wet waste or liquid is in or around the bin.

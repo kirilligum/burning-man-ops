@@ -367,9 +367,18 @@ lookup command documented in `AGENTS.md`.
   Dominatrix responsibility because the shared global instructions already
   provide that escalation path; show a non-default responsible role.
 - **Effect:** `scripts/render-morning-checklist.py` generates the self-contained
-  `morning-checklist.md`. The initial output contains only
-  `Clean_communal_kitchen_tables`; later iterations may add tasks to the same
-  generated handout. D-137 supersedes D-136.
+  `morning-checklist.md`. D-137 supersedes D-136.
+
+### D-138 — Discover all Morning tasks from XML membership
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Generate the Morning print handout from every task XML whose
+  `<checklist_types>` contains `<checklist_type>Morning</checklist_type>`.
+  Order selected tasks deterministically by task name.
+- **Effect:** The renderer has no manually maintained Morning task list. Adding
+  or removing a Morning checklist membership in canonical task XML updates the
+  generated handout automatically.
 
 ## Open decisions
 

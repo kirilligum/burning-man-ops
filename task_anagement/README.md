@@ -277,18 +277,19 @@ and Completion time fields. Rows form an assignment and status index, not an
 execution sequence; ordered actions remain in the task card.
 
 `scripts/render-morning-checklist.py` creates the concise field handout at
-`morning-checklist.md` directly from selected canonical task XML. The initial
-handout contains only `Clean_communal_kitchen_tables`. It resolves each task
-item and the shared finish instructions from canonical XML, prints the useful
-item fields below the task, and preserves task and item text exactly from XML,
-including reference emoji and underscores. The inlined item details mean those
-references do not require another lookup. Shared global instructions render
-once above the tasks. Only **PASS when** criteria use Markdown checkboxes; other
-sections remain checkbox-free. The handout omits empty worker-facing fields,
-circular current-task references, and maintainer metadata, and adds no blank
-lines between sections. The repeated default Dominatrix responsibility is
-omitted because the shared global instructions already give that escalation
-path; a non-default responsible role is shown.
+`morning-checklist.md` directly from canonical XML. It discovers every task
+whose checklist memberships include `Morning` and renders them in task-name
+order. It resolves each task item and the shared global instructions from
+canonical XML, prints the useful item fields below the applicable task, and
+preserves task and item text exactly from XML, including reference emoji and
+underscores. The inlined item details mean those references do not require
+another lookup. Shared global instructions render once above the tasks. Only
+**PASS when** criteria use Markdown checkboxes; other sections remain
+checkbox-free. The handout omits empty worker-facing fields, circular
+current-task references, and maintainer metadata, and adds no blank lines
+between sections. The repeated default Dominatrix responsibility is omitted
+because the shared global instructions already give that escalation path; a
+non-default responsible role is shown.
 
 Example:
 

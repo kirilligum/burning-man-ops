@@ -116,7 +116,30 @@ class TaskManagementScriptsTest(unittest.TestCase):
         self.assertIn("Morning print checklist is current", result.stdout)
 
         checklist = (REPOSITORY / PRINT_CHECKLIST).read_text(encoding="utf-8")
+        morning_tasks: list[ET.Element] = []
+        for task_path in sorted(
+            (REPOSITORY / "task_anagement/data/tasks").glob("*.xml")
+        ):
+            task = ET.parse(task_path).getroot()
+            memberships = [
+                (element.text or "").strip()
+                for element in task.findall("./checklist_types/checklist_type")
+            ]
+            if "Morning" in memberships:
+                morning_tasks.append(task)
+
+        task_names = [(task.findtext("name") or "").strip() for task in morning_tasks]
+        expected_pass_criteria = sum(
+            len(task.findall("./passWhen/criterion")) for task in morning_tasks
+        )
+        self.assertEqual(len(task_names), 26)
+        self.assertEqual(checklist.count("\n## "), len(task_names) + 1)
+        self.assertEqual(checklist.count("- [ ] "), expected_pass_criteria)
+        for task_name in task_names:
+            self.assertIn(f"## {task_name}\n", checklist)
+
         self.assertIn("## Clean_communal_kitchen_tables", checklist)
+        self.assertIn("## Wash_communal_kitchenware", checklist)
         self.assertIn("#### 📦 Communal_Tables", checklist)
         self.assertIn("#### 📦 Lost_and_Found", checklist)
         self.assertIn("#### 🍳 Dustpan_and_Brush", checklist)
@@ -132,7 +155,6 @@ class TaskManagementScriptsTest(unittest.TestCase):
             checklist.index("## Clean_communal_kitchen_tables"),
         )
         self.assertIn("Once or more per shift", checklist)
-        self.assertEqual(checklist.count("- [ ] "), 3)
         self.assertIn(
             "- [ ] No food, visible dirt, or sticky residue remains on the tables.",
             checklist,
@@ -145,12 +167,16 @@ class TaskManagementScriptsTest(unittest.TestCase):
         self.assertNotIn("**Who is responsible:** Dominatrix", checklist)
         self.assertNotIn("see task 📋 Clean_communal_kitchen_tables", checklist)
         self.assertNotIn("### Finish", checklist)
-        self.assertNotIn("**Why:**", checklist)
-        self.assertNotIn("**Time:**", checklist)
-        self.assertNotIn("### Common problems", checklist)
-        self.assertNotIn("### Who to ask", checklist)
         self.assertNotIn("### Reasoning", checklist)
         self.assertNotIn("### Decisions", checklist)
+
+        clean_section = checklist.split(
+            "## Clean_communal_kitchen_tables\n", 1
+        )[1].split("\n## ", 1)[0]
+        self.assertNotIn("**Why:**", clean_section)
+        self.assertNotIn("**Time:**", clean_section)
+        self.assertNotIn("### Common problems", clean_section)
+        self.assertNotIn("### Who to ask", clean_section)
 
     def test_historical_lookup_accepts_reference_only_decision(self) -> None:
         result = run_script(

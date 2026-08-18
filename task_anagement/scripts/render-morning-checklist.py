@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render the concise Morning print checklist from canonical task XML."""
+"""Render the concise Morning print checklist from canonical XML."""
 
 from __future__ import annotations
 
@@ -13,10 +13,25 @@ from render_helpers import item_for_reference, text
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECKLIST_TYPE = "Morning"
-TASKS = (
-    ROOT / "data" / "tasks" / "Clean_communal_kitchen_tables.xml",
-)
+TASKS_DIR = ROOT / "data" / "tasks"
 DEFAULT_OUTPUT = ROOT / "morning-checklist.md"
+
+
+def task_paths() -> list[Path]:
+    selected: list[tuple[str, Path]] = []
+    for task_path in TASKS_DIR.glob("*.xml"):
+        task = ET.parse(task_path).getroot()
+        checklist_types = [
+            text(element)
+            for element in task.findall("./checklist_types/checklist_type")
+            if text(element)
+        ]
+        if CHECKLIST_TYPE in checklist_types:
+            selected.append((text(task.find("name")), task_path))
+    return [
+        task_path
+        for _, task_path in sorted(selected, key=lambda value: value[0].casefold())
+    ]
 
 
 def render_item(reference: str, item: ET.Element, task_name: str) -> list[str]:
@@ -166,7 +181,7 @@ def render() -> str:
         for instruction in global_root.findall("./instruction")
         if text(instruction)
     )
-    for task_path in TASKS:
+    for task_path in task_paths():
         lines.extend(render_task(task_path))
     return "\n".join(lines) + "\n"
 
