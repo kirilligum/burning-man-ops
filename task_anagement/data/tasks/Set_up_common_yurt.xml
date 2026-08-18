@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_common_yurt</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Build after the common-yurt footprint is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>🏕️ Common_Yurt</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the yurt manufacturer instructions, part count, anchor plan, AC plan, and final-state photograph in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Mark the yurt footprint and entrance without blocking a service lane or emergency exit.</action>
+    </step>
+    <step number="3">
+      <action>Install the ground covering shown in the plan.</action>
+    </step>
+    <step number="4">
+      <action>Assemble the yurt shell in the manufacturer's sequence.</action>
+      <ifThen>IF wind prevents control of a wall or roof section, THEN secure the loose material and stop.</ifThen>
+    </step>
+    <step number="5">
+      <action>Install every listed anchor and strap.</action>
+    </step>
+    <step number="6">
+      <action>Have the Power Lead install any approved air conditioner and cable route.</action>
+    </step>
+    <step number="7">
+      <action>Have the Build Lead compare the completed yurt with the final-state photograph.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The yurt matches the manufacturer instructions and final-state photograph.</criterion>
+    <criterion>Every required anchor and strap is installed.</criterion>
+    <criterion>The entrance, emergency exit, and cable routes are clear.</criterion>
+    <criterion>The Build Lead and Power Lead completed their inspections.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

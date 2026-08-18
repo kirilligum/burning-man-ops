@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Assemble_camp_tower</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>During Build before flame-effect and lighting installation</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and the crew count printed in 📦 Build_Book</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Tower</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+    <resource>🔧 Impact_Drivers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the engineered tower drawing, lift sequence, part count, connection specifications, anchors, and final-state photograph in 📦 Build_Book.</action>
+      <ifThen>IF the engineered drawing or any required value is missing, THEN do not assemble the tower.</ifThen>
+    </step>
+    <step number="2">
+      <action>Mark the tower footprint and safety perimeter from 📦 Camp_Map.</action>
+    </step>
+    <step number="3">
+      <action>Count and inspect every structural section, connection, brace, strap, and anchor.</action>
+    </step>
+    <step number="4">
+      <action>Assemble each tower section on the ground in the printed sequence.</action>
+    </step>
+    <step number="5">
+      <action>Raise each section only on the Build Lead's command.</action>
+      <ifThen>IF wind or communication prevents controlled movement, THEN lower or secure the section and stop.</ifThen>
+    </step>
+    <step number="6">
+      <action>Install every connection, brace, strap, and anchor shown in the engineered drawing.</action>
+    </step>
+    <step number="7">
+      <action>Have the Build Lead compare the completed structure with every drawing connection and anchor.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The tower matches the current engineered drawing and final-state photograph.</criterion>
+    <criterion>Every connection, brace, strap, and anchor is installed to specification.</criterion>
+    <criterion>The safety perimeter and service access are clear.</criterion>
+    <criterion>No lighting or flame component was connected before structural sign-off.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

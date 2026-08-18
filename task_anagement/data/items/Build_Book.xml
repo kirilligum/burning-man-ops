@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Build_Book</name>
+
+  <description>
+    Current camp-specific build and strike drawings, part counts, connection
+    details, anchor locations, crew requirements, lift sequence, and final-state
+    photographs for each structure.
+  </description>
+  <location>At the build station.</location>
+  <readyBeforeUse>The page for the current asset is complete and approved by the responsible lead.</readyBeforeUse>
+
+  <readyForNextPerson>The book remains complete and at the build station.</readyForNextPerson>
+
+  <ifNotReady>Do not build, alter, or strike the affected asset. Tell the Build Lead.</ifNotReady>
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

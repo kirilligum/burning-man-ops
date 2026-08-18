@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Furniture</name>
+
+  <description>Playatech benches, swings, chairs, rugs, and cushions used in camp common areas.</description>
+  <location>Common and public areas.</location>
+
+  <readyForNextPerson>
+    Furniture is either assembled and stable or clean, dry, inventoried, and packed by type.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

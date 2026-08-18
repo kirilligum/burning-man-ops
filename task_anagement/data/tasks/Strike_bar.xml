@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_bar</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>During Strike after the final bar and cheese service closes</when>
+  <time/>
+
+  <resources>
+    <resource>Bar Lead and Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📋 Clean_bar</resource>
+    <resource>🍷 Bar</resource>
+    <resource>🍷 Wine_Cans</resource>
+    <resource>🍷 Wine_Cooler</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Have the Bar Lead confirm that service is closed and identify the wine to pack.</action>
+    </step>
+    <step number="2">
+      <action>Pack the identified wine in its transport container.</action>
+    </step>
+    <step number="3">
+      <action>Move all cooler meltwater into 🔧 Gray-Water_IBC.</action>
+    </step>
+    <step number="4">
+      <action>Complete 📋 Clean_bar.</action>
+    </step>
+    <step number="5">
+      <action>Remove the cooler, service supplies, and trash bins from the bar footprint.</action>
+    </step>
+    <step number="6">
+      <action>Dismantle the bar in the reverse sequence printed in 📦 Build_Book.</action>
+    </step>
+    <step number="7">
+      <action>Put every bar fastener and small part in its assigned 📦 Build_Hardware_Bins bin.</action>
+    </step>
+    <step number="8">
+      <action>Pack each clean, dry bar component in the transport group shown in 📦 Build_Book.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Wine and bar supplies are packed in their assigned transport containers.</criterion>
+    <criterion>No cooler water reached the playa.</criterion>
+    <criterion>Every bar component and hardware piece is clean, dry, accounted for, and packed.</criterion>
+    <criterion>The former bar footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Bar Lead</expert>
+</task>

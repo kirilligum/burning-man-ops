@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_fence</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Strike after the boundary is no longer needed for traffic control</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Fence</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Remove each fence section in the printed reverse order.</action>
+    </step>
+    <step number="2">
+      <action>Remove every fence anchor and ground fastener.</action>
+    </step>
+    <step number="3">
+      <action>Put every connection and anchor in the fence hardware bin.</action>
+    </step>
+    <step number="4">
+      <action>Bundle and secure fence sections in their transport group.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every fence section, connection, anchor, and ground fastener is accounted for and packed.</criterion>
+    <criterion>The former fence line is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

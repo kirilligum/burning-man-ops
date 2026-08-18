@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Power_System</name>
+
+  <description>Camp electrical generation, disconnects, panels, distribution, cords, and connectors.</description>
+  <location>Private infrastructure area (see the map).</location>
+
+  <readyForNextPerson>
+    The system remains in the state set by the Power Lead; emergency shutoffs and service access are clear.
+  </readyForNextPerson>
+
+  <ifNotReady>Keep people away and tell the Power Lead. Treat every component as energized.</ifNotReady>
+  <responsible>Power Lead</responsible>
+  <commonProblems/>
+</item>

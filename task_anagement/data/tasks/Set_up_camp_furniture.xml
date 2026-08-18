@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_camp_furniture</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Build after shade and public-area structures pass inspection</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Furniture</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current furniture locations, assembly pages, hardware counts, and final-state photographs in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Assemble each Playatech bench and swing according to its printed page.</action>
+    </step>
+    <step number="3">
+      <action>Have the Build Lead test each assembled bench and swing for movement or instability.</action>
+      <ifThen>IF furniture moves, rocks, binds, or has a missing connection, THEN keep it out of service.</ifThen>
+    </step>
+    <step number="4">
+      <action>Place benches, swings, chairs, rugs, and cushions in their mapped positions.</action>
+    </step>
+    <step number="5">
+      <action>Clear every walking path, service lane, and emergency exit.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every assembled bench and swing matches its drawing and is stable.</criterion>
+    <criterion>Every furniture group is in its mapped position.</criterion>
+    <criterion>No path, service lane, or emergency exit is blocked.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

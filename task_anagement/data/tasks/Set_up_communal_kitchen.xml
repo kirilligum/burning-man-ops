@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_communal_kitchen</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>During Build after the kitchen footprint is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Food Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Communal_Kitchen</resource>
+    <resource>📦 Communal_Tables</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+    <resource>🔧 Impact_Drivers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current kitchen layout, carport instructions, inventory, anchor plan, and final-state photograph in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Mark the kitchen footprint without blocking a service lane or emergency exit.</action>
+    </step>
+    <step number="3">
+      <action>Install the ground covering shown in the kitchen layout.</action>
+    </step>
+    <step number="4">
+      <action>Assemble and anchor the kitchen carport according to its manufacturer instructions and anchor plan.</action>
+    </step>
+    <step number="5">
+      <action>Place and stabilize the cooking, washing, storage, and eating tables shown in the layout.</action>
+    </step>
+    <step number="6">
+      <action>Place food, handwashing, fresh-water, gray-water, trash, and cleaning stations in their mapped positions.</action>
+    </step>
+    <step number="7">
+      <action>Have the Food Lead compare the completed kitchen with the final-state photograph.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The kitchen matches the current layout and final-state photograph.</criterion>
+    <criterion>The carport and every required anchor are installed.</criterion>
+    <criterion>Every table is stable and each station is in its mapped position.</criterion>
+    <criterion>Service lanes and emergency exits are clear.</criterion>
+    <criterion>The Food Lead completed the final inspection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Food Lead</expert>
+
+  <reasoning>
+    <entry>Propane, potable-water, and electrical connections remain separate authorized tasks.</entry>
+  </reasoning>
+</task>

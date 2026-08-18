@@ -11,10 +11,10 @@
   </readyForNextPerson>
 
   <ifNotReady>
-    Keep people out of the affected area and tell the Dominatrix. Do not adjust
+    Keep people out of the affected area and tell the Build Lead. Do not adjust
     or repair the structure unless authorized.
   </ifNotReady>
 
-  <responsible>Dominatrix</responsible>
+  <responsible>Build Lead</responsible>
   <commonProblems/>
 </item>

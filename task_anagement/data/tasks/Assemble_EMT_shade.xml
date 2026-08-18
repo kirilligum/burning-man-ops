@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Assemble_EMT_shade</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Build after placement approves the camp footprint</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and the crew count printed in 📦 Build_Book</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>🏕️ EMT_Shade</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+    <resource>🔧 Impact_Drivers</resource>
+    <resource>🔧 Impact_Driver_Batteries</resource>
+    <resource>Work gloves, eye protection, and closed-toe shoes</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current EMT-shade drawing, parts manifest, crew count, lift sequence, and final-state photograph in 📦 Build_Book.</action>
+      <ifThen>IF any information is missing or the physical parts differ, THEN do not start.</ifThen>
+    </step>
+    <step number="2">
+      <action>Mark the exact footprint and orientation from 📦 Camp_Map.</action>
+    </step>
+    <step number="3">
+      <action>Confirm that emergency exits and service lanes remain clear.</action>
+    </step>
+    <step number="4">
+      <action>Count every tube, fitting, fastener, covering, strap, brace, and anchor against the manifest.</action>
+    </step>
+    <step number="5">
+      <action>Inspect each counted component for bending, cracking, cuts, fraying, or missing hardware.</action>
+      <ifThen>IF a component is damaged or missing, THEN separate it and tell the Build Lead.</ifThen>
+    </step>
+    <step number="6">
+      <action>Lay out the roof components in the numbered orientation shown in the drawing.</action>
+    </step>
+    <step number="7">
+      <action>Assemble each roof bay in the printed sequence.</action>
+    </step>
+    <step number="8">
+      <action>Secure each roof connection using the hardware and specification in the drawing.</action>
+    </step>
+    <step number="9">
+      <action>Attach the roof covering at the stage specified in the drawing.</action>
+      <ifThen>IF wind catches the covering or prevents clear commands, THEN lower or secure the work, stop, and wait for acceptable conditions.</ifThen>
+    </step>
+    <step number="10">
+      <action>Raise each section only on the Build Lead's command.</action>
+    </step>
+    <step number="11">
+      <action>Install each leg in the printed sequence.</action>
+    </step>
+    <step number="12">
+      <action>Secure each raised section immediately with its temporary or final support.</action>
+    </step>
+    <step number="13">
+      <action>Install every anchor, chain, brace, and ratchet strap shown in the drawing.</action>
+    </step>
+    <step number="14">
+      <action>Tension the covering evenly to the final-state photograph.</action>
+    </step>
+    <step number="15">
+      <action>Have the Build Lead compare every connection and anchor with the drawing.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The completed shade matches the current drawing and final-state photograph.</criterion>
+    <criterion>Every listed connection, fastener, brace, strap, and anchor is installed.</criterion>
+    <criterion>No damaged component, loose covering, sharp edge, or unmarked trip hazard remains.</criterion>
+    <criterion>Emergency exits and service lanes are clear.</criterion>
+    <criterion>The Build Lead completed the final inspection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+
+  <reasoning>
+    <entry>The workbook gives only EMT Build calendar entries, so the actual geometry, counts, anchor layout, and crew sequence must be supplied by the camp-specific Build Book.</entry>
+    <entry>Burning Man warns that 75 mph winds are common; raising and covering remain Build Lead-controlled operations.</entry>
+  </reasoning>
+</task>

@@ -35,12 +35,12 @@
 
 ### If an item is not ready
 
-- **🏕️ EMT Shade:** Keep people out of the affected area and tell the Dominatrix. Do not adjust or repair the structure unless authorized.
+- **🏕️ EMT Shade:** Keep people out of the affected area and tell the Build Lead. Do not adjust or repair the structure unless authorized.
 
 ## Common problems
 
-- **IF** Any inspection point does not pass **THEN** Keep people out of the affected area and tell the Dominatrix. Do not adjust or repair the structure.
+- **IF** Any inspection point does not pass **THEN** Keep people out of the affected area and tell the Build Lead. Do not adjust or repair the structure.
 
 ## Who to ask
 
-Dominatrix
+Build Lead

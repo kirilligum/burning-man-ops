@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_shower_and_sink</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>During Strike after campers stop using the shower and sink</when>
+  <time/>
+
+  <resources>
+    <resource>Water Lead, Power Lead, and Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🔧 Camp_Shower</resource>
+    <resource>🔧 Camp_Sink</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>🔧 Gray-Water_Pump</resource>
+    <resource>🔧 Potable_Water_Hose</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Close the shower and sink to users.</action>
+    </step>
+    <step number="2">
+      <action>Have the Water Lead isolate the potable-water supply.</action>
+    </step>
+    <step number="3">
+      <action>Have the Water Lead move remaining line water into an approved fresh-water or gray-water container.</action>
+    </step>
+    <step number="4">
+      <action>Run 🔧 Gray-Water_Pump until the shower, sink, and connected gray-water lines are empty.</action>
+    </step>
+    <step number="5">
+      <action>Have the Power Lead de-energize and disconnect the gray-water pump.</action>
+    </step>
+    <step number="6">
+      <action>Disconnect and cap each water and gray-water line in the printed order.</action>
+    </step>
+    <step number="7">
+      <action>Clean and dry the shower, sink, pump, and hoses.</action>
+    </step>
+    <step number="8">
+      <action>Dismantle the shower and sink in the printed reverse sequence.</action>
+    </step>
+    <step number="9">
+      <action>Put every fastener and small part in its assigned hardware bin.</action>
+    </step>
+    <step number="10">
+      <action>Pack each dry component and capped hose in its assigned transport group.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No fresh water or gray water was released onto the playa.</criterion>
+    <criterion>The pump is de-energized and disconnected.</criterion>
+    <criterion>Every shower, sink, pump, hose, fastener, and small part is clean, dry, accounted for, and packed.</criterion>
+    <criterion>The former shower and sink footprints are clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Water Lead</expert>
+</task>

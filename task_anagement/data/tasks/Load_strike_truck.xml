@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Load_strike_truck</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>As each asset lead releases a packed transport group during Strike</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead, loading crew, and enough runners for the active work areas</resource>
+    <resource>📦 Truck_Load_Plan</resource>
+    <resource>🔧 Equipment_Truck</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Accept only transport groups released by their responsible asset lead.</action>
+    </step>
+    <step number="2">
+      <action>Count each accepted group against 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="3">
+      <action>Move each group to the truck using enough people for controlled lifting.</action>
+    </step>
+    <step number="4">
+      <action>Load each group in its printed order and position.</action>
+    </step>
+    <step number="5">
+      <action>Secure each completed load section with the specified restraint.</action>
+    </step>
+    <step number="6">
+      <action>Record every missing, damaged, substituted, or separately transported item on the load plan.</action>
+    </step>
+    <step number="7">
+      <action>Have the Build Lead inspect weight distribution, restraint, door clearance, and the final inventory.</action>
+    </step>
+    <step number="8">
+      <action>Close and latch the equipment-truck door after loading is complete.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every accepted transport group is recorded and loaded in its planned position.</criterion>
+    <criterion>Every load section is secured and every exception is recorded.</criterion>
+    <criterion>The Build Lead approved the final load and door clearance.</criterion>
+    <criterion>The truck is closed and latched.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

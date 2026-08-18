@@ -13,7 +13,7 @@
 
 ## Ready before normal use
 
-- **🔧 Equipment Truck:** The Sound Lead has identified which equipment may be moved.
+- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
 
 ## Steps
 

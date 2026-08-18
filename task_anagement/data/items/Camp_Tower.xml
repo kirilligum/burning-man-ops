@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Tower</name>
+
+  <description>Camp tower structure, shorter tower sections, LEDs, and approved flame-effect components.</description>
+  <location>Location shown on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    The tower is either installed and secured or de-energized, fuel-free, dismantled, inventoried, and packed.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

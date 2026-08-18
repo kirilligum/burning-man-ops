@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_common_yurt</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Strike after every person and belonging leaves the common yurt</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🏕️ Common_Yurt</resource>
+    <resource>📦 Clear_Storage_Bags</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that no person or personal belonging remains inside the yurt.</action>
+    </step>
+    <step number="2">
+      <action>Have the Power Lead de-energize, disconnect, and remove the yurt air conditioner and cables.</action>
+    </step>
+    <step number="3">
+      <action>Put clean, dry communal soft items in their assigned clear storage bags.</action>
+    </step>
+    <step number="4">
+      <action>Collapse and pack the yurt shell in the manufacturer's printed sequence.</action>
+      <ifThen>IF wind prevents control of a wall or roof section, THEN secure the material and stop.</ifThen>
+    </step>
+    <step number="5">
+      <action>Remove every anchor and ground fastener.</action>
+    </step>
+    <step number="6">
+      <action>Clean, dry, fold, and pack the ground covering.</action>
+    </step>
+    <step number="7">
+      <action>Put every yurt fastener and anchor in its assigned hardware bin.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The air conditioner and cables are de-energized, removed, and packed.</criterion>
+    <criterion>The yurt shell, soft items, ground covering, fasteners, and anchors are accounted for and packed.</criterion>
+    <criterion>The former yurt footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

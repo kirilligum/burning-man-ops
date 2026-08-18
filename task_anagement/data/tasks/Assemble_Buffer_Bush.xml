@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Assemble_Buffer_Bush</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Build after the Buffer Bush footprint is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📋 Prepare_Buffer_Bush</resource>
+    <resource>🏕️ Buffer_Bush</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>🔧 Camp_Power_System</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the Buffer Bush drawing, part count, electrical plan, anchor plan, and final-state photograph in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Mark the footprint and walking paths from 📦 Camp_Map.</action>
+    </step>
+    <step number="3">
+      <action>Count and inspect the base, anchors, buffers, pads, covers, lighting, cables, and controls.</action>
+    </step>
+    <step number="4">
+      <action>Assemble and anchor the base in the printed sequence.</action>
+    </step>
+    <step number="5">
+      <action>Install the buffers, inflated pads, fur covers, and tentacle covers in their numbered positions.</action>
+    </step>
+    <step number="6">
+      <action>Have the Power Lead inspect, route, and connect every de-energized cable and control.</action>
+    </step>
+    <step number="7">
+      <action>Complete 📋 Prepare_Buffer_Bush.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The Buffer Bush matches the current drawing and final-state photograph.</criterion>
+    <criterion>Every listed part and anchor is installed and every path is clear.</criterion>
+    <criterion>The Power Lead approved the electrical installation.</criterion>
+    <criterion>📋 Prepare_Buffer_Bush passes.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

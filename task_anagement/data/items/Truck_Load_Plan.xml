@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Truck_Load_Plan</name>
+
+  <description>Current loading order, inventory, weight distribution, and securement plan for the equipment truck.</description>
+  <location>At the equipment truck.</location>
+  <readyBeforeUse>The plan matches the truck and current camp inventory.</readyBeforeUse>
+
+  <readyForNextPerson>The final loaded inventory and unresolved exceptions are recorded.</readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

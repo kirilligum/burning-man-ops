@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Ratchet_Straps</name>
+
+  <description>Structure straps in the sizes and ratings listed in the current Build Book.</description>
+  <location>Build storage area.</location>
+  <readyBeforeUse>No cut, frayed webbing, bent hook, damaged ratchet, or missing label is present.</readyBeforeUse>
+
+  <readyForNextPerson>Every strap is dry, released, neatly rolled, and stored.</readyForNextPerson>
+
+  <ifNotReady>Remove the strap from service and tell the Build Lead.</ifNotReady>
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

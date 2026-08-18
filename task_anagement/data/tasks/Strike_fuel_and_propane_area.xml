@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_fuel_and_propane_area</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>During Strike after all fuel-burning equipment is no longer needed</when>
+  <time/>
+
+  <resources>
+    <resource>Fuel Lead and Flame Lead</resource>
+    <resource>📋 Shut_down_flame_effects</resource>
+    <resource>📋 Shut_down_Zimmer_vaporizer</resource>
+    <resource>📋 Complete_flame_effect_postcheck</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Kitchen_Propane_Supply</resource>
+    <resource>🔧 Camp_Generators</resource>
+    <resource>🔧 Generator_Secondary_Containment</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Complete 📋 Shut_down_flame_effects.</action>
+    </step>
+    <step number="2">
+      <action>Complete 📋 Shut_down_Zimmer_vaporizer.</action>
+    </step>
+    <step number="3">
+      <action>Complete 📋 Complete_flame_effect_postcheck.</action>
+    </step>
+    <step number="4">
+      <action>Have the Flame Lead disconnect each flame-system propane cylinder according to the approved operating procedure.</action>
+    </step>
+    <step number="5">
+      <action>Have the Propane Lead disconnect 🔥 Kitchen_Propane_Supply according to the appliance manual.</action>
+    </step>
+    <step number="6">
+      <action>Cap, secure upright, and move each disconnected propane cylinder to its approved transport or service position.</action>
+    </step>
+    <step number="7">
+      <action>Have the Fuel Lead arrange final generator fuel service or approved transport preparation.</action>
+    </step>
+    <step number="8">
+      <action>Inspect every former fuel position and containment surface for liquid, residue, or stained playa.</action>
+      <ifThen>IF fuel or contaminated material is present, THEN keep people away and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
+    </step>
+    <step number="9">
+      <action>Remove containment and barriers only after the Fuel Lead confirms the area is clean and fuel-free.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every flame effect and propane appliance is fully shut down and disconnected by its responsible lead.</criterion>
+    <criterion>Every propane cylinder is capped, upright, secured, and in an approved position.</criterion>
+    <criterion>The generators are prepared for service or transport by the Fuel Lead.</criterion>
+    <criterion>No fuel, residue, contaminated material, or unreported playa stain remains.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Fuel Lead</expert>
+</task>

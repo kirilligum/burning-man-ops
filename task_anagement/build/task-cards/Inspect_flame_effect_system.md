@@ -23,7 +23,6 @@
 
 ## Ready before normal use
 
-- **🔥 Flame Effect Burn License:** The license is current and identifies this flame effect.
 - **🔥 Flame Effect Operating Procedure:** The current revision is legible and approved by the Flame Lead.
 - **🔥 Propane Leak Test Solution:** Enough solution is available for every connection being tested.
 - **🔥 Fire Resistant Clothing:** The clothing is dry, intact, and fits the operator or assistant.

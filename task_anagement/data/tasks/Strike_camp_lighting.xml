@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_lighting</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>During Strike before dismantling any structure that supports lighting</when>
+  <time/>
+
+  <resources>
+    <resource>Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Lighting</resource>
+    <resource>🔧 Camp_Power_System</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Have the Power Lead de-energize and verify each lighting circuit before removal.</action>
+    </step>
+    <step number="2">
+      <action>Disconnect each de-energized lighting circuit in the printed order.</action>
+    </step>
+    <step number="3">
+      <action>Remove each light from its support.</action>
+    </step>
+    <step number="4">
+      <action>Inspect each retrieved light, cord, plug, and connector for damage.</action>
+      <ifThen>IF damage is present, THEN separate and mark the component out of service.</ifThen>
+    </step>
+    <step number="5">
+      <action>Coil each cable in the method shown in 📦 Build_Book.</action>
+    </step>
+    <step number="6">
+      <action>Pack lights, controls, supports, and cables in their assigned system containers.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every removed lighting circuit is de-energized.</criterion>
+    <criterion>Every light, control, support, cord, plug, and connector is accounted for and packed by system.</criterion>
+    <criterion>Damaged components are separated and marked out of service.</criterion>
+    <criterion>The Power Lead released each supporting structure for strike.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Power Lead</expert>
+</task>

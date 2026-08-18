@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Build_event_stage</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>During Build before sound-system installation</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and trained stage crew</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>🌐 Event_Stage</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+    <resource>🔧 Impact_Drivers</resource>
+    <resource>Work gloves, eye protection, and closed-toe shoes</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current stage drawing, scaffold instructions, part count, load limit, and final-state photograph in 📦 Build_Book.</action>
+      <ifThen>IF any information is missing or the parts differ, THEN do not build the stage.</ifThen>
+    </step>
+    <step number="2">
+      <action>Mark the stage footprint and audience boundary from 📦 Camp_Map.</action>
+    </step>
+    <step number="3">
+      <action>Count and inspect every stage, scaffold, fastener, guard, brace, and anchor component.</action>
+    </step>
+    <step number="4">
+      <action>Assemble the stage and scaffold in the manufacturer's printed sequence.</action>
+    </step>
+    <step number="5">
+      <action>Install every required brace, guard, access component, fastener, and anchor.</action>
+    </step>
+    <step number="6">
+      <action>Have the Build Lead compare the completed stage with the drawing and load-limit marking.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The stage matches the current drawing and manufacturer instructions.</criterion>
+    <criterion>Every required brace, guard, fastener, access component, and anchor is installed.</criterion>
+    <criterion>The load limit is visible and the audience boundary is clear.</criterion>
+    <criterion>The Build Lead completed the final inspection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

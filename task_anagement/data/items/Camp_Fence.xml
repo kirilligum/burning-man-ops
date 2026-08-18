@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Fence</name>
+
+  <description>Camp boundary fence shown in the current layout.</description>
+  <location>Boundary shown on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    The fence is either installed without blocking access or bundled and stored with its hardware.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

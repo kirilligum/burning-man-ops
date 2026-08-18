@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_bar</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>During Build after the public-area footprint is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Bar Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>🍷 Bar</resource>
+    <resource>🍷 Wine_Cooler</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current bar drawing, hardware count, anchor plan, storage layout, and final-state photograph in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Mark the bar footprint and guest path from 📦 Camp_Map.</action>
+    </step>
+    <step number="3">
+      <action>Assemble the bar in the printed sequence.</action>
+    </step>
+    <step number="4">
+      <action>Install every listed fastener, brace, strap, and anchor.</action>
+    </step>
+    <step number="5">
+      <action>Place the cooler, service storage, and trash-bin positions shown in the layout.</action>
+    </step>
+    <step number="6">
+      <action>Have the Bar Lead compare the completed bar with the final-state photograph.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The bar matches the current drawing and final-state photograph.</criterion>
+    <criterion>The bar is stable and every listed fastener, brace, strap, and anchor is installed.</criterion>
+    <criterion>The guest path and service area are clear.</criterion>
+    <criterion>The Bar Lead completed the final inspection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Bar Lead</expert>
+</task>

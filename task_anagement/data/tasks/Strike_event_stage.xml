@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_event_stage</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>After 📋 Strike_sound_system passes</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and trained stage crew</resource>
+    <resource>📋 Strike_sound_system</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🌐 Event_Stage</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>🔧 Impact_Drivers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that the Sound Lead released the empty stage.</action>
+    </step>
+    <step number="2">
+      <action>Close the stage work area to people not on the trained crew.</action>
+    </step>
+    <step number="3">
+      <action>Dismantle the stage, scaffold, guards, access components, braces, and anchors in the manufacturer-approved reverse sequence.</action>
+    </step>
+    <step number="4">
+      <action>Put every fastener and small stage part in its assigned hardware bin.</action>
+    </step>
+    <step number="5">
+      <action>Stack and secure each structural component in its transport group.</action>
+    </step>
+    <step number="6">
+      <action>Have the Build Lead count every component against the stage inventory.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every stage and scaffold component is accounted for and secured in its transport group.</criterion>
+    <criterion>Every fastener and anchor is in its assigned hardware bin.</criterion>
+    <criterion>The former stage footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

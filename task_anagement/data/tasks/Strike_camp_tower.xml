@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_tower</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>After 📋 Strike_fuel_and_propane_area and 📋 Strike_camp_lighting pass</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and the crew count printed in 📦 Build_Book</resource>
+    <resource>📋 Strike_fuel_and_propane_area</resource>
+    <resource>📋 Strike_camp_lighting</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Tower</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that the Flame Lead and Power Lead released the tower structure.</action>
+    </step>
+    <step number="2">
+      <action>Close the tower work area to people not on the trained crew.</action>
+    </step>
+    <step number="3">
+      <action>Remove braces and anchors only in the printed lowering sequence.</action>
+    </step>
+    <step number="4">
+      <action>Lower each tower section only on the Build Lead's command.</action>
+      <ifThen>IF wind or communication prevents controlled movement, THEN secure the structure and stop.</ifThen>
+    </step>
+    <step number="5">
+      <action>Dismantle each lowered section in the printed reverse sequence.</action>
+    </step>
+    <step number="6">
+      <action>Put every fastener, brace connection, and anchor in the tower hardware bin.</action>
+    </step>
+    <step number="7">
+      <action>Bundle and secure structural components in their assigned transport groups.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No fuel or energized electrical component remains on the tower.</criterion>
+    <criterion>Every structural component, fastener, brace, and anchor is accounted for and packed.</criterion>
+    <criterion>The former tower footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_Buffer_Bush</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Strike after the Buffer Bush closes</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🏕️ Buffer_Bush</resource>
+    <resource>📦 Clear_Storage_Bags</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Have the Power Lead de-energize and disconnect the buffers and lighting.</action>
+    </step>
+    <step number="2">
+      <action>Remove and pack the lighting in its assigned container.</action>
+    </step>
+    <step number="3">
+      <action>Remove the fur, pad, and tentacle covers.</action>
+    </step>
+    <step number="4">
+      <action>Put each clean, dry cover group in its assigned clear storage bag.</action>
+    </step>
+    <step number="5">
+      <action>Remove and pack each disconnected massage buffer in its assigned container.</action>
+    </step>
+    <step number="6">
+      <action>Deflate each pad using the method printed in 📦 Build_Book.</action>
+    </step>
+    <step number="7">
+      <action>Pack each pad with its matching cover group.</action>
+    </step>
+    <step number="8">
+      <action>Remove every base anchor.</action>
+    </step>
+    <step number="9">
+      <action>Dismantle the base in the printed reverse sequence.</action>
+    </step>
+    <step number="10">
+      <action>Put every fastener and anchor in the Buffer Bush hardware bin.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every electrical component is de-energized, disconnected, and packed.</criterion>
+    <criterion>Every cover, pad, buffer, base part, fastener, and anchor is accounted for and packed.</criterion>
+    <criterion>The former Buffer Bush footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

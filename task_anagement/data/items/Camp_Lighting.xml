@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Lighting</name>
+
+  <description>Night, path, dance-floor, sign, arch, tower, and structure lighting with cables and controls.</description>
+  <location>Locations shown on 📦 Camp_Map and 📦 Build_Book.</location>
+
+  <readyForNextPerson>
+    Lighting is either installed with protected cable routes or de-energized, inspected, coiled, and stored by system.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not energize damaged lighting. Tell the Power Lead.</ifNotReady>
+  <responsible>Power Lead</responsible>
+  <commonProblems/>
+</item>

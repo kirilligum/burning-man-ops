@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Clear_Storage_Bags</name>
+
+  <description>Large clear reusable bags for soft camp furnishings and covers.</description>
+  <location>Build storage area.</location>
+
+  <readyForNextPerson>Each used bag is closed and contains one identified asset group.</readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

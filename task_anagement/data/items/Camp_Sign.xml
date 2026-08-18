@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Sign</name>
+
+  <description>Treble Makers sign, letters, support poles, fasteners, and lighting.</description>
+  <location>Public frontage shown on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    The sign is either installed and secured or packed with its letters, bundled poles, and hardware.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

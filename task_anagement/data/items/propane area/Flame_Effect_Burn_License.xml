@@ -4,8 +4,6 @@
 
   <description>Current FAST-issued physical burn license for this flame effect.</description>
   <location>Physically held by the licensed operator while the effect is operated.</location>
-  <readyBeforeUse>The license is current and identifies this flame effect.</readyBeforeUse>
-
   <readyForNextPerson>The license is returned to the Flame Lead.</readyForNextPerson>
 
   <ifNotReady>Do not test or operate the flame effect. Tell the Flame Lead.</ifNotReady>

@@ -43,9 +43,11 @@
   <commonProblems>
     <problem>
       <condition>Any inspection point does not pass.</condition>
-      <response>Keep people out of the affected area and tell the Dominatrix. Do not adjust or repair the structure.</response>
+      <response>Keep people out of the affected area and tell the Build Lead. Do not adjust or repair the structure.</response>
     </problem>
   </commonProblems>
+
+  <expert>Build Lead</expert>
 
   <reasoning>
     <entry>Inspection is separate from repair so a shift worker does not change a wind-loaded structure.</entry>

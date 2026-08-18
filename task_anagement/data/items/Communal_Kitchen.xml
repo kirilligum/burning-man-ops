@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Communal_Kitchen</name>
+
+  <description>Camp kitchen structure, tables, storage, food-service equipment, and ground covering.</description>
+  <location>Kitchen footprint shown on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    The kitchen is either assembled and ready for service or clean, dry,
+    inventoried, and packed according to 📦 Build_Book.
+  </readyForNextPerson>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_sound_system</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>During Strike after the Sound Lead closes the final event</when>
+  <time/>
+
+  <resources>
+    <resource>Sound Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🌐 Sound_System</resource>
+    <resource>🔧 Camp_Power_System</resource>
+    <resource>🔧 Equipment_Truck</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Have the Power Lead de-energize and verify the sound-system power circuit.</action>
+    </step>
+    <step number="2">
+      <action>Have the Sound Lead disconnect signal and de-energized power connections in the printed sequence.</action>
+    </step>
+    <step number="3">
+      <action>Inspect each retrieved cable for cuts, exposed wire, damaged plugs, dirt, moisture, or heat marks.</action>
+      <ifThen>IF a cable is damaged, THEN separate and mark it out of service.</ifThen>
+    </step>
+    <step number="4">
+      <action>Coil each cable in the method shown in 📦 Build_Book.</action>
+    </step>
+    <step number="5">
+      <action>Pack each speaker, control, antenna, cable, and accessory in its assigned transport container.</action>
+    </step>
+    <step number="6">
+      <action>Have the Sound Lead count the packed system against the inventory.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The sound system is de-energized and fully disconnected.</criterion>
+    <criterion>Every component and cable is inspected, accounted for, and packed.</criterion>
+    <criterion>Damaged equipment is separated and marked out of service.</criterion>
+    <criterion>The Sound Lead released the empty stage for structural strike.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Sound Lead</expert>
+</task>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Prepare_build_truck</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Before the equipment truck departs for Black Rock City</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and loading crew</resource>
+    <resource>📦 Truck_Load_Plan</resource>
+    <resource>🔧 Equipment_Truck</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that 📦 Truck_Load_Plan matches the assigned truck and current inventory.</action>
+    </step>
+    <step number="2">
+      <action>Count each asset group against the load plan before loading.</action>
+    </step>
+    <step number="3">
+      <action>Load each asset group in the printed order and position.</action>
+    </step>
+    <step number="4">
+      <action>Secure each load section with the specified restraint.</action>
+    </step>
+    <step number="5">
+      <action>Record every missing, substituted, or unloaded item on 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="6">
+      <action>Have the Build Lead inspect weight distribution, restraint, door clearance, and the final inventory.</action>
+    </step>
+    <step number="7">
+      <action>Close and latch 🔧 Equipment_Truck.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The final inventory and every exception are recorded.</criterion>
+    <criterion>Every loaded item is in its planned position and secured.</criterion>
+    <criterion>The Build Lead approved weight distribution and door clearance.</criterion>
+    <criterion>The truck is closed and latched.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

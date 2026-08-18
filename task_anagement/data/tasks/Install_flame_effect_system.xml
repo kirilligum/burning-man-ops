@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Install_flame_effect_system</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>During Build after the supporting structure passes inspection</when>
+  <time/>
+
+  <resources>
+    <resource>Flame Lead, Power Lead, and trained flame crew</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📋 Inspect_flame_effect_system</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>🔥 Flame_Effect_Burn_License</resource>
+    <resource>🔥 Propane_Leak_Test_Solution</resource>
+    <resource>🔥 Flame_Effect_SDS</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that the installation drawing and operating procedure match the FAST-submitted flame-effect scenario.</action>
+    </step>
+    <step number="2">
+      <action>Install every rated fuel component in the exact drawing location and orientation.</action>
+    </step>
+    <step number="3">
+      <action>Install the single labeled quarter-turn emergency shutoff in its approved visible location.</action>
+    </step>
+    <step number="4">
+      <action>Secure every cylinder upright and protect the installation from vehicle traffic.</action>
+    </step>
+    <step number="5">
+      <action>Establish the FAST-approved audience perimeter and 20-foot combustible-free zone.</action>
+    </step>
+    <step number="6">
+      <action>Have the Power Lead install de-energized electrical components according to the approved drawing.</action>
+    </step>
+    <step number="7">
+      <action>Perform the pre-inspection leak test according to 🔥 Flame_Effect_Operating_Procedure under the Flame Lead and any required FAST supervision.</action>
+      <ifThen>IF any connection fails, THEN keep the system out of service until the Flame Lead corrects and retests it.</ifThen>
+    </step>
+    <step number="8">
+      <action>Have FAST physically inspect the completed installation.</action>
+      <ifThen>IF FAST does not approve the installation, THEN do not test or operate it.</ifThen>
+    </step>
+    <step number="9">
+      <action>Place the issued 🔥 Flame_Effect_Burn_License with the licensed operator.</action>
+    </step>
+    <step number="10">
+      <action>Complete 📋 Inspect_flame_effect_system.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The installation matches the FAST-submitted drawing and uses only rated components.</criterion>
+    <criterion>The emergency shutoff, cylinder securement, vehicle protection, and approved perimeter are complete.</criterion>
+    <criterion>No leak is present.</criterion>
+    <criterion>FAST approved the physical installation and issued the current burn license.</criterion>
+    <criterion>📋 Inspect_flame_effect_system passes.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+</task>

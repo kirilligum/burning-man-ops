@@ -16,7 +16,7 @@
 ## Ready before normal use
 
 - **🌐 DJ Gear:** The Sound Lead has identified the gear required for the event and its stage position.
-- **🔧 Equipment Truck:** The Sound Lead has identified which equipment may be moved.
+- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
 
 ## Steps
 

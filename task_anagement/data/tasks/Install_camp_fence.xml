@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Install_camp_fence</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Build after the camp boundary and service lanes are marked</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Fence</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current fence line, entrances, hardware, and anchor plan in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Mark the fence line without entering a service lane or emergency exit.</action>
+    </step>
+    <step number="3">
+      <action>Install each fence section in the printed order.</action>
+    </step>
+    <step number="4">
+      <action>Secure each section with the listed connections and anchors.</action>
+    </step>
+    <step number="5">
+      <action>Mark every remaining low anchor, line, or edge visible to pedestrians.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The fence follows the approved line and every planned entrance is open.</criterion>
+    <criterion>Every section, connection, and anchor is installed.</criterion>
+    <criterion>No service lane, emergency exit, or pedestrian route is blocked.</criterion>
+    <criterion>No unmarked trip or sharp-edge hazard remains.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

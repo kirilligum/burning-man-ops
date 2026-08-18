@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Install_camp_sign</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>During Build after the public frontage is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Sign</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the sign drawing, letter order, support, anchor, and lighting plan in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Assemble and anchor the sign support in its mapped position.</action>
+    </step>
+    <step number="3">
+      <action>Attach each sign letter in the printed order.</action>
+    </step>
+    <step number="4">
+      <action>Have the Power Lead install and test the sign lighting.</action>
+    </step>
+    <step number="5">
+      <action>Have the Build Lead inspect every connection, support, and anchor.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The sign matches the current drawing and letter order.</criterion>
+    <criterion>Every support, connection, and anchor is installed.</criterion>
+    <criterion>The lighting operates and its cable route is protected.</criterion>
+    <criterion>No pedestrian or service route is blocked.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

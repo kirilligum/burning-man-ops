@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Arch</name>
+
+  <description>Camp entrance arch, red carpet, lighting, connections, and anchors.</description>
+  <location>Public entrance shown on 📦 Camp_Map.</location>
+
+  <readyForNextPerson>
+    The arch is either installed and secured or packed with its rolled carpet, lighting, hardware, and structure.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

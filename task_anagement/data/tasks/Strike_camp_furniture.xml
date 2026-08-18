@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_furniture</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Strike after common and public areas close</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Furniture</resource>
+    <resource>📦 Clear_Storage_Bags</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Remove cushions and put each dry set in its assigned clear storage bag.</action>
+    </step>
+    <step number="2">
+      <action>Fold and stack the chairs by type.</action>
+    </step>
+    <step number="3">
+      <action>Roll each clean, dry rug and secure the roll.</action>
+    </step>
+    <step number="4">
+      <action>Dismantle each Playatech bench and swing in its printed reverse sequence.</action>
+    </step>
+    <step number="5">
+      <action>Put each furniture group's hardware in its assigned hardware bin.</action>
+    </step>
+    <step number="6">
+      <action>Stack or pack each furniture group in the location shown in 📦 Build_Book.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every cushion, chair, rug, bench, swing, and hardware piece is accounted for.</criterion>
+    <criterion>Soft items are clean, dry, and protected from dust and moisture.</criterion>
+    <criterion>Furniture groups are packed by type.</criterion>
+    <criterion>The former furniture areas are clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

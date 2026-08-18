@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Build_Hardware_Bins</name>
+
+  <description>Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.</description>
+  <location>Build storage area.</location>
+
+  <readyForNextPerson>
+    Hardware is sorted by asset, closed in its bin, and matches the count in 📦 Build_Book.
+  </readyForNextPerson>
+
+  <responsible>Build Lead</responsible>
+  <commonProblems/>
+</item>

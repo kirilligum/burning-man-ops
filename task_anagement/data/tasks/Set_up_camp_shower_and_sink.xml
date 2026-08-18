@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_camp_shower_and_sink</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>During Build after fresh-water and gray-water locations are confirmed</when>
+  <time/>
+
+  <resources>
+    <resource>Water Lead and Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>🔧 Camp_Shower</resource>
+    <resource>🔧 Camp_Sink</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>🔧 Gray-Water_Pump</resource>
+    <resource>🔧 Potable_Water_Hose</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current shower, sink, potable-water, pump, and gray-water diagram in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Place the shower and sink on the mapped level footprints outside traffic and drainage paths.</action>
+    </step>
+    <step number="3">
+      <action>Assemble and secure the shower enclosure and sink according to the approved diagram.</action>
+    </step>
+    <step number="4">
+      <action>Have the Water Lead connect the potable-water lines in the printed sequence.</action>
+    </step>
+    <step number="5">
+      <action>Have the Water Lead connect the shower, sink, pump, and gray-water lines in the printed sequence.</action>
+    </step>
+    <step number="6">
+      <action>Run the minimum water needed through each fixture to test flow and drainage.</action>
+      <ifThen>IF water leaks, pools, or fails to reach 🔧 Gray-Water_IBC, THEN close the supply, keep the fixture out of service, and tell the Water Lead.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The shower and sink are stable and secured in their mapped positions.</criterion>
+    <criterion>Potable water flows and all used test water reaches the gray-water IBC.</criterion>
+    <criterion>No leak, puddle, or exposed trip hazard is present.</criterion>
+    <criterion>The Water Lead completed the final inspection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Water Lead</expert>
+</task>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_camp_arch</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>After the Power Lead releases the arch lighting</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and the crew count printed in 📦 Build_Book</resource>
+    <resource>📋 Strike_camp_lighting</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Arch</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that the Power Lead released the arch structure.</action>
+    </step>
+    <step number="2">
+      <action>Roll the clean, dry red carpet and secure it with a ratchet strap.</action>
+    </step>
+    <step number="3">
+      <action>Lower the arch only on the Build Lead's command.</action>
+    </step>
+    <step number="4">
+      <action>Dismantle the lowered arch in the printed reverse sequence.</action>
+    </step>
+    <step number="5">
+      <action>Put every fastener and anchor in the arch hardware bin.</action>
+    </step>
+    <step number="6">
+      <action>Pack the carpet and structural parts in their assigned transport group.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The carpet, structure, fasteners, and anchors are accounted for and packed.</criterion>
+    <criterion>The former arch footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

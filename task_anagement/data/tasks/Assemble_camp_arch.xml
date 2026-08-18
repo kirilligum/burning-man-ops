@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Assemble_camp_arch</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>During Build after the public entrance is approved</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and Power Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Arch</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the arch drawing, lift sequence, connection, anchor, carpet, and lighting plan in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Assemble the arch on the ground in the printed sequence.</action>
+    </step>
+    <step number="3">
+      <action>Raise the arch only on the Build Lead's command.</action>
+    </step>
+    <step number="4">
+      <action>Install every connection, brace, strap, and anchor shown in the drawing.</action>
+    </step>
+    <step number="5">
+      <action>Unroll and secure the red carpet without creating a raised edge.</action>
+    </step>
+    <step number="6">
+      <action>Have the Power Lead install and test the arch lighting.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The arch matches the current drawing and is fully anchored.</criterion>
+    <criterion>The carpet is secured without a trip edge.</criterion>
+    <criterion>The lighting operates and its cable route is protected.</criterion>
+    <criterion>The entrance and emergency route are clear.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

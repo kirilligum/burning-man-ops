@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_EMT_shade</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>During Strike after every shelter and item beneath the shade is removed</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and the crew count printed in 📦 Build_Book</resource>
+    <resource>📋 Strike_camp_lighting</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🏕️ EMT_Shade</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+    <resource>🔧 Impact_Drivers</resource>
+    <resource>Work gloves, eye protection, and closed-toe shoes</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that every shelter, person, and belonging beneath the shade has been removed.</action>
+    </step>
+    <step number="2">
+      <action>Confirm that the Power Lead released every attached light and cable.</action>
+    </step>
+    <step number="3">
+      <action>Confirm the current lowering sequence, crew positions, and packing groups in 📦 Build_Book.</action>
+    </step>
+    <step number="4">
+      <action>Close the work area to people not on the strike crew.</action>
+    </step>
+    <step number="5">
+      <action>Remove and fold the side coverings while all structural anchors remain installed.</action>
+      <ifThen>IF wind prevents control of a covering, THEN secure it and stop.</ifThen>
+    </step>
+    <step number="6">
+      <action>Remove and fold the roof covering in the printed bay sequence while the frame remains anchored.</action>
+    </step>
+    <step number="7">
+      <action>Remove the ground-covering fasteners and put them in the hardware bin.</action>
+    </step>
+    <step number="8">
+      <action>Clean, dry, fold, and pack each ground covering.</action>
+    </step>
+    <step number="9">
+      <action>Release braces, straps, and anchors only in the printed lowering sequence.</action>
+    </step>
+    <step number="10">
+      <action>Lower each frame section only on the Build Lead's command.</action>
+    </step>
+    <step number="11">
+      <action>Dismantle each lowered frame section in the printed reverse sequence.</action>
+    </step>
+    <step number="12">
+      <action>Remove every remaining lag screw, chain, anchor, and ground fastener.</action>
+    </step>
+    <step number="13">
+      <action>Bundle horizontal and vertical EMT groups with ratchet straps.</action>
+    </step>
+    <step number="14">
+      <action>Put every fitting, fastener, bungee, chain, and anchor in its assigned hardware bin.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every covering, tube, fitting, fastener, bungee, strap, chain, and anchor is accounted for and packed.</criterion>
+    <criterion>No anchor or ground fastener remains in the playa.</criterion>
+    <criterion>The former shade footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+
+  <reasoning>
+    <entry>The outdated source removes anchors before coverings; the canonical order keeps the frame anchored until sail-producing coverings are removed.</entry>
+  </reasoning>
+</task>

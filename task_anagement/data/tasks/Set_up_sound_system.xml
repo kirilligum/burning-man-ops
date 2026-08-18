@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Set_up_sound_system</name>
+
+  <checklist_types>
+    <checklist_type>Build</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>During Build after 📋 Build_event_stage passes</when>
+  <time/>
+
+  <resources>
+    <resource>Sound Lead and Power Lead</resource>
+    <resource>📋 Build_event_stage</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>🌐 Sound_System</resource>
+    <resource>🔧 Camp_Power_System</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the current speaker, control, antenna, cable, power, and audience-boundary plan in 📦 Build_Book.</action>
+    </step>
+    <step number="2">
+      <action>Place and secure each sound component in its mapped position.</action>
+    </step>
+    <step number="3">
+      <action>Inspect every power and signal cable for damage before connection.</action>
+      <ifThen>IF a cable has damaged insulation, plug, connector, or heat marks, THEN remove it from service.</ifThen>
+    </step>
+    <step number="4">
+      <action>Route cables clear of traffic, sharp edges, water, fuel lines, and tension.</action>
+    </step>
+    <step number="5">
+      <action>Have the Power Lead connect the de-energized power system according to the approved plan.</action>
+    </step>
+    <step number="6">
+      <action>Have the Sound Lead energize and test every approved channel at test volume.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every sound component is secured in its mapped position.</criterion>
+    <criterion>No damaged cable, exposed connector, blocked path, or unprotected crossing remains.</criterion>
+    <criterion>Every approved channel passes the Sound Lead's test.</criterion>
+    <criterion>Emergency power access remains clear.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Sound Lead</expert>
+</task>

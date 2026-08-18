@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Strike_communal_kitchen</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>During Strike after the Food Lead closes the kitchen</when>
+  <time/>
+
+  <resources>
+    <resource>Food Lead, Water Lead, Propane Lead, and Build Lead</resource>
+    <resource>📦 Build_Book</resource>
+    <resource>📋 Wash_communal_kitchenware</resource>
+    <resource>📦 Communal_Kitchen</resource>
+    <resource>📦 Communal_Tables</resource>
+    <resource>🍳 Kitchenware</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
+    <resource>🔥 Kitchen_Propane_Supply</resource>
+    <resource>🔧 Camp_Sink</resource>
+    <resource>📦 Build_Hardware_Bins</resource>
+    <resource>📦 Ratchet_Straps</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Have the Food Lead remove or discard all remaining food according to the food plan.</action>
+    </step>
+    <step number="2">
+      <action>Have the Propane Lead disconnect and remove 🔥 Kitchen_Propane_Supply.</action>
+    </step>
+    <step number="3">
+      <action>Have the Water Lead disconnect 🔧 Camp_Sink and move all contained water to its approved destination.</action>
+    </step>
+    <step number="4">
+      <action>Complete 📋 Wash_communal_kitchenware.</action>
+    </step>
+    <step number="5">
+      <action>Pack fully dry kitchenware in its assigned transport containers.</action>
+    </step>
+    <step number="6">
+      <action>Have the Water Lead empty and dry 🍳 Drinking_Water_Dispensers without releasing water onto the playa.</action>
+    </step>
+    <step number="7">
+      <action>Fold and pack the kitchen tables in the order shown in 📦 Build_Book.</action>
+    </step>
+    <step number="8">
+      <action>Dismantle the kitchen carport in the printed strike sequence.</action>
+    </step>
+    <step number="9">
+      <action>Put every kitchen fastener and anchor in its assigned hardware bin.</action>
+    </step>
+    <step number="10">
+      <action>Clean, dry, fold, and pack the kitchen ground covering.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No food, propane, fresh water, or gray water remains in the dismantled kitchen.</criterion>
+    <criterion>Every kitchen component, table, utensil, fastener, and anchor is clean, dry, accounted for, and packed.</criterion>
+    <criterion>No liquid reached the playa.</criterion>
+    <criterion>The former kitchen footprint is clear and MOOP-free.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Food Lead</expert>
+</task>
