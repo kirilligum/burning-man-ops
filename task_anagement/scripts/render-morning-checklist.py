@@ -8,7 +8,7 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from render_helpers import humanize_references, item_for_reference, text
+from render_helpers import item_for_reference, text
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,12 +19,8 @@ TASKS = (
 DEFAULT_OUTPUT = ROOT / "morning-checklist.md"
 
 
-def humanize(value: str) -> str:
-    return humanize_references(value, keep_icons=False)
-
-
 def render_item(reference: str, item: ET.Element, task_name: str) -> list[str]:
-    lines = [f"#### {humanize(reference)}"]
+    lines = [f"#### {reference}"]
     scalar_fields = (
         ("Description", "description"),
         ("Location", "location"),
@@ -41,7 +37,7 @@ def render_item(reference: str, item: ET.Element, task_name: str) -> list[str]:
             continue
         if path == "responsible" and value == "Dominatrix":
             continue
-        lines.append(f"**{label}:** {humanize(value)}")
+        lines.append(f"**{label}:** {value}")
 
     problems = item.findall("./commonProblems/problem")
     rendered_problems = [
@@ -58,13 +54,13 @@ def render_item(reference: str, item: ET.Element, task_name: str) -> list[str]:
         for condition, response in rendered_problems:
             if condition and response:
                 lines.append(
-                    f"- **IF** {humanize(condition).rstrip('.')} "
-                    f"**THEN** {humanize(response)}"
+                    f"- **IF** {condition} "
+                    f"**THEN** {response}"
                 )
             elif condition:
-                lines.append(f"- **IF** {humanize(condition)}")
+                lines.append(f"- **IF** {condition}")
             else:
-                lines.append(f"- {humanize(response)}")
+                lines.append(f"- {response}")
     return lines
 
 
@@ -79,7 +75,7 @@ def render_task(task_path: Path) -> list[str]:
     if CHECKLIST_TYPE not in checklist_types:
         raise ValueError(f"{task_name} is not assigned to {CHECKLIST_TYPE}")
 
-    lines = [f"## {task_name.replace('_', ' ')}"]
+    lines = [f"## {task_name}"]
 
     scalar_fields = (
         ("Area", "area"),
@@ -90,7 +86,7 @@ def render_task(task_path: Path) -> list[str]:
     for label, path in scalar_fields:
         value = text(task.find(path))
         if value:
-            lines.append(f"**{label}:** {humanize(value)}")
+            lines.append(f"**{label}:** {value}")
 
     resources = [
         text(element)
@@ -99,7 +95,7 @@ def render_task(task_path: Path) -> list[str]:
     ]
     if resources:
         lines.append("### What you need")
-        lines.extend(f"- {humanize(resource)}" for resource in resources)
+        lines.extend(f"- {resource}" for resource in resources)
 
     steps = task.findall("./steps/step")
     if steps:
@@ -108,13 +104,13 @@ def render_task(task_path: Path) -> list[str]:
             number = step.get("number", "")
             action = text(step.find("action"))
             if action:
-                lines.append(f"{number}. {humanize(action)}")
+                lines.append(f"{number}. {action}")
             expected = text(step.find("expectedResult"))
             if expected:
-                lines.append(f"   **EXPECTED:** {humanize(expected)}")
+                lines.append(f"   **EXPECTED:** {expected}")
             branch = text(step.find("ifThen"))
             if branch:
-                lines.append(f"   **IF/THEN:** {humanize(branch)}")
+                lines.append(f"   **IF/THEN:** {branch}")
 
     criteria = [
         text(element)
@@ -123,7 +119,7 @@ def render_task(task_path: Path) -> list[str]:
     ]
     if criteria:
         lines.append("### PASS when")
-        lines.extend(f"- {humanize(criterion)}" for criterion in criteria)
+        lines.extend(f"- [ ] {criterion}" for criterion in criteria)
 
     problems = task.findall("./commonProblems/problem")
     rendered_problems = [
@@ -139,21 +135,13 @@ def render_task(task_path: Path) -> list[str]:
         lines.append("### Common problems")
         for condition, response in rendered_problems:
             if condition:
-                lines.append(f"- **IF:** {humanize(condition)}")
+                lines.append(f"- **IF:** {condition}")
             if response:
-                lines.append(f"  **THEN:** {humanize(response)}")
+                lines.append(f"  **THEN:** {response}")
 
     expert = text(task.find("expert"))
     if expert:
-        lines.extend(("### Who to ask", humanize(expert)))
-
-    lines.append("### Finish")
-    global_root = ET.parse(ROOT / "data" / "global-instructions.xml").getroot()
-    lines.extend(
-        f"- {humanize(text(instruction))}"
-        for instruction in global_root.findall("./instruction")
-        if text(instruction)
-    )
+        lines.extend(("### Who to ask", expert))
 
     item_lines = ["### Items"]
     for reference in resources:
@@ -167,10 +155,17 @@ def render_task(task_path: Path) -> list[str]:
 
 
 def render() -> str:
+    global_root = ET.parse(ROOT / "data" / "global-instructions.xml").getroot()
     lines = [
         "<!-- Generated from canonical task XML. Do not edit this file directly. -->",
         f"# {CHECKLIST_TYPE} checklist",
+        "## Global instructions",
     ]
+    lines.extend(
+        f"- {text(instruction)}"
+        for instruction in global_root.findall("./instruction")
+        if text(instruction)
+    )
     for task_path in TASKS:
         lines.extend(render_task(task_path))
     return "\n".join(lines) + "\n"

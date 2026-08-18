@@ -280,12 +280,15 @@ execution sequence; ordered actions remain in the task card.
 `morning-checklist.md` directly from selected canonical task XML. The initial
 handout contains only `Clean_communal_kitchen_tables`. It resolves each task
 item and the shared finish instructions from canonical XML, prints the useful
-item fields below the task, and humanizes repository references so a tired
-worker does not need to open other files. It uses no checkboxes, omits empty
-worker-facing fields, circular current-task references, and maintainer
-metadata, and adds no blank lines between sections. The repeated default
-Dominatrix responsibility is omitted because the shared finish instruction
-already gives that escalation path; a non-default responsible role is shown.
+item fields below the task, and preserves task and item text exactly from XML,
+including reference emoji and underscores. The inlined item details mean those
+references do not require another lookup. Shared global instructions render
+once above the tasks. Only **PASS when** criteria use Markdown checkboxes; other
+sections remain checkbox-free. The handout omits empty worker-facing fields,
+circular current-task references, and maintainer metadata, and adds no blank
+lines between sections. The repeated default Dominatrix responsibility is
+omitted because the shared global instructions already give that escalation
+path; a non-default responsible role is shown.
 
 Example:
 

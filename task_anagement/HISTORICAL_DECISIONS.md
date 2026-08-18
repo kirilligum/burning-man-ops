@@ -122,3 +122,34 @@ and prints only the matching records from this file.
   blank lines between sections.
 - **Effect:** D-135 replaces repository references with self-contained task,
   item, and global-instruction text for the worker.
+
+### D-135 — Make generated print checklists self-contained
+
+- **Date:** 2026-08-18
+- **Status:** Superseded by D-136
+- **Decision:** Generate field checklist Markdown from selected task XML, every
+  referenced item XML, and the shared global instructions. Print concise item
+  details below each task and humanize repository references so workers do not
+  need to open other files. Use no checkboxes or blank separator lines. Omit
+  empty worker-facing fields, circular current-task references, and maintainer
+  metadata. Omit repeated default Dominatrix responsibility because the shared
+  finish instruction already provides that escalation path; show a non-default
+  responsible role.
+- **Effect:** D-136 preserves exact XML text, including reference emoji and
+  underscores, while keeping item details inline.
+
+### D-136 — Preserve XML text in self-contained print checklists
+
+- **Date:** 2026-08-18
+- **Status:** Superseded by D-137
+- **Decision:** Generate field checklist Markdown from selected task XML, every
+  referenced item XML, and the shared global instructions. Print concise item
+  details below each task and preserve XML text exactly, including reference
+  emoji and underscores. Render the shared global instructions once above the
+  tasks. The inlined item details prevent those references from requiring
+  another lookup. Use no checkboxes or blank separator lines. Omit empty
+  worker-facing fields, circular current-task references, and maintainer
+  metadata. Omit repeated default Dominatrix responsibility because the shared
+  global instructions already provide that escalation path; show a non-default
+  responsible role.
+- **Effect:** D-137 adds Markdown checkboxes only to **PASS when** criteria.
