@@ -340,8 +340,17 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Task XML retains traceability without loading duplicated decision
   text. The historical lookup continues to use superseded record links.
 
+### D-132 — Keep one prioritized open-question queue
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Store unresolved questions requiring the user or a camp expert
+  in `ask_me/README.md`, ordered from highest to lowest operational priority.
+- **Effect:** The specification links to that queue instead of duplicating its
+  contents. When an answer is accepted, update the affected canonical files and
+  remove the resolved question. Do not store protected runtime details there.
+
 ## Open decisions
 
-Open operational questions remain in the specification's **Open decisions**
-section. They are not decisions until the user or relevant camp expert resolves
-them.
+Open operational questions remain in `ask_me/README.md`. They are not decisions
+until the user or relevant camp expert resolves them.

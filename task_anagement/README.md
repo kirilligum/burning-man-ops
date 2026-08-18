@@ -1014,9 +1014,9 @@ changes.
 
 ## Recommended next sequence
 
-1. Resolve the field-detail blockers in `WORKBOOK_COVERAGE.md`, beginning with
-   the generator threshold, Build Book, flame-effect procedure, and actual
-   propane equipment.
+1. Resolve the prioritized questions in
+   [`../ask_me/README.md`](../ask_me/README.md), beginning with which restricted
+   activities will operate in 2026.
 2. Have each responsible lead review their task and item XML.
 3. Field-test routine cards without coaching and revise from observed errors.
 4. Field-test printed checklists and task cards under actual light, dust, noise,
@@ -1025,22 +1025,12 @@ changes.
 6. Prove a no-change XML/Sheet/XML semantic round trip before human Sheet
    editing begins.
 
-## Open decisions
+## Open questions
 
-These must be resolved by the relevant experts rather than guessed by Codex:
-
-- one generator escalation threshold and its measurement point;
-- lost-and-found exceptions for food, trash, chemicals, sharps, and unsafe
-  objects;
-- the low-water trigger and current fresh-water and gray-water service methods;
-- actual shade geometry, hardware, anchors, and build sequence;
-- actual flame-effect valve and control IDs, limits, timing, and emergency
-  shutdown sequence;
-- the actual kitchen propane cylinder, regulator, connection, and appliance
-  manual;
-- the actual food products, 2026 permit, and approved service plan;
-- current on-playa maps, rosters, assignments, provider methods, and payment
-  authorization, kept outside repository XML when protected or short-lived.
+[`../ask_me/README.md`](../ask_me/README.md) is the single prioritized queue of
+questions that require the user or a responsible camp role. Once an answer is
+accepted, update the affected XML and specifications, record any durable system
+decision in `DECISIONS.md`, and remove the resolved question from the queue.
 
 ## External references
 
