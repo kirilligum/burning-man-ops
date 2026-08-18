@@ -287,6 +287,27 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Keep item records focused on non-obvious readiness conditions and
   concrete item-specific responses.
 
+### D-126 — Handle multisurface-cleaner replacement and spraying
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Keep the cleaner handoff condition to the bottle containing
+  cleaner. If it does not spray, turn the nozzle from `OFF` to `SPRAY`. When it
+  must be replaced, ask the Dominatrix where to find the replacement, dispose
+  of the old bottle in `📦 Trash_Bins`, and get the replacement.
+- **Effect:** Do not make the normal handoff depend on the nozzle's OFF state;
+  keep that state in the concrete common-problem response.
+
+### D-127 — Keep item IDs short and descriptions detailed
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Add an optional item `<description>` for recognizable details,
+  brand, model, size, or product information. Keep those details out of the
+  item name and filename.
+- **Effect:** `Multisurface_Cleaner` remains the item ID while its exact Clorox
+  product details live in `<description>`.
+
 ## Open decisions
 
 Open operational questions remain in the specification's **Open decisions**

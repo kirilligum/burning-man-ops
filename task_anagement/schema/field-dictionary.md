@@ -111,6 +111,7 @@ The **Steps** Sheet cell uses this deterministic layout:
 | Sheet column | XML path | Type | Required | Definition |
 | --- | --- | --- | --- | --- |
 | **Item** | `/item/name` | Text | Yes | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. Keep area, brand, model, size, and product numbers out of the ID. The ID must be unique within its parent folder. |
+| **Description** | `/item/description` | Text | No | Recognizable description, brand, model, size, or product detail. Keep these details out of the item ID. |
 | **Area** | Parent folder under `data/items/` | Enum | No | Categorical camp area. It is derived from the XML folder and exported as a Sheet column; it is not duplicated inside the item XML. Blank means the item is stored directly under `data/items/`. |
 | **Location** | `/item/location` | Text | Yes | Storage location using landmarks and labels when available. Labels are optional. |
 | **Ready before use** | `/item/readyBeforeUse` | Text | No | Observable state required before someone uses the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |

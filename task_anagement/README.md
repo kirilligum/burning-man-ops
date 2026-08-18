@@ -325,7 +325,7 @@ The simplest mental models are:
 
 > **TASK = NAME + CHECKLIST_TYPES + AREA + WHY + WHEN + TIME + RESOURCES + STEPS + PASS + PROBLEMS + EXPERT + REASONING + DECISIONS**
 
-> **ITEM = NAME + OPTIONAL AREA + LOCATION + OPTIONAL READY BEFORE + READY FOR NEXT + OPTIONAL IF NOT READY + RESPONSIBLE + PROBLEMS**
+> **ITEM = NAME + DESCRIPTION + OPTIONAL AREA + LOCATION + OPTIONAL READY BEFORE + READY FOR NEXT + OPTIONAL IF NOT READY + RESPONSIBLE + PROBLEMS**
 
 Task IDs are globally unique. Item IDs are unique within their parent folder
 and may repeat in different folders. IDs use underscores instead of spaces.
@@ -433,6 +433,7 @@ The `ITEMS` Sheet presents these columns in this order:
 | Sheet column | XML | Description and entry guidance |
 | --- | --- | --- |
 | **Item** | `item/name` | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. It must be unique within its parent folder. Keep area, brand, model, size, and product numbers out of the ID. |
+| **Description** | `item/description` | Optional recognizable description, brand, model, size, or product detail. Keep these details out of the item ID. |
 | **Area** | Parent folder under `data/items/` | Optional categorical camp area. The converter derives it from the XML folder and exposes it as a Sheet column. Blank means the item is directly under `data/items/`. |
 | **Location** | `location` | Exact storage location using visible landmarks, container names, and shelf or side information. |
 | **Ready before use** | `readyBeforeUse` | Observable condition required before someone starts using the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |
@@ -621,12 +622,18 @@ Illustrative items:
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
   <name>Multisurface_Cleaner</name>
+  <description>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).</description>
   <location>Kitchen.</location>
   <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
-  <readyForNextPerson>The nozzle is set to OFF and the bottle contains cleaner.</readyForNextPerson>
-  <ifNotReady>Replace it with Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346). If none is available, tell the Dominatrix.</ifNotReady>
+  <readyForNextPerson>The bottle contains cleaner.</readyForNextPerson>
+  <ifNotReady>Ask the Dominatrix where to find a replacement. Dispose of the old bottle in 📦 Trash_Bins. Get the replacement.</ifNotReady>
   <responsible>Dominatrix</responsible>
-  <commonProblems/>
+  <commonProblems>
+    <problem>
+      <condition>The cleaner is not spraying.</condition>
+      <response>The nozzle is OFF. Turn the nozzle to SPRAY.</response>
+    </problem>
+  </commonProblems>
 </item>
 ```
 

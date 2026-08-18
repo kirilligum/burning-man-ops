@@ -2,6 +2,11 @@
 <item>
   <name>Multisurface_Cleaner</name>
 
+  <description>
+    Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free,
+    32 fl oz (UPC 044600603346).
+  </description>
+
   <location>
     Kitchen.
   </location>
@@ -9,16 +14,20 @@
   <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
 
   <readyForNextPerson>
-    The nozzle is set to OFF and the bottle contains cleaner.
+    The bottle contains cleaner.
   </readyForNextPerson>
 
   <ifNotReady>
-    Replace it with Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle,
-    Fragrance Free, 32 fl oz (UPC 044600603346). If none is available, tell the
-    Dominatrix.
+    Ask the Dominatrix where to find a replacement. Dispose of the old bottle
+    in 📦 Trash_Bins. Get the replacement.
   </ifNotReady>
 
   <responsible>Dominatrix</responsible>
 
-  <commonProblems/>
+  <commonProblems>
+    <problem>
+      <condition>The cleaner is not spraying.</condition>
+      <response>The nozzle is OFF. Turn the nozzle to SPRAY.</response>
+    </problem>
+  </commonProblems>
 </item>

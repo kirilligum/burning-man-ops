@@ -45,7 +45,8 @@ or verify the task. Name required physical resources so workers can recognize
 them directly; do not hide required components behind a kit name. Store items
 under their categorical-area folder and use short functional IDs, such as
 `Disposable_Towels`. Keep the area, brand, model, size, and replacement details
-out of the item name. Store uncategorized items directly under `data/items/`.
+out of the item name; put useful brand or product detail in the optional item
+`<description>`. Store uncategorized items directly under `data/items/`.
 
 Ground procedures in the workbook, existing XML, and facts supplied by the
 user. Do not invent locations, equipment details, timings, quantities,
