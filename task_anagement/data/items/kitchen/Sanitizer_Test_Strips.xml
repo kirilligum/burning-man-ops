@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Sanitizer_Test_Strips</name>
+
+  <description>Hydrion QT-10 Quaternary Test Paper, 0 to 400 ppm.</description>
+  <location>Kitchen.</location>
+  <readyBeforeUse>At least one dry test strip remains.</readyBeforeUse>
+  <readyForNextPerson>The dispenser contains dry test strips and is closed.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement test strips.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

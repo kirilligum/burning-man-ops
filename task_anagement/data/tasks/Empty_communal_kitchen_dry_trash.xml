@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Empty_communal_kitchen_dry_trash</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once per shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Dry_Trash_Bin</resource>
+    <resource>🍳 Trash_Bags</resource>
+    <resource>📦 Dumpster</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Remove the bag from 🍳 Dry_Trash_Bin.</action>
+    </step>
+    <step number="2">
+      <action>Tie the bag closed.</action>
+    </step>
+    <step number="3">
+      <action>Put the closed bag inside 📦 Dumpster.</action>
+    </step>
+    <step number="4">
+      <action>Install a new 🍳 Trash_Bags bag in 🍳 Dry_Trash_Bin.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>A new bag is installed in the dry-trash bin.</criterion>
+    <criterion>No loose trash remains in or around the bin.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

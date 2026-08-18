@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Dry_Trash_Bin</name>
+  <description>Kitchen bin for dry, non-recyclable trash.</description>
+  <location>Kitchen.</location>
+
+  <readyForNextPerson>
+    A trash bag is installed and no trash is in or around the bin.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

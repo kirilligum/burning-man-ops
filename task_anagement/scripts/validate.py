@@ -54,6 +54,7 @@ REFERENCE = re.compile(
     r"(?P<icon>📋|🌐|🍷|🔥|🏕️|🍳|🔧|📦)\s+"
     r"(?P<name>[A-Za-z0-9][A-Za-z0-9_-]*)"
 )
+ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]*$")
 DECISION_HEADING = re.compile(r"^###\s+(D-\d+)\s+—\s+.*$", re.MULTILINE)
 DECISION_STATUS = re.compile(r"^- \*\*Status:\*\*\s+(.+)$", re.MULTILINE)
 
@@ -111,6 +112,8 @@ def validate_item(path: Path, root: ET.Element, check: Validation) -> None:
     name = check.require_text(path, root, "name")
     if name and path.stem != name:
         check.error(path, f"filename must be {name}.xml")
+    if name and not ID.fullmatch(name):
+        check.error(path, f"invalid item name {name!r}")
     check.require_text(path, root, "readyForNextPerson")
     check.require_text(path, root, "responsible")
     for problem in root.findall("./commonProblems/problem"):
@@ -131,6 +134,8 @@ def validate_task(
     name = check.require_text(path, root, "name")
     if name and path.stem != name:
         check.error(path, f"filename must be {name}.xml")
+    if name and not ID.fullmatch(name):
+        check.error(path, f"invalid task name {name!r}")
 
     area = check.require_text(path, root, "area")
     if area and area not in AREAS:
@@ -178,6 +183,10 @@ def validate_task(
             continue
         if value.startswith(reference_icons) and not REFERENCE.fullmatch(value):
             check.error(path, f"malformed resource reference {value!r}")
+
+    for problem in root.findall("./commonProblems/problem"):
+        check.require_text(path, problem, "condition")
+        check.require_text(path, problem, "response")
 
     for decision in root.findall("./decisions/decision"):
         record = (decision.findtext("record") or "").strip()

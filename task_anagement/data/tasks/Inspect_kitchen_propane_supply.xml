@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_kitchen_propane_supply</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>Once per shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔥 Kitchen_Propane_Supply</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Look at 🔥 Kitchen_Propane_Supply without touching its valves or connections.</action>
+    </step>
+    <step number="2">
+      <action>Listen and smell for leaking propane without leaning over the supply.</action>
+      <ifThen>IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Dominatrix immediately.</ifThen>
+    </step>
+    <step number="3">
+      <action>Read any existing fuel-level or empty-cylinder indicator.</action>
+      <ifThen>IF the supply is empty or nearly empty, THEN tell the Dominatrix. Do not replace a cylinder unless the Dominatrix authorizes you.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The kitchen propane supply is upright and secured.</criterion>
+    <criterion>No hissing, propane odor, or frost is present at a connection.</criterion>
+    <criterion>The supply is not empty.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+
+  <reasoning>
+    <entry>The checklist worker observes and reports; cylinder replacement requires separate authorization.</entry>
+  </reasoning>
+</task>

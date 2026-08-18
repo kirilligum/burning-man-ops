@@ -550,18 +550,16 @@ task_anagement/
         └── Clean_communal_kitchen_tables.md
 ```
 
-Validate and render the pilot with:
+Validate and render all tasks with:
 
 ```bash
 python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
 python3 task_anagement/scripts/validate.py
-python3 task_anagement/scripts/render-task-card.py \
-  task_anagement/data/tasks/Clean_communal_kitchen_tables.xml \
-  --output task_anagement/build/task-cards/Clean_communal_kitchen_tables.md
+python3 task_anagement/scripts/render-task-card.py --all
 ```
 
-Use the render command with `--check` to verify that the committed card matches
-the canonical XML without rewriting it.
+Use the render command with `--all --check` to verify that every committed card
+matches the canonical XML without rewriting it.
 
 ## Task-card content and order
 
@@ -1038,6 +1036,10 @@ These must be resolved by the relevant experts rather than guessed by Codex:
 External sources help identify hazards, regulations, and document-design
 practices. They do not replace equipment-specific procedures or expert
 validation.
+
+Current operational and provisional-product research is recorded in
+[SOURCES.md](SOURCES.md). The references below cover the documentation system
+itself.
 
 - [NASA: Human factors of flight-deck checklists](https://ntrs.nasa.gov/citations/19910017830)
 - [NASA: Designing flightdeck procedures](https://ntrs.nasa.gov/citations/20160013263)

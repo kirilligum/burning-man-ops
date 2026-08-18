@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Empty_communal_kitchen_wet_trash</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once per shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Wet_Trash_Bin</resource>
+    <resource>🍳 Trash_Bags</resource>
+    <resource>📦 Dumpster</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the bag in 🍳 Wet_Trash_Bin for leaks.</action>
+      <ifThen>IF the bag leaks, THEN place it inside a second 🍳 Trash_Bags bag before moving it.</ifThen>
+    </step>
+    <step number="2">
+      <action>Remove the bag from 🍳 Wet_Trash_Bin.</action>
+    </step>
+    <step number="3">
+      <action>Tie the bag closed.</action>
+    </step>
+    <step number="4">
+      <action>Put the closed bag inside 📦 Dumpster.</action>
+    </step>
+    <step number="5">
+      <action>Install a new 🍳 Trash_Bags bag in 🍳 Wet_Trash_Bin.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>A new bag is installed in the wet-trash bin.</criterion>
+    <criterion>No wet waste or liquid remains in or around the bin.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <reasoning>
+    <entry>Inspect before lifting so a leaking bag can be contained before liquid reaches the playa.</entry>
+  </reasoning>
+</task>

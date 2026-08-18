@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cooking_Surfaces</name>
+
+  <location>Communal kitchen cooking area.</location>
+
+  <readyForNextPerson>
+    Surfaces are clean, sanitized, dry, and free of food, grease, sticky residue,
+    and MOOP.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Clean the surfaces; see task 📋 Clean_communal_kitchen_cooking_surfaces.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

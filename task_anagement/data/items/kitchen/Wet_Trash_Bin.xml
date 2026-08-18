@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Wet_Trash_Bin</name>
+  <description>Kitchen bin for food scraps and other wet trash.</description>
+  <location>Kitchen.</location>
+
+  <readyForNextPerson>
+    A trash bag is installed and no wet waste or liquid is in or around the bin.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

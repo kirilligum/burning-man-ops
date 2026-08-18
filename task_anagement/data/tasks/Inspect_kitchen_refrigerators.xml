@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_kitchen_refrigerators</name>
+
+  <checklist_types>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once per Afternoon shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Kitchen_Refrigerators</resource>
+    <resource>🍳 Refrigerator_Thermometers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Read 🍳 Refrigerator_Thermometers without leaving refrigerator doors open.</action>
+      <ifThen>IF any refrigerator is above 41°F, THEN close its door and tell the Dominatrix immediately.</ifThen>
+    </step>
+    <step number="2">
+      <action>Inspect each refrigerator door for a complete seal.</action>
+      <ifThen>IF a door does not seal, THEN close it as far as possible and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="3">
+      <action>Confirm each refrigerator is receiving power.</action>
+      <ifThen>IF a refrigerator has no power, THEN keep its door closed and tell the Dominatrix.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every refrigerator reads 41°F or below.</criterion>
+    <criterion>Every refrigerator door is closed and sealed.</criterion>
+    <criterion>Every refrigerator is receiving power.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

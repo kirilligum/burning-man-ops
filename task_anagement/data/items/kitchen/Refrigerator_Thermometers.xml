@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Refrigerator_Thermometers</name>
+
+  <description>
+    One Rubbermaid Commercial Refrigerator/Freezer Thermometer FGR80DC in each
+    kitchen refrigerator; range -20°F to 80°F.
+  </description>
+
+  <location>Inside the kitchen refrigerators.</location>
+  <readyBeforeUse>Each refrigerator contains a readable thermometer.</readyBeforeUse>
+  <readyForNextPerson>Each thermometer remains visible inside its refrigerator.</readyForNextPerson>
+
+  <ifNotReady>Tell the Dominatrix which refrigerator needs a thermometer.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

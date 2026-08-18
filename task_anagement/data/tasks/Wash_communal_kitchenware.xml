@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Wash_communal_kitchenware</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once per shift and after communal kitchenware is used</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Kitchenware</resource>
+    <resource>🍳 Three_Wash_Basins</resource>
+    <resource>🍳 Dish_Soap</resource>
+    <resource>🍳 Sanitizer_Tablets</resource>
+    <resource>🍳 Sanitizer_Test_Strips</resource>
+    <resource>🍳 Drying_Rack</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>🍳 Wet_Trash_Bin</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Scrape food from 🍳 Kitchenware into 🍳 Wet_Trash_Bin.</action>
+    </step>
+    <step number="2">
+      <action>Arrange 🍳 Three_Wash_Basins in wash, rinse, and sanitize order.</action>
+    </step>
+    <step number="3">
+      <action>Fill the wash basin with enough potable water from 🔧 Fresh_Water_Tank to submerge the largest item.</action>
+    </step>
+    <step number="4">
+      <action>Add 🍳 Dish_Soap to the wash basin according to its label.</action>
+    </step>
+    <step number="5">
+      <action>Fill the rinse basin with enough potable water to submerge the largest item.</action>
+    </step>
+    <step number="6">
+      <action>Fill the sanitize basin with enough potable water to submerge the largest item.</action>
+    </step>
+    <step number="7">
+      <action>Add 🍳 Sanitizer_Tablets to the sanitize basin according to their label.</action>
+    </step>
+    <step number="8">
+      <action>Use 🍳 Sanitizer_Test_Strips to verify the sanitize basin is between 200 and 400 ppm.</action>
+      <ifThen>IF the result is outside 200 to 400 ppm, THEN adjust the solution according to the sanitizer label and test it again.</ifThen>
+    </step>
+    <step number="9">
+      <action>Wash each item in the wash basin until no food or grease remains.</action>
+    </step>
+    <step number="10">
+      <action>Rinse each washed item in the rinse basin.</action>
+    </step>
+    <step number="11">
+      <action>Submerge each rinsed item in the sanitize basin for the label contact time.</action>
+    </step>
+    <step number="12">
+      <action>Place each sanitized item on 🍳 Drying_Rack to air-dry.</action>
+    </step>
+    <step number="13">
+      <action>Empty all three basins into 🔧 Gray-Water_IBC.</action>
+    </step>
+    <step number="14">
+      <action>Put dry kitchenware in its storage place.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>All communal kitchenware is clean, sanitized, dry, and stored.</criterion>
+    <criterion>All dishwashing water is contained in the gray-water system.</criterion>
+    <criterion>The wash basins and drying rack are ready for the next person.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <reasoning>
+    <entry>Use only enough basin water to submerge the largest item because potable water and gray-water capacity are limited.</entry>
+    <entry>Use a measured sanitizer concentration instead of guessing from tablet count.</entry>
+  </reasoning>
+</task>

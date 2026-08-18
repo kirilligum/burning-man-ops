@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Drying_Rack</name>
+  <description>Rack used to air-dry sanitized kitchenware.</description>
+  <location>Kitchen.</location>
+
+  <readyForNextPerson>
+    The rack is clean, dry, and free of kitchenware that has finished drying.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

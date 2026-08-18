@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Trash_Bags</name>
+
+  <description>
+    Hefty Strong 13 Gallon Trash Bags, unscented, 80 count. Provisional size
+    until the camp confirms the kitchen bins.
+  </description>
+
+  <location>Kitchen.</location>
+  <readyBeforeUse>At least one unused bag is available.</readyBeforeUse>
+  <readyForNextPerson>At least one unused bag is available.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement trash bags.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

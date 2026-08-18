@@ -31,13 +31,11 @@ class TaskManagementScriptsTest(unittest.TestCase):
     def test_rendered_task_card_is_current(self) -> None:
         result = run_script(
             "task_anagement/scripts/render-task-card.py",
-            TASK,
-            "--output",
-            CARD,
+            "--all",
             "--check",
         )
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("Task card is current", result.stdout)
+        self.assertIn("task cards are current", result.stdout)
 
     def test_rendered_task_card_contains_linked_item_details(self) -> None:
         card = (REPOSITORY / CARD).read_text(encoding="utf-8")

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Dumpster</name>
+
+  <readyForNextPerson>
+    All trash is inside the dumpster. No trash is on the ground around it.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    If the dumpster is full, do not leave trash beside it. Tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

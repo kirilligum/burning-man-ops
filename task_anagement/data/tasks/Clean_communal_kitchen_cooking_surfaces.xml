@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clean_communal_kitchen_cooking_surfaces</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once or more per shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Cooking_Surfaces</resource>
+    <resource>🍳 Multisurface_Cleaner</resource>
+    <resource>🍳 Food_Surface_Sanitizer</resource>
+    <resource>🍳 Disposable_Towels</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put loose food and MOOP from 🍳 Cooking_Surfaces in 📦 Trash_Bins.</action>
+    </step>
+    <step number="2">
+      <action>Spray food, grease, visible dirt, and sticky residue with 🍳 Multisurface_Cleaner.</action>
+    </step>
+    <step number="3">
+      <action>Wipe the sprayed areas with 🍳 Disposable_Towels until no food, grease, visible dirt, or sticky residue remains.</action>
+    </step>
+    <step number="4">
+      <action>Put used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="5">
+      <action>Spray food-contact areas with 🍳 Food_Surface_Sanitizer.</action>
+    </step>
+    <step number="6">
+      <action>Leave the sanitized areas wet for the contact time printed on 🍳 Food_Surface_Sanitizer.</action>
+    </step>
+    <step number="7">
+      <action>Let the sanitized areas air-dry.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No food, grease, visible dirt, sticky residue, or MOOP remains.</criterion>
+    <criterion>Food-contact areas were sanitized and are dry.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <reasoning>
+    <entry>Clean visible soil before sanitizing because sanitizer does not replace cleaning.</entry>
+    <entry>Air-dry sanitized food-contact areas so a used towel does not contaminate them again.</entry>
+  </reasoning>
+</task>

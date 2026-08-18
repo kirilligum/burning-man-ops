@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Fill_kitchen_drinking_water_dispensers</name>
+
+  <checklist_types>
+    <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+  <why/>
+  <when>Once per Afternoon and Pre-event shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>🔧 Potable_Water_Hose</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Place the outlet of 🔧 Potable_Water_Hose inside the first 🍳 Drinking_Water_Dispensers dispenser without touching the outlet to the dispenser.</action>
+    </step>
+    <step number="2">
+      <action>Open 🔧 Fresh_Water_Tank and fill the dispenser to its full line.</action>
+    </step>
+    <step number="3">
+      <action>Close 🔧 Fresh_Water_Tank.</action>
+    </step>
+    <step number="4">
+      <action>Place the hose outlet inside the second dispenser without touching the outlet to the dispenser.</action>
+    </step>
+    <step number="5">
+      <action>Open 🔧 Fresh_Water_Tank and fill the second dispenser to its full line.</action>
+    </step>
+    <step number="6">
+      <action>Close 🔧 Fresh_Water_Tank.</action>
+    </step>
+    <step number="7">
+      <action>Hold the hose outlet over the second dispenser until it stops dripping.</action>
+    </step>
+    <step number="8">
+      <action>Close both dispenser lids.</action>
+    </step>
+    <step number="9">
+      <action>Coil 🔧 Potable_Water_Hose without letting its ends touch the playa.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Both drinking-water dispensers are filled to their full lines.</criterion>
+    <criterion>Both lids are closed and neither dispenser leaks.</criterion>
+    <criterion>No water reached the playa.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <reasoning>
+    <entry>Use a potable-water hose rather than the shower or a garden hose so drinking water is not contaminated.</entry>
+  </reasoning>
+</task>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fresh_Water_Tank</name>
+
+  <description>Camp tank containing potable water.</description>
+  <location>Private infrastructure area.</location>
+  <readyBeforeUse>The tank contains potable water and has no visible leak.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The outlet is closed and no water is leaking or pooled around the tank.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Stop using the tank and tell the Dominatrix. Do not let leaking water reach
+    the playa.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

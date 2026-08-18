@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Potable_Water_Hose</name>
+
+  <description>
+    Camco TastePURE 25 ft drinking-water hose, 5/8 in inner diameter, lead- and
+    BPA-free (22783).
+  </description>
+
+  <location>Private infrastructure area.</location>
+
+  <readyBeforeUse>
+    The hose is used only for potable water and has no visible damage or dirt
+    inside its fittings.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    The hose is drained, coiled, and stored with both ends off the playa.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a garden or gray-water hose. Tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

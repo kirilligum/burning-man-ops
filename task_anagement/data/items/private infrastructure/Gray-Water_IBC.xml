@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Gray-Water_IBC</name>
+
+  <description>Camp IBC that contains used kitchen and shower water.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyBeforeUse>The IBC has capacity for the task and has no visible leak.</readyBeforeUse>
+
+  <readyForNextPerson>
+    All inlets and outlets are closed when not in use. No gray water is leaking
+    or pooled around the IBC.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Stop showers, dishwashing, and other gray-water-producing tasks. Tell the
+    Dominatrix. Do not let gray water reach the playa.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Kitchen_Propane_Supply</name>
+
+  <description>Propane cylinder and connections supplying the communal kitchen.</description>
+  <location>At the communal kitchen cooking area.</location>
+
+  <readyForNextPerson>
+    The supply is not empty, is upright and secured, and has no hissing, propane
+    odor, or frost at a connection.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Stop cooking. Do not operate a valve or replace a cylinder unless the
+    Dominatrix authorizes you. Tell the Dominatrix immediately.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

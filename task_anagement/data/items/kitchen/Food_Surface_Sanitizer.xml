@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Food_Surface_Sanitizer</name>
+
+  <description>
+    PURELL Foodservice Surface Sanitizer, fragrance free, ready-to-use 32 fl oz
+    spray bottle (3341-06). No rinse is required when used according to label.
+  </description>
+
+  <location>Kitchen.</location>
+  <readyBeforeUse>The bottle contains sanitizer and sprays.</readyBeforeUse>
+  <readyForNextPerson>The bottle contains sanitizer.</readyForNextPerson>
+
+  <ifNotReady>
+    Ask the Dominatrix where to find a replacement. Turn the old bottle's
+    nozzle to OFF, put the old bottle in 📦 Trash_Bins, and get the replacement.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The sanitizer is not spraying and the nozzle is OFF.</condition>
+      <response>Turn the nozzle to ON.</response>
+    </problem>
+  </commonProblems>
+</item>

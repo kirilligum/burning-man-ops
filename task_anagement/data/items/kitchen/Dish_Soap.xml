@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Dish_Soap</name>
+
+  <description>
+    Dawn Professional Manual Pot and Pan Detergent, original scent, 38 fl oz
+    (UPC 037000451129).
+  </description>
+
+  <location>Kitchen.</location>
+  <readyBeforeUse>The bottle contains dish soap.</readyBeforeUse>
+  <readyForNextPerson>The bottle contains dish soap and its cap is closed.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement dish soap.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

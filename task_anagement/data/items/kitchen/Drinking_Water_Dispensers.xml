@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Drinking_Water_Dispensers</name>
+
+  <description>Two Igloo-style insulated drinking-water dispensers.</description>
+  <location>Kitchen.</location>
+
+  <readyBeforeUse>
+    The interiors and spigots are clean, and neither dispenser leaks.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    Both dispensers are full of potable water, their lids are closed, and
+    neither dispenser leaks.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    If a dispenser is dirty or leaking, do not fill it. Tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

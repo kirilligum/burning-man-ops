@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Kitchen_Refrigerators</name>
+
+  <location>Kitchen.</location>
+  <readyBeforeUse>Each refrigerator is receiving power and is 41°F or below.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Each refrigerator is 41°F or below, and every door is closed and sealed.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Keep the door closed and tell the Dominatrix immediately.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

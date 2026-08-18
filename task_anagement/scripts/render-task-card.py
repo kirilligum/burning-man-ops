@@ -176,8 +176,19 @@ def render(task_path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task_xml", type=Path)
-    parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("task_xml", nargs="?", type=Path)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Render every canonical task to build/task-cards.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=ROOT / "build" / "task-cards",
+        help="Output directory used with --all.",
+    )
     parser.add_argument(
         "--check",
         action="store_true",
@@ -185,28 +196,55 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    try:
-        rendered = render(args.task_xml.resolve())
-    except (OSError, ET.ParseError, KeyError) as exc:
-        print(f"error: {exc}", file=sys.stderr)
-        return 1
+    if args.all:
+        if args.task_xml is not None or args.output is not None:
+            parser.error("--all cannot be combined with task_xml or --output")
+        jobs = [
+            (task_path, args.output_dir / f"{task_path.stem}.md")
+            for task_path in sorted((ROOT / "data" / "tasks").glob("*.xml"))
+        ]
+    else:
+        if args.task_xml is None or args.output is None:
+            parser.error("task_xml and --output are required unless --all is used")
+        jobs = [(args.task_xml, args.output)]
 
-    output = args.output.resolve()
-    if args.check:
+    stale: list[Path] = []
+    for task_path, output_path in jobs:
         try:
-            existing = output.read_text(encoding="utf-8")
-        except OSError as exc:
-            print(f"error: cannot check {output}: {exc}", file=sys.stderr)
+            rendered = render(task_path.resolve())
+        except (OSError, ET.ParseError, KeyError) as exc:
+            print(f"error: {task_path}: {exc}", file=sys.stderr)
             return 1
-        if existing != rendered:
-            print(f"error: rendered task card is stale: {output}", file=sys.stderr)
-            return 1
-        print(f"Task card is current: {output.relative_to(ROOT.parent)}")
-        return 0
 
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(rendered, encoding="utf-8")
-    print(f"Rendered {output.relative_to(ROOT.parent)}")
+        output = output_path.resolve()
+        if args.check:
+            try:
+                existing = output.read_text(encoding="utf-8")
+            except OSError:
+                stale.append(output)
+                continue
+            if existing != rendered:
+                stale.append(output)
+            continue
+
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(rendered, encoding="utf-8")
+        print(f"Rendered {output.relative_to(ROOT.parent)}")
+
+    if stale:
+        for output in stale:
+            print(f"error: rendered task card is stale: {output}", file=sys.stderr)
+        return 1
+    if args.check:
+        if args.all:
+            expected = {output_path.resolve() for _, output_path in jobs}
+            extras = sorted(args.output_dir.resolve().glob("*.md"))
+            extras = [path for path in extras if path not in expected]
+            if extras:
+                for output in extras:
+                    print(f"error: orphaned task card: {output}", file=sys.stderr)
+                return 1
+        print(f"All {len(jobs)} task cards are current.")
     return 0
 
 

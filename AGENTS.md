@@ -95,10 +95,7 @@ For every task-system change, run:
 ```bash
 python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
 python3 task_anagement/scripts/validate.py
-python3 task_anagement/scripts/render-task-card.py \
-  task_anagement/data/tasks/Clean_communal_kitchen_tables.xml \
-  --output task_anagement/build/task-cards/Clean_communal_kitchen_tables.md \
-  --check
+python3 task_anagement/scripts/render-task-card.py --all --check
 git diff --check
 git status --short
 ```
