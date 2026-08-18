@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Out_of_Service_Sign</name>
+
+  <description>Reusable sign used to close unsafe or nonfunctional camp equipment.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyForNextPerson>
+    The sign is displayed on closed equipment or returned to its storage place.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

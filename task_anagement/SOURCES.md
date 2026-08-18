@@ -33,6 +33,11 @@ Current provisional products:
   — gray-water definition, containment, and disposal options.
 - [Burning Man human-waste disposal](https://burningman.org/black-rock-city/preparation/playa-living/human-waste-disposal/)
   — only human waste and one-ply toilet paper belong in porta-potties.
+- [Burning Man Survival Guide 2026: on-playa resources](https://survival.burningman.org/city-infrastructure/on-playa-resources/)
+  — current Lost and Found handling and Recycle Camp location, hours, and
+  accepted empty crushed aluminum cans.
+- [Burning Man 2026 camp listings](https://burningman.org/black-rock-city/black-rock-city-2026/2026-camps/)
+  — confirms Recycle Camp at 5:35 and Esplanade for 2026.
 
 ## Fuel, structures, and flame effects
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clear_common_yurt_and_yurt_area</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🏕️ Common_Yurt</resource>
+    <resource>📦 Lost_and_Found</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put personal belongings with no nearby owner in 📦 Lost_and_Found.</action>
+    </step>
+    <step number="2">
+      <action>Return communal items to their storage places.</action>
+    </step>
+    <step number="3">
+      <action>Put trash and MOOP from inside and around 🏕️ Common_Yurt in 📦 Trash_Bins.</action>
+    </step>
+    <step number="4">
+      <action>Move objects out of the yurt entrance and walking path.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No unattended personal belongings, trash, or MOOP remain inside or around the yurt.</criterion>
+    <criterion>The yurt entrance and walking path are clear.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

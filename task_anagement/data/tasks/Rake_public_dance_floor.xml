@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Rake_public_dance_floor</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🌐 Dance_Floor</resource>
+    <resource>🌐 Landscape_Rakes</resource>
+    <resource>📦 MOOP_Buckets</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Walk one edge of 🌐 Dance_Floor with 🌐 Landscape_Rakes and 📦 MOOP_Buckets.</action>
+    </step>
+    <step number="2">
+      <action>Pull each rake lightly through the playa in a straight pass to the opposite edge.</action>
+    </step>
+    <step number="3">
+      <action>Put every exposed piece of MOOP in 📦 MOOP_Buckets.</action>
+    </step>
+    <step number="4">
+      <action>Repeat overlapping straight passes until the entire dance floor has been raked.</action>
+    </step>
+    <step number="5">
+      <action>Rake down ridges or piles created by the passes.</action>
+    </step>
+    <step number="6">
+      <action>Empty 📦 MOOP_Buckets into 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The entire dance floor has been covered by overlapping rake passes.</criterion>
+    <criterion>No visible MOOP remains.</criterion>
+    <criterion>No rake ridge or playa pile remains.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

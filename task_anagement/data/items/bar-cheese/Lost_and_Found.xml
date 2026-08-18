@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Lost_and_Found</name>
+
+  <description>Container for personal belongings found in the public and bar areas.</description>
+  <location>Bar/Cheese area.</location>
+  <readyBeforeUse>The container has space for found personal belongings.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Found personal belongings are inside the container. Nothing is on the
+    ground around it.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The container is full.</condition>
+      <response>Get another empty container and put it next to the full container.</response>
+    </problem>
+  </commonProblems>
+</item>

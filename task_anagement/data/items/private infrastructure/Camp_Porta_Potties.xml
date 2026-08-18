@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Porta_Potties</name>
+
+  <description>Portable toilets reserved for Treble Makers camp members.</description>
+  <location>Porta-potty area (see the map).</location>
+
+  <readyBeforeUse>
+    The toilet is not full, the seat and floor are visibly clean, one-ply toilet
+    paper is available, and the toilet is open for use.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    The toilet is not full, the seat and floor are visibly clean, one-ply toilet
+    paper is available, and the lid and door are closed.
+  </readyForNextPerson>
+
+  <ifNotReady>Close the toilet and tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>A wipe, tampon, pad, food, can, plastic, or other trash needs disposal.</condition>
+      <response>Put it in 📦 Trash_Bins. Only human waste and one-ply toilet paper go in a toilet.</response>
+    </problem>
+    <problem>
+      <condition>A toilet lid is open after use.</condition>
+      <response>Close the lid to reduce odor and insects.</response>
+    </problem>
+  </commonProblems>
+</item>

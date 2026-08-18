@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Shower</name>
+
+  <description>Private shower for Treble Makers camp members only.</description>
+  <location>Shower area (see the map).</location>
+
+  <readyBeforeUse>
+    The shower is open, clean, empty of personal belongings, and has no leak or
+    standing water.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    No personal belonging, hair, trash, mud, visible dirt, leak, puddle, or
+    standing water remains.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

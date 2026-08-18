@@ -18,7 +18,7 @@
 - 🔧 Gray-Water IBC — Private infrastructure area. Camp IBC that contains used kitchen and shower water.
 - 🍳 Wet Trash Bin — Kitchen. Kitchen bin for food scraps and other wet trash.
 
-## Before starting
+## Ready before normal use
 
 - **🍳 Dish Soap:** The bottle contains dish soap.
 - **🍳 Sanitizer Tablets:** At least one tablet remains in the bottle.

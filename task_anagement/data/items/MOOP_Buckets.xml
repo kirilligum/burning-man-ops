@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>MOOP_Buckets</name>
+
+  <description>Handled buckets or jugs carried during MOOP sweeps.</description>
+
+  <readyForNextPerson>
+    Every bucket is empty, visibly clean, and stored with the other MOOP tools.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

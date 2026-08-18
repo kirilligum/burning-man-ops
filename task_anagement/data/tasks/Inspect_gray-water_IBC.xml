@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_gray-water_IBC</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At shift start and every 2 hours during a Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Gray-Water_IBC</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the IBC, seams, inlets, outlets, and hoses for a visible leak.</action>
+    </step>
+    <step number="2">
+      <action>Inspect the playa under and around the IBC for moisture or a puddle.</action>
+    </step>
+    <step number="3">
+      <action>Observe the gray-water level without opening the IBC.</action>
+    </step>
+    <step number="4">
+      <action>Tell the Dominatrix the level reading.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No leak, moisture, or puddle is visible.</criterion>
+    <criterion>The IBC is not visibly full.</criterion>
+    <criterion>The Dominatrix received the level reading.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>A leak, puddle, or full IBC is present.</condition>
+      <response>Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix immediately.</response>
+    </problem>
+  </commonProblems>
+</task>

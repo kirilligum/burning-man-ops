@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Read_fresh_water_tank_level</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At shift start and every 2 hours during a Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Fresh_Water_Tank</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the tank, outlet, and ground for a visible leak.</action>
+      <ifThen>IF a leak is present, THEN stop using the tank and tell the Dominatrix immediately.</ifThen>
+    </step>
+    <step number="2">
+      <action>Observe the fresh-water level without opening the tank.</action>
+    </step>
+    <step number="3">
+      <action>Tell the Dominatrix the level reading.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No visible leak is present.</criterion>
+    <criterion>The Dominatrix received the fresh-water level reading.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Handcart</name>
+
+  <description>Hand-pulled cart used to move bags and supplies without driving.</description>
+
+  <readyForNextPerson>
+    The cart is empty, parked in its storage place, and cannot roll into a path.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

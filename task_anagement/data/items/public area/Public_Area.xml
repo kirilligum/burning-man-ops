@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Public_Area</name>
+  <location>Treble Makers public-facing camp area (see the map).</location>
+
+  <readyForNextPerson>
+    No unattended personal belonging or MOOP remains. Entrances, views, and
+    walking paths are clear.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

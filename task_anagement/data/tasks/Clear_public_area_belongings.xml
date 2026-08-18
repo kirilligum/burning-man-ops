@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clear_public_area_belongings</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🌐 Public_Area</resource>
+    <resource>🍷 Lost_and_Found</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put personal belongings with no nearby owner in 🍷 Lost_and_Found.</action>
+    </step>
+    <step number="2">
+      <action>Move bicycles blocking entrances, views, or walking paths to camp bicycle parking.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No unattended personal belongings remain in the public area.</criterion>
+    <criterion>No bicycle blocks an entrance, view, or walking path.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>A bicycle appears abandoned but does not block the public area.</condition>
+      <response>Leave it where it is. Lost and Found does not accept bicycles.</response>
+    </problem>
+  </commonProblems>
+</task>

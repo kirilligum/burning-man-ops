@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Common_Area</name>
+  <location>Treble Makers common camp area (see the map).</location>
+
+  <readyForNextPerson>
+    No unattended personal belonging, trash, or MOOP remains. Entrances and
+    walking paths are clear.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

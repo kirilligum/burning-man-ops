@@ -100,7 +100,7 @@ def render(task_path: Path) -> str:
         if item is not None and text(item.find("readyBeforeUse"))
     ]
     if ready_before:
-        lines.extend(["", "## Before starting", ""])
+        lines.extend(["", "## Ready before normal use", ""])
         for value, condition in ready_before:
             lines.append(f"- **{humanize(value)}:** {humanize(condition)}")
 

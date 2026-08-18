@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Use_camp_shower</name>
+
+  <checklist_types>
+    <checklist_type>Shower</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why>Potable water and gray-water capacity are limited.</why>
+  <when>Every time a camp member uses the shower</when>
+  <time>3 minutes or less of running water</time>
+
+  <resources>
+    <resource>🔧 Camp_Shower</resource>
+    <resource>🔧 Gray-Water_Pump</resource>
+    <resource>🔧 Out_of_Service_Sign</resource>
+    <resource>📦 Trash_Bins</resource>
+    <resource>A personal bag</resource>
+    <resource>A timer</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Brush loose hair before entering 🔧 Camp_Shower.</action>
+    </step>
+    <step number="2">
+      <action>Put clothes, bottles, packaging, and personal items in your bag.</action>
+    </step>
+    <step number="3">
+      <action>Start the timer when you turn on the water.</action>
+    </step>
+    <step number="4">
+      <action>Turn off the water while applying soap or shampoo.</action>
+    </step>
+    <step number="5">
+      <action>Rinse your body.</action>
+    </step>
+    <step number="6">
+      <action>Direct rinse water over soap remaining on the walls and floor.</action>
+    </step>
+    <step number="7">
+      <action>Turn off the water before the timer reaches 3 minutes.</action>
+    </step>
+    <step number="8">
+      <action>Put hair, wipes, razors, and packaging in 📦 Trash_Bins.</action>
+    </step>
+    <step number="9">
+      <action>Run 🔧 Gray-Water_Pump until the shower basin is empty.</action>
+      <ifThen>IF the pump does not remove the water or you see a leak, THEN close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Running-water time did not exceed 3 minutes.</criterion>
+    <criterion>No personal item, hair, trash, mud, or standing water remains.</criterion>
+    <criterion>No water reached the playa.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_EMT_shade</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Once per shift and after strong wind or rain</when>
+  <time/>
+
+  <resources>
+    <resource>🏕️ EMT_Shade</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the shade covering for tears, loose edges, and strong flapping.</action>
+    </step>
+    <step number="2">
+      <action>Inspect every visible fitting for movement, cracks, and missing fasteners.</action>
+    </step>
+    <step number="3">
+      <action>Inspect every visible tube and leg for bending, movement, and sinking.</action>
+    </step>
+    <step number="4">
+      <action>Inspect every visible strap and anchor for looseness, damage, and abrasion.</action>
+    </step>
+    <step number="5">
+      <action>Inspect the ground for puddles, softened playa, exposed hardware, and blocked paths.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No covering, fitting, tube, leg, strap, or anchor has a visible failure.</criterion>
+    <criterion>No puddle, softened playa, exposed hardware, or blocked path is present.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>Any inspection point does not pass.</condition>
+      <response>Keep people out of the affected area and tell the Dominatrix. Do not adjust or repair the structure.</response>
+    </problem>
+  </commonProblems>
+
+  <reasoning>
+    <entry>Inspection is separate from repair so a shift worker does not change a wind-loaded structure.</entry>
+  </reasoning>
+</task>

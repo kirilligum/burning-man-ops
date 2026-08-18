@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>EMT_Shade</name>
+
+  <description>Camp shade structures built from EMT tubing and shade covering.</description>
+  <location>EMT shade areas (see the map).</location>
+
+  <readyForNextPerson>
+    The covering, fittings, tubes, legs, straps, and anchors have no visible
+    failure. The ground is dry and paths are clear.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Keep people out of the affected area and tell the Dominatrix. Do not adjust
+    or repair the structure unless authorized.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

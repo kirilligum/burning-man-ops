@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disinfecting_Wipes</name>
+
+  <description>Clorox Disinfecting Wipes, 75 count.</description>
+  <location>Private infrastructure area.</location>
+  <readyBeforeUse>At least one moist wipe remains.</readyBeforeUse>
+  <readyForNextPerson>The container has moist wipes and its lid is closed.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement wipes.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

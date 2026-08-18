@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_camp_porta_potties</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Porta_Potties</resource>
+    <resource>🔧 One_Ply_Toilet_Paper</resource>
+    <resource>🔧 Disinfecting_Wipes</resource>
+    <resource>🔧 Disposable_Nitrile_Gloves</resource>
+    <resource>🔧 Out_of_Service_Sign</resource>
+    <resource>📦 Handwashing_Station</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Look into each toilet without touching the tank contents.</action>
+      <ifThen>IF waste is near the tank opening, THEN close the toilet, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="2">
+      <action>Inspect the toilet-paper holder in each toilet.</action>
+      <ifThen>IF a roll is missing or empty, THEN install 🔧 One_Ply_Toilet_Paper.</ifThen>
+    </step>
+    <step number="3">
+      <action>Inspect the seat and floor for a visible spill.</action>
+      <ifThen>IF a visible spill is present, THEN do steps 4 through 7. IF none is present, THEN skip to step 8.</ifThen>
+    </step>
+    <step number="4">
+      <action>Put on 🔧 Disposable_Nitrile_Gloves.</action>
+    </step>
+    <step number="5">
+      <action>Wipe the spill with 🔧 Disinfecting_Wipes according to the product label.</action>
+    </step>
+    <step number="6">
+      <action>Put used wipes in 📦 Trash_Bins.</action>
+    </step>
+    <step number="7">
+      <action>Remove the gloves and put them in 📦 Trash_Bins.</action>
+    </step>
+    <step number="8">
+      <action>Wash your hands at 📦 Handwashing_Station.</action>
+    </step>
+    <step number="9">
+      <action>Close each toilet lid and door.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No toilet is full or visibly dirty.</criterion>
+    <criterion>One-ply toilet paper is available in every toilet.</criterion>
+    <criterion>Every lid and door is closed.</criterion>
+    <criterion>No wipe, glove, trash, or other object was put in a toilet tank.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>Trash, a wipe, or another object is visible inside a toilet tank.</condition>
+      <response>Do not reach into the tank. Close the toilet and tell the Dominatrix.</response>
+    </problem>
+  </commonProblems>
+</task>

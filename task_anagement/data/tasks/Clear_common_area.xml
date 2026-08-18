@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clear_common_area</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Once per shift</when>
+  <time/>
+
+  <resources>
+    <resource>🏕️ Common_Area</resource>
+    <resource>📦 Lost_and_Found</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put personal belongings with no nearby owner in 📦 Lost_and_Found.</action>
+    </step>
+    <step number="2">
+      <action>Return communal items to their storage places.</action>
+    </step>
+    <step number="3">
+      <action>Put trash and MOOP in 📦 Trash_Bins.</action>
+    </step>
+    <step number="4">
+      <action>Move bicycles and other objects out of entrances and walking paths.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No unattended personal belongings remain in the common area.</criterion>
+    <criterion>No trash or MOOP remains in the common area.</criterion>
+    <criterion>Entrances and walking paths are clear.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

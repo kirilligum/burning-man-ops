@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_and_clean_shower</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Shower</resource>
+    <resource>🔧 Gray-Water_Pump</resource>
+    <resource>🔧 Shower_Cleaner</resource>
+    <resource>🔧 Disposable_Towels</resource>
+    <resource>🔧 Shower_Squeegee</resource>
+    <resource>🔧 Out_of_Service_Sign</resource>
+    <resource>📦 Lost_and_Found</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put unattended belongings from 🔧 Camp_Shower in 📦 Lost_and_Found.</action>
+    </step>
+    <step number="2">
+      <action>Use 🔧 Disposable_Towels to pick up hair, trash, and MOOP.</action>
+    </step>
+    <step number="3">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="4">
+      <action>Spray muddy and visibly dirty spots with 🔧 Shower_Cleaner.</action>
+    </step>
+    <step number="5">
+      <action>Wipe the sprayed spots with 🔧 Disposable_Towels until no mud or visible dirt remains.</action>
+    </step>
+    <step number="6">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="7">
+      <action>Use 🔧 Shower_Squeegee to move standing water toward the drain.</action>
+    </step>
+    <step number="8">
+      <action>Run 🔧 Gray-Water_Pump until the shower basin is empty.</action>
+      <ifThen>IF the pump does not remove the water, THEN close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="9">
+      <action>Inspect under and around the shower for a puddle or leak.</action>
+      <ifThen>IF a puddle or leak is present, THEN close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No hair, trash, MOOP, mud, or visible dirt remains.</criterion>
+    <criterion>The shower basin is empty.</criterion>
+    <criterion>No puddle or leak is present under or around the shower.</criterion>
+    <criterion>The gray-water pump removed the water.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

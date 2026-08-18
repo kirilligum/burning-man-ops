@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>One_Ply_Toilet_Paper</name>
+
+  <description>Camco TST one-ply RV and marine toilet tissue, 4 rolls (40274).</description>
+  <location>Private infrastructure area.</location>
+  <readyBeforeUse>At least one unused roll is available.</readyBeforeUse>
+  <readyForNextPerson>At least one unused roll is available.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement toilet paper.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Shower_Squeegee</name>
+
+  <description>Hand squeegee used only in the camp shower.</description>
+  <location>Shower area.</location>
+
+  <readyForNextPerson>
+    The squeegee has no hair or trash on it and is returned to the shower area.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

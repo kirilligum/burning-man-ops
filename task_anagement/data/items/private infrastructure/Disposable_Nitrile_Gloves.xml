@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disposable_Nitrile_Gloves</name>
+
+  <description>HDX 6 mil disposable nitrile gloves, 100 count.</description>
+  <location>Private infrastructure area.</location>
+  <readyBeforeUse>A clean pair in the correct size is available.</readyBeforeUse>
+  <readyForNextPerson>Clean gloves remain available in the box.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement gloves.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

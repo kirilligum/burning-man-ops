@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Aluminum_Can_Collection</name>
+
+  <description>Camp collection container for empty aluminum beverage cans only.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyForNextPerson>
+    The container holds only empty aluminum cans and is not overflowing.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Remove non-aluminum material. Empty and recycle accumulated cans; see task
+    📋 Recycle_aluminum_cans.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

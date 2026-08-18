@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Read_generator_fuel_level</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>At shift start and every 2 hours during a Dominatrix shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Generators</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the ground and visible fuel connections around each generator for a leak.</action>
+      <ifThen>IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Dominatrix and a Black Rock Ranger.</ifThen>
+    </step>
+    <step number="2">
+      <action>Read the fuel gauge on each generator without opening a cap or operating a control.</action>
+    </step>
+    <step number="3">
+      <action>Tell the Dominatrix each exact gauge reading.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No visible fuel leak is present.</criterion>
+    <criterion>The Dominatrix received the exact reading for every generator.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+
+  <reasoning>
+    <entry>The workbook gives three conflicting escalation thresholds, so this task reports every exact reading until the generator owner sets one threshold.</entry>
+    <entry>Gauge inspection is separate from refueling and repair.</entry>
+  </reasoning>
+</task>

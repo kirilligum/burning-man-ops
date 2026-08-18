@@ -12,7 +12,7 @@
 - 🍳 Trash Bags — Kitchen. Hefty Strong 13 Gallon Trash Bags, unscented, 80 count. Provisional size until the camp confirms the kitchen bins.
 - 📦 Dumpster
 
-## Before starting
+## Ready before normal use
 
 - **🍳 Trash Bags:** At least one unused bag is available.
 

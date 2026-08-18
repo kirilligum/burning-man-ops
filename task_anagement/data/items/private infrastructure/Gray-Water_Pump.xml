@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Gray-Water_Pump</name>
+
+  <description>Pump that moves shower water into the camp gray-water system.</description>
+  <location>Shower area.</location>
+
+  <readyBeforeUse>The pump is available and removes water from the shower basin.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The pump is off after the shower basin is empty. No hose or connection leaks.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Close the shower, display 🔧 Out_of_Service_Sign, and tell the Dominatrix.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

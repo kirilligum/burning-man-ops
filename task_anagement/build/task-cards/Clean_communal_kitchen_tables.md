@@ -15,7 +15,7 @@
 - 🍳 Disposable Towels — Kitchen. WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701).
 - 📦 Trash Bins
 
-## Before starting
+## Ready before normal use
 
 - **📦 Lost and Found:** The container is available and has space for abandoned personal belongings.
 - **🍳 Dustpan and Brush:** The brush and dustpan have no visible dirt or trash.

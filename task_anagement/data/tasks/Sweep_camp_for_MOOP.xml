@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Sweep_camp_for_MOOP</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Once per shift and after camp strike</when>
+  <time/>
+
+  <resources>
+    <resource>Enough people to span the sweep area at arm's-width spacing</resource>
+    <resource>📦 MOOP_Buckets</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Line up at one edge of the sweep area.</action>
+    </step>
+    <step number="2">
+      <action>Spread the line until each person is about one arm's width from the next person.</action>
+    </step>
+    <step number="3">
+      <action>Walk the line forward together while scanning the playa directly ahead.</action>
+    </step>
+    <step number="4">
+      <action>Put every piece of MOOP in 📦 MOOP_Buckets.</action>
+    </step>
+    <step number="5">
+      <action>Repeat the line sweep across the camp, serving, art-car, and porta-potty areas.</action>
+    </step>
+    <step number="6">
+      <action>Empty 📦 MOOP_Buckets into 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every assigned area was covered by an arm's-width line sweep.</criterion>
+    <criterion>No visible MOOP remains in the swept areas.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

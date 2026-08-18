@@ -11,7 +11,7 @@
 - 🍳 Kitchen Refrigerators — Kitchen.
 - 🍳 Refrigerator Thermometers — Inside the kitchen refrigerators. One Rubbermaid Commercial Refrigerator/Freezer Thermometer FGR80DC in each kitchen refrigerator; range -20°F to 80°F.
 
-## Before starting
+## Ready before normal use
 
 - **🍳 Kitchen Refrigerators:** Each refrigerator is receiving power and is 41°F or below.
 - **🍳 Refrigerator Thermometers:** Each refrigerator contains a readable thermometer.

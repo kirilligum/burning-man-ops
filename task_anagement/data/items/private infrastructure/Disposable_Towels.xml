@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disposable_Towels</name>
+
+  <description>
+    WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count
+    (05701).
+  </description>
+
+  <location>Shower area.</location>
+  <readyBeforeUse>At least one clean, dry towel remains.</readyBeforeUse>
+  <readyForNextPerson>At least one clean, dry towel remains.</readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to find replacement towels.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

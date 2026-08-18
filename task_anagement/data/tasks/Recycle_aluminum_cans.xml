@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Recycle_aluminum_cans</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>Between 9:00 a.m. and 5:00 p.m. when aluminum cans have accumulated</when>
+  <time/>
+
+  <resources>
+    <resource>🍷 Aluminum_Can_Collection</resource>
+    <resource>🍷 Aluminum_Can_Mesh_Bags</resource>
+    <resource>📦 Handcart</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Remove foil, glass, plastic, steel, paper, cardboard, and trash from 🍷 Aluminum_Can_Collection.</action>
+    </step>
+    <step number="2">
+      <action>Put removed trash in 📦 Trash_Bins.</action>
+    </step>
+    <step number="3">
+      <action>Empty liquid from every aluminum can into 🔧 Gray-Water_IBC.</action>
+    </step>
+    <step number="4">
+      <action>Crush every empty aluminum can.</action>
+    </step>
+    <step number="5">
+      <action>Put the crushed cans in 🍷 Aluminum_Can_Mesh_Bags.</action>
+    </step>
+    <step number="6">
+      <action>Secure the mesh bags to 📦 Handcart.</action>
+    </step>
+    <step number="7">
+      <action>Take the cans to Recycle Camp at 5:35 and Esplanade between 9:00 a.m. and 5:00 p.m.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>All accumulated aluminum cans are empty, crushed, and accepted by Recycle Camp.</criterion>
+    <criterion>No liquid reached the playa.</criterion>
+    <criterion>No non-aluminum material was delivered with the cans.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>Recycle Camp is closed.</condition>
+      <response>Return the secured mesh bags to camp and try again during posted hours.</response>
+    </problem>
+  </commonProblems>
+
+  <reasoning>
+    <entry>Current 2026 Burning Man guidance sends empty crushed aluminum cans to Recycle Camp rather than trash.</entry>
+  </reasoning>
+</task>

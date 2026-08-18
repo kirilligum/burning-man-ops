@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Common_Yurt</name>
+  <location>Common area (see the map).</location>
+
+  <readyForNextPerson>
+    No unattended personal belonging, trash, or MOOP remains inside or around
+    the yurt. Its entrance and walking path are clear.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

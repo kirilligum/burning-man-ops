@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Generators</name>
+
+  <description>Camp generators and their built-in fuel gauges.</description>
+  <location>Private infrastructure area (see the map).</location>
+
+  <readyForNextPerson>
+    No visible fuel leak is present. Fuel caps remain closed and controls remain
+    in the state set by the authorized operator.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Keep people away and immediately tell the Dominatrix and a Black Rock Ranger
+    about any fuel leak or spill. Do not refuel or repair a generator unless
+    authorized.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

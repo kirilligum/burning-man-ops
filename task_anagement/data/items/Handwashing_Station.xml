@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Handwashing_Station</name>
+
+  <description>
+    Camp handwashing station with potable water, soap, disposable towels, and a
+    basin that contains the wastewater.
+  </description>
+
+  <readyBeforeUse>
+    Water, soap, and disposable towels are available. The wastewater basin has
+    capacity and does not leak.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    Water, soap, and disposable towels remain available. No water has reached
+    the playa.
+  </readyForNextPerson>
+
+  <ifNotReady>Stop using the station and tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

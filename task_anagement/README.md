@@ -82,7 +82,7 @@ when a large puddle cannot be fixed. Those are mixed with prompts such as:
 - “Stage clean.”
 - “Fire Pit Structure Intact and not dangerous.”
 
-It also contains unresolved conflicts:
+It also contains conflicts and unresolved choices:
 
 - Generator escalation appears at below 50%, below two-thirds, and below 70%,
   while the Dominatrix checklists use “under half.”
@@ -95,6 +95,10 @@ It also contains unresolved conflicts:
 - Some checklists tell people to add instructions during the shift or erase the
   completed checkmarks, preventing controlled revision and durable execution
   records.
+
+Current 2026 Recycle Camp guidance resolves the can conflict for the canonical
+procedure: empty and crush aluminum cans, then take them to Recycle Camp during
+its posted hours. The workbook wording remains unchanged as source evidence.
 
 The workbook also mixes operating instructions with prior-year layouts, strike
 plans, contact exports, bookings, and deprecated material. The new system must
@@ -1019,7 +1023,6 @@ changes.
 These must be resolved by the relevant experts rather than guessed by Codex:
 
 - one generator escalation threshold and its measurement point;
-- the aluminum-can disposal and recycling rule;
 - the exact scope of generator gauge inspection versus refueling;
 - the exact scope of propane inspection versus tank replacement;
 - lost-and-found exceptions for food, trash, chemicals, sharps, and unsafe

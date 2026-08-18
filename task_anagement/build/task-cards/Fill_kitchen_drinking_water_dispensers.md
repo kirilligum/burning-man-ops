@@ -12,7 +12,7 @@
 - 🔧 Fresh Water Tank — Private infrastructure area. Camp tank containing potable water.
 - 🔧 Potable Water Hose — Private infrastructure area. Camco TastePURE 25 ft drinking-water hose, 5/8 in inner diameter, lead- and BPA-free (22783).
 
-## Before starting
+## Ready before normal use
 
 - **🍳 Drinking Water Dispensers:** The interiors and spigots are clean, and neither dispenser leaks.
 - **🔧 Fresh Water Tank:** The tank contains potable water and has no visible leak.

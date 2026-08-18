@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Landscape_Rakes</name>
+
+  <description>Wide landscape rakes used to expose small MOOP on the dance floor.</description>
+  <location>Public area.</location>
+
+  <readyForNextPerson>
+    Each rake has no MOOP caught in its head and is returned to storage.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

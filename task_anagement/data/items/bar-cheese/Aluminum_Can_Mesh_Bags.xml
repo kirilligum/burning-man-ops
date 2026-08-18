@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Aluminum_Can_Mesh_Bags</name>
+
+  <description>Reusable mesh bags that let empty crushed aluminum cans dry.</description>
+  <location>Bar/Cheese area.</location>
+  <readyBeforeUse>At least one empty, dry mesh bag is available.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Empty mesh bags are dry and stored. Filled bags contain only empty crushed
+    aluminum cans and are secured from wind.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>
