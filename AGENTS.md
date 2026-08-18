@@ -109,3 +109,8 @@ Use focused Conventional Commit-style subjects such as `docs: record task
 field decisions`. Pull requests should name affected tasks or items, describe
 schema or sync impact, list validation, identify unresolved decisions, and
 include rendered screenshots when layout changes.
+
+Commit and push frequently after each coherent change rather than accumulating
+an unrelated batch. Before each push, run the validation commands, inspect
+`git diff`, and confirm `git status --short`. Never force-push or rewrite shared
+history unless the user explicitly requests it.
