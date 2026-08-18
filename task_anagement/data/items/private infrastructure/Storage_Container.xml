@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Storage_Container</name>
+
+  <description>Camp storage container for operational equipment and supplies.</description>
+  <location>Private infrastructure area (see the map).</location>
+
+  <readyForNextPerson>
+    Stored items are inside, the doorway is clear, and the door is closed and
+    latched when access is complete.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

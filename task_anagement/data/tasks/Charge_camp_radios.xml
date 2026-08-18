@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Charge_camp_radios</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Once per Morning shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Camp_Radios</resource>
+    <resource>🔧 Radio_Chargers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Collect every returned camp radio.</action>
+    </step>
+    <step number="2">
+      <action>Inspect each radio and battery for cracks, swelling, leaking, or unusual heat.</action>
+      <ifThen>IF damage or unusual heat is present, THEN do not charge that radio and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="3">
+      <action>Connect each safe radio to its compatible charger.</action>
+    </step>
+    <step number="4">
+      <action>Observe the charging indicator on each connected radio or charger.</action>
+      <ifThen>IF the charging indicator does not appear, THEN reconnect it once and tell the Dominatrix if it still does not charge.</ifThen>
+    </step>
+    <step number="5">
+      <action>Leave each radio fully charged or connected to a powered compatible charger.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every returned radio is accounted for.</criterion>
+    <criterion>Every safe radio is fully charged or visibly charging.</criterion>
+    <criterion>No damaged or unusually hot battery is charging.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

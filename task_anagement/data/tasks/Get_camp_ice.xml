@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Get_camp_ice</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>During the Morning ice run or when the Dominatrix requests ice before an event</when>
+  <time/>
+
+  <resources>
+    <resource>Approved payment method from the Dominatrix</resource>
+    <resource>📦 Handcart</resource>
+    <resource>🍷 Ice_Storage</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Ask the Dominatrix to confirm the number of bags and give you the approved payment method.</action>
+      <ifThen>IF this is the normal Morning run and no different quantity is requested, THEN get 5 bags.</ifThen>
+    </step>
+    <step number="2">
+      <action>Take 📦 Handcart to Arctica at 3:00 and G during its posted open hours.</action>
+    </step>
+    <step number="3">
+      <action>Purchase the confirmed number of ice bags.</action>
+    </step>
+    <step number="4">
+      <action>Secure the ice bags on 📦 Handcart.</action>
+    </step>
+    <step number="5">
+      <action>Put the ice bags in 🍷 Ice_Storage.</action>
+    </step>
+    <step number="6">
+      <action>Return the payment method and any change or receipt to the Dominatrix.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The confirmed number of ice bags is in camp ice storage.</criterion>
+    <criterion>The payment method and any change or receipt were returned to the Dominatrix.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>Arctica at 3:00 and G is closed.</condition>
+      <response>Use another currently open Arctica location or return to camp and tell the Dominatrix.</response>
+    </problem>
+  </commonProblems>
+
+  <reasoning>
+    <entry>The workbook's 3:00 and G location remains an official 2026 Arctica location; posted hours control because hours vary by event day.</entry>
+  </reasoning>
+</task>

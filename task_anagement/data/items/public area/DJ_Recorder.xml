@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>DJ_Recorder</name>
+
+  <description>Recorder used by the sound team to capture event sets with timestamps.</description>
+  <location>Event stage.</location>
+
+  <readyBeforeUse>The status display shows that recording and timestamps are active.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The recorder remains in the operating state set by the Sound Lead.
+  </readyForNextPerson>
+
+  <ifNotReady>Tell the Sound Lead. Do not change recorder settings unless directed.</ifNotReady>
+
+  <responsible>Sound Lead</responsible>
+  <commonProblems/>
+</item>

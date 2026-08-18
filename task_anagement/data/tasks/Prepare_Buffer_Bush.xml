@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Prepare_Buffer_Bush</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Common area</area>
+  <why/>
+  <when>Once per selected shift before people use the Buffer Bush</when>
+  <time/>
+
+  <resources>
+    <resource>🏕️ Buffer_Bush</resource>
+    <resource>🍷 Lost_and_Found</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the Buffer Bush for exposed wiring, loose or bent parts, and torn covers.</action>
+      <ifThen>IF any damage is visible, THEN keep people out, do not operate it, and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="2">
+      <action>Activate each massage buffer with no person touching it.</action>
+    </step>
+    <step number="3">
+      <action>Observe each buffer for continuous movement without stopping, grinding, or rattling.</action>
+      <ifThen>IF a buffer stops, grinds, or rattles, THEN turn it off and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="4">
+      <action>Turn off each buffer after its test.</action>
+    </step>
+    <step number="5">
+      <action>Press each mattress or pad to confirm that it remains inflated under hand pressure.</action>
+      <ifThen>IF a mattress or pad is soft or bottoms out, THEN tell the Dominatrix.</ifThen>
+    </step>
+    <step number="6">
+      <action>Put unattended personal belongings in 🍷 Lost_and_Found.</action>
+    </step>
+    <step number="7">
+      <action>Put trash and MOOP in 📦 Trash_Bins.</action>
+    </step>
+    <step number="8">
+      <action>Straighten the fur covers and remove visible debris.</action>
+    </step>
+    <step number="9">
+      <action>Move bicycles and other objects that block the view or walking path to camp bicycle parking.</action>
+    </step>
+    <step number="10">
+      <action>Turn on the Buffer Bush lighting.</action>
+    </step>
+    <step number="11">
+      <action>Observe every Buffer Bush light.</action>
+      <ifThen>IF a light does not turn on, THEN tell the Dominatrix.</ifThen>
+    </step>
+    <step number="12">
+      <action>Set the lighting for the current checklist.</action>
+      <ifThen>IF this is Pre-event or Post-event, THEN leave the lighting on. IF this is Morning or Afternoon, THEN turn it off after the test.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every massage buffer moves continuously without stopping, grinding, or rattling.</criterion>
+    <criterion>Every mattress or pad remains inflated under hand pressure.</criterion>
+    <criterion>No visible mechanical or electrical damage is present.</criterion>
+    <criterion>The fur, surrounding area, view, and walking path are clear.</criterion>
+    <criterion>The lighting works and is set for the current checklist.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Dominatrix</expert>
+
+  <reasoning>
+    <entry>The workbook's five Buffer Bush checks are phases of one readiness outcome, so one task avoids duplicate cleanup and inspection work.</entry>
+  </reasoning>
+</task>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Buffer_Bush</name>
+
+  <description>
+    Group massage structure with powered massage buffers, inflated mattresses
+    or pads, fur covers, and lighting.
+  </description>
+  <location>Common area (see the map).</location>
+
+  <readyBeforeUse>
+    Every buffer moves continuously without stopping, grinding, or rattling.
+    Mattresses or pads remain inflated. No exposed wire, loose or bent part, or
+    torn cover is visible.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    The structure is clean, operational, free of personal belongings, and clear
+    of blocked paths. Its lighting is set for the current checklist.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Keep people out of the affected part, turn off a failing buffer, and tell
+    the Dominatrix. Do not improvise an electrical or mechanical repair.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

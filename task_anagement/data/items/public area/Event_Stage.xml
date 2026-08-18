@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Event_Stage</name>
+
+  <description>Public stage used for Treble Makers music events.</description>
+  <location>Public area (see the map).</location>
+
+  <readyForNextPerson>
+    Only equipment approved by the Sound Lead remains. No unattended belonging,
+    trash, or MOOP is on the stage.
+  </readyForNextPerson>
+
+  <responsible>Sound Lead</responsible>
+  <commonProblems/>
+</item>

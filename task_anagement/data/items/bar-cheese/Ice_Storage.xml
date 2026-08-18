@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Ice_Storage</name>
+
+  <description>Camp cooler or freezer space designated for unopened ice bags.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>Enough clean space is available for the incoming ice bags.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Ice bags are inside the designated storage and no meltwater is leaking onto
+    the playa.
+  </readyForNextPerson>
+
+  <ifNotReady>Ask the Dominatrix where to put the ice before buying it.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

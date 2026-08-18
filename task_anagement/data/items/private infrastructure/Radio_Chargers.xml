@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Radio_Chargers</name>
+
+  <description>Powered chargers compatible with the camp radios.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyBeforeUse>Each charger is dry, undamaged, and powered.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Chargers are dry, powered, and holding only compatible radios or batteries.
+  </readyForNextPerson>
+
+  <ifNotReady>Unplug a damaged, wet, or unusually hot charger and tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

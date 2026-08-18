@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Prepare_event_stage</name>
+
+  <checklist_types>
+    <checklist_type>Pre-event</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>Before each camp event</when>
+  <time/>
+
+  <resources>
+    <resource>Sound Lead</resource>
+    <resource>Enough people to move each assigned item without dragging it or lifting alone</resource>
+    <resource>🌐 Event_Stage</resource>
+    <resource>🌐 DJ_Gear</resource>
+    <resource>🌐 DJ_Recorder</resource>
+    <resource>🌐 Dance_Floor</resource>
+    <resource>🍷 Lost_and_Found</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Ask the Sound Lead which DJ gear to move from the equipment truck.</action>
+    </step>
+    <step number="2">
+      <action>Move each assigned item to the position given by the Sound Lead.</action>
+    </step>
+    <step number="3">
+      <action>Put unattended personal belongings from the stage in 🍷 Lost_and_Found.</action>
+    </step>
+    <step number="4">
+      <action>Return camp equipment not assigned to the event to its storage place.</action>
+    </step>
+    <step number="5">
+      <action>Put trash from the stage and dance floor in 📦 Trash_Bins.</action>
+    </step>
+    <step number="6">
+      <action>Put all remaining visible MOOP from 🌐 Event_Stage and 🌐 Dance_Floor in 📦 Trash_Bins.</action>
+    </step>
+    <step number="7">
+      <action>Observe the running and timestamp indicators on 🌐 DJ_Recorder.</action>
+      <ifThen>IF either indicator is missing, THEN tell the Sound Lead before the event starts.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every item assigned by the Sound Lead is in its assigned position.</criterion>
+    <criterion>Only event equipment remains on the stage.</criterion>
+    <criterion>No unattended belonging, trash, or visible MOOP remains on the stage or dance floor.</criterion>
+    <criterion>The DJ recorder shows that recording and timestamps are active.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Sound Lead</expert>
+</task>

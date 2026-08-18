@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Charge_impact_driver_batteries</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>Once per selected shift</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Impact_Drivers</resource>
+    <resource>🔧 Impact_Driver_Batteries</resource>
+    <resource>🔧 Impact_Driver_Chargers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Collect every returned impact driver and battery.</action>
+    </step>
+    <step number="2">
+      <action>Inspect each battery for cracks, swelling, leaking, or unusual heat.</action>
+      <ifThen>IF damage or unusual heat is present, THEN do not charge that battery and tell the Dominatrix.</ifThen>
+    </step>
+    <step number="3">
+      <action>Insert each safe battery into its compatible charger.</action>
+    </step>
+    <step number="4">
+      <action>Observe the charging indicator on each charger.</action>
+      <ifThen>IF the charging indicator does not appear, THEN reseat the battery once and tell the Dominatrix if it still does not charge.</ifThen>
+    </step>
+    <step number="5">
+      <action>Return every impact driver to its storage place.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every returned impact driver and battery is accounted for.</criterion>
+    <criterion>Every safe battery is fully charged or visibly charging.</criterion>
+    <criterion>No damaged or unusually hot battery is charging.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

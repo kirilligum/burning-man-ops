@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Impact_Drivers</name>
+
+  <description>Camp cordless impact drivers used during build, operation, and strike.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyForNextPerson>
+    Every returned driver is clean enough to identify, switched off, and stored
+    with no bit left loose.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

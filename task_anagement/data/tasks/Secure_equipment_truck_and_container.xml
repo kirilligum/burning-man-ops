@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Secure_equipment_truck_and_container</name>
+
+  <checklist_types>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>After post-event equipment has been returned</when>
+  <time/>
+
+  <resources>
+    <resource>🔧 Equipment_Truck</resource>
+    <resource>🔧 Storage_Container</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the equipment-truck doorway for an object blocking closure.</action>
+      <ifThen>IF an object blocks the door, THEN ask its owner or the Dominatrix where it belongs.</ifThen>
+    </step>
+    <step number="2">
+      <action>Close the equipment-truck door.</action>
+    </step>
+    <step number="3">
+      <action>Engage the equipment-truck door latch.</action>
+    </step>
+    <step number="4">
+      <action>Inspect the storage-container doorway for an object blocking closure.</action>
+      <ifThen>IF an object blocks the door, THEN ask its owner or the Dominatrix where it belongs.</ifThen>
+    </step>
+    <step number="5">
+      <action>Close the storage-container door.</action>
+    </step>
+    <step number="6">
+      <action>Engage the storage-container door latch.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The equipment-truck door is closed and latched.</criterion>
+    <criterion>The storage-container door is closed and latched.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

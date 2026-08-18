@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Impact_Driver_Batteries</name>
+
+  <description>Rechargeable batteries compatible with the camp impact drivers.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyForNextPerson>
+    Every returned safe battery is fully charged or visibly charging. No
+    damaged or unusually hot battery is charging.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not charge a cracked, swollen, leaking, or unusually hot battery. Tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

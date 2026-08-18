@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Pack_DJ_gear_after_event</name>
+
+  <checklist_types>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Public area</area>
+  <why/>
+  <when>After the Sound Lead ends the event</when>
+  <time/>
+
+  <resources>
+    <resource>Sound Lead</resource>
+    <resource>Enough people to move each assigned item without dragging it or lifting alone</resource>
+    <resource>🌐 DJ_Gear</resource>
+    <resource>🔧 Equipment_Truck</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Wait for the Sound Lead to confirm that the assigned gear is powered down.</action>
+    </step>
+    <step number="2">
+      <action>Disconnect only the cable or item assigned to you by the Sound Lead.</action>
+    </step>
+    <step number="3">
+      <action>Pack each assigned item in the case or cover identified by the Sound Lead.</action>
+    </step>
+    <step number="4">
+      <action>Move each packed item to its assigned place in 🔧 Equipment_Truck.</action>
+    </step>
+    <step number="5">
+      <action>Tell the Sound Lead about any missing or damaged item.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every assigned item is packed in its correct case or cover.</criterion>
+    <criterion>Every packed item is in the truck position assigned by the Sound Lead.</criterion>
+    <criterion>The Sound Lead received any missing-item or damage report.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Sound Lead</expert>
+</task>

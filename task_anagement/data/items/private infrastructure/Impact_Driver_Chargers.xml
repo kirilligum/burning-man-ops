@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Impact_Driver_Chargers</name>
+
+  <description>Powered chargers compatible with the camp impact-driver batteries.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyBeforeUse>Each charger is dry, undamaged, and powered.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Chargers are dry, powered, and holding only compatible batteries.
+  </readyForNextPerson>
+
+  <ifNotReady>Unplug a damaged, wet, or unusually hot charger and tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

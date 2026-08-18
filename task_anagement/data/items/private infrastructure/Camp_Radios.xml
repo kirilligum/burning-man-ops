@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Camp_Radios</name>
+
+  <description>Rechargeable handheld radios used for camp operations.</description>
+  <location>Private infrastructure area.</location>
+
+  <readyForNextPerson>
+    Every returned radio is fully charged or visibly charging. No damaged or
+    unusually hot battery is charging.
+  </readyForNextPerson>
+
+  <responsible>Dominatrix</responsible>
+  <commonProblems/>
+</item>

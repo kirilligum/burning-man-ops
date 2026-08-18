@@ -50,3 +50,11 @@ Current provisional products:
 
 - [Burning Man Survival Guide 2026: alcohol service](https://survival.burningman.org/law-enforcement/specific-laws-to-be-aware-of/)
   — verify that every person served alcohol is at least 21.
+- [Burning Man Survival Guide 2026: on-playa resources](https://survival.burningman.org/city-infrastructure/on-playa-resources/)
+  — 2026 Arctica locations, payment methods, and day-specific ice-sales hours.
+
+## Electrical equipment
+
+- [Burning Man 2026 electrical-safety guidance](https://burningman.org/black-rock-city/preparation/camping-tips/electrical-safety/)
+  — current guidance for camp power distribution, battery placement, inspection,
+  and damaged equipment.

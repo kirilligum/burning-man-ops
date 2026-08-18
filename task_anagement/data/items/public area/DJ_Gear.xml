@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>DJ_Gear</name>
+
+  <description>DJ equipment, cables, cases, and covers identified by the Sound Lead.</description>
+  <location>Event stage or equipment truck, as directed by the Sound Lead.</location>
+
+  <readyBeforeUse>
+    The Sound Lead has identified the gear required for the event and its stage
+    position.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    In service, each item is in the position approved by the Sound Lead. After
+    use, each item is in its correct case or cover and assigned truck position.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not substitute or connect equipment. Ask the Sound Lead.</ifNotReady>
+
+  <responsible>Sound Lead</responsible>
+  <commonProblems/>
+</item>
