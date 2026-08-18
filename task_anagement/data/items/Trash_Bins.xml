@@ -2,17 +2,18 @@
 <item>
   <name>Trash_Bins</name>
 
-  <location>
-    Kitchen, bins labeled 📦 Trash_Bins.
-  </location>
-
-  <readyBeforeUse>Trash Bins are available.</readyBeforeUse>
+  <readyBeforeUse>Not full.</readyBeforeUse>
 
   <readyForNextPerson>
-    Trash is inside the bins. No loose trash is present around them.
+    A trash bag is installed and is not full. No loose trash is present around
+    the bins.
   </readyForNextPerson>
 
-  <ifNotReady>Tell the Dominatrix.</ifNotReady>
+  <ifNotReady>
+    If the trash bag is full, take it to the dumpster. Ask the Dominatrix where
+    to get a replacement trash bag. Replace the bag. If the problem is not
+    clear, tell the Dominatrix.
+  </ifNotReady>
 
   <responsible>Dominatrix</responsible>
 

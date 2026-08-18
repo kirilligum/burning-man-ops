@@ -18,7 +18,7 @@
   <resources>
     <resource>📦 Communal_Tables</resource>
     <resource>📦 Lost_and_Found</resource>
-    <resource>🍳 Dustpan_&amp;_Brush</resource>
+    <resource>🍳 Dustpan_and_Brush</resource>
     <resource>🍳 Multisurface_Cleaner</resource>
     <resource>🍳 Disposable_Towels</resource>
     <resource>📦 Trash_Bins</resource>
@@ -30,11 +30,11 @@
     </step>
 
     <step number="2">
-      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_&amp;_Brush.</action>
+      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_and_Brush.</action>
     </step>
 
     <step number="3">
-      <action>Empty 🍳 Dustpan_&amp;_Brush into 📦 Trash_Bins.</action>
+      <action>Empty 🍳 Dustpan_and_Brush into 📦 Trash_Bins.</action>
     </step>
 
     <step number="4">
@@ -78,7 +78,7 @@
       <date>2026-08-18</date>
       <status>Accepted</status>
       <text>Use the sequence clear belongings, dry-brush, conditionally spot-clean, then collect MOOP.</text>
-      <effect>Require 🍳 Dustpan_&amp;_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
+      <effect>Require 🍳 Dustpan_and_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
     </decision>
     <decision>
       <record>D-114</record>

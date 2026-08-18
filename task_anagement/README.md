@@ -216,8 +216,17 @@ Information that does not belong includes:
 - credentials or API secrets;
 - unrelated prior-year planning tabs.
 
-Each task stores the expert to contact. If no expert is specified, the expert
-is **Dominatrix**. Do not store phone numbers or other protected contact data.
+Each task stores the expert to contact. If no specific expert or useful
+reference is known, use **Dominatrix** as the fallback. Do not store phone
+numbers or other protected contact data.
+
+### Reference resolution and fallback
+
+Use the clearest existing task, item, location, role, or global-instruction
+reference whenever one is available. If a reference or required response is
+unknown or unclear, ask the **Dominatrix**. This is a fallback for an unresolved
+gap, not a substitute for a known reference. As the documentation becomes
+clearer, replace Dominatrix fallbacks with the useful reference.
 
 ## Document types
 
@@ -231,7 +240,10 @@ to every task:
 - Stop and ask when instructions, equipment, or conditions do not match.
 - Do not perform restricted work without authorization.
 - Collect all MOOP.
-- Return equipment to its labeled location.
+- Use the relevant task, item, location, or role reference when it is known;
+  ask the Dominatrix when it is not.
+- If you cannot find an item, ask the Dominatrix.
+- Return equipment to its designated location.
 - Restock consumables or report shortages.
 - Tag broken equipment and report it.
 - Leave the area ready for the next shift.
@@ -301,8 +313,8 @@ Reusable information about an item or piece of equipment should not be copied
 into every procedure.
 
 An item card contains only the item fields defined below. Its parent folder plus
-its name is its identifier. The name is the canonical label ID; the physical
-label and human-facing renderer may display the underscores as spaces.
+its name is its identifier. The name is the canonical ID; a physical label is
+optional, and a human-facing renderer may display the underscores as spaces.
 
 ## Core data model
 
@@ -313,7 +325,7 @@ The simplest mental models are:
 
 > **TASK = NAME + CHECKLIST_TYPES + AREA + WHY + WHEN + TIME + RESOURCES + STEPS + PASS + PROBLEMS + EXPERT + REASONING + DECISIONS**
 
-> **ITEM = NAME + OPTIONAL AREA + LOCATION + READY BEFORE + READY FOR NEXT + IF NOT READY + RESPONSIBLE + PROBLEMS**
+> **ITEM = NAME + OPTIONAL AREA + LOCATION + OPTIONAL READY BEFORE + READY FOR NEXT + OPTIONAL IF NOT READY + RESPONSIBLE + PROBLEMS**
 
 Task IDs are globally unique. Item IDs are unique within their parent folder
 and may repeat in different folders. IDs use underscores instead of spaces.
@@ -423,9 +435,9 @@ The `ITEMS` Sheet presents these columns in this order:
 | **Item** | `item/name` | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. It must be unique within its parent folder. Keep area, brand, model, size, and product numbers out of the ID. |
 | **Area** | Parent folder under `data/items/` | Optional categorical camp area. The converter derives it from the XML folder and exposes it as a Sheet column. Blank means the item is directly under `data/items/`. |
 | **Location** | `location` | Exact storage location using visible landmarks, container names, and shelf or side information. |
-| **Ready before use** | `readyBeforeUse` | Observable condition required before someone starts using the item. Leave blank when a rare condition is covered by the global escalation instruction and no useful pre-check is needed. |
+| **Ready before use** | `readyBeforeUse` | Observable condition required before someone starts using the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |
 | **Ready for next person** | `readyForNextPerson` | Observable condition in which the item must be returned, including cleaning, closing, charging, or restocking. |
-| **If not ready** | `ifNotReady` | Immediate action when either ready condition is not met. State whether to stop, restock, tag, move, or notify someone. |
+| **If not ready** | `ifNotReady` | Optional item-specific action when a ready condition is not met. Leave blank when the global instructions cover the response. |
 | **Who is responsible** | `responsible` | Person responsible for keeping the item available and resolving problems. Do not include private contact information. |
 | **Common problems** | `commonProblems/problem` | Recurring problems during normal use and the direct response to each one. |
 
@@ -441,7 +453,7 @@ Use this item-name pattern:
 
 Examples are `Multisurface_Cleaner` and `Disposable_Towels`. Keep IDs short
 enough to work in references and filenames. Renderers may replace underscores
-with spaces for physical labels and task cards. Put exact
+with spaces for physical labels, when used, and task cards. Put exact
 replacement-product details in **If not ready**, not in the name.
 
 Items represent supplies, not a deduplicated product catalog. The kitchen and
@@ -477,6 +489,8 @@ instructions belong in Steps or Common problems instead.
     next person to use.
   </instruction>
   <instruction>Collect all MOOP.</instruction>
+  <instruction>Use the relevant reference when known. If it is not clear, ask the Dominatrix.</instruction>
+  <instruction>If you cannot find an item, ask the Dominatrix.</instruction>
   <instruction>If a problem occurs and the solution is not clear, tell the Dominatrix.</instruction>
 </globalInstructions>
 ```
@@ -489,7 +503,7 @@ with an area icon followed by the exact underscore ID, resolving the task's
 Area before the item root. The icon is not part of the ID. The expert, Area,
 and selected checklist types are stored directly in the task. XML stores them
 under `<checklist_types>` as one `<checklist_type>` element per selected type. A
-missing expert means **Dominatrix**.
+missing expert means **Dominatrix** as the unresolved-question fallback.
 
 Illustrative example:
 
@@ -512,7 +526,7 @@ Illustrative example:
   <resources>
     <resource>📦 Communal_Tables</resource>
     <resource>📦 Lost_and_Found</resource>
-    <resource>🍳 Dustpan_&amp;_Brush</resource>
+    <resource>🍳 Dustpan_and_Brush</resource>
     <resource>🍳 Multisurface_Cleaner</resource>
     <resource>🍳 Disposable_Towels</resource>
     <resource>📦 Trash_Bins</resource>
@@ -523,10 +537,10 @@ Illustrative example:
       <action>Put unattended belongings in 📦 Lost_and_Found.</action>
     </step>
     <step number="2">
-      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_&amp;_Brush.</action>
+      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_and_Brush.</action>
     </step>
     <step number="3">
-      <action>Empty 🍳 Dustpan_&amp;_Brush into 📦 Trash_Bins.</action>
+      <action>Empty 🍳 Dustpan_and_Brush into 📦 Trash_Bins.</action>
     </step>
     <step number="4">
       <action>Inspect 📦 Communal_Tables for food, visible dirt, or sticky residue.</action>
@@ -565,7 +579,7 @@ Illustrative example:
       <date>2026-08-18</date>
       <status>Accepted</status>
       <text>Use the sequence clear belongings, dry-brush, conditionally spot-clean, then collect MOOP.</text>
-      <effect>Require 🍳 Dustpan_&amp;_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
+      <effect>Require 🍳 Dustpan_and_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
     </decision>
     <decision>
       <record>D-114</record>
@@ -586,7 +600,8 @@ Illustrative example:
 </task>
 ```
 
-The task omits `<expert>`, so **Dominatrix** is used. The `<reasoning>` and
+The task omits `<expert>`, so **Dominatrix** is used as the unresolved-question
+fallback. The `<reasoning>` and
 `<decisions>` sections preserve maintainer context; they are not rendered on the
 default task card. Item-specific failures are kept in their item records rather
 than repeated in task Common problems.
@@ -606,7 +621,7 @@ Illustrative items:
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
   <name>Multisurface_Cleaner</name>
-  <location>Kitchen, bottle labeled 🍳 Multisurface_Cleaner.</location>
+  <location>Kitchen.</location>
   <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
   <readyForNextPerson>The nozzle is set to OFF and the bottle contains cleaner.</readyForNextPerson>
   <ifNotReady>Replace it with Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346). If none is available, tell the Dominatrix.</ifNotReady>
@@ -619,7 +634,7 @@ Illustrative items:
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
   <name>Disposable_Towels</name>
-  <location>Kitchen, pack labeled 🍳 Disposable_Towels.</location>
+  <location>Kitchen.</location>
   <readyBeforeUse>At least one clean, dry towel remains in the pack.</readyBeforeUse>
   <readyForNextPerson>At least one clean, dry towel remains in the pack.</readyForNextPerson>
   <ifNotReady>Replace them with WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701). If none are available, tell the Dominatrix.</ifNotReady>
@@ -631,11 +646,9 @@ Illustrative items:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-  <name>Dustpan_&amp;_Brush</name>
-  <location>Kitchen, item labeled 🍳 Dustpan_&amp;_Brush.</location>
-  <readyBeforeUse>Dustpan and brush are available.</readyBeforeUse>
+  <name>Dustpan_and_Brush</name>
+  <location>Kitchen.</location>
   <readyForNextPerson>The dustpan is empty and the brush is with the dustpan.</readyForNextPerson>
-  <ifNotReady>Tell the Dominatrix.</ifNotReady>
   <responsible>Dominatrix</responsible>
   <commonProblems/>
 </item>
@@ -665,8 +678,7 @@ task_anagement/
 │   │   ├── common area/
 │   │   ├── kitchen/
 │   │   │   ├── Disposable_Towels.xml
-│   │   │   ├── Dustpan_&_Brush.xml
-│   │   │   ├── Gray-Water_IBC.xml
+│   │   │   ├── Dustpan_and_Brush.xml
 │   │   │   └── Multisurface_Cleaner.xml
 │   │   └── private infrastructure/
 │   └── global-instructions.xml
@@ -734,9 +746,8 @@ task card unless a maintainer explicitly requests them.
 ### 1. Use one name for each thing
 
 Do not alternate between “water tank,” “tote,” “IBC,” and “reservoir.” Select an
-exact ID, such as `Gray-Water_IBC`, and place the rendered label on the physical
-item. Its parent folder plus that ID is its identifier; do not add a second
-code.
+exact ID, such as `Gray-Water_IBC`. A rendered physical label is optional. Its
+parent folder plus that ID is its identifier; do not add a second code.
 
 ### 2. Title tasks with a verb, object, and place
 
@@ -1151,7 +1162,7 @@ changes.
 
 ### 6. Conduct a no-coaching novice test
 
-Give a newcomer the card, labeled equipment, and required materials. The
+Give a newcomer the card, the actual equipment, and the required materials. The
 observer does not explain unless safety requires intervention.
 
 Record:

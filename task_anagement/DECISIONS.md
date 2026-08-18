@@ -257,6 +257,36 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Item and task records should provide a concrete response when
   one is known. Escalate only when the record does not provide a clear solution.
 
+### D-123 — Use Dominatrix only as the unknown-reference fallback
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Use the clearest available task, item, location, role, or
+  global-instruction reference. Ask the Dominatrix when the required reference
+  or response is unknown or unclear.
+- **Effect:** Dominatrix is a fallback for unresolved documentation gaps. As a
+  useful reference becomes available, replace the fallback with that reference.
+
+### D-124 — Physical item labels are optional
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Do not assume that camp items have physical labels. Use the
+  item's location and recognizable form; mention a label only when it is known
+  to be present or intentionally added.
+- **Effect:** Item IDs remain canonical repository references without requiring
+  a physical labeling project.
+
+### D-125 — Keep obvious item readiness global
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Omit `readyBeforeUse` and `ifNotReady` when they only say that
+  an item should be available or repeat the global instruction to ask the
+  Dominatrix when the item cannot be found.
+- **Effect:** Keep item records focused on non-obvious readiness conditions and
+  concrete item-specific responses.
+
 ## Open decisions
 
 Open operational questions remain in the specification's **Open decisions**

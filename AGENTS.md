@@ -50,6 +50,16 @@ out of the item name. Store uncategorized items directly under `data/items/`.
 Ground procedures in the workbook, existing XML, and facts supplied by the
 user. Do not invent locations, equipment details, timings, quantities,
 thresholds, or generic safety scenarios. Mark unknown facts for field testing.
+Use the clearest existing task, item, location, role, or global-instruction
+reference when one is available. If a reference or required response is
+unknown or unclear, point the user or worker to the Dominatrix. Treat that as
+a fallback for an unresolved gap, not as a substitute for a known reference;
+replace the fallback with the useful reference as the documentation improves.
+Physical labels are optional. Do not invent or require a label for an item;
+mention one only when the camp has actually decided to use it.
+Do not add obvious `readyBeforeUse` or `ifNotReady` text merely to say that an
+item should exist or to repeat “ask the Dominatrix”; leave those fields blank
+when the global instructions already cover the situation.
 Keep universal instructions global, item readiness and item failures in item
 files, task execution in task files, and on-playa results in the generated
 checklist. Keep optional task `<reasoning>` and `<decisions>` records as concise

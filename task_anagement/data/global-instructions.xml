@@ -5,5 +5,7 @@
     next person to use.
   </instruction>
   <instruction>Collect all MOOP.</instruction>
+  <instruction>Use the relevant reference when known. If it is not clear, ask the Dominatrix.</instruction>
+  <instruction>If you cannot find an item, ask the Dominatrix.</instruction>
   <instruction>If a problem occurs and the solution is not clear, tell the Dominatrix.</instruction>
 </globalInstructions>

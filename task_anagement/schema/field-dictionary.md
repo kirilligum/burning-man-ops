@@ -25,7 +25,7 @@ and are not part of IDs.
 | **Steps** | `/task/steps/step` | Ordered multiline structure | Yes | The fewest read-do actions needed, in execution order. At least one step is required. |
 | **PASS when** | `/task/passWhen/criterion` | Multiline text | Yes | The minimum observable conditions needed to verify completion. Use one criterion per line. |
 | **Common problems** | `/task/commonProblems/problem` | Multiline IF/THEN text | No | Likely task-level problems not owned by an item or tied to one step. Use one condition and response per line. |
-| **Who to ask** | `/task/expert` | Text | No | Person to ask about the task. Blank or an omitted element means **Dominatrix**. Do not include contact information. |
+| **Who to ask** | `/task/expert` | Text | No | Specific person or role to ask about the task. Blank or an omitted element means **Dominatrix** only when no clearer expert or reference is known. Do not include contact information. |
 | **Reasoning** | `/task/reasoning/entry` | Multiline text | No | Concise rationale for the task's order, scope, or omissions. Maintainer record; not shown on the task card by default. |
 | **Decisions** | `/task/decisions/decision` | Structured record list | No | Task-specific decisions that explain the accepted procedure. Each record has `date`, `status`, `text`, and `effect`; add `record` when it links to a global decision ID. Maintainer record; not shown on the task card by default. |
 
@@ -112,10 +112,10 @@ The **Steps** Sheet cell uses this deterministic layout:
 | --- | --- | --- | --- | --- |
 | **Item** | `/item/name` | Text | Yes | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. Keep area, brand, model, size, and product numbers out of the ID. The ID must be unique within its parent folder. |
 | **Area** | Parent folder under `data/items/` | Enum | No | Categorical camp area. It is derived from the XML folder and exported as a Sheet column; it is not duplicated inside the item XML. Blank means the item is stored directly under `data/items/`. |
-| **Location** | `/item/location` | Text | Yes | Storage location using visible labels and landmarks. |
-| **Ready before use** | `/item/readyBeforeUse` | Text | No | Observable state required before someone uses the item. Leave blank when a rare condition is already covered by the global escalation instruction and no useful pre-check is needed. |
+| **Location** | `/item/location` | Text | Yes | Storage location using landmarks and labels when available. Labels are optional. |
+| **Ready before use** | `/item/readyBeforeUse` | Text | No | Observable state required before someone uses the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |
 | **Ready for next person** | `/item/readyForNextPerson` | Text | Yes | Observable state in which the item must be returned. |
-| **If not ready** | `/item/ifNotReady` | Text | Yes | Immediate action when either ready condition is not met. |
+| **If not ready** | `/item/ifNotReady` | Text | No | Immediate item-specific action when a ready condition is not met. Leave blank when the global instructions cover the response. |
 | **Who is responsible** | `/item/responsible` | Text | Yes | Person responsible for keeping the item available and resolving problems. Do not include contact information. |
 | **Common problems** | `/item/commonProblems/problem` | Multiline IF/THEN text | No | Recurring item-specific problems and their direct responses. |
 

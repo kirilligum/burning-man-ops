@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-  <name>Dustpan_&amp;_Brush</name>
+  <name>Dustpan_and_Brush</name>
 
   <location>
-    Kitchen, item labeled 🍳 Dustpan_&amp;_Brush.
+    Kitchen.
   </location>
-
-  <readyBeforeUse>Dustpan and brush are available.</readyBeforeUse>
 
   <readyForNextPerson>
     The dustpan is empty and the brush is with the dustpan.
   </readyForNextPerson>
-
-  <ifNotReady>Tell the Dominatrix.</ifNotReady>
 
   <responsible>Dominatrix</responsible>
 

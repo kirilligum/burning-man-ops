@@ -3,7 +3,7 @@
   <name>Lost_and_Found</name>
 
   <location>
-    Kitchen, container labeled 📦 Lost_and_Found.
+    Kitchen.
   </location>
 
   <readyBeforeUse>
@@ -25,7 +25,7 @@
   <commonProblems>
     <problem>
       <condition>The container is full.</condition>
-      <response>Get another labeled container and put it next to this one.</response>
+      <response>Get another container and put it next to this one.</response>
     </problem>
   </commonProblems>
 </item>
