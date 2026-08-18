@@ -1015,8 +1015,8 @@ changes.
 ## Recommended next sequence
 
 1. Resolve the prioritized questions in
-   [`../ask_me/README.md`](../ask_me/README.md), beginning with which restricted
-   activities will operate in 2026.
+   [`critical_operational_questions_2026-08-18T09-29-52-04-00.md`](../ask_me/critical_operational_questions_2026-08-18T09-29-52-04-00.md),
+   beginning with which restricted activities will operate in 2026.
 2. Have each responsible lead review their task and item XML.
 3. Field-test routine cards without coaching and revise from observed errors.
 4. Field-test printed checklists and task cards under actual light, dust, noise,
@@ -1027,10 +1027,12 @@ changes.
 
 ## Open questions
 
-[`../ask_me/README.md`](../ask_me/README.md) is the single prioritized queue of
-questions that require the user or a responsible camp role. Once an answer is
-accepted, update the affected XML and specifications, record any durable system
-decision in `DECISIONS.md`, and remove the resolved question from the queue.
+Timestamped Markdown files under [`../ask_me/`](../ask_me/) contain prioritized
+question batches for the user or a responsible camp role. The current critical
+batch is
+[`critical_operational_questions_2026-08-18T09-29-52-04-00.md`](../ask_me/critical_operational_questions_2026-08-18T09-29-52-04-00.md).
+Once an answer is accepted, update the affected XML and specifications and
+record any durable system decision in `DECISIONS.md`.
 
 ## External references
 

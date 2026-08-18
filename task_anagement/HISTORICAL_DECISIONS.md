@@ -102,3 +102,12 @@ and prints only the matching records from this file.
 - **Effect:** D-129 consolidates missing items, unclear instructions, and
   unclear solutions into one worker-facing instruction. Item and task records
   still provide a concrete response whenever one is known.
+
+### D-132 — Keep one prioritized open-question queue
+
+- **Date:** 2026-08-18
+- **Status:** Superseded by D-133
+- **Decision:** Store unresolved questions requiring the user or a camp expert
+  in `ask_me/README.md`, ordered from highest to lowest operational priority.
+- **Effect:** D-133 replaces the single generic queue with multiple descriptive,
+  timestamped question files under `ask_me/`.

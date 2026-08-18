@@ -10,8 +10,10 @@ and `task_anagement/HISTORICAL_DECISIONS.md` preserves superseded decisions.
 exclusions, `task_anagement/SOURCES.md` records operational research, and
 `task_anagement/schema/field-dictionary.md` defines fields. Canonical XML lives
 under `task_anagement/data/`; generated cards and checklists live under
-`task_anagement/build/`. `ask_me/README.md` is the prioritized queue of
-unresolved questions for the user or responsible camp experts.
+`task_anagement/build/`. Timestamped Markdown files under `ask_me/` contain
+prioritized question batches for the user or responsible camp experts. Name
+each file `<descriptive_name>_<ISO_timestamp>.md`; obtain the timestamp with
+`date -Is` and replace its colons with hyphens for portable filenames.
 
 ## Decision Record and Agent Behavior
 
@@ -21,10 +23,10 @@ user's newest explicit instruction wins. Do not load
 `HISTORICAL_DECISIONS.md` for ordinary work because it is intentionally
 long-running context. Load related history only for a deep dive.
 
-Use `ask_me/README.md` when resolving an operational blocker. Questions are not
-decisions. When the user or responsible expert answers one, update every
-affected canonical file, record any durable system decision, and remove the
-resolved question. Never place protected runtime details in the question file.
+Use the relevant timestamped file under `ask_me/` when resolving an operational
+blocker. Questions are not decisions. When the user or responsible expert
+answers one, update every affected canonical file and record any durable system
+decision. Never place protected runtime details in a question file.
 
 When the user accepts, reverses, or directly requests a durable design change,
 update `DECISIONS.md` and every affected specification, example, and XML file in

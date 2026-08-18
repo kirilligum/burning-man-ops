@@ -340,17 +340,19 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Task XML retains traceability without loading duplicated decision
   text. The historical lookup continues to use superseded record links.
 
-### D-132 — Keep one prioritized open-question queue
+### D-133 — Use descriptive timestamped question files
 
 - **Date:** 2026-08-18
 - **Status:** Accepted
-- **Decision:** Store unresolved questions requiring the user or a camp expert
-  in `ask_me/README.md`, ordered from highest to lowest operational priority.
-- **Effect:** The specification links to that queue instead of duplicating its
-  contents. When an answer is accepted, update the affected canonical files and
-  remove the resolved question. Do not store protected runtime details there.
+- **Decision:** Store each question batch in its own Markdown file under
+  `ask_me/`. Use a descriptive `snake_case` name followed by a timestamp from
+  `date -Is`, replacing colons with hyphens for filename portability.
+- **Effect:** Multiple question files can coexist without a generic
+  `ask_me/README.md`. Questions remain coordination records rather than
+  decisions or canonical operational data. Do not store protected runtime
+  details in them.
 
 ## Open decisions
 
-Open operational questions remain in `ask_me/README.md`. They are not decisions
-until the user or relevant camp expert resolves them.
+Open operational questions remain in timestamped files under `ask_me/`. They
+are not decisions until the user or relevant camp expert resolves them.
