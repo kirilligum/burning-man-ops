@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Pairing_List</name>
+
+  <description>Daily music, wine, and cheese pairing selected for the camp event.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The current event's music, wine, and cheese are identified.</readyBeforeUse>
+  <readyForNextPerson>The current pairing remains readable at the bar.</readyForNextPerson>
+  <ifNotReady>Ask the Bar Lead for the current pairing before service begins.</ifNotReady>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

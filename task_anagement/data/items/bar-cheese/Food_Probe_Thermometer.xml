@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Food_Probe_Thermometer</name>
+
+  <description>ThermoWorks ThermoPop 2 NSF-certified instant-read thermometer with probe cover.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>The probe is clean, sanitized, dry, and the display turns on.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, the probe is cleaned and sanitized after each reading. After
+    service, it is clean, sanitized, dry, covered, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not estimate a food temperature. Ask the Food Lead for a working sanitized thermometer.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

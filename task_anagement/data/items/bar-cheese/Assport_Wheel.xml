@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Assport_Wheel</name>
+
+  <description>Optional activity wheel used for no-contact or consented Assport prompts.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyForNextPerson>The wheel is stable, readable, and stored where it cannot roll or fall.</readyForNextPerson>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

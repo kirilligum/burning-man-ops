@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Food_Covers</name>
+
+  <description>Clear food-service covers sized for the cheese serving trays.</description>
+  <location>Cheese-station storage.</location>
+
+  <readyBeforeUse>Every cover is clean, sanitized, air-dry, intact, and fits its tray.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, covers protect prepared food between servings. After service,
+    every cover is washed, rinsed, sanitized, air-dry, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not display uncovered food. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

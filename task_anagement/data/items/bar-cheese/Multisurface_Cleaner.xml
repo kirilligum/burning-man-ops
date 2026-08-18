@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Multisurface_Cleaner</name>
+
+  <description>
+    Clorox Free &amp; Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray
+    bottle (UPC 044600603346).
+  </description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
+  <readyForNextPerson>The bottle contains cleaner.</readyForNextPerson>
+
+  <ifNotReady>
+    Ask the Dominatrix where to find a replacement. Put the empty bottle in
+    📦 Trash_Bins.
+  </ifNotReady>
+
+  <responsible>Bar Lead</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The cleaner is not spraying and the nozzle is OFF.</condition>
+      <response>Turn the nozzle to ON.</response>
+    </problem>
+  </commonProblems>
+</item>

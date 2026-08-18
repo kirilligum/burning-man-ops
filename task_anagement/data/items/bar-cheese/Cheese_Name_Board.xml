@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_Name_Board</name>
+
+  <description>Reusable board beside the bar that identifies the Cheese of the Day.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyForNextPerson>The current cheese name is legible and matches the pairing list.</readyForNextPerson>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

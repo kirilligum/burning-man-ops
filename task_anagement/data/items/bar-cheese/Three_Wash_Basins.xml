@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Three_Wash_Basins</name>
+
+  <description>Three Rubbermaid Commercial 7.6-gallon bus boxes, model FG335100GRAY.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>The three basins are empty, visibly clean, and do not leak.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The basins are empty, visibly clean, air-dry, nested, and stored. No liquid
+    has reached the playa.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not wash food-contact items in a dirty or leaking basin. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

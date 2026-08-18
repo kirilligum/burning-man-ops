@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_Knife</name>
+
+  <description>Food-service knife used only for cheese preparation.</description>
+  <location>Cheese-station storage.</location>
+
+  <readyBeforeUse>The blade and handle are clean, sanitized, air-dry, and undamaged.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, the knife is clean and remains on the protected work surface.
+    After service, it is washed, rinsed, sanitized, air-dry, covered, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a damaged or dirty knife. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_Station_Storage</name>
+
+  <description>Closed storage container for clean, dry cheese-service tools.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>The container is clean, dry, and has space for every dry tool.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Only clean, fully dry cheese-service tools are inside and the container is closed.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not store a wet or dirty food-contact item. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Bar</name>
+
+  <description>Treble Makers public wine-service bar.</description>
+  <location>Bar/Cheese area (see the map).</location>
+
+  <readyBeforeUse>
+    The bar top is clean and dry. One lined trash bin is positioned at each
+    side before service.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    No unattended belonging, crumb, trash, MOOP, sticky spot, or visible residue
+    remains. The bar top is dry.
+  </readyForNextPerson>
+
+  <ifNotReady>Clean the bar; see task 📋 Clean_bar.</ifNotReady>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

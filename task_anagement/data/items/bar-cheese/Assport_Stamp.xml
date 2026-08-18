@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Assport_Stamp</name>
+
+  <description>Stamp and ink used to mark a guest's Assport after the experience.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyForNextPerson>The stamp is clean enough to read, capped or covered, and stored.</readyForNextPerson>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

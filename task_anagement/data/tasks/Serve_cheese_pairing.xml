@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Serve_cheese_pairing</name>
+
+  <checklist_types>
+    <checklist_type>Cheese</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>During cheese service from 6:00 p.m. to 8:30 p.m.</when>
+  <time/>
+
+  <resources>
+    <resource>📋 Prepare_cheese_station</resource>
+    <resource>📦 Handwashing_Station</resource>
+    <resource>🍷 Disposable_Food_Gloves</resource>
+    <resource>🍷 Cheese_of_the_Day</resource>
+    <resource>🍷 Crackers</resource>
+    <resource>🍷 Cheese_Knife</resource>
+    <resource>🍷 Cutting_Boards</resource>
+    <resource>🍷 Cheese_Serving_Trays</resource>
+    <resource>🍷 Food_Covers</resource>
+    <resource>🍷 Serving_Tongs</resource>
+    <resource>🍷 Food_Probe_Thermometer</resource>
+    <resource>🍷 Food_Surface_Sanitizer</resource>
+    <resource>🍷 Food_Service_Checklist</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Complete 📋 Prepare_cheese_station.</action>
+    </step>
+    <step number="2">
+      <action>Lay a small batch of crackers on 🍷 Cheese_Serving_Trays with clean gloved hands.</action>
+    </step>
+    <step number="3">
+      <action>Cut 🍷 Cheese_of_the_Day into pieces that fit the crackers.</action>
+    </step>
+    <step number="4">
+      <action>Place one cheese piece on each cracker.</action>
+    </step>
+    <step number="5">
+      <action>Cover prepared cheese crackers with 🍷 Food_Covers between servings.</action>
+    </step>
+    <step number="6">
+      <action>Use 🍷 Serving_Tongs to place each serving in a guest's cup or napkin.</action>
+    </step>
+    <step number="7">
+      <action>Measure the displayed cheese with 🍷 Food_Probe_Thermometer when replenishing a tray.</action>
+      <ifThen>IF the cheese is above 41°F, THEN remove it from service and tell the Food Lead.</ifThen>
+    </step>
+    <step number="8">
+      <action>Record each temperature on 🍷 Food_Service_Checklist.</action>
+    </step>
+    <step number="9">
+      <action>Clean and sanitize the thermometer probe according to the 🍷 Food_Surface_Sanitizer label.</action>
+    </step>
+    <step number="10">
+      <action>Consolidate the remaining servings onto one tray before replenishing the other tray.</action>
+    </step>
+    <step number="11">
+      <action>Prepare small batches so the cheese lasts through 8:30 p.m.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No bare hand or guest contact occurred with ready-to-eat food.</criterion>
+    <criterion>Displayed cheese stayed at or below 41°F and temperatures were recorded.</criterion>
+    <criterion>Prepared food stayed covered between servings.</criterion>
+    <criterion>Cheese service continued through 8:30 p.m. or until the approved supply was exhausted.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <expert>Food Lead</expert>
+</task>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Prepare_bar_for_service</name>
+
+  <checklist_types>
+    <checklist_type>Pre-event</checklist_type>
+    <checklist_type>Bar</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>Before each bar shift</when>
+  <time/>
+
+  <resources>
+    <resource>📋 Clean_bar</resource>
+    <resource>🍷 Bar</resource>
+    <resource>🍷 Pairing_List</resource>
+    <resource>🍷 Wine_Cans</resource>
+    <resource>🍷 Wine_Cooler</resource>
+    <resource>🍷 Ice_Storage</resource>
+    <resource>📋 Get_camp_ice</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Complete 📋 Clean_bar if the bar top is not clean and dry.</action>
+    </step>
+    <step number="2">
+      <action>Read the current music, wine, and cheese pairing on 🍷 Pairing_List.</action>
+    </step>
+    <step number="3">
+      <action>Place one lined trash bin at each side of 🍷 Bar.</action>
+    </step>
+    <step number="4">
+      <action>Put the required ice in 🍷 Wine_Cooler.</action>
+      <ifThen>IF the wine is Pinot Noir, THEN use 2 bags. IF it is white, rosé, or sparkling red, THEN use 5 bags. IF the required ice is unavailable, THEN complete 📋 Get_camp_ice.</ifThen>
+    </step>
+    <step number="5">
+      <action>Put the Wine of the Day cans in 🍷 Wine_Cooler.</action>
+      <ifThen>IF the Wine of the Day is unavailable, THEN tell the Bar Lead.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The bar top is clean and dry.</criterion>
+    <criterion>One lined trash bin is on each side of the bar.</criterion>
+    <criterion>The cooler contains the Wine of the Day and the correct number of ice bags.</criterion>
+    <criterion>The worker can state the current music, wine, and cheese pairing.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Bar Lead</expert>
+
+  <reasoning>
+    <entry>The workbook phrase about two trash bags is interpreted as two total, one at each side, because that is the smallest arrangement matching the wording.</entry>
+  </reasoning>
+</task>

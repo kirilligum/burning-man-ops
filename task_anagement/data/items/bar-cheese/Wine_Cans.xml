@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Wine_Cans</name>
+
+  <description>Cans of the Wine of the Day selected on the pairing list.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The Wine of the Day cans are available and undamaged.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Unopened cans and any open half-can remain upright in the wine cooler.
+    Empty cans are crushed and in aluminum-can collection.
+  </readyForNextPerson>
+
+  <ifNotReady>Tell the Bar Lead before service begins.</ifNotReady>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

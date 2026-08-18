@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Plastic_Wrap</name>
+
+  <description>Reynolds Kitchens Quick Cut Plastic Wrap, 12 inches by 225 feet.</description>
+  <location>Cheese-station storage.</location>
+
+  <readyBeforeUse>Clean wrap remains and the slide cutter is intact.</readyBeforeUse>
+  <readyForNextPerson>The roll is inside its box and the slide cutter is locked at one end.</readyForNextPerson>
+  <ifNotReady>Ask the Food Lead for replacement food wrap.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

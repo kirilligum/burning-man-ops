@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Dustpan_and_Brush</name>
+
+  <description>Small hand brush and dustpan used at the bar.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyForNextPerson>
+    The dustpan is empty. No debris remains in the brush. Both are returned to
+    the Bar/Cheese area.
+  </readyForNextPerson>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>

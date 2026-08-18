@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Close_cheese_station</name>
+
+  <checklist_types>
+    <checklist_type>Cheese</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>At the end of cheese service</when>
+  <time/>
+
+  <resources>
+    <resource>Food Lead</resource>
+    <resource>📦 Handwashing_Station</resource>
+    <resource>🍷 Cheese_of_the_Day</resource>
+    <resource>🍷 Crackers</resource>
+    <resource>🍷 Food_Probe_Thermometer</resource>
+    <resource>🍷 Plastic_Wrap</resource>
+    <resource>🍷 Three_Wash_Basins</resource>
+    <resource>🍷 Dish_Soap</resource>
+    <resource>🍷 Sanitizer_Tablets</resource>
+    <resource>🍷 Sanitizer_Test_Strips</resource>
+    <resource>🍷 Cheese_Knife</resource>
+    <resource>🍷 Cutting_Boards</resource>
+    <resource>🍷 Cheese_Serving_Trays</resource>
+    <resource>🍷 Tray_Grids_and_Mats</resource>
+    <resource>🍷 Serving_Tongs</resource>
+    <resource>🍷 Drying_Rack</resource>
+    <resource>🍷 Cheese_Station_Storage</resource>
+    <resource>🍷 Cheese_Work_Surface</resource>
+    <resource>🍷 Food_Surface_Sanitizer</resource>
+    <resource>🍷 Disposable_Towels</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>🔧 Gray-Water_IBC</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Measure remaining protected cheese with 🍷 Food_Probe_Thermometer.</action>
+    </step>
+    <step number="2">
+      <action>Separate protected cheese at or below 41°F from exposed, warmer, or unknown cheese.</action>
+    </step>
+    <step number="3">
+      <action>Put exposed, warmer, or unknown cheese and exposed crackers in 📦 Trash_Bins.</action>
+    </step>
+    <step number="4">
+      <action>Wrap protected cheese that remained at or below 41°F with 🍷 Plastic_Wrap.</action>
+    </step>
+    <step number="5">
+      <action>Put the wrapped protected cheese in the refrigerator.</action>
+    </step>
+    <step number="6">
+      <action>Return unopened crackers to dry storage.</action>
+    </step>
+    <step number="7">
+      <action>Fill each of 🍷 Three_Wash_Basins from 🔧 Fresh_Water_Tank with the minimum water needed to submerge the largest item.</action>
+    </step>
+    <step number="8">
+      <action>Add 🍷 Dish_Soap to the first basin according to its label.</action>
+    </step>
+    <step number="9">
+      <action>Add 🍷 Sanitizer_Tablets to the third basin according to their label.</action>
+    </step>
+    <step number="10">
+      <action>Measure the third basin with 🍷 Sanitizer_Test_Strips.</action>
+      <expectedResult>The sanitizer measures 200–400 ppm.</expectedResult>
+      <ifThen>IF the result is outside 200–400 ppm, THEN adjust according to the sanitizer label and test again.</ifThen>
+    </step>
+    <step number="11">
+      <action>Wash each knife, cutting board, tray, grid, mat, tong, and thermometer probe in the first basin.</action>
+    </step>
+    <step number="12">
+      <action>Rinse each washed item in the second basin.</action>
+    </step>
+    <step number="13">
+      <action>Sanitize each rinsed item in the third basin for the label's contact time.</action>
+    </step>
+    <step number="14">
+      <action>Place each sanitized item on 🍷 Drying_Rack to air dry.</action>
+    </step>
+    <step number="15">
+      <action>Put fully dry items in 🍷 Cheese_Station_Storage.</action>
+    </step>
+    <step number="16">
+      <action>Move all used basin water into 🔧 Gray-Water_IBC.</action>
+    </step>
+    <step number="17">
+      <action>Clean and sanitize 🍷 Cheese_Work_Surface with 🍷 Food_Surface_Sanitizer according to its label.</action>
+    </step>
+    <step number="18">
+      <action>Wash your hands at 📦 Handwashing_Station.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No exposed cheese or cracker was returned to storage.</criterion>
+    <criterion>Only protected cheese held at or below 41°F was wrapped and refrigerated.</criterion>
+    <criterion>Every reusable food-contact item was washed, rinsed, sanitized, air-dried, and stored.</criterion>
+    <criterion>The work surface is clean and sanitized.</criterion>
+    <criterion>No wash water or sanitizer reached the playa.</criterion>
+  </passWhen>
+
+  <commonProblems>
+    <problem>
+      <condition>The time or temperature history of remaining cheese is unknown.</condition>
+      <response>Do not refrigerate it for later service. Put it in 📦 Trash_Bins.</response>
+    </problem>
+  </commonProblems>
+
+  <expert>Food Lead</expert>
+
+  <reasoning>
+    <entry>The workbook says to refrigerate any remaining cheese, but current food-safety guidance does not support saving exposed food with unknown time or temperature history.</entry>
+  </reasoning>
+</task>

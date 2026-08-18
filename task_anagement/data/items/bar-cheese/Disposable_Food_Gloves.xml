@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disposable_Food_Gloves</name>
+
+  <description>Choice powder-free clear disposable poly foodservice gloves, large, 100 count.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>A clean pair is available and fits the worker.</readyBeforeUse>
+  <readyForNextPerson>Unused clean gloves remain available.</readyForNextPerson>
+  <ifNotReady>Do not touch ready-to-eat food. Ask the Food Lead for gloves that fit.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>A glove tears or touches hair, a face, a phone, trash, money, or another unclean surface.</condition>
+      <response>Remove it, wash both hands, and put on new gloves before touching food.</response>
+    </problem>
+  </commonProblems>
+</item>

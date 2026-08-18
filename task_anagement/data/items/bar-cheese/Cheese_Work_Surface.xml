@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_Work_Surface</name>
+
+  <description>Hard, nonporous food-contact work surface used for cheese service.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The surface is visibly clean, sanitized, and air-dry.</readyBeforeUse>
+  <readyForNextPerson>
+    During service, the surface remains clean and protected from dust and public
+    contact. After service, it is clean, sanitized, air-dry, and covered.
+  </readyForNextPerson>
+  <ifNotReady>Clean and sanitize the surface before food preparation.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

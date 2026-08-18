@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Serve_wine</name>
+
+  <checklist_types>
+    <checklist_type>Bar</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>For every guest requesting wine during a bar shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍷 Wine_Cans</resource>
+    <resource>🍷 Wine_Cooler</resource>
+    <resource>🍷 Pairing_List</resource>
+    <resource>🍷 Aluminum_Can_Collection</resource>
+    <resource>The guest's cup</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the guest's valid government-issued photo ID.</action>
+      <ifThen>IF the ID does not show that the guest is at least 21, or the guest has no valid ID, THEN do not serve alcohol.</ifThen>
+    </step>
+    <step number="2">
+      <action>Tell the guest the Wine of the Day and its music and cheese pairing.</action>
+    </step>
+    <step number="3">
+      <action>Ask the guest to hold out their cup.</action>
+    </step>
+    <step number="4">
+      <action>Select an open half-can when one is available; otherwise open a new can.</action>
+    </step>
+    <step number="5">
+      <action>Pour one-half can into the guest's cup.</action>
+    </step>
+    <step number="6">
+      <action>Return any remaining half-can upright to 🍷 Wine_Cooler.</action>
+    </step>
+    <step number="7">
+      <action>Crush each empty can.</action>
+    </step>
+    <step number="8">
+      <action>Put each crushed empty can in 🍷 Aluminum_Can_Collection.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every person served showed a valid ID proving an age of at least 21.</criterion>
+    <criterion>Wine was poured into guest cups; no wine can was handed to a guest.</criterion>
+    <criterion>Each serving was one-half can.</criterion>
+    <criterion>Every empty can was crushed and put in aluminum-can collection.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Bar Lead</expert>
+
+  <reasoning>
+    <entry>Checking every guest's ID removes the workbook's subjective under-40 judgment and directly verifies the legal minimum age.</entry>
+    <entry>Current 2026 Burning Man guidance sends empty crushed aluminum cans to Recycle Camp, so the canonical task does not follow the workbook's trash instruction.</entry>
+  </reasoning>
+</task>

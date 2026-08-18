@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Food_Surface_Sanitizer</name>
+
+  <description>
+    PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06,
+    EPA registration 84150-3.
+  </description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The bottle contains sanitizer, sprays, and is not expired.</readyBeforeUse>
+  <readyForNextPerson>The bottle is closed, contains sanitizer, and is stored away from heat or flame.</readyForNextPerson>
+  <ifNotReady>Do not substitute an unlabeled product. Ask the Food Lead for a replacement.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The bottle is near heat or open flame.</condition>
+      <response>Move it to its cool storage place before use; the product is combustible.</response>
+    </problem>
+  </commonProblems>
+</item>

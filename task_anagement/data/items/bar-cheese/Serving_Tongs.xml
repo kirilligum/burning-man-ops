@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Serving_Tongs</name>
+
+  <description>Small stainless-steel food-service tongs used to hand out cheese servings.</description>
+  <location>Cheese-station storage.</location>
+
+  <readyBeforeUse>Each tong is clean, sanitized, air-dry, and opens and closes freely.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, tongs remain clean and do not touch guests. After service,
+    each tong is washed, rinsed, sanitized, air-dry, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not serve with a dirty or damaged tong. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

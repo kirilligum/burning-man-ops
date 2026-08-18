@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disposable_Aprons</name>
+
+  <description>Choice disposable white 0.50 mil poly aprons, 100 count.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>A clean apron is available.</readyBeforeUse>
+  <readyForNextPerson>Unused clean aprons remain available.</readyForNextPerson>
+  <ifNotReady>Do not handle food. Ask the Food Lead for a clean apron.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -21,6 +21,10 @@ Current provisional products:
 - [Rubbermaid 7.6-gallon bus/utility box](https://www.rubbermaidcommercial.com/foodservice/table-service/busutility-boxes/?sku=FG335100GRAY)
 - [Rubbermaid FGR80DC refrigerator thermometer](https://www.rubbermaidapac.com/food-service/monitoring/refrigeratorfreezer-20-80-f/)
 - [Camco TastePURE 22783 drinking-water hose](https://www.walmart.com/ip/14504301)
+- [Choice disposable foodservice poly gloves](https://www.webstaurantstore.com/choice-large-disposable-food-service-poly-gloves-case/682DISPL.html)
+- [Choice disposable poly aprons](https://www.webstaurantstore.com/choice-42-x-24-50-mil-disposable-poly-apron-box/682APRON.html)
+- [ThermoWorks ThermoPop 2 NSF listing](https://www.thermoworks.com/content/pdf/ThermoWorks-NSF.pdf)
+- [Reynolds Kitchens Quick Cut Plastic Wrap](https://www.reynoldsbrands.com/products/other-products/plastic-wrap)
 
 ## Leave No Trace, water, and sanitation
 
@@ -50,6 +54,11 @@ Current provisional products:
 
 - [Burning Man Survival Guide 2026: alcohol service](https://survival.burningman.org/law-enforcement/specific-laws-to-be-aware-of/)
   — verify that every person served alcohol is at least 21.
+- [Nevada Revised Statutes 202.055](https://www.leg.state.nv.us/nrs/nrs-202.html#NRS202Sec055)
+  — furnishing alcohol to a person under 21 is prohibited.
+- [Burning Man Survival Guide 2026: consent](https://survival.burningman.org/survival-health-and-safety/consent-and-sexual-misconduct/)
+  — consent must be freely given, reversible, informed, enthusiastic, and
+  specific; minors and intoxicated people cannot consent.
 - [Burning Man Survival Guide 2026: on-playa resources](https://survival.burningman.org/city-infrastructure/on-playa-resources/)
   — 2026 Arctica locations, payment methods, and day-specific ice-sales hours.
 

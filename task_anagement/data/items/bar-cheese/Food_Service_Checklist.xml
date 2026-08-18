@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Food_Service_Checklist</name>
+
+  <description>Current CNHD food permit, daily self-inspection checklist, and temperature log.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>The current permit is displayed and today's checklist and temperature log are available for the next entry.</readyBeforeUse>
+  <readyForNextPerson>Today's entries are legible and the documents remain at the cheese station.</readyForNextPerson>
+  <ifNotReady>Do not open cheese service. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

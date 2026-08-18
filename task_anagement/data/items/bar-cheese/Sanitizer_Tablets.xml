@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Sanitizer_Tablets</name>
+
+  <description>Steramine 1-G quaternary sanitizer tablets, 150-count bottle.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>Dry tablets remain in the labeled bottle.</readyBeforeUse>
+  <readyForNextPerson>The bottle is closed, dry, and contains tablets.</readyForNextPerson>
+  <ifNotReady>Do not substitute a chemical. Ask the Food Lead for the approved sanitizer.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Sanitizer_Test_Strips</name>
+
+  <description>Hydrion QT-10 quaternary sanitizer test paper, 0–400 ppm.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>Dry, unexpired strips remain and the color chart is readable.</readyBeforeUse>
+  <readyForNextPerson>The container is closed, dry, and contains unexpired strips.</readyForNextPerson>
+  <ifNotReady>Do not estimate sanitizer strength. Ask the Food Lead for compatible test strips.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

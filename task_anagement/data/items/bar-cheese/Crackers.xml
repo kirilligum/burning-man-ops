@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Crackers</name>
+
+  <description>Shelf-stable crackers selected for the Cheese of the Day.</description>
+  <location>Cheese station dry storage.</location>
+
+  <readyBeforeUse>Crackers are sealed or protected from dust, moisture, pests, and public contact.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Unopened crackers are in dry storage. Crackers exposed during service are discarded.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not serve damp, dusty, open, or contaminated crackers.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

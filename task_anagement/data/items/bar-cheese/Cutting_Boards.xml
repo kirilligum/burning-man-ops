@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cutting_Boards</name>
+
+  <description>Nonporous cutting boards used only for cheese preparation.</description>
+  <location>Cheese-station storage.</location>
+
+  <readyBeforeUse>Each board is clean, sanitized, air-dry, and free of deep cuts or cracks.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, each board is clean and remains on the protected work surface.
+    After service, each is washed, rinsed, sanitized, air-dry, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a cracked, deeply cut, or dirty board. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

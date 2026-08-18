@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clean_bar</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Bar</checklist_type>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>Once per selected shift</when>
+  <time/>
+
+  <resources>
+    <resource>🍷 Bar</resource>
+    <resource>🍷 Lost_and_Found</resource>
+    <resource>🍷 Dustpan_and_Brush</resource>
+    <resource>🍷 Multisurface_Cleaner</resource>
+    <resource>🍷 Disposable_Towels</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put unattended personal belongings in 🍷 Lost_and_Found.</action>
+    </step>
+    <step number="2">
+      <action>Brush crumbs and dry debris into 🍷 Dustpan_and_Brush.</action>
+    </step>
+    <step number="3">
+      <action>Put the collected debris in 📦 Trash_Bins.</action>
+    </step>
+    <step number="4">
+      <action>Inspect the bar top for sticky or visible residue.</action>
+      <ifThen>IF residue is present, THEN do steps 5 through 7. IF none remains, THEN skip to step 8.</ifThen>
+    </step>
+    <step number="5">
+      <action>Spray the residue with 🍷 Multisurface_Cleaner.</action>
+    </step>
+    <step number="6">
+      <action>Wipe each sprayed spot with 🍷 Disposable_Towels until the residue is gone.</action>
+    </step>
+    <step number="7">
+      <action>Put used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="8">
+      <action>Put remaining MOOP from the bar top and floor in 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No unattended belonging, crumb, trash, MOOP, sticky spot, or visible residue remains.</criterion>
+    <criterion>The bar top is dry and ready for service.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+</task>

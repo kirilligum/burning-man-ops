@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Hair_Restraints</name>
+
+  <description>Disposable 21-inch white nylon hairnets, 100 count.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>A clean restraint that contains the worker's hair is available.</readyBeforeUse>
+  <readyForNextPerson>Unused clean restraints remain available.</readyForNextPerson>
+  <ifNotReady>Do not handle food. Ask the Food Lead for a hair restraint.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

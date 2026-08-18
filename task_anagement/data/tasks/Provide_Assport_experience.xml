@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Provide_Assport_experience</name>
+
+  <checklist_types>
+    <checklist_type>Bar</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>When a guest requests an Assport stamp</when>
+  <time/>
+
+  <resources>
+    <resource>🍷 Assport_Stamp</resource>
+    <resource>🍷 Assport_Wheel</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Offer the guest a no-contact option and the available contact options.</action>
+    </step>
+    <step number="2">
+      <action>Explain the exact action before any physical contact.</action>
+    </step>
+    <step number="3">
+      <action>Ask for a clear and enthusiastic yes to that exact action.</action>
+      <ifThen>IF the answer is not a clear yes, or the guest is a minor or too intoxicated to consent, THEN use a no-contact option.</ifThen>
+    </step>
+    <step number="4">
+      <action>Perform only the action the guest agreed to.</action>
+      <ifThen>IF the guest withdraws consent, THEN stop immediately.</ifThen>
+    </step>
+    <step number="5">
+      <action>Stamp the guest's Assport.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The guest received the requested stamp.</criterion>
+    <criterion>Any physical contact was specific, freely chosen, enthusiastic, and stopped if consent changed.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Bar Lead</expert>
+</task>

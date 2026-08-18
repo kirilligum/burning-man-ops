@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_Serving_Trays</name>
+
+  <description>Food-service trays that hold sealed ice below the serving grids and mats.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>Trays are clean, sanitized, air-dry, and have no crack or leak.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, trays are leak-free and keep food at or below 41°F. After
+    service, they are washed, rinsed, sanitized, air-dry, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a cracked or leaking tray. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

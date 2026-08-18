@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Tray_Grids_and_Mats</name>
+
+  <description>Food-contact grids and mats that hold servings above sealed ice bags.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>Every grid and mat is clean, sanitized, air-dry, and intact.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, every grid and mat is clean and protected from contamination.
+    After service, each is washed, rinsed, sanitized, air-dry, and stored.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a damaged or dirty grid or mat. Tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

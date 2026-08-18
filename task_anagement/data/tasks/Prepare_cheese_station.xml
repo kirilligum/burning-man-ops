@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Prepare_cheese_station</name>
+
+  <checklist_types>
+    <checklist_type>Cheese</checklist_type>
+  </checklist_types>
+
+  <area>Bar/Cheese</area>
+  <why/>
+  <when>Before cheese service begins</when>
+  <time/>
+
+  <resources>
+    <resource>Food Lead</resource>
+    <resource>📦 Handwashing_Station</resource>
+    <resource>🍷 Hair_Restraints</resource>
+    <resource>🍷 Disposable_Aprons</resource>
+    <resource>🍷 Disposable_Food_Gloves</resource>
+    <resource>🍷 Cheese_Work_Surface</resource>
+    <resource>🍷 Food_Surface_Sanitizer</resource>
+    <resource>🍷 Disposable_Towels</resource>
+    <resource>🍷 Cheese_of_the_Day</resource>
+    <resource>🍷 Pairing_List</resource>
+    <resource>🍷 Food_Probe_Thermometer</resource>
+    <resource>🍷 Cheese_Name_Board</resource>
+    <resource>🍷 Cheese_Serving_Trays</resource>
+    <resource>🍷 Tray_Grids_and_Mats</resource>
+    <resource>🍷 Ice_Storage</resource>
+    <resource>🍷 Food_Service_Checklist</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Inspect the current food permit and daily 🍷 Food_Service_Checklist.</action>
+      <ifThen>IF either required document is missing, THEN do not open and tell the Food Lead.</ifThen>
+    </step>
+    <step number="2">
+      <action>Confirm that you have no vomiting, diarrhea, jaundice, fever with sore throat, or infected hand wound.</action>
+      <ifThen>IF you have any listed symptom, THEN do not handle food and tell the Food Lead.</ifThen>
+    </step>
+    <step number="3">
+      <action>Secure your hair with one restraint from 🍷 Hair_Restraints.</action>
+    </step>
+    <step number="4">
+      <action>Wash your hands at 📦 Handwashing_Station.</action>
+    </step>
+    <step number="5">
+      <action>Put on one clean apron from 🍷 Disposable_Aprons.</action>
+    </step>
+    <step number="6">
+      <action>Remove visible soil from 🍷 Cheese_Work_Surface with 🍷 Food_Surface_Sanitizer and 🍷 Disposable_Towels.</action>
+    </step>
+    <step number="7">
+      <action>Spray the work surface until it is visibly wet.</action>
+    </step>
+    <step number="8">
+      <action>Leave the work surface visibly wet for 60 seconds.</action>
+    </step>
+    <step number="9">
+      <action>Allow the work surface to air dry.</action>
+    </step>
+    <step number="10">
+      <action>Measure 🍷 Cheese_of_the_Day with 🍷 Food_Probe_Thermometer.</action>
+      <ifThen>IF the cheese is above 41°F, THEN keep it out of service and tell the Food Lead.</ifThen>
+    </step>
+    <step number="11">
+      <action>Clean and sanitize the thermometer probe according to the 🍷 Food_Surface_Sanitizer label.</action>
+    </step>
+    <step number="12">
+      <action>Write the cheese name from 🍷 Pairing_List on 🍷 Cheese_Name_Board.</action>
+    </step>
+    <step number="13">
+      <action>Put sealed ice bags from 🍷 Ice_Storage in 🍷 Cheese_Serving_Trays.</action>
+    </step>
+    <step number="14">
+      <action>Place 🍷 Tray_Grids_and_Mats above the ice.</action>
+    </step>
+    <step number="15">
+      <action>Complete the opening entries on 🍷 Food_Service_Checklist.</action>
+    </step>
+    <step number="16">
+      <action>Wash your hands again at 📦 Handwashing_Station.</action>
+    </step>
+    <step number="17">
+      <action>Put on one clean pair from 🍷 Disposable_Food_Gloves.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The required permit and daily checklist are present.</criterion>
+    <criterion>The worker is healthy, hair is restrained, hands are washed, and apron and gloves are clean.</criterion>
+    <criterion>The work surface is sanitized and air-dry.</criterion>
+    <criterion>The cheese is at or below 41°F.</criterion>
+    <criterion>The cheese name is displayed and the trays, ice, grids, and mats are ready.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Food Lead</expert>
+
+  <reasoning>
+    <entry>Gloves are put on after cleaning and equipment setup so the worker does not contaminate them before touching ready-to-eat food.</entry>
+  </reasoning>
+</task>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Cheese_of_the_Day</name>
+
+  <description>Cheese selected on the current pairing list from an approved food source.</description>
+  <location>Kitchen refrigerator until service.</location>
+
+  <readyBeforeUse>The cheese is protected from contamination and at or below 41°F.</readyBeforeUse>
+
+  <readyForNextPerson>
+    During service, the cheese is protected and at or below 41°F. After service,
+    protected cheese held at or below 41°F is wrapped and refrigerated. Exposed
+    cheese or cheese with unknown history is discarded.
+  </readyForNextPerson>
+
+  <ifNotReady>Keep the cheese out of service and tell the Food Lead.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

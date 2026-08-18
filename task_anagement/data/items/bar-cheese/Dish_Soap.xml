@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Dish_Soap</name>
+
+  <description>Dawn Professional Manual Pot and Pan Detergent, original scent.</description>
+  <location>Cheese station.</location>
+
+  <readyBeforeUse>The labeled container has enough detergent for the wash basin.</readyBeforeUse>
+  <readyForNextPerson>The container is closed, upright, and contains detergent.</readyForNextPerson>
+  <ifNotReady>Ask the Food Lead for the same approved detergent.</ifNotReady>
+
+  <responsible>Food Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Wine_Cooler</name>
+
+  <description>Insulated cooler used to chill wine cans; its ice is not served to guests.</description>
+  <location>Bar/Cheese area.</location>
+
+  <readyBeforeUse>The cooler is clean, upright, and does not leak.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The cooler is upright and closed. Meltwater is contained and no water has
+    reached the playa.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not use a leaking cooler. Tell the Bar Lead.</ifNotReady>
+
+  <responsible>Bar Lead</responsible>
+  <commonProblems/>
+</item>
