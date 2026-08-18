@@ -477,7 +477,7 @@ instructions belong in Steps or Common problems instead.
     next person to use.
   </instruction>
   <instruction>Collect all MOOP.</instruction>
-  <instruction>If something is wrong with an item, escalate to the Dominatrix.</instruction>
+  <instruction>If a problem occurs and the solution is not clear, tell the Dominatrix.</instruction>
 </globalInstructions>
 ```
 

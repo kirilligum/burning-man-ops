@@ -248,6 +248,15 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Keep item **Common problems** limited to non-obvious,
   item-specific responses that require separate instruction.
 
+### D-122 — Escalate only unclear problems globally
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** The global escalation instruction is: `If a problem occurs and
+  the solution is not clear, tell the Dominatrix.`
+- **Effect:** Item and task records should provide a concrete response when
+  one is known. Escalate only when the record does not provide a clear solution.
+
 ## Open decisions
 
 Open operational questions remain in the specification's **Open decisions**

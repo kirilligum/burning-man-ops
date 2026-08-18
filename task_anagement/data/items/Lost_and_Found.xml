@@ -16,7 +16,8 @@
   </readyForNextPerson>
 
   <ifNotReady>
-    Do not place belongings outside the container. Tell the Dominatrix.
+    Do not place belongings outside the container. If the problem is not clear,
+    tell the Dominatrix.
   </ifNotReady>
 
   <responsible>Dominatrix</responsible>
@@ -24,7 +25,7 @@
   <commonProblems>
     <problem>
       <condition>The container is full.</condition>
-      <response>Do not pile belongings around it. Tell the Dominatrix.</response>
+      <response>Get another labeled container and put it next to this one.</response>
     </problem>
   </commonProblems>
 </item>
