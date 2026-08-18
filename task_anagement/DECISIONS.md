@@ -157,18 +157,18 @@ lookup command documented in `AGENTS.md`.
 - **Status:** Accepted
 - **Decision:** Store categorized items in their categorical area folder. Store
   an item that does not belong to an area directly under `data/items/`.
-- **Effect:** A task resolves an item name first in its Area folder and then at
-  the item root. Root items have a blank **Area** value in TSV and Google
-  Sheets. `📦 Communal_Tables`, `📦 Lost_and_Found`, and `📦 Trash_Bins` are root
-  items.
+- **Effect:** Root items have a blank **Area** value in TSV and Google Sheets.
+  `📦 Communal_Tables`, `📦 Lost_and_Found`, and `📦 Trash_Bins` are root
+  items. Item references resolve through their category icon as defined by
+  D-128.
 
 ### D-113 — Keep task reasoning and decisions in task XML
 
 - **Date:** 2026-08-18
 - **Status:** Accepted
 - **Decision:** Add optional `<reasoning>` entries and `<decisions>` records to
-  each task XML. A reasoning entry records a concise rationale. A decision
-  record contains `date`, `status`, `text`, and `effect`.
+  each task XML. A reasoning entry records a concise rationale. A task-specific
+  decision contains `date`, `status`, `text`, and `effect`.
 - **Effect:** Maintainers and Codex can review why a task is shaped a certain
   way and which task-specific choices were accepted without adding prose to
   the read-do procedure. Renderers omit these fields from task cards by
@@ -248,15 +248,6 @@ lookup command documented in `AGENTS.md`.
 - **Effect:** Keep item **Common problems** limited to non-obvious,
   item-specific responses that require separate instruction.
 
-### D-122 — Escalate only unclear problems globally
-
-- **Date:** 2026-08-18
-- **Status:** Accepted
-- **Decision:** The global escalation instruction is: `If a problem occurs and
-  the solution is not clear, tell the Dominatrix.`
-- **Effect:** Item and task records should provide a concrete response when
-  one is known. Escalate only when the record does not provide a clear solution.
-
 ### D-123 — Use Dominatrix only as the unknown-reference fallback
 
 - **Date:** 2026-08-18
@@ -292,7 +283,7 @@ lookup command documented in `AGENTS.md`.
 - **Date:** 2026-08-18
 - **Status:** Accepted
 - **Decision:** Keep the cleaner handoff condition to the bottle containing
-  cleaner. If it does not spray, turn the nozzle from `OFF` to `SPRAY`. When it
+  cleaner. If it does not spray, turn the nozzle from `OFF` to `ON`. When it
   must be replaced, ask the Dominatrix where to find the replacement, dispose
   of the old bottle in `📦 Trash_Bins`, and get the replacement.
 - **Effect:** Do not make the normal handoff depend on the nozzle's OFF state;
@@ -307,6 +298,47 @@ lookup command documented in `AGENTS.md`.
   item name and filename.
 - **Effect:** `Multisurface_Cleaner` remains the item ID while its exact Clorox
   product details live in `<description>`.
+
+### D-128 — Resolve item references by their icon
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** The icon at the start of an item reference determines the item
+  folder. The remaining underscore name is the item ID within that folder.
+- **Effect:** `🍳 Multisurface_Cleaner` resolves only to
+  `data/items/kitchen/Multisurface_Cleaner.xml`; `📦 Trash_Bins` resolves only
+  to `data/items/Trash_Bins.xml`. References remain deterministic when the same
+  item name exists in more than one area.
+
+### D-129 — Keep global worker instructions minimal
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Global XML contains only instructions that every worker must
+  apply to every task. Authoring rules stay in the specification and
+  `AGENTS.md`.
+- **Effect:** Every task tells the worker to return used items ready for the
+  next person, collect MOOP, and ask the Dominatrix when an item, instruction,
+  or solution is missing or unclear. D-129 supersedes D-122's narrower wording.
+
+### D-130 — Allow an item to omit Location
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Item **Location** is optional when the item is recognizable at
+  the task site or may be found in multiple obvious places.
+- **Effect:** `Trash_Bins` may omit `<location>`. Keep a location whenever it
+  materially helps a newcomer find the item.
+
+### D-131 — Reference shared decisions without copying them
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** A task-specific decision keeps its full fields in task XML. A
+  decision already stored in the active or historical decision record is
+  linked from a task with only `record` and `status`.
+- **Effect:** Task XML retains traceability without loading duplicated decision
+  text. The historical lookup continues to use superseded record links.
 
 ## Open decisions
 

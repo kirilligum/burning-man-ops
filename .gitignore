@@ -1,2 +1,4 @@
 firebase-debug.log
 .aider*
+__pycache__/
+*.pyc

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalInstructions>
   <instruction>
-    For completing the task, check that the items are in the condition for the
-    next person to use.
+    Before marking PASS, return each used item to its location and leave it
+    ready for the next person.
   </instruction>
   <instruction>Collect all MOOP.</instruction>
-  <instruction>Use the relevant reference when known. If it is not clear, ask the Dominatrix.</instruction>
-  <instruction>If you cannot find an item, ask the Dominatrix.</instruction>
-  <instruction>If a problem occurs and the solution is not clear, tell the Dominatrix.</instruction>
+  <instruction>
+    If an item, instruction, or solution is missing or unclear, ask the
+    Dominatrix.
+  </instruction>
 </globalInstructions>

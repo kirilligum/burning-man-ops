@@ -92,3 +92,13 @@ and prints only the matching records from this file.
 - **Decision:** Use **Stash Bins** as the item name and waste destination for
   this task.
 - **Effect:** Superseded by the correction to **Trash Bins**.
+
+### D-122 — Escalate only unclear problems globally
+
+- **Date:** 2026-08-18
+- **Status:** Superseded by D-129
+- **Decision:** The global escalation instruction is: `If a problem occurs and
+  the solution is not clear, tell the Dominatrix.`
+- **Effect:** D-129 consolidates missing items, unclear instructions, and
+  unclear solutions into one worker-facing instruction. Item and task records
+  still provide a concrete response whenever one is known.

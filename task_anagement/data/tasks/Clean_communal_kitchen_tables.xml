@@ -26,20 +26,20 @@
 
   <steps>
     <step number="1">
-      <action>Put unattended belongings in 📦 Lost_and_Found.</action>
+      <action>Put belongings with no nearby owner found on, under, or around 📦 Communal_Tables in 📦 Lost_and_Found.</action>
     </step>
 
     <step number="2">
-      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_and_Brush.</action>
+      <action>Use 🍳 Dustpan_and_Brush to brush dry crumbs and debris from 📦 Communal_Tables into the dustpan.</action>
     </step>
 
     <step number="3">
-      <action>Empty 🍳 Dustpan_and_Brush into 📦 Trash_Bins.</action>
+      <action>Empty the dustpan into 📦 Trash_Bins.</action>
     </step>
 
     <step number="4">
       <action>Inspect 📦 Communal_Tables for food, visible dirt, or sticky residue.</action>
-      <ifThen>IF residue remains, THEN do steps 5 through 7. IF no residue remains, THEN skip to step 8.</ifThen>
+      <ifThen>IF food, visible dirt, or sticky residue remains, THEN do steps 5 through 7. IF none remains, THEN skip to step 8.</ifThen>
     </step>
 
     <step number="5">
@@ -47,7 +47,7 @@
     </step>
 
     <step number="6">
-      <action>Wipe the sprayed areas with one towel from 🍳 Disposable_Towels until no food, visible dirt, or sticky residue remains.</action>
+      <action>Wipe the sprayed areas with a towel from 🍳 Disposable_Towels until no food, visible dirt, or sticky residue remains.</action>
     </step>
 
     <step number="7">
@@ -55,7 +55,7 @@
     </step>
 
     <step number="8">
-      <action>Put MOOP found on, under, and around 📦 Communal_Tables in 📦 Trash_Bins.</action>
+      <action>Put remaining MOOP found on, under, and around 📦 Communal_Tables in 📦 Trash_Bins.</action>
     </step>
   </steps>
 
@@ -68,7 +68,7 @@
   <commonProblems/>
 
   <reasoning>
-    <entry>Clear unattended belongings before moving debris so they are not brushed aside or discarded.</entry>
+    <entry>Move belongings with no nearby owner before cleaning so they are not brushed aside or discarded.</entry>
     <entry>Remove dry debris before wet cleaning so cleaner and towels are used only when residue remains.</entry>
     <entry>Finish with MOOP so the final sweep catches material displaced during cleaning.</entry>
   </reasoning>
@@ -82,17 +82,17 @@
     </decision>
     <decision>
       <record>D-114</record>
-      <date>2026-08-18</date>
       <status>Superseded</status>
-      <text>Use Stash Bins as the waste destination.</text>
-      <effect>Superseded by the correction to Trash Bins.</effect>
     </decision>
     <decision>
       <record>D-115</record>
+      <status>Accepted</status>
+    </decision>
+    <decision>
       <date>2026-08-18</date>
       <status>Accepted</status>
-      <text>Use 📦 Trash_Bins as the waste destination.</text>
-      <effect>Use 📦 Trash_Bins for the individual destination in task steps.</effect>
+      <text>Use the brush and dustpan on tables only when both have no visible dirt or trash.</text>
+      <effect>Use disposable towels for dry debris when the brush or dustpan is not clean enough for a table surface.</effect>
     </decision>
   </decisions>
 </task>

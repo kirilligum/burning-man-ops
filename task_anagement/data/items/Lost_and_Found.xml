@@ -15,17 +15,12 @@
     ground around it.
   </readyForNextPerson>
 
-  <ifNotReady>
-    Do not place belongings outside the container. If the problem is not clear,
-    tell the Dominatrix.
-  </ifNotReady>
-
   <responsible>Dominatrix</responsible>
 
   <commonProblems>
     <problem>
       <condition>The container is full.</condition>
-      <response>Get another container and put it next to this one.</response>
+      <response>Get another empty container and put it next to the full container.</response>
     </problem>
   </commonProblems>
 </item>

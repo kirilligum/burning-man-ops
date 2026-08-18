@@ -6,11 +6,9 @@
     Tables at communal eating area (see the map)
   </location>
 
-  <readyBeforeUse/>
-
   <readyForNextPerson>
-    Every table is clean, dry, stable, and usable. No MOOP is present on, under,
-    or around the tables.
+    Every table is clean and dry. No MOOP is present on, under, or around the
+    tables.
   </readyForNextPerson>
 
   <ifNotReady>

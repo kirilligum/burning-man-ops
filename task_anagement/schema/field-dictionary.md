@@ -7,9 +7,9 @@ human-facing names.
 Task names are globally unique identifiers using underscores instead of spaces.
 An item is identified by its parent folder plus its name. Categorized items use
 an area folder; uncategorized items live directly under `data/items/`. Names are
-unique within a folder and may repeat in different folders. Canonical IDs and
-references match exactly, including capitalization; reference icons are prefixes
-and are not part of IDs.
+unique within a folder and may repeat in different folders. Canonical IDs match
+exactly, including capitalization. The reference icon is not part of the ID,
+but it is required reference syntax that selects the item's folder.
 
 ## Task fields
 
@@ -21,13 +21,13 @@ and are not part of IDs.
 | **Why** | `/task/why` | Text | No | One short sentence describing a non-obvious practical benefit or consequence. Leave blank when it would only restate the task. |
 | **When** | `/task/when` | Text | Yes | Time, event, or observable trigger for starting the task. |
 | **Time** | `/task/time` | Text duration | No | Realistic duration under normal conditions, such as `10 minutes`. Leave blank until a useful value is known. |
-| **What you need** | `/task/resources/resource` | Multiline text | No | Only items, materials, helpers, or required presence without which the task cannot be completed. An item reference is its area icon followed by its underscore ID; other resources remain plain text. Use one resource per line. Resolve the ID first in the task's Area folder and then directly under `data/items/`. |
+| **What you need** | `/task/resources/resource` | Multiline text | No | Only items, materials, helpers, or required presence without which the task cannot be completed. An item reference is its area icon followed by its underscore ID; the icon selects the exact item folder. Other resources remain plain text. Use one resource per line. |
 | **Steps** | `/task/steps/step` | Ordered multiline structure | Yes | The fewest read-do actions needed, in execution order. At least one step is required. |
 | **PASS when** | `/task/passWhen/criterion` | Multiline text | Yes | The minimum observable conditions needed to verify completion. Use one criterion per line. |
 | **Common problems** | `/task/commonProblems/problem` | Multiline IF/THEN text | No | Likely task-level problems not owned by an item or tied to one step. Use one condition and response per line. |
 | **Who to ask** | `/task/expert` | Text | No | Specific person or role to ask about the task. Blank or an omitted element means **Dominatrix** only when no clearer expert or reference is known. Do not include contact information. |
 | **Reasoning** | `/task/reasoning/entry` | Multiline text | No | Concise rationale for the task's order, scope, or omissions. Maintainer record; not shown on the task card by default. |
-| **Decisions** | `/task/decisions/decision` | Structured record list | No | Task-specific decisions that explain the accepted procedure. Each record has `date`, `status`, `text`, and `effect`; add `record` when it links to a global decision ID. Maintainer record; not shown on the task card by default. |
+| **Decisions** | `/task/decisions/decision` | Structured record list | No | A task-specific decision has `date`, `status`, `text`, and `effect`. A decision already stored in the active or historical record has only `record` and `status`. Maintainer record; not shown on the task card by default. |
 
 The Sheet task-definition field order is exactly the order above, with the
 Boolean checklist-type columns immediately after **Task**, **Area** after those
@@ -49,7 +49,8 @@ of the default task card.
 
 ## Reference icons
 
-Icons are display prefixes. They are not part of task or item IDs.
+Icons are reference prefixes. They are not part of task or item IDs, but an
+item icon authoritatively selects the folder used to resolve the item.
 
 | Reference | Icon |
 | --- | --- |
@@ -113,7 +114,7 @@ The **Steps** Sheet cell uses this deterministic layout:
 | **Item** | `/item/name` | Text | Yes | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. Keep area, brand, model, size, and product numbers out of the ID. The ID must be unique within its parent folder. |
 | **Description** | `/item/description` | Text | No | Recognizable description, brand, model, size, or product detail. Keep these details out of the item ID. |
 | **Area** | Parent folder under `data/items/` | Enum | No | Categorical camp area. It is derived from the XML folder and exported as a Sheet column; it is not duplicated inside the item XML. Blank means the item is stored directly under `data/items/`. |
-| **Location** | `/item/location` | Text | Yes | Storage location using landmarks and labels when available. Labels are optional. |
+| **Location** | `/item/location` | Text | No | Storage location using landmarks and labels when useful. Leave blank when the item is recognizable at the task site or may be found in multiple obvious places. Labels are optional. |
 | **Ready before use** | `/item/readyBeforeUse` | Text | No | Observable state required before someone uses the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |
 | **Ready for next person** | `/item/readyForNextPerson` | Text | Yes | Observable state in which the item must be returned. |
 | **If not ready** | `/item/ifNotReady` | Text | No | Immediate item-specific action when a ready condition is not met. Leave blank when the global instructions cover the response. |
@@ -152,15 +153,14 @@ to the read-do procedure.
 </decisions>
 ```
 
-`reasoning/entry` is one concise rationale per entry. Each `decisions/decision`
-must contain the four child fields `date`, `status`, `text`, and `effect`. The
-optional `record` child links to a global decision ID such as `D-114` when the
-task decision has a corresponding entry in `DECISIONS.md` or
-`HISTORICAL_DECISIONS.md`. `status` is one of `Accepted`, `Superseded`, or
-`Open`; only `Accepted` records govern the current task. Project-wide decisions
-remain in `task_anagement/DECISIONS.md`. These records explain the procedure;
-an operational branch still belongs in a step's `ifThen` field. Converters must
-preserve these records, including order and empty optional values.
+`reasoning/entry` is one concise rationale per entry. A task-specific
+`decisions/decision` contains `date`, `status`, `text`, and `effect`. When the
+decision already exists in `DECISIONS.md` or `HISTORICAL_DECISIONS.md`, use a
+reference-only decision containing `record` and `status`; do not copy its text.
+`status` is one of `Accepted`, `Superseded`, or `Open`; only `Accepted` records
+govern the current task. These records explain the procedure; an operational
+branch still belongs in a step's `ifThen` field. Converters must preserve these
+records, including order and empty optional values.
 
 ## Global-instruction field
 
@@ -187,9 +187,9 @@ definition fields.
 - Reject spaces in task and item IDs. Replace each space with `_`; do not put
   the reference icon or `.xml` extension in the ID.
 - Reject duplicate task names, duplicate item names within one folder, and item
-  references missing from both the task's Area folder and the item root.
-- Permit the same item name in different folders. Resolve the task's Area
-  folder before the item root.
+  references missing from the folder selected by their icon.
+- Permit the same item name in different folders. Resolve every item reference
+  from its icon, regardless of the task's Area.
 - Do not derive names from row numbers or positions.
 - Do not place multiple resources, criteria, or problems on one line.
 - Empty optional fields remain empty; converters do not invent content.

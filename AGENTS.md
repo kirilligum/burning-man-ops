@@ -77,21 +77,28 @@ protected information and private contact details.
 Task names are unique identifiers using underscores instead of spaces. An item's
 parent folder plus its name is its identifier. Store names in `<name>` elements,
 make each filename match its name, and keep one logical record per XML file. Every task stores its
-categorical area and resolves item references first within that area's folder,
-then directly under `data/items/`. Format XML as UTF-8 with two-space
-indentation. References omit the `.xml` extension. Prefix task references with
-`📋`; prefix item references with the icon for their area folder, or `📦` for
-root items. Icons are not part of IDs. Task XML stores selected checklist
+categorical area. Format XML as UTF-8 with two-space indentation. References
+omit the `.xml` extension. Prefix task references with `📋`; prefix item
+references with the icon for their area folder, or `📦` for root items. The
+item icon authoritatively selects the folder even though it is not part of the
+ID. Task XML stores selected checklist
 memberships in `<checklist_types>` using one `<checklist_type>` element per
 selected type. Converters must preserve reasoning and decision records,
 including their order, optional `<record>` links, and empty optional values.
+A task-specific decision has date, status, text, and effect. A shared active or
+historical decision reference has only record and status.
 
 ## Validation Commands
 
-There is no automated suite yet. For every change, run:
+For every task-system change, run:
 
 ```bash
-find task_anagement/data -name '*.xml' -exec xmllint --noout {} +
+python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
+python3 task_anagement/scripts/validate.py
+python3 task_anagement/scripts/render-task-card.py \
+  task_anagement/data/tasks/Clean_communal_kitchen_tables.xml \
+  --output task_anagement/build/task-cards/Clean_communal_kitchen_tables.md \
+  --check
 git diff --check
 git status --short
 ```

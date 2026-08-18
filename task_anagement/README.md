@@ -32,7 +32,8 @@ superseded records related to a task.
 
 Task and item names are canonical IDs. Replace spaces with underscores and use
 the resulting ID for the XML filename without its `.xml` extension in
-references. Icons are display prefixes, not part of IDs.
+references. Icons are not part of IDs, but an item icon is required reference
+syntax that selects the item's folder.
 
 | Reference | Icon |
 | --- | --- |
@@ -234,27 +235,18 @@ The system will produce connected documents rather than one enormous manual.
 
 ### 1. Global instructions
 
-`global-instructions.xml` contains the short, durable instructions that apply
-to every task:
+`global-instructions.xml` contains exactly the short worker instructions that
+apply to every task:
 
-- Stop and ask when instructions, equipment, or conditions do not match.
-- Do not perform restricted work without authorization.
+- Before marking PASS, return each used item to its location and leave it ready
+  for the next person.
 - Collect all MOOP.
-- Use the relevant task, item, location, or role reference when it is known;
-  ask the Dominatrix when it is not.
-- If you cannot find an item, ask the Dominatrix.
-- Return equipment to its designated location.
-- Restock consumables or report shortages.
-- Tag broken equipment and report it.
-- Leave the area ready for the next shift.
-- Record completion, blockage, or escalation.
+- If an item, instruction, or solution is missing or unclear, ask the
+  Dominatrix.
 
-One global instruction connects every used item to its item-specific handoff
-condition:
-
-> Before marking PASS, return each used item to **Location** in the condition
-> described by **Ready for next person**. If it does not match, follow **If not
-> ready**.
+Rules for authors, such as preferring a known reference over the Dominatrix,
+belong in this specification and `AGENTS.md`; they are not rendered as worker
+instructions.
 
 Global instructions are automatically included in rendered task cards or their
 standard completion section. Tasks do not reference them individually. If an
@@ -325,7 +317,7 @@ The simplest mental models are:
 
 > **TASK = NAME + CHECKLIST_TYPES + AREA + WHY + WHEN + TIME + RESOURCES + STEPS + PASS + PROBLEMS + EXPERT + REASONING + DECISIONS**
 
-> **ITEM = NAME + DESCRIPTION + OPTIONAL AREA + LOCATION + OPTIONAL READY BEFORE + READY FOR NEXT + OPTIONAL IF NOT READY + RESPONSIBLE + PROBLEMS**
+> **ITEM = NAME + DESCRIPTION + OPTIONAL AREA + OPTIONAL LOCATION + OPTIONAL READY BEFORE + READY FOR NEXT + OPTIONAL IF NOT READY + RESPONSIBLE + PROBLEMS**
 
 Task IDs are globally unique. Item IDs are unique within their parent folder
 and may repeat in different folders. IDs use underscores instead of spaces.
@@ -344,8 +336,10 @@ perform or verify the task. Detail is added after a demonstrated operational
 need, not by default.
 
 Locations are deliberately not separate records. An area folder gives a
-categorized item's categorical location; the **Location** field says exactly
-where to find it. An uncategorized item stays directly under `data/items/`.
+categorized item's categorical location; the optional **Location** field says
+where to find it when that information is useful. A recognizable item that may
+be found in several obvious places may omit Location. An uncategorized item
+stays directly under `data/items/`.
 
 ### Planned Google Sheets tabs
 
@@ -397,7 +391,7 @@ describe the same information without creating duplicate identifiers.
 | **Common problems** | `commonProblems/problem` | Likely problems not tied to one particular step. Pair each condition with a direct response, preferably as IF/THEN. |
 | **Who to ask** | `expert` | Person to ask about the task. Leave blank to use **Dominatrix**. This appears after Common problems on the task card. |
 | **Reasoning** | `reasoning/entry` | Optional concise rationale for the task's order, scope, or omissions. One entry per line. Maintainer metadata; not shown on the task card by default. |
-| **Decisions** | `decisions/decision` | Optional task-specific decision records. Each record contains a date, status, decision text, and effect. Maintainer metadata; not shown on the task card by default. |
+| **Decisions** | `decisions/decision` | A task-specific decision contains date, status, text, and effect. A shared active or historical decision is linked with only record and status. Maintainer metadata; not shown on the task card by default. |
 
 The initial checklist-column allowlist should be selected from the current
 operational workbook during inventory:
@@ -435,7 +429,7 @@ The `ITEMS` Sheet presents these columns in this order:
 | **Item** | `item/name` | Short functional item ID using underscores instead of spaces and matching the XML filename, such as `Disposable_Towels`. It must be unique within its parent folder. Keep area, brand, model, size, and product numbers out of the ID. |
 | **Description** | `item/description` | Optional recognizable description, brand, model, size, or product detail. Keep these details out of the item ID. |
 | **Area** | Parent folder under `data/items/` | Optional categorical camp area. The converter derives it from the XML folder and exposes it as a Sheet column. Blank means the item is directly under `data/items/`. |
-| **Location** | `location` | Exact storage location using visible landmarks, container names, and shelf or side information. |
+| **Location** | `location` | Optional storage location using visible landmarks, container names, and shelf or side information. Leave blank when the item is recognizable at the task site or may be found in multiple obvious places. |
 | **Ready before use** | `readyBeforeUse` | Observable condition required before someone starts using the item. Leave blank when availability is obvious or the global instructions already cover not finding the item. |
 | **Ready for next person** | `readyForNextPerson` | Observable condition in which the item must be returned, including cleaning, closing, charging, or restocking. |
 | **If not ready** | `ifNotReady` | Optional item-specific action when a ready condition is not met. Leave blank when the global instructions cover the response. |
@@ -444,9 +438,10 @@ The `ITEMS` Sheet presents these columns in this order:
 
 Each item is stored as an individual XML file under its area folder or directly
 under `data/items/` when it has no category. An item resource line uses its
-category icon followed by its exact underscore ID; the resolver strips the icon
-and resolves the ID first in the task's Area and then at the item root. Other
-resource lines, such as `Two additional people`, remain plain requirements.
+category icon followed by its exact underscore ID. The icon authoritatively
+selects the item folder: `🍳` selects `data/items/kitchen/`, while `📦`
+selects `data/items/`. Other resource lines, such as `Two additional people`,
+remain plain requirements.
 
 Use this item-name pattern:
 
@@ -486,182 +481,38 @@ instructions belong in Steps or Common problems instead.
 <?xml version="1.0" encoding="UTF-8"?>
 <globalInstructions>
   <instruction>
-    For completing the task, check that the items are in the condition for the
-    next person to use.
+    Before marking PASS, return each used item to its location and leave it
+    ready for the next person.
   </instruction>
   <instruction>Collect all MOOP.</instruction>
-  <instruction>Use the relevant reference when known. If it is not clear, ask the Dominatrix.</instruction>
-  <instruction>If you cannot find an item, ask the Dominatrix.</instruction>
-  <instruction>If a problem occurs and the solution is not clear, tell the Dominatrix.</instruction>
+  <instruction>
+    If an item, instruction, or solution is missing or unclear, ask the
+    Dominatrix.
+  </instruction>
 </globalInstructions>
 ```
 
 ## XML representation
 
-The exact XML schema will be refined when the first task is implemented. The
-starting shape should keep the task readable and direct. Tasks reference items
-with an area icon followed by the exact underscore ID, resolving the task's
-Area before the item root. The icon is not part of the ID. The expert, Area,
-and selected checklist types are stored directly in the task. XML stores them
-under `<checklist_types>` as one `<checklist_type>` element per selected type. A
-missing expert means **Dominatrix** as the unresolved-question fallback.
+The field dictionary defines the canonical XML shape. The current examples are
+the actual files, not copies embedded in this specification:
 
-Illustrative example:
+- `data/tasks/Clean_communal_kitchen_tables.xml`
+- `data/items/Communal_Tables.xml`
+- `data/items/Lost_and_Found.xml`
+- `data/items/Trash_Bins.xml`
+- `data/items/kitchen/Disposable_Towels.xml`
+- `data/items/kitchen/Dustpan_and_Brush.xml`
+- `data/items/kitchen/Multisurface_Cleaner.xml`
+- `data/global-instructions.xml`
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<task>
-  <name>Clean_communal_kitchen_tables</name>
+Task XML stores the expert, Area, checklist memberships, execution fields, and
+optional maintainer metadata. An item reference contains the folder-selecting
+icon and exact underscore ID. A missing expert means **Dominatrix**. Shared
+active or historical decisions are linked with `record` and `status`; their
+text remains in the applicable decision record.
 
-  <checklist_types>
-    <checklist_type>Morning</checklist_type>
-    <checklist_type>Afternoon</checklist_type>
-  </checklist_types>
-
-  <area>Kitchen</area>
-
-  <why/>
-  <when>Once or more per shift</when>
-  <time/>
-
-  <resources>
-    <resource>📦 Communal_Tables</resource>
-    <resource>📦 Lost_and_Found</resource>
-    <resource>🍳 Dustpan_and_Brush</resource>
-    <resource>🍳 Multisurface_Cleaner</resource>
-    <resource>🍳 Disposable_Towels</resource>
-    <resource>📦 Trash_Bins</resource>
-  </resources>
-
-  <steps>
-    <step number="1">
-      <action>Put unattended belongings in 📦 Lost_and_Found.</action>
-    </step>
-    <step number="2">
-      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_and_Brush.</action>
-    </step>
-    <step number="3">
-      <action>Empty 🍳 Dustpan_and_Brush into 📦 Trash_Bins.</action>
-    </step>
-    <step number="4">
-      <action>Inspect 📦 Communal_Tables for food, visible dirt, or sticky residue.</action>
-      <ifThen>IF residue remains, THEN do steps 5 through 7. IF no residue remains, THEN skip to step 8.</ifThen>
-    </step>
-    <step number="5">
-      <action>Spray the residue with 🍳 Multisurface_Cleaner.</action>
-    </step>
-    <step number="6">
-      <action>Wipe the sprayed areas with one towel from 🍳 Disposable_Towels until no food, visible dirt, or sticky residue remains.</action>
-    </step>
-    <step number="7">
-      <action>Put the used towel in 📦 Trash_Bins.</action>
-    </step>
-    <step number="8">
-      <action>Put MOOP found on, under, and around 📦 Communal_Tables in 📦 Trash_Bins.</action>
-    </step>
-  </steps>
-
-  <passWhen>
-    <criterion>No food, visible dirt, or sticky residue remains on the tables.</criterion>
-    <criterion>No MOOP remains on, under, or around the tables.</criterion>
-    <criterion>The tables are dry.</criterion>
-  </passWhen>
-
-  <commonProblems/>
-
-  <reasoning>
-    <entry>Clear unattended belongings before moving debris so they are not brushed aside or discarded.</entry>
-    <entry>Remove dry debris before wet cleaning so cleaner and towels are used only when residue remains.</entry>
-    <entry>Finish with MOOP so the final sweep catches material displaced during cleaning.</entry>
-  </reasoning>
-
-  <decisions>
-    <decision>
-      <date>2026-08-18</date>
-      <status>Accepted</status>
-      <text>Use the sequence clear belongings, dry-brush, conditionally spot-clean, then collect MOOP.</text>
-      <effect>Require 🍳 Dustpan_and_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
-    </decision>
-    <decision>
-      <record>D-114</record>
-      <date>2026-08-18</date>
-      <status>Superseded</status>
-      <text>Use Stash Bins as the waste destination.</text>
-      <effect>Superseded by the correction to Trash Bins.</effect>
-    </decision>
-    <decision>
-      <record>D-115</record>
-      <date>2026-08-18</date>
-      <status>Accepted</status>
-      <text>Use 📦 Trash_Bins as the waste destination.</text>
-      <effect>Use 📦 Trash_Bins for the individual destination in task steps.</effect>
-    </decision>
-  </decisions>
-
-</task>
-```
-
-The task omits `<expert>`, so **Dominatrix** is used as the unresolved-question
-fallback. The `<reasoning>` and
-`<decisions>` sections preserve maintainer context; they are not rendered on the
-default task card. Item-specific failures are kept in their item records rather
-than repeated in task Common problems.
-
-`<reasoning>` contains one concise `<entry>` per rationale. Each
-`<decisions><decision>` record contains `<date>`, `<status>`, `<text>`, and
-`<effect>`. An optional `<record>` such as `D-114` links the task decision to a
-global decision record. Use `Accepted`, `Superseded`, or `Open` for the status.
-Only Accepted decisions govern the current task; project-wide current decisions
-remain in `DECISIONS.md`, while superseded records remain in
-`HISTORICAL_DECISIONS.md`. These records explain the procedure; an operational
-IF/THEN branch still belongs in the relevant step.
-
-Illustrative items:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<item>
-  <name>Multisurface_Cleaner</name>
-  <description>Clorox Free &amp; Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).</description>
-  <location>Kitchen.</location>
-  <readyBeforeUse>The bottle contains cleaner and sprays.</readyBeforeUse>
-  <readyForNextPerson>The bottle contains cleaner.</readyForNextPerson>
-  <ifNotReady>Ask the Dominatrix where to find a replacement. Dispose of the old bottle in 📦 Trash_Bins. Get the replacement.</ifNotReady>
-  <responsible>Dominatrix</responsible>
-  <commonProblems>
-    <problem>
-      <condition>The cleaner is not spraying.</condition>
-      <response>The nozzle is OFF. Turn the nozzle to SPRAY.</response>
-    </problem>
-  </commonProblems>
-</item>
-```
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<item>
-  <name>Disposable_Towels</name>
-  <location>Kitchen.</location>
-  <readyBeforeUse>At least one clean, dry towel remains in the pack.</readyBeforeUse>
-  <readyForNextPerson>At least one clean, dry towel remains in the pack.</readyForNextPerson>
-  <ifNotReady>Replace them with WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701). If none are available, tell the Dominatrix.</ifNotReady>
-  <responsible>Dominatrix</responsible>
-  <commonProblems/>
-</item>
-```
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<item>
-  <name>Dustpan_and_Brush</name>
-  <location>Kitchen.</location>
-  <readyForNextPerson>The dustpan is empty and the brush is with the dustpan.</readyForNextPerson>
-  <responsible>Dominatrix</responsible>
-  <commonProblems/>
-</item>
-```
-
-Expected future repository layout:
+Expected repository layout:
 
 ```text
 task_anagement/
@@ -669,7 +520,6 @@ task_anagement/
 ├── DECISIONS.md
 ├── HISTORICAL_DECISIONS.md
 ├── schema/
-│   ├── operations.xsd
 │   └── field-dictionary.md
 ├── data/
 │   ├── Treble Makers Camper Wiki.xml
@@ -690,19 +540,28 @@ task_anagement/
 │   │   └── private infrastructure/
 │   └── global-instructions.xml
 ├── scripts/
-│   ├── import-google-sheet
-│   ├── export-google-sheet
 │   ├── extract-historical-decisions.py
-│   ├── validate
-│   └── render
+│   ├── validate.py
+│   └── render-task-card.py
+├── tests/
+│   └── test_scripts.py
 └── build/
-    ├── task-cards/
-    ├── posters/
-    └── booklet/
+    └── task-cards/
+        └── Clean_communal_kitchen_tables.md
 ```
 
-This is a proposed layout, not a requirement to create every directory before
-the first pilot proves what is needed.
+Validate and render the pilot with:
+
+```bash
+python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
+python3 task_anagement/scripts/validate.py
+python3 task_anagement/scripts/render-task-card.py \
+  task_anagement/data/tasks/Clean_communal_kitchen_tables.xml \
+  --output task_anagement/build/task-cards/Clean_communal_kitchen_tables.md
+```
+
+Use the render command with `--check` to verify that the committed card matches
+the canonical XML without rewriting it.
 
 ## Task-card content and order
 
@@ -717,8 +576,9 @@ Every task card should follow the same scanning order.
 7. What you need
 8. Steps
 9. PASS when
-10. Common problems
-11. Who to ask, showing **Dominatrix** when no other expert is specified
+10. Finish, including global instructions and item handoff conditions
+11. Common problems
+12. Who to ask, showing **Dominatrix** when no other expert is specified
 
 Each step contains one physical action or observation. Expected results and
 IF/THEN decisions appear inside the applicable step rather than in separate
@@ -905,102 +765,31 @@ Every printed page should show its task name.
 
 ## Pilot 1: 📋 Clean communal kitchen tables
 
-This is the recommended first pilot because it is frequent and observable. It
-will test whether a minimum task card is enough for a newcomer.
+This is the first complete pilot because it is frequent, observable, and low
+risk. Its canonical source is
+`data/tasks/Clean_communal_kitchen_tables.xml`; its field-facing output is
+`build/task-cards/Clean_communal_kitchen_tables.md`.
 
-The following is a prototype, not an approved procedure.
+The task appears on the **Morning** and **Afternoon** checklists, matching the
+two workbook occurrences. **Why** and **Time** remain blank intentionally.
+The task uses six linked item records, and the rendered card assembles their
+locations, readiness conditions, concrete responses, and common problems so a
+worker does not need to read raw XML.
 
-### 📋 Clean communal kitchen tables
+The selected cleaner is **Clorox Free & Clear Multi Surface Cleaner, Spray
+Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)**. [Clorox directs
+users](https://www.clorox.com/products/clorox-free-clear-multi-surface-cleaner/)
+to turn the nozzle to ON, spray the soiled area, and wipe with a towel or cloth;
+no rinse is required. The product cleans but does not disinfect.
 
-- **Morning:** Yes
-- **Afternoon:** Yes
-- **Area:** Kitchen
+The selected disposable towel is **WypAll PowerClean L40 Extra Absorbent
+Towels, White, 12 x 12.5 in, 56 Count (05701)**.
+[Kimberly-Clark identifies product 05701](https://www.kcprofessional.com/en-us/products/wiping-and-cleaning/process-cleaning/heavy-duty-cleaning-cloth/wypall%C2%AE-powerclean%E2%84%A2-l40-extra-absorbent-towels/05701)
+as a 56-count pack suitable for food-preparation cleaning.
 
-#### Why
-
-_Blank._
-
-#### When
-
-Once or more per shift.
-
-#### Time
-
-_Blank._
-
-#### What you need
-
-- 📦 Communal Tables
-- 📦 Lost and Found
-- 🍳 Dustpan &amp; Brush
-- 🍳 Multisurface Cleaner
-- 🍳 Disposable Towels
-- 📦 Trash Bins
-
-#### Steps
-
-1. Put unattended belongings in 📦 Lost and Found.
-2. Brush dry crumbs and debris from the tables into the dustpan.
-3. Empty the dustpan into 📦 Trash Bins.
-4. Inspect the tables for food, visible dirt, or sticky residue. If residue
-   remains, do steps 5 through 7. If no residue remains, skip to step 8.
-5. Spray the residue with 🍳 Multisurface Cleaner.
-6. Wipe the sprayed areas with one towel from 🍳 Disposable Towels until
-   no food, visible dirt, or sticky residue remains.
-7. Put the used towel in 📦 Trash Bins.
-8. Put MOOP from on, under, and around the tables in 📦 Trash Bins.
-
-#### PASS when
-
-- No food, visible dirt, or sticky residue remains on the tables.
-- No MOOP remains on, under, or around the tables.
-- The tables are dry.
-
-#### Common problems
-
-_Blank._
-
-#### Who to ask
-
-Dominatrix
-
-#### Reasoning (maintainer record)
-
-- Clear unattended belongings before moving debris so they are not brushed
-  aside or discarded.
-- Remove dry debris before wet cleaning so cleaner and towels are used only when
-  residue remains.
-- Finish with MOOP so the final sweep catches material displaced during
-  cleaning.
-
-#### Decisions (maintainer record)
-
-- **2026-08-18 — Accepted:** Use the sequence clear belongings, dry-brush,
-  conditionally spot-clean, then collect MOOP. **Effect:** Require Dustpan &
-  Brush as a resource; use Multisurface Cleaner and Disposable Towels only when
-  residue remains.
-- **2026-08-18 — Superseded:** Use Stash Bins as the waste destination.
-  **Effect:** Superseded by the correction to Trash Bins.
-- **2026-08-18 — Accepted:** Use Trash Bins as the waste destination.
-  **Effect:** Use Trash Bin for the individual destination in task steps.
-
-### Pilot product selection
-
-The operational item name is **Multisurface Cleaner**. Its selected
-replacement product is **Clorox Free & Clear Multi Surface Cleaner, Spray
-Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)**. [Clorox directs users](https://www.clorox.com/products/clorox-free-clear-multi-surface-cleaner/)
-to spray soiled areas and wipe with a towel or cloth; no rinse is required.
-[Walmart sells this exact product](https://www.walmart.com/ip/2691727553)
-individually.
-
-The operational item name is **Disposable Towels**. Its selected
-replacement product is **WypAll PowerClean L40 Extra Absorbent Towels, White,
-12 x 12.5 in, 56 Count (05701)**. [Kimberly-Clark identifies product `05701`](https://www.kcprofessional.com/en-us/products/wiping-and-cleaning/process-cleaning/heavy-duty-cleaning-cloth/wypall%C2%AE-powerclean%E2%84%A2-l40-extra-absorbent-towels/05701)
-as a 56-count pack suitable for food-preparation cleaning. [Home Depot sells
-the same pack](https://www.homedepot.com/p/205705246) as model `KIM05701PK`.
-
-This task claims only that the tables are clean. It does not claim that they
-are sanitized or disinfected.
+The source, linked items, decision references, and generated card now pass the
+repository validator. The procedure becomes field-approved only after a camper
+successfully completes it using the rendered card at the actual station.
 
 ## EMT shade procedures
 
@@ -1106,16 +895,17 @@ Validation should begin with practical errors that would make a task ambiguous
 or impossible to render:
 
 - duplicate task names or duplicate item names within one folder;
-- an item name referenced by a task that exists in neither the task's Area nor
-  the item root;
+- an item reference whose icon does not resolve to an item with that name in
+  the icon's folder;
 - a missing required task or item column;
 - a task with no selected checklist, Area, When, numbered Steps, or PASS when
   conditions;
 - a categorized item outside an approved area folder;
-- an item with no Location or Ready for next person value;
+- an item with no Ready for next person value;
 - an unknown XML checklist membership or a non-Boolean Sheet checklist value;
 - duplicate or invalid step numbering;
-- a decision record missing its date, status, text, or effect;
+- a task-specific decision missing its date, status, text, or effect;
+- a shared decision reference missing its record or status;
 - a task decision `<record>` that is not found in the active or historical
   decision record;
 - an unknown task decision status;
@@ -1215,21 +1005,16 @@ changes.
 
 ## Recommended implementation sequence
 
-1. Preserve the ODS unchanged as source evidence.
-2. Create a contradiction and open-decision register.
-3. Define the minimum XML schema needed for `Clean_communal_kitchen_tables`.
-4. Create `Clean_communal_kitchen_tables.xml` with unresolved values clearly
-   marked.
-5. Implement one XML-to-Google-Sheets export path.
-6. Implement the matching Google-Sheets-to-XML import path.
-7. Prove a no-change round trip.
-8. Conduct the kitchen-table field test.
-9. Add MOOP collection and shower inspection.
-10. Add generator gauge inspection to prove inspection-versus-intervention
-    separation.
-11. Add EMT shade inspection.
-12. Add rendering only after the first task structure is stable.
-13. Document the real EMT build before creating its field procedure.
+1. Keep the ODS unchanged as source evidence.
+2. Validate the canonical kitchen-table task and its linked items.
+3. Render the kitchen-table task card from XML.
+4. Conduct the kitchen-table field test using the rendered card.
+5. Revise the XML from observed problems and render again.
+6. Implement XML-to-Google-Sheets export and the matching import only after the
+   pilot fields are stable.
+7. Prove a no-change XML/Sheet/XML round trip.
+8. Add the next routine task.
+9. Add restricted inspection tasks only after the routine format is proven.
 
 ## Open decisions
 

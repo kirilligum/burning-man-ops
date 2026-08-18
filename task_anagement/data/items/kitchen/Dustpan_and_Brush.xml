@@ -2,13 +2,26 @@
 <item>
   <name>Dustpan_and_Brush</name>
 
+  <description>Small hand brush and dustpan used on communal tables.</description>
+
   <location>
     Kitchen.
   </location>
 
+  <readyBeforeUse>
+    The brush and dustpan have no visible dirt or trash.
+  </readyBeforeUse>
+
   <readyForNextPerson>
-    The dustpan is empty and the brush is with the dustpan.
+    The dustpan is empty, the brush and dustpan have no visible dirt or trash,
+    and the brush is with the dustpan.
   </readyForNextPerson>
+
+  <ifNotReady>
+    Empty the dustpan into 📦 Trash_Bins. If visible dirt or trash remains,
+    use 🍳 Disposable_Towels to collect dry debris from the tables and tell
+    the Dominatrix.
+  </ifNotReady>
 
   <responsible>Dominatrix</responsible>
 
