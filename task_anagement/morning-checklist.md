@@ -25,9 +25,9 @@
 7. Put the used towel in 📦 Trash_Bins.
 8. Put remaining MOOP found on, under, and around 📦 Communal_Tables in 📦 Trash_Bins.
 ### PASS when
-- No food, visible dirt, or sticky residue remains on the tables.
-- No MOOP remains on, under, or around the tables.
-- The tables are dry.
+- [ ] No food, visible dirt, or sticky residue remains on the tables.
+- [ ] No MOOP remains on, under, or around the tables.
+- [ ] The tables are dry.
 ### Items
 #### 📦 Communal_Tables
 **Location:** Tables at communal eating area (see the map)
