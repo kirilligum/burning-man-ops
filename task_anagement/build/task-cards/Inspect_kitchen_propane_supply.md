@@ -14,9 +14,9 @@
 
 1. Look at 🔥 Kitchen Propane Supply without touching its valves or connections.
 2. Listen and smell for leaking propane without leaning over the supply.
-   - **IF/THEN:** IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Dominatrix immediately.
+   - **IF/THEN:** IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Propane Lead immediately.
 3. Read any existing fuel-level or empty-cylinder indicator.
-   - **IF/THEN:** IF the supply is empty or nearly empty, THEN tell the Dominatrix. Do not replace a cylinder unless the Dominatrix authorizes you.
+   - **IF/THEN:** IF the supply is empty or nearly empty, THEN tell the Propane Lead. Do not replace a cylinder unless the Propane Lead authorizes you.
 
 ## PASS when
 
@@ -36,8 +36,8 @@
 
 ### If an item is not ready
 
-- **🔥 Kitchen Propane Supply:** Stop cooking. Do not operate a valve or replace a cylinder unless the Dominatrix authorizes you. Tell the Dominatrix immediately.
+- **🔥 Kitchen Propane Supply:** Stop cooking. Do not operate a valve or replace a cylinder unless the Propane Lead authorizes you. Tell the Propane Lead immediately.
 
 ## Who to ask
 
-Dominatrix
+Propane Lead

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Kitchen_Propane_Appliance_Manual</name>
+
+  <description>Manufacturer instructions for the actual camp kitchen propane appliance and regulator.</description>
+  <location>At the kitchen propane supply.</location>
+  <readyBeforeUse>The manual matches the installed appliance and regulator.</readyBeforeUse>
+
+  <readyForNextPerson>The manual remains at the kitchen propane supply.</readyForNextPerson>
+
+  <ifNotReady>Do not replace or connect a cylinder. Tell the Propane Lead.</ifNotReady>
+  <responsible>Propane Lead</responsible>
+  <commonProblems/>
+</item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Generator_Secondary_Containment</name>
+
+  <description>
+    Generator spill containment approved for the installed fuel system.
+  </description>
+  <location>Under and around the generator fuel-fill area.</location>
+  <readyBeforeUse>The containment is intact, empty, and positioned to catch a refueling spill.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The containment remains correctly positioned and contains no unreported
+    fuel or contaminated material.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not refuel. Tell the Fuel Lead.</ifNotReady>
+  <responsible>Fuel Lead</responsible>
+  <commonProblems/>
+</item>

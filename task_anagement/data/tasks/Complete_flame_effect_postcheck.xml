@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Complete_flame_effect_postcheck</name>
+
+  <checklist_types>
+    <checklist_type>Post-event</checklist_type>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>After normal or emergency flame-effect shutdown</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>🔥 Flame_Effect_Log</resource>
+    <resource>🔥 Disposable_Towels</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Compare every valve, regulator, and power control with the approved shutdown state.</action>
+      <ifThen>IF any state differs, THEN keep the perimeter closed and tell the Flame Lead.</ifThen>
+    </step>
+    <step number="2">
+      <action>Wait until every component is cool enough to inspect according to 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="3">
+      <action>Dampen one 🔥 Disposable_Towels towel with the minimum water needed from 🔧 Fresh_Water_Tank.</action>
+    </step>
+    <step number="4">
+      <action>Wipe leak-test residue and loose playa dust from cool exterior surfaces.</action>
+    </step>
+    <step number="5">
+      <action>Put the used towel in 📦 Trash_Bins.</action>
+    </step>
+    <step number="6">
+      <action>Inspect hoses, fittings, guards, effect heads, and wiring for heat damage or new abrasion.</action>
+      <ifThen>IF damage is present, THEN mark the affected part out of service and record it in 🔥 Flame_Effect_Log.</ifThen>
+    </step>
+    <step number="7">
+      <action>Record fuel use, shutdown type, and maintenance needs in 🔥 Flame_Effect_Log.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The system matches its approved shutdown state.</criterion>
+    <criterion>No leak-test solution, cleanup water, or loose playa dust remains on the inspected exterior surfaces or playa.</criterion>
+    <criterion>No unrecorded damage or maintenance need remains.</criterion>
+    <criterion>Fuel use and shutdown are recorded.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+</task>

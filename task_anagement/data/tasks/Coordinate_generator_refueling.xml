@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Coordinate_generator_refueling</name>
+
+  <checklist_types>
+    <checklist_type>Morning Dominatrix</checklist_type>
+    <checklist_type>Evening Dominatrix</checklist_type>
+    <checklist_type>Infra Lead</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+    <checklist_type>Post-event</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>When the Fuel Lead requests generator refueling</when>
+  <time/>
+
+  <resources>
+    <resource>Fuel Lead</resource>
+    <resource>Approved fuel provider or authorized generator operator</resource>
+    <resource>🔧 Camp_Generators</resource>
+    <resource>🔧 Generator_Secondary_Containment</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+    <resource>📦 Camp_Map</resource>
+    <resource>📦 Camp_Issue_Log</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the exact generator and fuel type with the Fuel Lead.</action>
+    </step>
+    <step number="2">
+      <action>Inspect the generator and ground for an existing fuel leak.</action>
+      <ifThen>IF a leak or spill is present, THEN keep people away, do not refuel, and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
+    </step>
+    <step number="3">
+      <action>Confirm that 🔧 Generator_Secondary_Containment is correctly positioned and empty.</action>
+    </step>
+    <step number="4">
+      <action>Confirm that an operable fire extinguisher is visible and unobstructed.</action>
+    </step>
+    <step number="5">
+      <action>Clear the straight service route from the street or fire lane to the generator.</action>
+    </step>
+    <step number="6">
+      <action>Keep unauthorized people away while the approved provider or operator refuels the generator.</action>
+    </step>
+    <step number="7">
+      <action>Observe the fill area for overflow, drips, or a spill.</action>
+      <ifThen>IF fuel escapes containment or reaches the playa, THEN stop the operation if it is safe to communicate, keep people away, and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
+    </step>
+    <step number="8">
+      <action>Read and record the generator fuel gauge after refueling.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The authorized provider or operator refueled the correct generator with the correct fuel.</criterion>
+    <criterion>No fuel escaped containment or reached the playa.</criterion>
+    <criterion>The service route is clear and the final gauge reading is recorded.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Fuel Lead</expert>
+
+  <reasoning>
+    <entry>The workbook's generic refuel instruction becomes provider coordination because its Dominatrix rows describe on-playa fuel service and do not authorize a novice to transfer fuel.</entry>
+  </reasoning>
+</task>

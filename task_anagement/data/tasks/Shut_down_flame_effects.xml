@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Shut_down_flame_effects</name>
+
+  <checklist_types>
+    <checklist_type>Post-event</checklist_type>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>At the end of flame-effect operation or when the Flame Lead orders normal shutdown</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Keep the trained spotter and approved perimeter in place.</action>
+    </step>
+    <step number="2">
+      <action>Close the effect-feed valve at 🔥 Zimmer_Vaporizer identified in the approved procedure.</action>
+    </step>
+    <step number="3">
+      <action>Fire the approved final poof only when wind and the perimeter remain safe.</action>
+      <ifThen>IF a safe final poof is not possible, THEN use the approved emergency-shutdown sequence instead.</ifThen>
+    </step>
+    <step number="4">
+      <action>Wait until the effect flame and pilot are out.</action>
+    </step>
+    <step number="5">
+      <action>Close every effect safety valve in the order printed in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The effect feed and every effect safety valve are closed.</criterion>
+    <criterion>No effect flame or pilot remains lit.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+
+  <reasoning>
+    <entry>The Post-event worker verifies the licensed Flame Lead's completed shutdown; an ordinary cleanup worker does not operate valves.</entry>
+  </reasoning>
+</task>

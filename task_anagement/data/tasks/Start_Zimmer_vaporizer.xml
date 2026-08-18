@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Start_Zimmer_vaporizer</name>
+
+  <checklist_types>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>When the licensed Flame Lead authorizes flame-effect startup after a passed daily inspection</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>📋 Inspect_flame_effect_system</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>🔥 Propane_Leak_Test_Solution</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that 📋 Inspect_flame_effect_system passed today.</action>
+    </step>
+    <step number="2">
+      <action>Confirm that every effect feed valve is closed.</action>
+    </step>
+    <step number="3">
+      <action>Confirm that the release quarter-turn valve is in the closed position shown in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="4">
+      <action>Inspect the vaporizer guard and relief-valve outlet for damage, obstruction, or playa dust.</action>
+      <ifThen>IF the guard is damaged or the relief path is obstructed, THEN do not start the vaporizer.</ifThen>
+    </step>
+    <step number="5">
+      <action>Energize the vaporizer using the control named in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="6">
+      <action>Read the vaporizer voltage.</action>
+      <ifThen>IF the voltage is outside the approved range printed in 🔥 Flame_Effect_Operating_Procedure, THEN de-energize the vaporizer and stop.</ifThen>
+    </step>
+    <step number="7">
+      <action>Wait until every thermocouple reaches the approved operating range printed in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="8">
+      <action>Slowly open the liquid-tank valve identified in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="9">
+      <action>Leak-test the energized vaporizer connections with 🔥 Propane_Leak_Test_Solution according to the approved procedure.</action>
+      <ifThen>IF growing bubbles, propane odor, hissing, frost, or an abnormal reading is present, THEN complete the approved emergency shutdown and keep the system out of service.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The daily inspection passed.</criterion>
+    <criterion>The vaporizer voltage and every thermocouple are in their approved ranges.</criterion>
+    <criterion>The liquid supply is open and no leak or abnormal reading is present.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+
+  <reasoning>
+    <entry>System-specific ranges and control names are not guessed; the Flame Lead-approved operating procedure must supply them.</entry>
+  </reasoning>
+</task>

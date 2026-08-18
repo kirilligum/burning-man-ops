@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Zimmer_Vaporizer</name>
+
+  <description>
+    Camp propane vaporizer identified as Zimmer in the source checklist,
+    including its tank valve, relief valve, voltage display, thermocouples, and
+    effect feeds.
+  </description>
+  <location>Propane area (see the map).</location>
+
+  <readyForNextPerson>
+    The vaporizer is either under continuous licensed operation or fully shut
+    down according to its approved operating procedure.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not energize or open fuel to the vaporizer. Tell the Flame Lead.</ifNotReady>
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

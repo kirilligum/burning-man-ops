@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Replace_kitchen_propane_cylinder</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Pre-event</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>When 🔥 Kitchen_Propane_Supply is empty or nearly empty and the Propane Lead authorizes replacement</when>
+  <time/>
+
+  <resources>
+    <resource>Propane Lead</resource>
+    <resource>🔥 Kitchen_Propane_Supply</resource>
+    <resource>🔥 Kitchen_Propane_Appliance_Manual</resource>
+    <resource>🔥 Replacement_Kitchen_Propane_Cylinder</resource>
+    <resource>🔥 Propane_Leak_Test_Solution</resource>
+    <resource>🔥 Disposable_Towels</resource>
+    <resource>🔧 Fresh_Water_Tank</resource>
+    <resource>📦 Trash_Bins</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm with the Propane Lead that the replacement cylinder and connection match the kitchen appliance.</action>
+      <ifThen>IF the size, fuel, connection, or regulator does not match, THEN do not continue.</ifThen>
+    </step>
+    <step number="2">
+      <action>Extinguish every flame and remove smoking and ignition sources within 10 feet.</action>
+    </step>
+    <step number="3">
+      <action>Turn every connected kitchen appliance control to OFF.</action>
+    </step>
+    <step number="4">
+      <action>Close the connected cylinder valve.</action>
+    </step>
+    <step number="5">
+      <action>Disconnect the regulator using the method specified by the appliance manufacturer.</action>
+    </step>
+    <step number="6">
+      <action>Cap the disconnected cylinder valve with its supplied cap.</action>
+    </step>
+    <step number="7">
+      <action>Move the disconnected cylinder upright to the propane storage area.</action>
+    </step>
+    <step number="8">
+      <action>Place 🔥 Replacement_Kitchen_Propane_Cylinder upright in the secured operating position.</action>
+    </step>
+    <step number="9">
+      <action>Connect the appliance regulator according to the manufacturer's instructions.</action>
+    </step>
+    <step number="10">
+      <action>Open the replacement cylinder valve slowly.</action>
+    </step>
+    <step number="11">
+      <action>Apply 🔥 Propane_Leak_Test_Solution to every connection disturbed during replacement.</action>
+      <ifThen>IF growing bubbles appear, or propane is heard or smelled, THEN close the cylinder valve, keep the appliance out of service, and tell the Propane Lead.</ifThen>
+    </step>
+    <step number="12">
+      <action>Dampen one 🔥 Disposable_Towels towel with the minimum water needed from 🔧 Fresh_Water_Tank.</action>
+    </step>
+    <step number="13">
+      <action>Wipe the tested connections until no leak-test solution remains.</action>
+    </step>
+    <step number="14">
+      <action>Put the used towel in 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The matching replacement cylinder is upright, secured, and connected.</criterion>
+    <criterion>No growing bubbles, hissing, propane odor, or frost is present.</criterion>
+    <criterion>No leak-test solution or water remains on the connections or playa.</criterion>
+    <criterion>The disconnected cylinder is capped, upright, secured, and in the propane storage area.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Propane Lead</expert>
+
+  <reasoning>
+    <entry>The inspection checklist remains available to ordinary shift workers; cylinder replacement is a separate trained task.</entry>
+    <entry>The actual cylinder size and connection must be confirmed on playa because the workbook does not identify them.</entry>
+  </reasoning>
+</task>

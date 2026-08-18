@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Flame_Effect_First_Aid_Kit</name>
+
+  <description>
+    Flame-effect first-aid kit containing non-petroleum burn cream or aloe gel,
+    100% cotton gauze rolls and pads, clean water for cooling or flushing, and
+    waterless soap.
+  </description>
+  <location>At the flame-effect operator station outside the safety perimeter.</location>
+
+  <readyForNextPerson>
+    The listed supplies are sealed, unexpired, visible, and available to
+    responders.
+  </readyForNextPerson>
+
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

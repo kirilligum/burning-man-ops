@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fire_Resistant_Clothing</name>
+
+  <description>Fire-resistant clothing approved by the Flame Lead for operators and assistants.</description>
+  <location>Propane area.</location>
+  <readyBeforeUse>The clothing is dry, intact, and fits the operator or assistant.</readyBeforeUse>
+
+  <readyForNextPerson>The clothing is dry and returned to its storage location.</readyForNextPerson>
+
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

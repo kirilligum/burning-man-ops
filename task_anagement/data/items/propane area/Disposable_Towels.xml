@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Disposable_Towels</name>
+
+  <description>Plain white disposable paper towels for propane-area cleanup.</description>
+  <location>Propane area.</location>
+  <readyBeforeUse>At least two clean towels are available.</readyBeforeUse>
+
+  <readyForNextPerson>At least two clean towels are available.</readyForNextPerson>
+
+  <ifNotReady>Ask the Flame Lead where to find replacement towels.</ifNotReady>
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

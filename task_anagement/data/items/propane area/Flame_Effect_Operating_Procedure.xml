@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Flame_Effect_Operating_Procedure</name>
+
+  <description>
+    Current Flame Lead-approved system sheet naming every valve and control and
+    stating the validated voltage, temperature, pressure, timing, startup,
+    shutdown, and emergency-shutdown values for the actual installation.
+  </description>
+  <location>At the flame-effect operator station.</location>
+  <readyBeforeUse>The current revision is legible and approved by the Flame Lead.</readyBeforeUse>
+
+  <readyForNextPerson>The procedure remains at the operator station.</readyForNextPerson>
+
+  <ifNotReady>Do not operate the flame effect. Tell the Flame Lead.</ifNotReady>
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

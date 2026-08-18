@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Propane_Leak_Test_Solution</name>
+
+  <description>
+    EASTMAN 65700B liquid gas leak detector, 2 oz, for LP-gas fittings.
+  </description>
+  <location>Propane area.</location>
+  <readyBeforeUse>Enough solution is available for every connection being tested.</readyBeforeUse>
+
+  <readyForNextPerson>The cap is closed and the bottle is stored upright.</readyForNextPerson>
+
+  <ifNotReady>Ask the Propane Lead for replacement leak-test solution.</ifNotReady>
+  <responsible>Propane Lead</responsible>
+
+  <commonProblems>
+    <problem>
+      <condition>The applied solution forms growing bubbles.</condition>
+      <response>Close the fuel supply, keep the equipment out of service, and tell the Propane Lead. Never use a flame to test for a leak.</response>
+    </problem>
+  </commonProblems>
+</item>

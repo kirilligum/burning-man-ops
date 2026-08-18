@@ -12,9 +12,9 @@
 
   <ifNotReady>
     Stop cooking. Do not operate a valve or replace a cylinder unless the
-    Dominatrix authorizes you. Tell the Dominatrix immediately.
+    Propane Lead authorizes you. Tell the Propane Lead immediately.
   </ifNotReady>
 
-  <responsible>Dominatrix</responsible>
+  <responsible>Propane Lead</responsible>
   <commonProblems/>
 </item>

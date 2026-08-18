@@ -22,11 +22,11 @@
     </step>
     <step number="2">
       <action>Listen and smell for leaking propane without leaning over the supply.</action>
-      <ifThen>IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Dominatrix immediately.</ifThen>
+      <ifThen>IF you hear hissing, smell propane, or see frost at a connection, THEN stop cooking, keep people away, and tell the Propane Lead immediately.</ifThen>
     </step>
     <step number="3">
       <action>Read any existing fuel-level or empty-cylinder indicator.</action>
-      <ifThen>IF the supply is empty or nearly empty, THEN tell the Dominatrix. Do not replace a cylinder unless the Dominatrix authorizes you.</ifThen>
+      <ifThen>IF the supply is empty or nearly empty, THEN tell the Propane Lead. Do not replace a cylinder unless the Propane Lead authorizes you.</ifThen>
     </step>
   </steps>
 
@@ -37,7 +37,7 @@
   </passWhen>
 
   <commonProblems/>
-  <expert>Dominatrix</expert>
+  <expert>Propane Lead</expert>
 
   <reasoning>
     <entry>The checklist worker observes and reports; cylinder replacement requires separate authorization.</entry>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Replacement_Kitchen_Propane_Cylinder</name>
+
+  <description>
+    Filled DOT propane cylinder matching the kitchen appliance and regulator.
+    The camp must replace this provisional description with its actual cylinder
+    size and connection.
+  </description>
+  <location>Propane storage area.</location>
+
+  <readyBeforeUse>
+    The cylinder is upright, secured, filled, within its requalification date,
+    and free of excessive rust, damage, or a missing valve collar or foot ring.
+  </readyBeforeUse>
+
+  <readyForNextPerson>
+    The cylinder is either connected and leak-free or upright, secured, capped,
+    and stored in the propane area.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not connect or refill the cylinder. Tell the Propane Lead.</ifNotReady>
+  <responsible>Propane Lead</responsible>
+  <commonProblems/>
+</item>

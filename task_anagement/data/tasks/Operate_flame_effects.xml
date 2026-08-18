@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Operate_flame_effects</name>
+
+  <checklist_types>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>Continuously while the flame-effect system is pressurized or lit</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>📋 Start_flame_effects</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Keep the licensed operator and trained spotter at the effect continuously.</action>
+    </step>
+    <step number="2">
+      <action>Keep people and combustible material outside the FAST-approved perimeter.</action>
+    </step>
+    <step number="3">
+      <action>Continuously observe wind, flame direction, pressure, pilots, hoses, fittings, controls, and the audience boundary.</action>
+      <ifThen>IF wind picks up, the flame or heat can leave the approved zone, a leak or abnormal condition appears, or any Ranger, FAST, or ESD member requests shutdown, THEN stop firing and complete the approved emergency shutdown.</ifThen>
+    </step>
+    <step number="4">
+      <action>Fire the effect only on the licensed operator's command and within the approved operating limits.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The effect was continuously attended by a licensed operator and trained spotter.</criterion>
+    <criterion>The approved perimeter remained clear.</criterion>
+    <criterion>Every firing stayed within the approved operating limits.</criterion>
+    <criterion>Any shutdown condition caused immediate shutdown.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+</task>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Shut_down_Zimmer_vaporizer</name>
+
+  <checklist_types>
+    <checklist_type>Post-event</checklist_type>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>After 📋 Shut_down_flame_effects passes</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>📋 Shut_down_flame_effects</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that 📋 Shut_down_flame_effects passed and every effect-feed valve is closed.</action>
+    </step>
+    <step number="2">
+      <action>Wait the validated tank-reflow time printed in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="3">
+      <action>Close the liquid-tank valve identified in the approved procedure.</action>
+    </step>
+    <step number="4">
+      <action>Clear the vaporizer propane output using the approved procedure.</action>
+    </step>
+    <step number="5">
+      <action>Discharge remaining propane from every accumulator through its approved effect path.</action>
+    </step>
+    <step number="6">
+      <action>Close every regulator and remaining valve in the approved shutdown order.</action>
+    </step>
+    <step number="7">
+      <action>Set vaporizer power to the shutdown state printed in the approved procedure.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The liquid-tank valve, effect valves, safety valves, and regulators are closed.</criterion>
+    <criterion>The vaporizer output and every accumulator are cleared by the approved route.</criterion>
+    <criterion>Vaporizer power is in its approved shutdown state.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+
+  <reasoning>
+    <entry>The workbook's five-minute reflow and ambiguous voltage decision require validation on the actual Zimmer; the approved operating procedure owns the final values.</entry>
+  </reasoning>
+</task>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Inspect_flame_effect_system</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>Before the first flame-effect startup each day</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Zimmer_Vaporizer</resource>
+    <resource>🔥 Flame_Effect_Burn_License</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>🔥 Propane_Leak_Test_Solution</resource>
+    <resource>🔥 Fire_Resistant_Clothing</resource>
+    <resource>🔥 Flame_Effect_First_Aid_Kit</resource>
+    <resource>🔥 Flame_Effect_SDS</resource>
+    <resource>🔥 Flame_Effect_Log</resource>
+    <resource>📦 Fire_Extinguishers</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that the operator and spotter are at least 21, trained for this effect, unimpaired, and wearing 🔥 Fire_Resistant_Clothing.</action>
+      <ifThen>IF any condition is not met, THEN do not operate the effect.</ifThen>
+    </step>
+    <step number="2">
+      <action>Match 🔥 Flame_Effect_Burn_License to this installation.</action>
+      <ifThen>IF the current physical license is not present, THEN do not test or operate the effect.</ifThen>
+    </step>
+    <step number="3">
+      <action>Confirm that 🔥 Flame_Effect_Operating_Procedure is the Flame Lead-approved current revision.</action>
+    </step>
+    <step number="4">
+      <action>Clear combustible and flammable material from the FAST-approved perimeter and at least 20 feet around the effect.</action>
+    </step>
+    <step number="5">
+      <action>Confirm that the audience boundary and operator zone match the FAST-approved layout.</action>
+    </step>
+    <step number="6">
+      <action>Observe wind direction and strength.</action>
+      <ifThen>IF wind can carry flame or heat toward people, structures, or outside the approved perimeter, THEN do not operate the effect.</ifThen>
+    </step>
+    <step number="7">
+      <action>Inspect the effect structure, guards, anchors, and vehicle protection for movement or damage.</action>
+    </step>
+    <step number="8">
+      <action>Inspect every cylinder for current certification, upright securement, excessive rust, damage, and intact valve protection.</action>
+    </step>
+    <step number="9">
+      <action>Inspect every visible hose and fitting for cracks, abrasion, looseness, heat damage, or an unrated component.</action>
+    </step>
+    <step number="10">
+      <action>Confirm that the primary quarter-turn emergency shutoff is visible, labeled, accessible, and in the OFF position.</action>
+    </step>
+    <step number="11">
+      <action>Confirm that every other valve and control is in the pre-operation position shown in 🔥 Flame_Effect_Operating_Procedure.</action>
+    </step>
+    <step number="12">
+      <action>Confirm that the flame-effect fire extinguisher is visible, unobstructed, charged, and rated for flammable gas.</action>
+    </step>
+    <step number="13">
+      <action>Confirm that 🔥 Flame_Effect_First_Aid_Kit and 🔥 Flame_Effect_SDS are available outside the perimeter.</action>
+    </step>
+    <step number="14">
+      <action>Leak-test every connection exactly as specified in 🔥 Flame_Effect_Operating_Procedure.</action>
+      <ifThen>IF growing bubbles, propane odor, hissing, frost, or another failed inspection condition is present, THEN keep the system shut down and tell the Flame Lead.</ifThen>
+    </step>
+    <step number="15">
+      <action>Record the inspection result in 🔥 Flame_Effect_Log.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The licensed operator and trained spotter meet every operator requirement.</criterion>
+    <criterion>The current burn license and operating procedure are present.</criterion>
+    <criterion>The approved perimeter is clear and current wind is acceptable.</criterion>
+    <criterion>No structural, cylinder, hose, fitting, valve, control, or leak-test failure is present.</criterion>
+    <criterion>Fire suppression, first-aid supplies, SDSs, and the inspection record are ready.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+
+  <reasoning>
+    <entry>The workbook's Morning fire-pit and vaporizer-hose checks are part of the mandatory daily flame-system inspection.</entry>
+  </reasoning>
+</task>

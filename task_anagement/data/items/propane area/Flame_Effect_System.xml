@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Flame_Effect_System</name>
+
+  <description>
+    Registered Treble Makers propane flame effect, including its structure,
+    cylinders, hoses, fittings, regulators, valves, pilots, accumulators,
+    controls, and effect heads.
+  </description>
+  <location>Propane area (see the map).</location>
+
+  <readyForNextPerson>
+    The system is either under continuous licensed operation or fully shut down
+    according to its approved operating procedure.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not operate the system. Tell the Flame Lead.</ifNotReady>
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>

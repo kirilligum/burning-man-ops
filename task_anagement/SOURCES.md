@@ -46,9 +46,16 @@ Current provisional products:
 ## Fuel, structures, and flame effects
 
 - [Burning Man fuel and hazardous-material storage](https://burningman.org/black-rock-city/preparation/camping-tips/fire-safety-agreement/)
+- [Burning Man 2026 Fuel Program](https://burningman.org/black-rock-city/preparation/infrastructure/brc-fuel-program/)
 - [Burning Man generator guidance](https://burningman.org/black-rock-city/preparation/camping-tips/generators/)
 - [Burning Man structure securing](https://burningman.org/black-rock-city/preparation/camping-tips/securing-your-structure/)
-- [Burning Man flame-effect safety agreement](https://burningman.org/black-rock-city/bring-your-art/fire-art-guidelines/fire-safety-agreements/flame-effects-on-mutant-vehicles/)
+- [Burning Man flame-effect guidelines](https://burningman.org/black-rock-city/bring-your-art/fire-art-guidelines/flame-effects/)
+- [Burning Man flame-effects-in-camps safety agreement](https://burningman.org/black-rock-city/bring-your-art/fire-art-guidelines/fire-safety-agreements/flame-effects-in-theme-camps/)
+- [Burning Man fire guidelines in camps](https://burningman.org/black-rock-city/bring-your-art/fire-art-guidelines/fire-in-theme-camps-2/)
+
+Current provisional product:
+
+- [EASTMAN 65700B liquid gas leak detector](https://www.lowes.com/pd/EASTMAN-Liquid-Gas-Leak-Detector-For-Gas-Water-Heater/5013929867)
 
 ## Public service
 

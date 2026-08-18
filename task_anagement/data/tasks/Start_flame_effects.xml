@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Start_flame_effects</name>
+
+  <checklist_types>
+    <checklist_type>Flame Effects</checklist_type>
+  </checklist_types>
+
+  <area>Propane area</area>
+  <why/>
+  <when>After Zimmer startup passes and immediately before flame-effect operation</when>
+  <time/>
+
+  <resources>
+    <resource>Licensed Flame Lead</resource>
+    <resource>One trained spotter</resource>
+    <resource>📋 Start_Zimmer_vaporizer</resource>
+    <resource>🔥 Flame_Effect_System</resource>
+    <resource>🔥 Flame_Effect_Operating_Procedure</resource>
+    <resource>🔥 Flame_Effect_Ignition_Torch</resource>
+    <resource>🔥 Propane_Leak_Test_Solution</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm that 📋 Start_Zimmer_vaporizer passed and the trained spotter is in position.</action>
+    </step>
+    <step number="2">
+      <action>Confirm that every effect safety valve is closed.</action>
+    </step>
+    <step number="3">
+      <action>Set the effect regulator to the approved pressure in 🔥 Flame_Effect_Operating_Procedure without exceeding 110 psi.</action>
+    </step>
+    <step number="4">
+      <action>Open the effect-feed valve identified in the approved procedure.</action>
+    </step>
+    <step number="5">
+      <action>Leak-test the effect feed with 🔥 Propane_Leak_Test_Solution according to the approved procedure.</action>
+      <ifThen>IF growing bubbles, propane odor, hissing, or frost is present, THEN complete the approved emergency shutdown and keep the effect out of service.</ifThen>
+    </step>
+    <step number="6">
+      <action>Open the pilot regulators and valves in the sequence printed in the approved procedure.</action>
+    </step>
+    <step number="7">
+      <action>Observe wind direction and confirm that the approved perimeter remains clear.</action>
+    </step>
+    <step number="8">
+      <action>Light the pilot with 🔥 Flame_Effect_Ignition_Torch using the approved ignition method.</action>
+    </step>
+    <step number="9">
+      <action>Fire one test poof on the Flame Lead's command.</action>
+      <ifThen>IF the flame, sound, pilot, pressure, or controls behave differently from the approved procedure, THEN complete the approved shutdown and keep the effect out of service.</ifThen>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>The trained spotter and safety perimeter are in position.</criterion>
+    <criterion>The regulator is at its approved pressure and no leak is present.</criterion>
+    <criterion>The pilot and one test poof operate exactly as described in the approved procedure.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Flame Lead</expert>
+</task>

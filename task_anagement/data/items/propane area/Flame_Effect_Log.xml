@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Flame_Effect_Log</name>
+
+  <description>On-playa inspection, operation, fuel-use, and maintenance log for the registered effect.</description>
+  <location>At the flame-effect operator station.</location>
+
+  <readyForNextPerson>
+    The latest inspection, operation, fuel use, and unresolved maintenance need
+    are recorded without private incident details.
+  </readyForNextPerson>
+
+  <responsible>Flame Lead</responsible>
+  <commonProblems/>
+</item>
