@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-  <name>Kitchen Lost and Found</name>
+  <name>Lost_and_Found</name>
 
   <location>
-    Kitchen, container labeled Kitchen Lost and Found.
+    Kitchen, container labeled 📦 Lost_and_Found.
   </location>
 
   <readyBeforeUse>

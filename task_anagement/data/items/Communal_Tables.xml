@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Communal_Tables</name>
+
+  <location>
+    Tables at communal eating area (see the map)
+  </location>
+
+  <readyBeforeUse/>
+
+  <readyForNextPerson>
+    Every table is clean, dry, stable, and usable. No MOOP is present on, under,
+    or around the tables.
+  </readyForNextPerson>
+
+  <ifNotReady>
+    Clean the table; see task 📋 Clean_communal_kitchen_tables.
+  </ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems/>
+</item>

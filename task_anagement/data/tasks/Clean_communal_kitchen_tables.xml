@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Clean_communal_kitchen_tables</name>
+
+  <checklist_types>
+    <checklist_type>Morning</checklist_type>
+    <checklist_type>Afternoon</checklist_type>
+  </checklist_types>
+
+  <area>Kitchen</area>
+
+  <why/>
+
+  <when>Once or more per shift</when>
+
+  <time/>
+
+  <resources>
+    <resource>📦 Communal_Tables</resource>
+    <resource>📦 Lost_and_Found</resource>
+    <resource>🍳 Dustpan_&amp;_Brush</resource>
+    <resource>🍳 Multisurface_Cleaner</resource>
+    <resource>🍳 Disposable_Towels</resource>
+    <resource>📦 Trash_Bins</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Put unattended belongings in 📦 Lost_and_Found.</action>
+    </step>
+
+    <step number="2">
+      <action>Brush dry crumbs and debris from 📦 Communal_Tables into 🍳 Dustpan_&amp;_Brush.</action>
+    </step>
+
+    <step number="3">
+      <action>Empty 🍳 Dustpan_&amp;_Brush into 📦 Trash_Bins.</action>
+    </step>
+
+    <step number="4">
+      <action>Inspect 📦 Communal_Tables for food, visible dirt, or sticky residue.</action>
+      <ifThen>IF residue remains, THEN do steps 5 through 7. IF no residue remains, THEN skip to step 8.</ifThen>
+    </step>
+
+    <step number="5">
+      <action>Spray the residue with 🍳 Multisurface_Cleaner.</action>
+    </step>
+
+    <step number="6">
+      <action>Wipe the sprayed areas with one towel from 🍳 Disposable_Towels until no food, visible dirt, or sticky residue remains.</action>
+    </step>
+
+    <step number="7">
+      <action>Put the used towel in 📦 Trash_Bins.</action>
+    </step>
+
+    <step number="8">
+      <action>Put MOOP found on, under, and around 📦 Communal_Tables in 📦 Trash_Bins.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>No food, visible dirt, or sticky residue remains on the tables.</criterion>
+    <criterion>No MOOP remains on, under, or around the tables.</criterion>
+    <criterion>The tables are dry.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+
+  <reasoning>
+    <entry>Clear unattended belongings before moving debris so they are not brushed aside or discarded.</entry>
+    <entry>Remove dry debris before wet cleaning so cleaner and towels are used only when residue remains.</entry>
+    <entry>Finish with MOOP so the final sweep catches material displaced during cleaning.</entry>
+  </reasoning>
+
+  <decisions>
+    <decision>
+      <date>2026-08-18</date>
+      <status>Accepted</status>
+      <text>Use the sequence clear belongings, dry-brush, conditionally spot-clean, then collect MOOP.</text>
+      <effect>Require 🍳 Dustpan_&amp;_Brush as a resource. Use 🍳 Multisurface_Cleaner and 🍳 Disposable_Towels only when residue remains.</effect>
+    </decision>
+    <decision>
+      <record>D-114</record>
+      <date>2026-08-18</date>
+      <status>Superseded</status>
+      <text>Use Stash Bins as the waste destination.</text>
+      <effect>Superseded by the correction to Trash Bins.</effect>
+    </decision>
+    <decision>
+      <record>D-115</record>
+      <date>2026-08-18</date>
+      <status>Accepted</status>
+      <text>Use 📦 Trash_Bins as the waste destination.</text>
+      <effect>Use 📦 Trash_Bins for the individual destination in task steps.</effect>
+    </decision>
+  </decisions>
+</task>

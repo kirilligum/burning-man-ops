@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Trash_Bins</name>
+
+  <location>
+    Kitchen, bins labeled 📦 Trash_Bins.
+  </location>
+
+  <readyBeforeUse>Trash Bins are available.</readyBeforeUse>
+
+  <readyForNextPerson>
+    Trash is inside the bins. No loose trash is present around them.
+  </readyForNextPerson>
+
+  <ifNotReady>Tell the Dominatrix.</ifNotReady>
+
+  <responsible>Dominatrix</responsible>
+
+  <commonProblems/>
+</item>

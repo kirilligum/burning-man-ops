@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-  <name>WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701)</name>
+  <name>Disposable_Towels</name>
 
   <location>
-    Kitchen, pack labeled WypAll PowerClean L40 Extra Absorbent Towels.
+    Kitchen, pack labeled 🍳 Disposable_Towels.
   </location>
 
   <readyBeforeUse>At least one clean, dry towel remains in the pack.</readyBeforeUse>
@@ -13,7 +13,8 @@
   </readyForNextPerson>
 
   <ifNotReady>
-    Replace it with the same product. If none is available, tell the Dominatrix.
+    Replace them with WypAll PowerClean L40 Extra Absorbent Towels, White,
+    12 x 12.5 in, 56 Count (05701). If none are available, tell the Dominatrix.
   </ifNotReady>
 
   <responsible>Dominatrix</responsible>

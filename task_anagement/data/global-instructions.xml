@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalInstructions>
+  <instruction>
+    For completing the task, check that the items are in the condition for the
+    next person to use.
+  </instruction>
+  <instruction>Collect all MOOP.</instruction>
+  <instruction>If something is wrong with an item, escalate to the Dominatrix.</instruction>
+</globalInstructions>

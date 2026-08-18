@@ -17,6 +17,12 @@ tentative suggestions.
 - Keep entries concise. Record the decision and its practical effect, not the
   full conversation.
 
+Superseded entries are kept in
+[HISTORICAL_DECISIONS.md](HISTORICAL_DECISIONS.md) to keep this active record
+small. Do not read the historical record during ordinary task work. For a deep
+dive, use the task XML's `<decisions><decision><record>` references and the
+lookup command documented in `AGENTS.md`.
+
 ## Working-style decisions
 
 ### D-001 — Prefer the smallest useful system
@@ -88,17 +94,6 @@ tentative suggestions.
   Create a separate item record for each component named by the task. A visibly
   identifiable station or group does not need to be split unnecessarily.
 
-### D-008 — Identify exact products or exact preparation processes
-
-- **Date:** 2026-08-17
-- **Status:** Accepted
-- **Decision:** Identify a purchased item with the manufacturer or store
-  product title, size, and product number when available. If an item is made by
-  camp, document its exact ingredients, quantities, and preparation steps.
-- **Effect:** Do not use generic names such as `table cleaner` when a specific
-  product must be obtained. Put multi-step preparation in its own task rather
-  than hiding it in an item name.
-
 ## System decisions
 
 ### D-101 — XML is the repository source of truth
@@ -117,15 +112,6 @@ tentative suggestions.
 - **Decision:** `Treble Makers Checklists - 2026.ods` is an archive used to
   inventory tasks and contradictions; it is not migrated wholesale.
 
-### D-103 — Names are identifiers
-
-- **Date:** 2026-08-17
-- **Status:** Accepted
-- **Decision:** Tasks and items have one unique `<name>` field and no separate
-  ID or title. Each XML filename matches its `<name>` exactly plus `.xml`.
-- **Effect:** References use the exact name. Renaming updates the filename and
-  every reference together.
-
 ### D-104 — One file per task or item
 
 - **Date:** 2026-08-17
@@ -133,31 +119,13 @@ tentative suggestions.
 - **Decision:** Store tasks under `data/tasks/` and items under `data/items/`,
   with one logical record per XML file.
 
-### D-105 — Task field order
-
-- **Date:** 2026-08-17
-- **Status:** Accepted
-- **Decision:** Task fields are **Task**, Boolean checklist columns, **Why**,
-  **When**, **Time**, **What you need**, **Steps**, **PASS when**, **Common
-  problems**, and **Who to ask**, in that order.
-- **Effect:** **Who to ask** defaults to **Dominatrix**. Steps contain one
-  action or observation, optional expected result, and decisions where they
-  occur.
-
-### D-106 — Item field order
-
-- **Date:** 2026-08-17
-- **Status:** Accepted
-- **Decision:** Item fields are **Item**, **Location**, **Ready before use**,
-  **Ready for next person**, **If not ready**, **Who is responsible**, and
-  **Common problems**, in that order.
-
 ### D-107 — Checklist membership uses Boolean Sheet columns
 
 - **Date:** 2026-08-17
 - **Status:** Accepted
 - **Decision:** TSV and Google Sheets use one Boolean column per approved
-  checklist. XML stores only selected checklist memberships.
+  checklist type. XML stores only selected checklist types under
+  `<checklist_types>`.
 - **Effect:** Do not use a delimited checklist cell or a separate checklist
   relationship file.
 
@@ -182,6 +150,103 @@ tentative suggestions.
 - **Status:** Accepted
 - **Decision:** Do not store phone exports, private incident details, bookings,
   payments, credentials, secrets, or private contact information.
+
+### D-112 — Keep uncategorized items at the item root
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Store categorized items in their categorical area folder. Store
+  an item that does not belong to an area directly under `data/items/`.
+- **Effect:** A task resolves an item name first in its Area folder and then at
+  the item root. Root items have a blank **Area** value in TSV and Google
+  Sheets. `📦 Communal_Tables`, `📦 Lost_and_Found`, and `📦 Trash_Bins` are root
+  items.
+
+### D-113 — Keep task reasoning and decisions in task XML
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Add optional `<reasoning>` entries and `<decisions>` records to
+  each task XML. A reasoning entry records a concise rationale. A decision
+  record contains `date`, `status`, `text`, and `effect`.
+- **Effect:** Maintainers and Codex can review why a task is shaped a certain
+  way and which task-specific choices were accepted without adding prose to
+  the read-do procedure. Renderers omit these fields from task cards by
+  default. Operational IF/THEN branches remain in the relevant step.
+  Project-wide choices remain in this file.
+
+### D-115 — Use Trash Bins as the waste destination
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Use **📦 Trash_Bins** as the item ID and waste destination for
+  this task.
+- **Effect:** The task and its examples refer to the individual destination as
+  **📦 Trash_Bins** without an `.xml` extension.
+
+### D-116 — Omit rare item preconditions covered by global escalation
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Leave an item's **Ready before use** field blank when the
+  condition is rare and the global instruction already says to escalate any
+  problem to the Dominatrix.
+- **Effect:** Do not spend procedure space describing unlikely damage or other
+  rare pre-use conditions. Keep the field available for items where a normal
+  pre-use check is useful.
+
+### D-117 — Separate active and historical decision records
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Keep current accepted decisions in `DECISIONS.md` and move
+  superseded entries to `HISTORICAL_DECISIONS.md`. Task XML may link a past
+  decision with a `<record>` ID.
+- **Effect:** Agents read the smaller active record by default. For a deep dive,
+  `extract-historical-decisions.py` parses the task XML and prints only the
+  linked historical records.
+
+### D-118 — Use underscore IDs and shared reference icons
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Replace spaces with underscores in task and item names and
+  filenames. References use the ID without the `.xml` extension. Prefix task
+  references with `📋`. Prefix item references with one icon determined by the
+  item's area folder; use `📦` for uncategorized root items.
+- **Effect:** IDs are safe to use in filenames and references without quoting.
+  Icons identify the reference type or item category and are not part of the
+  canonical ID. The current item icon mapping is `Public area=🌐`,
+  `Bar/Cheese=🍷`, `Propane area=🔥`, `Common area=🏕️`, `Kitchen=🍳`,
+  `Private infrastructure=🔧`, and uncategorized=`📦`.
+
+### D-119 — Name task checklist-type elements explicitly
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Store selected checklist memberships in each task under
+  `<checklist_types>`, with one `<checklist_type>` child for each selected
+  checklist type.
+- **Effect:** The XML distinguishes the collection of checklist types from an
+  individual checklist type. Google Sheets still exposes one Boolean column per
+  checklist type, and generated field checklists use the selected values.
+
+### D-120 — Collect MOOP for every task
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Add `Collect all MOOP.` to the shared global instructions.
+- **Effect:** Every task includes MOOP collection as a completion requirement;
+  task-specific MOOP locations or destinations remain in the task XML.
+
+### D-121 — Omit obvious item problems
+
+- **Date:** 2026-08-18
+- **Status:** Accepted
+- **Decision:** Do not repeat an obvious item problem when the global escalation
+  instruction already gives the correct response.
+- **Effect:** Keep item **Common problems** limited to non-obvious,
+  item-specific responses that require separate instruction.
 
 ## Open decisions
 
