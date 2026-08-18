@@ -87,8 +87,8 @@ def render(task_path: Path) -> str:
             lines.append(f"- {label}")
             continue
         details = [
-            text(item.find("location")).rstrip("."),
-            text(item.find("description")).rstrip("."),
+            humanize(text(item.find("location")).rstrip(".")),
+            humanize(text(item.find("description")).rstrip(".")),
         ]
         details = [detail for detail in details if detail]
         suffix = f" — {'. '.join(details)}." if details else ""

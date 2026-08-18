@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fuel_Spill_Mat</name>
+
+  <description>
+    Fuel-resistant spill mat or fuel-compatible intact tarp sized to cover the generator fuel-transfer point.
+  </description>
+  <location>With the generator service supplies.</location>
+  <readyBeforeUse>The mat is dry and has no hole, tear, or retained fuel.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The mat is dry, has no unreported fuel, and is stored with the generator service supplies.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not refuel. Tell the Fuel Lead.</ifNotReady>
+  <responsible>Fuel Lead</responsible>
+  <commonProblems>
+    <problem>
+      <condition>Fuel reaches the mat.</condition>
+      <response>Stop the transfer if it is safe to communicate, keep people away, and tell the Fuel Lead. Do not fold or store the mat.</response>
+    </problem>
+  </commonProblems>
+</item>

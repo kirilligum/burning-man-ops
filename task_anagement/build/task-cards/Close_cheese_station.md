@@ -12,6 +12,7 @@
 - 📦 Handwashing Station — Camp handwashing station with potable water, soap, disposable towels, and a basin that contains the wastewater.
 - 🍷 Cheese of the Day — Kitchen refrigerator until service. Cheese selected on the current pairing list from an approved food source.
 - 🍷 Crackers — Cheese station dry storage. Shelf-stable crackers selected for the Cheese of the Day.
+- 🍳 Kitchen Refrigerators — Kitchen.
 - 🍷 Food Probe Thermometer — Cheese station. ThermoWorks ThermoPop 2 NSF-certified instant-read thermometer with probe cover.
 - 🍷 Plastic Wrap — Cheese-station storage. Reynolds Kitchens Quick Cut Plastic Wrap, 12 inches by 225 feet.
 - 🍷 Three Wash Basins — Cheese station. Three Rubbermaid Commercial 7.6-gallon bus boxes, model FG335100GRAY.
@@ -26,8 +27,10 @@
 - 🍷 Drying Rack — Cheese station. Clean rack that holds washed food-contact items off the playa while they air dry.
 - 🍷 Cheese Station Storage — Cheese station. Closed storage container for clean, dry cheese-service tools.
 - 🍷 Cheese Work Surface — Bar/Cheese area. Hard, nonporous food-contact work surface used for cheese service.
-- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3.
+- 🍷 Multisurface Cleaner — Bar/Cheese area. Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
+- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3. For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
 - 🍷 Disposable Towels — Bar/Cheese area. WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
+- 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
 - 🔧 Fresh Water Tank — Private infrastructure area. Camp tank containing potable water.
 - 🔧 Gray-Water IBC — Private infrastructure area. Camp IBC that contains used kitchen and shower water.
 - 📦 Trash Bins
@@ -37,6 +40,7 @@
 - **📦 Handwashing Station:** Water, soap, and disposable towels are available. The wastewater basin has capacity and does not leak.
 - **🍷 Cheese of the Day:** The cheese is protected from contamination and at or below 41°F.
 - **🍷 Crackers:** Crackers are sealed or protected from dust, moisture, pests, and public contact.
+- **🍳 Kitchen Refrigerators:** Each refrigerator is receiving power and is 41°F or below.
 - **🍷 Food Probe Thermometer:** The probe is clean, sanitized, dry, and the display turns on.
 - **🍷 Plastic Wrap:** Clean wrap remains and the slide cutter is intact.
 - **🍷 Three Wash Basins:** The three basins are empty, visibly clean, and do not leak.
@@ -51,8 +55,10 @@
 - **🍷 Drying Rack:** The rack is clean, dry, stable, and protected from dust.
 - **🍷 Cheese Station Storage:** The container is clean, dry, and has space for every dry tool.
 - **🍷 Cheese Work Surface:** The surface is visibly clean, sanitized, and air-dry.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner and sprays.
 - **🍷 Food Surface Sanitizer:** The bottle contains sanitizer, sprays, and is not expired.
 - **🍷 Disposable Towels:** At least one clean, dry towel remains.
+- **🍳 Drinking Water Dispensers:** The interiors and spigots are clean, and neither dispenser leaks.
 - **🔧 Fresh Water Tank:** The tank contains potable water and has no visible leak.
 - **🔧 Gray-Water IBC:** The IBC has capacity for the task and has no visible leak.
 - **📦 Trash Bins:** Not full.
@@ -63,7 +69,7 @@
 2. Separate protected cheese at or below 41°F from exposed, warmer, or unknown cheese.
 3. Put exposed, warmer, or unknown cheese and exposed crackers in 📦 Trash Bins.
 4. Wrap protected cheese that remained at or below 41°F with 🍷 Plastic Wrap.
-5. Put the wrapped protected cheese in the refrigerator.
+5. Put the wrapped protected cheese in 🍳 Kitchen Refrigerators.
 6. Return unopened crackers to dry storage.
 7. Fill each of 🍷 Three Wash Basins from 🔧 Fresh Water Tank with the minimum water needed to submerge the largest item.
 8. Add 🍷 Dish Soap to the first basin according to its label.
@@ -77,8 +83,15 @@
 14. Place each sanitized item on 🍷 Drying Rack to air dry.
 15. Put fully dry items in 🍷 Cheese Station Storage.
 16. Move all used basin water into 🔧 Gray-Water IBC.
-17. Clean and sanitize 🍷 Cheese Work Surface with 🍷 Food Surface Sanitizer according to its label.
-18. Wash your hands at 📦 Handwashing Station.
+17. Spray 🍷 Cheese Work Surface with 🍷 Multisurface Cleaner.
+18. Wipe the work surface with 🍷 Disposable Towels until no visible soil remains.
+19. Dampen a new disposable towel with potable water from 🍳 Drinking Water Dispensers.
+20. Wipe every cleaned part of the work surface with the damp towel.
+21. Put the used towels in 📦 Trash Bins.
+22. Spray the work surface with 🍷 Food Surface Sanitizer until it is visibly wet.
+23. Leave the work surface visibly wet for 60 seconds.
+24. Allow the work surface to air dry.
+25. Wash your hands at 📦 Handwashing Station.
 
 ## PASS when
 
@@ -99,6 +112,7 @@
 - **📦 Handwashing Station:** Water, soap, and disposable towels remain available. No water has reached the playa.
 - **🍷 Cheese of the Day:** During service, the cheese is protected and at or below 41°F. After service, protected cheese held at or below 41°F is wrapped and refrigerated. Exposed cheese or cheese with unknown history is discarded.
 - **🍷 Crackers:** Unopened crackers are in dry storage. Crackers exposed during service are discarded.
+- **🍳 Kitchen Refrigerators:** Each refrigerator is 41°F or below, and every door is closed and sealed.
 - **🍷 Food Probe Thermometer:** During service, the probe is cleaned and sanitized after each reading. After service, it is clean, sanitized, dry, covered, and stored.
 - **🍷 Plastic Wrap:** The roll is inside its box and the slide cutter is locked at one end.
 - **🍷 Three Wash Basins:** The basins are empty, visibly clean, air-dry, nested, and stored. No liquid has reached the playa.
@@ -113,8 +127,10 @@
 - **🍷 Drying Rack:** The rack is empty, visibly clean, dry, and protected from dust.
 - **🍷 Cheese Station Storage:** Only clean, fully dry cheese-service tools are inside and the container is closed.
 - **🍷 Cheese Work Surface:** During service, the surface remains clean and protected from dust and public contact. After service, it is clean, sanitized, air-dry, and covered.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner.
 - **🍷 Food Surface Sanitizer:** The bottle is closed, contains sanitizer, and is stored away from heat or flame.
 - **🍷 Disposable Towels:** At least one clean, dry towel remains.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **🔧 Fresh Water Tank:** The outlet is closed and no water is leaking or pooled around the tank.
 - **🔧 Gray-Water IBC:** All inlets and outlets are closed when not in use. No gray water is leaking or pooled around the IBC.
 - **📦 Trash Bins:** A trash bag is installed and is not full. No loose trash is present around the bins.
@@ -124,6 +140,7 @@
 - **📦 Handwashing Station:** Stop using the station and tell the Dominatrix.
 - **🍷 Cheese of the Day:** Keep the cheese out of service and tell the Food Lead.
 - **🍷 Crackers:** Do not serve damp, dusty, open, or contaminated crackers.
+- **🍳 Kitchen Refrigerators:** Keep the door closed and tell the Dominatrix immediately.
 - **🍷 Food Probe Thermometer:** Do not estimate a food temperature. Ask the Food Lead for a working sanitized thermometer.
 - **🍷 Plastic Wrap:** Ask the Food Lead for replacement food wrap.
 - **🍷 Three Wash Basins:** Do not wash food-contact items in a dirty or leaking basin. Tell the Food Lead.
@@ -138,15 +155,18 @@
 - **🍷 Drying Rack:** Clean and sanitize the rack before placing sanitized items on it.
 - **🍷 Cheese Station Storage:** Do not store a wet or dirty food-contact item. Tell the Food Lead.
 - **🍷 Cheese Work Surface:** Clean and sanitize the surface before food preparation.
+- **🍷 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Put the empty bottle in 📦 Trash Bins.
 - **🍷 Food Surface Sanitizer:** Do not substitute an unlabeled product. Ask the Food Lead for a replacement.
 - **🍷 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
 - **🔧 Fresh Water Tank:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
 - **🔧 Gray-Water IBC:** Stop showers, dishwashing, and other gray-water-producing tasks. Tell the Dominatrix. Do not let gray water reach the playa.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 
 - **IF** The time or temperature history of remaining cheese is unknown **THEN** Do not refrigerate it for later service. Put it in 📦 Trash Bins.
+- **🍷 Multisurface Cleaner:** **IF** The cleaner is not spraying and the nozzle is OFF **THEN** Turn the nozzle to ON.
 - **🍷 Food Surface Sanitizer:** **IF** The bottle is near heat or open flame **THEN** Move it to its cool storage place before use; the product is combustible.
 
 ## Who to ask

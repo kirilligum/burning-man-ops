@@ -6,7 +6,9 @@
   <location>At the equipment truck.</location>
   <readyBeforeUse>The plan matches the truck and current camp inventory.</readyBeforeUse>
 
-  <readyForNextPerson>The final loaded inventory and unresolved exceptions are recorded.</readyForNextPerson>
+  <readyForNextPerson>
+    The latest loading or unloading inventory and every unresolved exception are recorded.
+  </readyForNextPerson>
 
   <responsible>Build Lead</responsible>
   <commonProblems/>

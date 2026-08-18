@@ -8,7 +8,7 @@
 
   <area>Public area</area>
   <why/>
-  <when>After the Power Lead releases the arch lighting</when>
+  <when>After 📋 Strike_camp_lighting passes and the Power Lead releases the arch</when>
   <time/>
 
   <resources>
@@ -22,7 +22,7 @@
 
   <steps>
     <step number="1">
-      <action>Confirm that the Power Lead released the arch structure.</action>
+      <action>Confirm that 📋 Strike_camp_lighting passed and the Power Lead released the arch structure.</action>
     </step>
     <step number="2">
       <action>Roll the clean, dry red carpet and secure it with a ratchet strap.</action>

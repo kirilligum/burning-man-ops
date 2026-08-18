@@ -17,7 +17,6 @@
 ## Ready before normal use
 
 - **📦 Build Book:** The page for the current asset is complete and approved by the responsible lead.
-- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
 
 ## Steps
 
@@ -47,7 +46,7 @@
 - **📦 Build Book:** The book remains complete and at the build station.
 - **🌐 Sound System:** The system remains in the state set by the sound team and has no reported fault.
 - **🔧 Camp Power System:** The system remains in the state set by the Power Lead; emergency shutoffs and service access are clear.
-- **🔧 Equipment Truck:** Assigned equipment is secured inside. The doorway is clear and the door is closed and latched when loading is complete.
+- **🔧 Equipment Truck:** The doorway is clear and the door is closed and latched when work is complete. Any equipment remaining inside is secured and recorded on 📦 Truck Load Plan.
 
 ### If an item is not ready
 

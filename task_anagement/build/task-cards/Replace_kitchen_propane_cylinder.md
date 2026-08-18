@@ -16,7 +16,7 @@
 - 🔥 Disposable Towels — Propane area. Plain white disposable paper towels for propane-area cleanup.
 - 🔧 Fresh Water Tank — Private infrastructure area. Camp tank containing potable water.
 - 📦 Trash Bins
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 
 ## Ready before normal use
 
@@ -32,20 +32,21 @@
 
 1. Confirm with the Propane Lead that the replacement cylinder and connection match the kitchen appliance.
    - **IF/THEN:** IF the size, fuel, connection, or regulator does not match, THEN do not continue.
-2. Extinguish every flame and remove smoking and ignition sources within 10 feet.
-3. Turn every connected kitchen appliance control to OFF.
-4. Close the connected cylinder valve.
-5. Disconnect the regulator using the method specified by the appliance manufacturer.
-6. Cap the disconnected cylinder valve with its supplied cap.
-7. Move the disconnected cylinder upright to the propane storage area.
-8. Place 🔥 Replacement Kitchen Propane Cylinder upright in the secured operating position.
-9. Connect the appliance regulator according to the manufacturer's instructions.
-10. Open the replacement cylinder valve slowly.
-11. Apply 🔥 Propane Leak Test Solution to every connection disturbed during replacement.
+2. Confirm that an appropriate extinguisher from 📦 Fire Extinguishers is visible and accessible at the propane work area.
+3. Extinguish every flame and remove smoking and other ignition sources from the work area.
+4. Turn every connected kitchen appliance control to OFF.
+5. Close the connected cylinder valve.
+6. Disconnect the regulator using the method specified by 🔥 Kitchen Propane Appliance Manual.
+7. Cap the disconnected cylinder valve with its supplied cap.
+8. Move the disconnected cylinder upright to the propane storage area.
+9. Place 🔥 Replacement Kitchen Propane Cylinder upright in the secured operating position.
+10. Connect the appliance regulator according to 🔥 Kitchen Propane Appliance Manual.
+11. Open the replacement cylinder valve slowly.
+12. Apply 🔥 Propane Leak Test Solution to every connection disturbed during replacement.
    - **IF/THEN:** IF growing bubbles appear, or propane is heard or smelled, THEN close the cylinder valve, keep the appliance out of service, and tell the Propane Lead.
-12. Dampen one 🔥 Disposable Towels towel with the minimum water needed from 🔧 Fresh Water Tank.
-13. Wipe the tested connections until no leak-test solution remains.
-14. Put the used towel in 📦 Trash Bins.
+13. Dampen one 🔥 Disposable Towels towel with the minimum water needed from 🔧 Fresh Water Tank.
+14. Wipe the tested connections until no leak-test solution remains.
+15. Put the used towel in 📦 Trash Bins.
 
 ## PASS when
 
@@ -79,7 +80,7 @@
 - **🔥 Propane Leak Test Solution:** Ask the Propane Lead for replacement leak-test solution.
 - **🔥 Disposable Towels:** Ask the Flame Lead where to find replacement towels.
 - **🔧 Fresh Water Tank:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 - **📦 Fire Extinguishers:** Tell the Dominatrix immediately.
 
 ## Common problems

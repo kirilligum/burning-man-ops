@@ -8,7 +8,7 @@
 
   <area>Public area</area>
   <why/>
-  <when>After the Power Lead releases the sign lighting</when>
+  <when>After 📋 Strike_camp_lighting passes and the Power Lead releases the sign</when>
   <time/>
 
   <resources>
@@ -22,7 +22,7 @@
 
   <steps>
     <step number="1">
-      <action>Confirm that the Power Lead released the sign structure.</action>
+      <action>Confirm that 📋 Strike_camp_lighting passed and the Power Lead released the sign structure.</action>
     </step>
     <step number="2">
       <action>Remove each sign letter in the reverse printed order.</action>

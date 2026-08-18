@@ -14,8 +14,10 @@
 - 🍷 Disposable Aprons — Bar/Cheese area. Choice disposable white 0.50 mil poly aprons, 100 count.
 - 🍷 Disposable Food Gloves — Bar/Cheese area. Choice powder-free clear disposable poly foodservice gloves, large, 100 count.
 - 🍷 Cheese Work Surface — Bar/Cheese area. Hard, nonporous food-contact work surface used for cheese service.
-- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3.
+- 🍷 Multisurface Cleaner — Bar/Cheese area. Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
+- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3. For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
 - 🍷 Disposable Towels — Bar/Cheese area. WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
+- 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
 - 🍷 Cheese of the Day — Kitchen refrigerator until service. Cheese selected on the current pairing list from an approved food source.
 - 🍷 Pairing List — Bar/Cheese area. Daily music, wine, and cheese pairing selected for the camp event.
 - 🍷 Food Probe Thermometer — Cheese station. ThermoWorks ThermoPop 2 NSF-certified instant-read thermometer with probe cover.
@@ -33,8 +35,10 @@
 - **🍷 Disposable Aprons:** A clean apron is available.
 - **🍷 Disposable Food Gloves:** A clean pair is available and fits the worker.
 - **🍷 Cheese Work Surface:** The surface is visibly clean, sanitized, and air-dry.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner and sprays.
 - **🍷 Food Surface Sanitizer:** The bottle contains sanitizer, sprays, and is not expired.
 - **🍷 Disposable Towels:** At least one clean, dry towel remains.
+- **🍳 Drinking Water Dispensers:** The interiors and spigots are clean, and neither dispenser leaks.
 - **🍷 Cheese of the Day:** The cheese is protected from contamination and at or below 41°F.
 - **🍷 Pairing List:** The current event's music, wine, and cheese are identified.
 - **🍷 Food Probe Thermometer:** The probe is clean, sanitized, dry, and the display turns on.
@@ -53,19 +57,30 @@
 3. Secure your hair with one restraint from 🍷 Hair Restraints.
 4. Wash your hands at 📦 Handwashing Station.
 5. Put on one clean apron from 🍷 Disposable Aprons.
-6. Remove visible soil from 🍷 Cheese Work Surface with 🍷 Food Surface Sanitizer and 🍷 Disposable Towels.
-7. Spray the work surface until it is visibly wet.
-8. Leave the work surface visibly wet for 60 seconds.
-9. Allow the work surface to air dry.
-10. Measure 🍷 Cheese of the Day with 🍷 Food Probe Thermometer.
+6. Spray 🍷 Cheese Work Surface with 🍷 Multisurface Cleaner.
+7. Wipe the work surface with 🍷 Disposable Towels until no visible soil remains.
+8. Dampen a new disposable towel with potable water from 🍳 Drinking Water Dispensers.
+9. Wipe every cleaned part of the work surface with the damp towel.
+10. Put the used towels in 📦 Trash Bins.
+11. Spray the work surface with 🍷 Food Surface Sanitizer until it is visibly wet.
+12. Leave the work surface visibly wet for 60 seconds.
+13. Allow the work surface to air dry.
+14. Measure 🍷 Cheese of the Day with 🍷 Food Probe Thermometer.
    - **IF/THEN:** IF the cheese is above 41°F, THEN keep it out of service and tell the Food Lead.
-11. Clean and sanitize the thermometer probe according to the 🍷 Food Surface Sanitizer label.
-12. Write the cheese name from 🍷 Pairing List on 🍷 Cheese Name Board.
-13. Put sealed ice bags from 🍷 Ice Storage in 🍷 Cheese Serving Trays.
-14. Place 🍷 Tray Grids and Mats above the ice.
-15. Complete the opening entries on 🍷 Food Service Checklist.
-16. Wash your hands again at 📦 Handwashing Station.
-17. Put on one clean pair from 🍷 Disposable Food Gloves.
+15. Spray the thermometer probe with 🍷 Multisurface Cleaner.
+16. Wipe the probe with 🍷 Disposable Towels until no cheese remains.
+17. Dampen a new disposable towel with potable water from 🍳 Drinking Water Dispensers.
+18. Wipe every cleaned part of the probe with the damp towel.
+19. Put the used towels in 📦 Trash Bins.
+20. Spray the probe with 🍷 Food Surface Sanitizer until it is visibly wet.
+21. Leave the probe visibly wet for 60 seconds.
+22. Allow the probe to air dry.
+23. Write the cheese name from 🍷 Pairing List on 🍷 Cheese Name Board.
+24. Put sealed ice bags from 🍷 Ice Storage in 🍷 Cheese Serving Trays.
+25. Place 🍷 Tray Grids and Mats above the ice.
+26. Complete the opening entries on 🍷 Food Service Checklist.
+27. Wash your hands again at 📦 Handwashing Station.
+28. Put on one clean pair from 🍷 Disposable Food Gloves.
 
 ## PASS when
 
@@ -73,6 +88,7 @@
 - The worker is healthy, hair is restrained, hands are washed, and apron and gloves are clean.
 - The work surface is sanitized and air-dry.
 - The cheese is at or below 41°F.
+- The thermometer probe is clean, sanitized, and air-dry.
 - The cheese name is displayed and the trays, ice, grids, and mats are ready.
 
 ## Finish
@@ -88,8 +104,10 @@
 - **🍷 Disposable Aprons:** Unused clean aprons remain available.
 - **🍷 Disposable Food Gloves:** Unused clean gloves remain available.
 - **🍷 Cheese Work Surface:** During service, the surface remains clean and protected from dust and public contact. After service, it is clean, sanitized, air-dry, and covered.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner.
 - **🍷 Food Surface Sanitizer:** The bottle is closed, contains sanitizer, and is stored away from heat or flame.
 - **🍷 Disposable Towels:** At least one clean, dry towel remains.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **🍷 Cheese of the Day:** During service, the cheese is protected and at or below 41°F. After service, protected cheese held at or below 41°F is wrapped and refrigerated. Exposed cheese or cheese with unknown history is discarded.
 - **🍷 Pairing List:** The current pairing remains readable at the bar.
 - **🍷 Food Probe Thermometer:** During service, the probe is cleaned and sanitized after each reading. After service, it is clean, sanitized, dry, covered, and stored.
@@ -107,8 +125,10 @@
 - **🍷 Disposable Aprons:** Do not handle food. Ask the Food Lead for a clean apron.
 - **🍷 Disposable Food Gloves:** Do not touch ready-to-eat food. Ask the Food Lead for gloves that fit.
 - **🍷 Cheese Work Surface:** Clean and sanitize the surface before food preparation.
+- **🍷 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Put the empty bottle in 📦 Trash Bins.
 - **🍷 Food Surface Sanitizer:** Do not substitute an unlabeled product. Ask the Food Lead for a replacement.
 - **🍷 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
 - **🍷 Cheese of the Day:** Keep the cheese out of service and tell the Food Lead.
 - **🍷 Pairing List:** Ask the Bar Lead for the current pairing before service begins.
 - **🍷 Food Probe Thermometer:** Do not estimate a food temperature. Ask the Food Lead for a working sanitized thermometer.
@@ -116,11 +136,12 @@
 - **🍷 Tray Grids and Mats:** Do not use a damaged or dirty grid or mat. Tell the Food Lead.
 - **🍷 Ice Storage:** Ask the Dominatrix where to put the ice before buying it.
 - **🍷 Food Service Checklist:** Do not open cheese service. Tell the Food Lead.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 
 - **🍷 Disposable Food Gloves:** **IF** A glove tears or touches hair, a face, a phone, trash, money, or another unclean surface **THEN** Remove it, wash both hands, and put on new gloves before touching food.
+- **🍷 Multisurface Cleaner:** **IF** The cleaner is not spraying and the nozzle is OFF **THEN** Turn the nozzle to ON.
 - **🍷 Food Surface Sanitizer:** **IF** The bottle is near heat or open flame **THEN** Move it to its cool storage place before use; the product is combustible.
 
 ## Who to ask

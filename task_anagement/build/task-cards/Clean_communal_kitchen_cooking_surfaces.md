@@ -10,8 +10,9 @@
 
 - 🍳 Cooking Surfaces — Communal kitchen cooking area.
 - 🍳 Multisurface Cleaner — Kitchen. Clorox Free & Clear Multi Surface Cleaner, Spray Bottle, Fragrance Free, 32 fl oz (UPC 044600603346).
-- 🍳 Food Surface Sanitizer — Kitchen. PURELL Foodservice Surface Sanitizer, fragrance free, ready-to-use 32 fl oz spray bottle (3341-06). No rinse is required when used according to label.
+- 🍳 Food Surface Sanitizer — Kitchen. PURELL Foodservice Surface Sanitizer, fragrance free, ready-to-use 32 fl oz spray bottle (3341-06). For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
 - 🍳 Disposable Towels — Kitchen. WypAll PowerClean L40 Extra Absorbent Towels, White, 12 x 12.5 in, 56 Count (05701).
+- 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
 - 📦 Trash Bins
 
 ## Ready before normal use
@@ -19,6 +20,7 @@
 - **🍳 Multisurface Cleaner:** The bottle contains cleaner and sprays.
 - **🍳 Food Surface Sanitizer:** The bottle contains sanitizer and sprays.
 - **🍳 Disposable Towels:** At least one clean, dry towel remains in the pack.
+- **🍳 Drinking Water Dispensers:** The interiors and spigots are clean, and neither dispenser leaks.
 - **📦 Trash Bins:** Not full.
 
 ## Steps
@@ -27,9 +29,12 @@
 2. Spray food, grease, visible dirt, and sticky residue with 🍳 Multisurface Cleaner.
 3. Wipe the sprayed areas with 🍳 Disposable Towels until no food, grease, visible dirt, or sticky residue remains.
 4. Put used towels in 📦 Trash Bins.
-5. Spray food-contact areas with 🍳 Food Surface Sanitizer.
-6. Leave the sanitized areas wet for the contact time printed on 🍳 Food Surface Sanitizer.
-7. Let the sanitized areas air-dry.
+5. Dampen a new disposable towel with potable water from 🍳 Drinking Water Dispensers.
+6. Wipe every cleaned food-contact area with the damp towel.
+7. Put the used towel in 📦 Trash Bins.
+8. Spray food-contact areas with 🍳 Food Surface Sanitizer until visibly wet.
+9. Leave the sanitized areas visibly wet for 60 seconds.
+10. Let the sanitized areas air-dry.
 
 ## PASS when
 
@@ -48,6 +53,7 @@
 - **🍳 Multisurface Cleaner:** The bottle contains cleaner.
 - **🍳 Food Surface Sanitizer:** The bottle contains sanitizer.
 - **🍳 Disposable Towels:** At least one clean, dry towel remains in the pack.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **📦 Trash Bins:** A trash bag is installed and is not full. No loose trash is present around the bins.
 
 ### If an item is not ready
@@ -55,7 +61,8 @@
 - **🍳 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Turn the old bottle's nozzle to OFF, put the old bottle in 📦 Trash Bins, and get the replacement.
 - **🍳 Food Surface Sanitizer:** Ask the Dominatrix where to find a replacement. Turn the old bottle's nozzle to OFF, put the old bottle in 📦 Trash Bins, and get the replacement.
 - **🍳 Disposable Towels:** Ask the Dominatrix where to find a replacement pack. Get the replacement pack.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

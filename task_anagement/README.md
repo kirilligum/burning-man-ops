@@ -12,8 +12,15 @@ execution.
 > leaves the task, equipment, and area ready for the next shift.
 
 This README describes the system as currently agreed. It is expected to change
-as the schema, conversion process, procedures, and field tests are refined.
-Nothing in this directory is currently an approved field procedure.
+as conversion, equipment capture, and field tests are completed. The canonical
+inventory now accounts for every operational instruction in the source
+workbook. [WORKBOOK_COVERAGE.md](WORKBOOK_COVERAGE.md) records each mapping,
+exclusion, conflict, and field-detail blocker; [SOURCES.md](SOURCES.md) records
+the external operational evidence.
+
+The XML and generated cards are reviewable procedure drafts. A card does not
+authorize restricted work or replace the actual equipment manual, Build Book,
+FAST license, permit, or responsible lead's approval.
 
 ## Decision records
 
@@ -235,7 +242,7 @@ clearer, replace Dominatrix fallbacks with the useful reference.
 
 ## Document types
 
-The system will produce connected documents rather than one enormous manual.
+The system produces connected documents rather than one enormous manual.
 
 ### 1. Global instructions
 
@@ -263,19 +270,25 @@ The shift checklist is generated from checklist-type memberships inside the
 task XML. It is an index, assignment sheet, and execution record, not the full
 procedure.
 
+`scripts/render-checklists.py` creates one printable Markdown checklist per
+checklist type under `build/checklists/`. Every row links to the applicable
+task card and provides its When condition plus the runtime Status, Initials,
+and Completion time fields. Rows form an assignment and status index, not an
+execution sequence; ordered actions remain in the task card.
+
 Example:
 
-| Checklist | Task | Status | Initials | Time |
-| --- | --- | --- | --- | --- |
-| `MORNING` | 📋 Clean_communal_kitchen_tables |  |  |  |
-| `MORNING` | Clean cooking surfaces |  |  |  |
-| `MORNING` | Empty dry waste |  |  |  |
-| `MORNING` | Inspect EMT shade |  |  |  |
-| `MORNING` | Read generator fuel gauge |  |  |  |
+| Checklist | Task | When | Status | Initials | Time |
+| --- | --- | --- | --- | --- | --- |
+| `Morning` | 📋 Clean_communal_kitchen_tables | Once or more per shift |  |  |  |
+| `Morning` | 📋 Clean_communal_kitchen_cooking_surfaces | Once or more per shift |  |  |  |
+| `Morning` | 📋 Empty_communal_kitchen_dry_trash | Once per shift |  |  |  |
+| `Morning` | 📋 Inspect_EMT_shade | Once per Morning shift and after strong wind or rain |  |  |  |
+| `Morning` | 📋 Read_generator_fuel_level | At shift start and every 2 hours during a Dominatrix shift |  |  |  |
 
 The worker performing the task marks one of:
 
-- **PASS** — the task was performed and every PASS when condition was met.
+- **PASS** — the task was performed and every PASS criterion was met.
 - **BLOCKED** — the task could not be completed.
 - **ESCALATED** — the task or observed condition was handed to the expert.
 - **NOT APPLICABLE** — the task did not apply to that shift or condition.
@@ -397,10 +410,9 @@ describe the same information without creating duplicate identifiers.
 | **Reasoning** | `reasoning/entry` | Optional concise rationale for the task's order, scope, or omissions. One entry per line. Maintainer metadata; not shown on the task card by default. |
 | **Decisions** | `decisions/decision` | A task-specific decision contains date, status, text, and effect. A shared active or historical decision is linked with only record and status. Maintainer metadata; not shown on the task card by default. |
 
-The initial checklist-column allowlist should be selected from the current
-operational workbook during inventory:
+The current checklist-type columns are:
 
-| Candidate Boolean column | `TRUE` means |
+| Boolean column | `TRUE` means |
 | --- | --- |
 | **Morning Dominatrix** | Include the task on the Morning Dominatrix checklist. |
 | **Evening Dominatrix** | Include the task on the Evening Dominatrix checklist. |
@@ -417,8 +429,9 @@ operational workbook during inventory:
 | **Build** | Include the task on the camp Build checklist. |
 | **Strike** | Include the task on the camp Strike checklist. |
 
-These are candidates, not an automatic migration of workbook tabs. The camp
-must confirm which checklist types remain current.
+These values are an allowlist based on the operational workbook. Adding or
+retiring a checklist type requires updating the validator, field dictionary,
+and generated outputs together.
 
 In TSV, each checklist column contains `TRUE` or `FALSE`. In Google Sheets, the
 same fields are checkboxes. In XML, a task lists only its `TRUE` memberships;
@@ -523,35 +536,35 @@ task_anagement/
 ├── README.md
 ├── DECISIONS.md
 ├── HISTORICAL_DECISIONS.md
+├── SOURCES.md
+├── WORKBOOK_COVERAGE.md
 ├── schema/
 │   └── field-dictionary.md
 ├── data/
 │   ├── Treble Makers Camper Wiki.xml
 │   ├── tasks/
-│   │   └── Clean_communal_kitchen_tables.xml
+│   │   └── <one task>.xml
 │   ├── items/
-│   │   ├── Communal_Tables.xml
-│   │   ├── Lost_and_Found.xml
-│   │   ├── Trash_Bins.xml
+│   │   ├── <uncategorized item>.xml
 │   │   ├── public area/
 │   │   ├── bar-cheese/
 │   │   ├── propane area/
 │   │   ├── common area/
 │   │   ├── kitchen/
-│   │   │   ├── Disposable_Towels.xml
-│   │   │   ├── Dustpan_and_Brush.xml
-│   │   │   └── Multisurface_Cleaner.xml
 │   │   └── private infrastructure/
 │   └── global-instructions.xml
 ├── scripts/
 │   ├── extract-historical-decisions.py
+│   ├── render-checklists.py
 │   ├── validate.py
 │   └── render-task-card.py
 ├── tests/
 │   └── test_scripts.py
 └── build/
+    ├── checklists/
+    │   └── <checklist type>.md
     └── task-cards/
-        └── Clean_communal_kitchen_tables.md
+        └── <task>.md
 ```
 
 Validate and render all tasks with:
@@ -560,10 +573,12 @@ Validate and render all tasks with:
 python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
 python3 task_anagement/scripts/validate.py
 python3 task_anagement/scripts/render-task-card.py --all
+python3 task_anagement/scripts/render-checklists.py
 ```
 
-Use the render command with `--all --check` to verify that every committed card
-matches the canonical XML without rewriting it.
+Use the task-card renderer with `--all --check` and the checklist renderer with
+`--check` to verify that every committed output matches canonical XML without
+rewriting it.
 
 ## Task-card content and order
 
@@ -747,7 +762,7 @@ Printed output should use a station system:
 - bar board for bar cards;
 - shower board for shower cards;
 - generator station for inspection and operator cards;
-- shade storage for build, inspection, repair, and strike cards;
+- shade storage for build, inspection, and strike cards;
 - central shift board for assignments and execution status.
 
 Starting physical-production targets to field-test include:
@@ -765,10 +780,10 @@ Starting physical-production targets to field-test include:
 
 Every printed page should show its task name.
 
-## Pilot 1: 📋 Clean communal kitchen tables
+## Reference task: 📋 Clean communal kitchen tables
 
-This is the first complete pilot because it is frequent, observable, and low
-risk. Its canonical source is
+This was the first calibration task because it is frequent, observable, and
+low risk. Its canonical source is
 `data/tasks/Clean_communal_kitchen_tables.xml`; its field-facing output is
 `build/task-cards/Clean_communal_kitchen_tables.md`.
 
@@ -781,32 +796,36 @@ worker does not need to read raw XML.
 The selected cleaner is **Clorox Free & Clear Multi Surface Cleaner, Spray
 Bottle, Fragrance Free, 32 fl oz (UPC 044600603346)**. [Clorox directs
 users](https://www.clorox.com/products/clorox-free-clear-multi-surface-cleaner/)
-to turn the nozzle to ON, spray the soiled area, and wipe with a towel or cloth;
-no rinse is required. The product cleans but does not disinfect.
+to turn the nozzle to ON, spray the soiled area, and wipe with a towel or cloth.
+Cooking and cheese food-contact surfaces use separate cleaning, potable-rinse,
+sanitizing, and air-drying sequences.
 
 The selected disposable towel is **WypAll PowerClean L40 Extra Absorbent
 Towels, White, 12 x 12.5 in, 56 Count (05701)**.
 [Kimberly-Clark identifies product 05701](https://www.kcprofessional.com/en-us/products/wiping-and-cleaning/process-cleaning/heavy-duty-cleaning-cloth/wypall%C2%AE-powerclean%E2%84%A2-l40-extra-absorbent-towels/05701)
 as a 56-count pack suitable for food-preparation cleaning.
 
-The source, linked items, decision references, and generated card now pass the
-repository validator. The procedure becomes field-approved only after a camper
-successfully completes it using the rendered card at the actual station.
+The source, linked items, decision references, and generated card pass the
+repository validator. Field testing may still reveal camp-specific changes.
 
 ## EMT shade procedures
 
-The EMT shade must not be represented by one vague checklist row. Build,
-inspection, repair, and strike are separate tasks:
+The EMT shade must not be represented by one vague checklist row. The current
+source supports three separate tasks:
 
 - Assemble EMT shade
 - Inspect EMT shade
-- Repair EMT shade
 - Strike EMT shade
+
+There is no repair task because the workbook and current camp records do not
+define an approved repair. A failed inspection clears the affected area and
+escalates to the Build Lead.
 
 ### Assemble EMT shade status
 
-The current workbook does not contain enough information to create a buildable
-procedure. The following must be captured from the actual structure:
+`Assemble_EMT_shade.xml` is a controlled work package that requires the current
+Build Book and Build Lead. It intentionally cannot be executed if the Build
+Book is incomplete. The following must be captured from the actual structure:
 
 - structure geometry and orientation;
 - tube lengths and tube labels;
@@ -821,19 +840,8 @@ procedure. The following must be captured from the actual structure:
 - final inspection criteria;
 - approved drawing and manifest.
 
-The initial build phases are expected to be:
-
-1. Prepare the site.
-2. Inventory and lay out components.
-3. Assemble the roof frame.
-4. Attach the covering at the validated stage and raise the structure.
-5. Anchor, brace, inspect, and hand off.
-
-This outline is an observation framework, not a field procedure. The real task
-must be recorded while the Build Lead performs it, then validated against the
-actual structure.
-
-Expected STOP conditions include:
+The current task stops before assembly when required information is missing.
+Its controlled stop conditions include:
 
 - missing or mismatched drawing or components;
 - bent tubes or damaged fittings;
@@ -846,7 +854,7 @@ Expected STOP conditions include:
 - loss of coordinated control by the Build Lead;
 - an impaired or physically unable worker.
 
-### Inspect EMT shade starting point
+### Inspect EMT shade
 
 A trained camper can perform a defined inspection without being authorized to
 change the structure.
@@ -860,8 +868,8 @@ change the structure.
 7. If a structural component fails, clear the affected area and notify the
    Build Lead. Do not improvise a repair.
 
-The exact inspection points and PASS/FAIL photographs must come from the actual
-approved structure.
+The Build Lead must validate the inspection points and add asset-specific
+PASS/FAIL photographs to the Build Book.
 
 ## Flame, fuel, electrical, and mechanical tasks
 
@@ -891,10 +899,10 @@ The same separation applies to generator work:
 - refueling is a separate authorized task;
 - troubleshooting and repair are separate authorized tasks.
 
-## Initial validation
+## Validation
 
-Validation should begin with practical errors that would make a task ambiguous
-or impossible to render:
+`scripts/validate.py` currently rejects practical errors that would make a task
+ambiguous or impossible to render, including:
 
 - duplicate task names or duplicate item names within one folder;
 - an item reference whose icon does not resolve to an item with that name in
@@ -904,22 +912,21 @@ or impossible to render:
   conditions;
 - a categorized item outside an approved area folder;
 - an item with no Ready for next person value;
-- an unknown XML checklist membership or a non-Boolean Sheet checklist value;
+- an unknown XML checklist membership;
 - duplicate or invalid step numbering;
 - a task-specific decision missing its date, status, text, or effect;
 - a shared decision reference missing its record or status;
 - a task decision `<record>` that is not found in the active or historical
   decision record;
 - an unknown task decision status;
-- a step using “check” without an inspection target or expected state;
-- unresolved placeholders in a field-ready task;
-- missing stop or escalation information where the task requires it;
-- protected information in any import or XML file;
-- a non-lossless XML/Sheet/XML round trip.
+- an operational task or item reference not declared as a resource;
+- email addresses or phone numbers in canonical operational XML;
+- duplicate resources, criteria, checklist memberships, or instructions.
 
-Controlled-language phrases such as “make sure,” “reasonably,” “properly,”
-“some,” “enough,” “if necessary,” and “as needed” should initially produce
-warnings for human review rather than automatic rejection.
+The future Sheet converter must additionally reject invalid Boolean values and
+prove a no-change XML/Sheet/XML semantic round trip. Controlled-language and
+missing field-detail review remains human work because safe wording depends on
+context.
 
 ## Production workflow
 
@@ -1005,34 +1012,35 @@ Review a task when equipment or storage changes, a near miss occurs, a user
 cannot complete it, the real procedure changes, or an external requirement
 changes.
 
-## Recommended implementation sequence
+## Recommended next sequence
 
-1. Keep the ODS unchanged as source evidence.
-2. Validate the canonical kitchen-table task and its linked items.
-3. Render the kitchen-table task card from XML.
-4. Conduct the kitchen-table field test using the rendered card.
-5. Revise the XML from observed problems and render again.
-6. Implement XML-to-Google-Sheets export and the matching import only after the
-   pilot fields are stable.
-7. Prove a no-change XML/Sheet/XML round trip.
-8. Add the next routine task.
-9. Add restricted inspection tasks only after the routine format is proven.
+1. Resolve the field-detail blockers in `WORKBOOK_COVERAGE.md`, beginning with
+   the generator threshold, Build Book, flame-effect procedure, and actual
+   propane equipment.
+2. Have each responsible lead review their task and item XML.
+3. Field-test routine cards without coaching and revise from observed errors.
+4. Field-test printed checklists and task cards under actual light, dust, noise,
+   and storage conditions.
+5. Implement deterministic XML-to-Sheet export and Sheet-to-XML import.
+6. Prove a no-change XML/Sheet/XML semantic round trip before human Sheet
+   editing begins.
 
 ## Open decisions
 
 These must be resolved by the relevant experts rather than guessed by Codex:
 
 - one generator escalation threshold and its measurement point;
-- the exact scope of generator gauge inspection versus refueling;
-- the exact scope of propane inspection versus tank replacement;
 - lost-and-found exceptions for food, trash, chemicals, sharps, and unsafe
   objects;
-- gray-water routing and full-capacity response;
+- the low-water trigger and current fresh-water and gray-water service methods;
 - actual shade geometry, hardware, anchors, and build sequence;
-- actual flame-effect component names and operating procedures;
-- what “mechanical issue” means for each inspected asset;
-- the final allowlist of Boolean checklist-type columns;
-- the final set of Sheet tabs and XML files after the pilot round trip.
+- actual flame-effect valve and control IDs, limits, timing, and emergency
+  shutdown sequence;
+- the actual kitchen propane cylinder, regulator, connection, and appliance
+  manual;
+- the actual food products, 2026 permit, and approved service plan;
+- current on-playa maps, rosters, assignments, provider methods, and payment
+  authorization, kept outside repository XML when protected or short-lived.
 
 ## External references
 

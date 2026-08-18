@@ -5,6 +5,7 @@
   <checklist_types>
     <checklist_type>Morning</checklist_type>
     <checklist_type>Afternoon</checklist_type>
+    <checklist_type>Strike</checklist_type>
   </checklist_types>
 
   <area>Common area</area>

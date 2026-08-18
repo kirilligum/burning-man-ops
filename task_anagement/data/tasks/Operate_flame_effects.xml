@@ -8,7 +8,7 @@
 
   <area>Propane area</area>
   <why/>
-  <when>Continuously while the flame-effect system is pressurized or lit</when>
+  <when>After 📋 Start_flame_effects passes and continuously while the system is pressurized or lit</when>
   <time/>
 
   <resources>
@@ -22,16 +22,19 @@
 
   <steps>
     <step number="1">
-      <action>Keep the licensed operator and trained spotter at the effect continuously.</action>
+      <action>Confirm that 📋 Start_flame_effects passed for the current operating session.</action>
     </step>
     <step number="2">
-      <action>Keep people and combustible material outside the FAST-approved perimeter.</action>
+      <action>Keep the licensed operator and trained spotter at the effect continuously.</action>
     </step>
     <step number="3">
+      <action>Keep people and combustible material outside the FAST-approved perimeter.</action>
+    </step>
+    <step number="4">
       <action>Continuously observe wind, flame direction, pressure, pilots, hoses, fittings, controls, and the audience boundary.</action>
       <ifThen>IF wind picks up, the flame or heat can leave the approved zone, a leak or abnormal condition appears, or any Ranger, FAST, or ESD member requests shutdown, THEN stop firing and complete the approved emergency shutdown.</ifThen>
     </step>
-    <step number="4">
+    <step number="5">
       <action>Fire the effect only on the licensed operator's command and within the approved operating limits.</action>
     </step>
   </steps>

@@ -4,14 +4,14 @@
 
 - **Checklist types:** Strike
 - **Area:** Public area
-- **When:** After the Power Lead releases the arch lighting
+- **When:** After 📋 Strike camp lighting passes and the Power Lead releases the arch
 
 ## What you need
 
 - Build Lead and the crew count printed in 📦 Build Book
 - 📋 Strike camp lighting
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
-- 📦 Camp Arch — Public entrance shown on 📦 Camp_Map. Camp entrance arch, red carpet, lighting, connections, and anchors.
+- 📦 Camp Arch — Public entrance shown on 📦 Camp Map. Camp entrance arch, red carpet, lighting, connections, and anchors.
 - 📦 Build Hardware Bins — Build storage area. Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.
 - 📦 Ratchet Straps — Build storage area. Structure straps in the sizes and ratings listed in the current Build Book.
 
@@ -22,7 +22,7 @@
 
 ## Steps
 
-1. Confirm that the Power Lead released the arch structure.
+1. Confirm that 📋 Strike camp lighting passed and the Power Lead released the arch structure.
 2. Roll the clean, dry red carpet and secure it with a ratchet strap.
 3. Lower the arch only on the Build Lead's command.
 4. Dismantle the lowered arch in the printed reverse sequence.

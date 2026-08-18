@@ -31,43 +31,46 @@
       <ifThen>IF the size, fuel, connection, or regulator does not match, THEN do not continue.</ifThen>
     </step>
     <step number="2">
-      <action>Extinguish every flame and remove smoking and ignition sources within 10 feet.</action>
+      <action>Confirm that an appropriate extinguisher from 📦 Fire_Extinguishers is visible and accessible at the propane work area.</action>
     </step>
     <step number="3">
-      <action>Turn every connected kitchen appliance control to OFF.</action>
+      <action>Extinguish every flame and remove smoking and other ignition sources from the work area.</action>
     </step>
     <step number="4">
-      <action>Close the connected cylinder valve.</action>
+      <action>Turn every connected kitchen appliance control to OFF.</action>
     </step>
     <step number="5">
-      <action>Disconnect the regulator using the method specified by the appliance manufacturer.</action>
+      <action>Close the connected cylinder valve.</action>
     </step>
     <step number="6">
-      <action>Cap the disconnected cylinder valve with its supplied cap.</action>
+      <action>Disconnect the regulator using the method specified by 🔥 Kitchen_Propane_Appliance_Manual.</action>
     </step>
     <step number="7">
-      <action>Move the disconnected cylinder upright to the propane storage area.</action>
+      <action>Cap the disconnected cylinder valve with its supplied cap.</action>
     </step>
     <step number="8">
-      <action>Place 🔥 Replacement_Kitchen_Propane_Cylinder upright in the secured operating position.</action>
+      <action>Move the disconnected cylinder upright to the propane storage area.</action>
     </step>
     <step number="9">
-      <action>Connect the appliance regulator according to the manufacturer's instructions.</action>
+      <action>Place 🔥 Replacement_Kitchen_Propane_Cylinder upright in the secured operating position.</action>
     </step>
     <step number="10">
-      <action>Open the replacement cylinder valve slowly.</action>
+      <action>Connect the appliance regulator according to 🔥 Kitchen_Propane_Appliance_Manual.</action>
     </step>
     <step number="11">
+      <action>Open the replacement cylinder valve slowly.</action>
+    </step>
+    <step number="12">
       <action>Apply 🔥 Propane_Leak_Test_Solution to every connection disturbed during replacement.</action>
       <ifThen>IF growing bubbles appear, or propane is heard or smelled, THEN close the cylinder valve, keep the appliance out of service, and tell the Propane Lead.</ifThen>
     </step>
-    <step number="12">
+    <step number="13">
       <action>Dampen one 🔥 Disposable_Towels towel with the minimum water needed from 🔧 Fresh_Water_Tank.</action>
     </step>
-    <step number="13">
+    <step number="14">
       <action>Wipe the tested connections until no leak-test solution remains.</action>
     </step>
-    <step number="14">
+    <step number="15">
       <action>Put the used towel in 📦 Trash_Bins.</action>
     </step>
   </steps>

@@ -4,14 +4,14 @@
 
 - **Checklist types:** Strike
 - **Area:** Public area
-- **When:** After the Power Lead releases the sign lighting
+- **When:** After 📋 Strike camp lighting passes and the Power Lead releases the sign
 
 ## What you need
 
 - Build Lead
 - 📋 Strike camp lighting
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
-- 📦 Camp Sign — Public frontage shown on 📦 Camp_Map. Treble Makers sign, letters, support poles, fasteners, and lighting.
+- 📦 Camp Sign — Public frontage shown on 📦 Camp Map. Treble Makers sign, letters, support poles, fasteners, and lighting.
 - 📦 Build Hardware Bins — Build storage area. Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.
 - 📦 Ratchet Straps — Build storage area. Structure straps in the sizes and ratings listed in the current Build Book.
 
@@ -22,7 +22,7 @@
 
 ## Steps
 
-1. Confirm that the Power Lead released the sign structure.
+1. Confirm that 📋 Strike camp lighting passed and the Power Lead released the sign structure.
 2. Remove each sign letter in the reverse printed order.
 3. Lower and dismantle the sign support under the Build Lead's direction.
 4. Bundle the support poles with 📦 Ratchet Straps.

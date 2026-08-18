@@ -16,6 +16,7 @@
     <resource>📦 Handwashing_Station</resource>
     <resource>🍷 Cheese_of_the_Day</resource>
     <resource>🍷 Crackers</resource>
+    <resource>🍳 Kitchen_Refrigerators</resource>
     <resource>🍷 Food_Probe_Thermometer</resource>
     <resource>🍷 Plastic_Wrap</resource>
     <resource>🍷 Three_Wash_Basins</resource>
@@ -30,8 +31,10 @@
     <resource>🍷 Drying_Rack</resource>
     <resource>🍷 Cheese_Station_Storage</resource>
     <resource>🍷 Cheese_Work_Surface</resource>
+    <resource>🍷 Multisurface_Cleaner</resource>
     <resource>🍷 Food_Surface_Sanitizer</resource>
     <resource>🍷 Disposable_Towels</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
     <resource>🔧 Fresh_Water_Tank</resource>
     <resource>🔧 Gray-Water_IBC</resource>
     <resource>📦 Trash_Bins</resource>
@@ -51,7 +54,7 @@
       <action>Wrap protected cheese that remained at or below 41°F with 🍷 Plastic_Wrap.</action>
     </step>
     <step number="5">
-      <action>Put the wrapped protected cheese in the refrigerator.</action>
+      <action>Put the wrapped protected cheese in 🍳 Kitchen_Refrigerators.</action>
     </step>
     <step number="6">
       <action>Return unopened crackers to dry storage.</action>
@@ -89,9 +92,30 @@
       <action>Move all used basin water into 🔧 Gray-Water_IBC.</action>
     </step>
     <step number="17">
-      <action>Clean and sanitize 🍷 Cheese_Work_Surface with 🍷 Food_Surface_Sanitizer according to its label.</action>
+      <action>Spray 🍷 Cheese_Work_Surface with 🍷 Multisurface_Cleaner.</action>
     </step>
     <step number="18">
+      <action>Wipe the work surface with 🍷 Disposable_Towels until no visible soil remains.</action>
+    </step>
+    <step number="19">
+      <action>Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.</action>
+    </step>
+    <step number="20">
+      <action>Wipe every cleaned part of the work surface with the damp towel.</action>
+    </step>
+    <step number="21">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="22">
+      <action>Spray the work surface with 🍷 Food_Surface_Sanitizer until it is visibly wet.</action>
+    </step>
+    <step number="23">
+      <action>Leave the work surface visibly wet for 60 seconds.</action>
+    </step>
+    <step number="24">
+      <action>Allow the work surface to air dry.</action>
+    </step>
+    <step number="25">
       <action>Wash your hands at 📦 Handwashing_Station.</action>
     </step>
   </steps>
@@ -115,5 +139,6 @@
 
   <reasoning>
     <entry>The workbook says to refrigerate any remaining cheese, but current food-safety guidance does not support saving exposed food with unknown time or temperature history.</entry>
+    <entry>The sanitizer label requires visible soil removal, washing, and a potable-water rinse before the 60-second food-contact sanitizing step.</entry>
   </reasoning>
 </task>

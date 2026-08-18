@@ -43,7 +43,7 @@
       <action>Turn off the water before the timer reaches 3 minutes.</action>
     </step>
     <step number="8">
-      <action>Put hair, wipes, razors, and packaging in 📦 Trash_Bins.</action>
+      <action>Put hair, wipes, and packaging in 📦 Trash_Bins.</action>
     </step>
     <step number="9">
       <action>Run 🔧 Gray-Water_Pump until the shower basin is empty.</action>

@@ -15,7 +15,7 @@
 - 🍳 Sanitizer Test Strips — Kitchen. Hydrion QT-10 Quaternary Test Paper, 0 to 400 ppm.
 - 🍷 Multisurface Cleaner — Bar/Cheese area. Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
 - 🍷 Disposable Towels — Bar/Cheese area. WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
-- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3.
+- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3. For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
 - 🔧 Shower Cleaner — Shower area. Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
 - 🔧 Disposable Towels — Shower area. WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
 - 📦 Trash Bins
@@ -77,7 +77,7 @@
 - **🍷 Food Surface Sanitizer:** Do not substitute an unlabeled product. Ask the Food Lead for a replacement.
 - **🔧 Shower Cleaner:** Ask the Dominatrix where to find a replacement.
 - **🔧 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

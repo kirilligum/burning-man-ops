@@ -10,7 +10,7 @@
 
 - Build Lead
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
-- 📦 Camp Fence — Boundary shown on 📦 Camp_Map. Camp boundary fence shown in the current layout.
+- 📦 Camp Fence — Boundary shown on 📦 Camp Map. Camp boundary fence shown in the current layout.
 - 📦 Build Hardware Bins — Build storage area. Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.
 
 ## Ready before normal use

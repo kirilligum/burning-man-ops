@@ -7,16 +7,24 @@ owns. Equipment-specific manuals and expert validation override generic advice.
 ## Kitchen and food service
 
 - [CNHD Burning Man 2026](https://www.centralnevadahd.org/burning-man/) — current
-  permit deadline, 2026 food-service guide, and permit exceptions.
+  August 14, 2026 permit deadline, 2026 food-service guide, and permit
+  exceptions. The deadline predates this checkpoint; cheese service must not
+  open unless the required current permit is already available.
 - [Burning Man 2026 food-permit guidance](https://survival.burningman.org/rules-and-regulations/health-permits-are-required-for-food-and-beverage-service/)
   — when a camp must obtain a temporary food permit.
-- [CNHD temporary-food operational checklist](https://www.centralnevadahd.org/wp-content/uploads/2024/04/CNHD-Temporary-Food-Application-Final_editsMM01122024.pdf)
-  — handwashing, cold holding at 41°F or below, three-stage dishwashing, quat
-  sanitizer at 200–400 ppm, test strips, and air drying.
+- [CNHD Special Events application and operational checklist](https://www.centralnevadahd.org/wp-content/uploads/2024/04/CNHD-Temporary-Food-Application-Final_editsMM01122024.pdf)
+  — the operational checklist on pages 5–6 covers handwashing, cold holding at
+  41°F or below, wastewater, and food protection.
+- [CNHD Burning Man self-inspection checklist](https://www.centralnevadahd.org/wp-content/uploads/2024/02/BMSelfCheck.pdf)
+  — Burning Man-specific daily checks for food protection, handwashing, cold
+  holding, thermometers, and wash/rinse/sanitize basins.
 
 Current provisional products:
 
 - [PURELL Foodservice Surface Sanitizer](https://www3.epa.gov/pesticides/chem_search/ppls/084150-00003-20220113.pdf)
+  — for food-contact surfaces, the EPA-approved label requires visible soil
+  removal, washing, a potable-water rinse, 60 seconds visibly wet, and air
+  drying; no rinse follows the sanitizer.
 - [Dawn Professional Manual Pot and Pan Detergent](https://pgpro.com/en-us/brands/dawn-professional/manual-pot-and-pan-detergent-original)
 - [Rubbermaid 7.6-gallon bus/utility box](https://www.rubbermaidcommercial.com/foodservice/table-service/busutility-boxes/?sku=FG335100GRAY)
 - [Rubbermaid FGR80DC refrigerator thermometer](https://www.rubbermaidapac.com/food-service/monitoring/refrigeratorfreezer-20-80-f/)
@@ -46,6 +54,9 @@ Current provisional products:
 ## Fuel, structures, and flame effects
 
 - [Burning Man fuel and hazardous-material storage](https://burningman.org/black-rock-city/preparation/camping-tips/fire-safety-agreement/)
+  — secondary containment, a 40-B extinguisher 8–10 feet from fuel storage,
+  transfer spill protection, and basic spill-response tools including a shovel
+  and sealable container. It also prohibits filling a running generator.
 - [Burning Man 2026 Fuel Program](https://burningman.org/black-rock-city/preparation/infrastructure/brc-fuel-program/)
 - [Burning Man generator guidance](https://burningman.org/black-rock-city/preparation/camping-tips/generators/)
 - [Burning Man structure securing](https://burningman.org/black-rock-city/preparation/camping-tips/securing-your-structure/)

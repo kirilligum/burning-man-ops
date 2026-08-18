@@ -20,10 +20,10 @@
 
 ## Steps
 
-1. Place the outlet of 🔧 Potable Water Hose inside the first 🍳 Drinking Water Dispensers dispenser without touching the outlet to the dispenser.
+1. Hold the outlet of 🔧 Potable Water Hose above the first 🍳 Drinking Water Dispensers dispenser without touching either surface.
 2. Open 🔧 Fresh Water Tank and fill the dispenser to its full line.
 3. Close 🔧 Fresh Water Tank.
-4. Place the hose outlet inside the second dispenser without touching the outlet to the dispenser.
+4. Hold the hose outlet above the second dispenser without touching either surface.
 5. Open 🔧 Fresh Water Tank and fill the second dispenser to its full line.
 6. Close 🔧 Fresh Water Tank.
 7. Hold the hose outlet over the second dispenser until it stops dripping.
@@ -44,13 +44,12 @@
 
 ### Leave items ready
 
-- **🍳 Drinking Water Dispensers:** Both dispensers are full of potable water, their lids are closed, and neither dispenser leaks.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **🔧 Fresh Water Tank:** The outlet is closed and no water is leaking or pooled around the tank.
 - **🔧 Potable Water Hose:** The hose is drained, coiled, and stored with both ends off the playa.
 
 ### If an item is not ready
 
-- **🍳 Drinking Water Dispensers:** If a dispenser is dirty or leaking, do not fill it. Tell the Dominatrix.
 - **🔧 Fresh Water Tank:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
 - **🔧 Potable Water Hose:** Do not use a garden or gray-water hose. Tell the Dominatrix.
 

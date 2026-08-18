@@ -20,6 +20,9 @@
     <resource>Approved fuel provider or authorized generator operator</resource>
     <resource>🔧 Camp_Generators</resource>
     <resource>🔧 Generator_Secondary_Containment</resource>
+    <resource>🔧 Fuel_Spill_Mat</resource>
+    <resource>🔧 Fuel_Spill_Shovel</resource>
+    <resource>🔧 Fuel_Waste_Container</resource>
     <resource>📦 Fire_Extinguishers</resource>
     <resource>📦 Camp_Map</resource>
     <resource>📦 Camp_Issue_Log</resource>
@@ -34,29 +37,46 @@
       <ifThen>IF a leak or spill is present, THEN keep people away, do not refuel, and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
     </step>
     <step number="3">
-      <action>Confirm that 🔧 Generator_Secondary_Containment is correctly positioned and empty.</action>
+      <action>Have the approved provider or operator shut down the generator before its tank is filled.</action>
     </step>
     <step number="4">
-      <action>Confirm that an operable fire extinguisher is visible and unobstructed.</action>
+      <action>Confirm that 🔧 Generator_Secondary_Containment is correctly positioned and empty.</action>
     </step>
     <step number="5">
-      <action>Clear the straight service route from the street or fire lane to the generator.</action>
+      <action>Place 🔧 Fuel_Spill_Mat under the fuel-transfer point.</action>
     </step>
     <step number="6">
-      <action>Keep unauthorized people away while the approved provider or operator refuels the generator.</action>
+      <action>Place 🔧 Fuel_Spill_Shovel outside the transfer area where it remains accessible.</action>
     </step>
     <step number="7">
+      <action>Place empty 🔧 Fuel_Waste_Container beside the shovel.</action>
+    </step>
+    <step number="8">
+      <action>Confirm that a visible, unobstructed fire extinguisher with at least a 40-B rating is 8 to 10 feet from the fuel area.</action>
+    </step>
+    <step number="9">
+      <action>Use 📦 Camp_Map to clear the straight service route from the street or fire lane to the generator.</action>
+    </step>
+    <step number="10">
+      <action>Keep unauthorized people away while the approved provider or operator refuels the generator.</action>
+    </step>
+    <step number="11">
       <action>Observe the fill area for overflow, drips, or a spill.</action>
       <ifThen>IF fuel escapes containment or reaches the playa, THEN stop the operation if it is safe to communicate, keep people away, and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
     </step>
-    <step number="8">
-      <action>Read and record the generator fuel gauge after refueling.</action>
+    <step number="12">
+      <action>Read the generator fuel gauge after refueling.</action>
+    </step>
+    <step number="13">
+      <action>Record the final gauge reading and service result in 📦 Camp_Issue_Log.</action>
     </step>
   </steps>
 
   <passWhen>
     <criterion>The authorized provider or operator refueled the correct generator with the correct fuel.</criterion>
+    <criterion>The generator was shut down while its tank was filled.</criterion>
     <criterion>No fuel escaped containment or reached the playa.</criterion>
+    <criterion>The fuel-transfer mat, shovel, and waste container remain ready for spill response.</criterion>
     <criterion>The service route is clear and the final gauge reading is recorded.</criterion>
   </passWhen>
 

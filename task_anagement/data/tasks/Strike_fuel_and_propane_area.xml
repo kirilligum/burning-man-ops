@@ -12,15 +12,18 @@
   <time/>
 
   <resources>
-    <resource>Fuel Lead and Flame Lead</resource>
+    <resource>Fuel Lead, Flame Lead, and Propane Lead</resource>
     <resource>📋 Shut_down_flame_effects</resource>
     <resource>📋 Shut_down_Zimmer_vaporizer</resource>
     <resource>📋 Complete_flame_effect_postcheck</resource>
     <resource>🔥 Flame_Effect_System</resource>
     <resource>🔥 Zimmer_Vaporizer</resource>
     <resource>🔥 Kitchen_Propane_Supply</resource>
+    <resource>🔥 Kitchen_Propane_Appliance_Manual</resource>
     <resource>🔧 Camp_Generators</resource>
     <resource>🔧 Generator_Secondary_Containment</resource>
+    <resource>🔧 Fuel_Spill_Shovel</resource>
+    <resource>🔧 Fuel_Waste_Container</resource>
     <resource>📦 Fire_Extinguishers</resource>
   </resources>
 
@@ -38,7 +41,7 @@
       <action>Have the Flame Lead disconnect each flame-system propane cylinder according to the approved operating procedure.</action>
     </step>
     <step number="5">
-      <action>Have the Propane Lead disconnect 🔥 Kitchen_Propane_Supply according to the appliance manual.</action>
+      <action>Have the Propane Lead disconnect 🔥 Kitchen_Propane_Supply according to 🔥 Kitchen_Propane_Appliance_Manual.</action>
     </step>
     <step number="6">
       <action>Cap, secure upright, and move each disconnected propane cylinder to its approved transport or service position.</action>
@@ -47,10 +50,16 @@
       <action>Have the Fuel Lead arrange final generator fuel service or approved transport preparation.</action>
     </step>
     <step number="8">
+      <action>Confirm that a visible, unobstructed fire extinguisher with at least a 40-B rating is 8 to 10 feet from the fuel area.</action>
+    </step>
+    <step number="9">
+      <action>Keep 🔧 Fuel_Spill_Shovel and empty 🔧 Fuel_Waste_Container accessible outside the work area.</action>
+    </step>
+    <step number="10">
       <action>Inspect every former fuel position and containment surface for liquid, residue, or stained playa.</action>
       <ifThen>IF fuel or contaminated material is present, THEN keep people away and immediately notify a Black Rock Ranger and the Fuel Lead.</ifThen>
     </step>
-    <step number="9">
+    <step number="11">
       <action>Remove containment and barriers only after the Fuel Lead confirms the area is clean and fuel-free.</action>
     </step>
   </steps>
@@ -59,6 +68,7 @@
     <criterion>Every flame effect and propane appliance is fully shut down and disconnected by its responsible lead.</criterion>
     <criterion>Every propane cylinder is capped, upright, secured, and in an approved position.</criterion>
     <criterion>The generators are prepared for service or transport by the Fuel Lead.</criterion>
+    <criterion>The extinguisher and spill-response tools remained accessible until the area was confirmed fuel-free.</criterion>
     <criterion>No fuel, residue, contaminated material, or unreported playa stain remains.</criterion>
   </passWhen>
 

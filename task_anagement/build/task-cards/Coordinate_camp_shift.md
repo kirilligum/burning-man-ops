@@ -9,7 +9,7 @@
 ## What you need
 
 - 📦 Shift Assignment Sheet — At the Dominatrix station. On-playa assignment sheet showing who is scheduled for each shift. Personal assignments are not stored in this repository.
-- 📦 Generated Checklists — At the Dominatrix station and each applicable work station. Printed shift checklists generated from the canonical task checklist types.
+- 📦 Generated Checklists — At the Dominatrix station and each applicable work station. Printed assignment and status checklists generated from canonical task checklist types. Each row links to the task instructions and shows when the task applies; row order is not an execution sequence.
 - 📦 Camp Issue Log — At the Dominatrix station. On-playa log for unresolved task, supply, safety, and service issues. Do not record private incident or health details.
 
 ## Steps
@@ -38,7 +38,7 @@
 ### Leave items ready
 
 - **📦 Shift Assignment Sheet:** Every current shift has an assigned worker or a recorded coverage gap.
-- **📦 Generated Checklists:** Each completed line shows status, initials, and completion time; unresolved lines identify the next action.
+- **📦 Generated Checklists:** The current generated revision is present. Each completed line shows status, initials, and completion time; unresolved results are copied to 📦 Camp Issue Log.
 - **📦 Camp Issue Log:** Every unresolved operational issue has a current status and next action.
 
 ## Who to ask

@@ -25,7 +25,7 @@
 
 1. Confirm that 📋 Start Zimmer vaporizer passed and the trained spotter is in position.
 2. Confirm that every effect safety valve is closed.
-3. Set the effect regulator to the approved pressure in 🔥 Flame Effect Operating Procedure without exceeding 110 psi.
+3. Set the effect regulator to the pressure printed in 🔥 Flame Effect Operating Procedure.
 4. Open the effect-feed valve identified in the approved procedure.
 5. Leak-test the effect feed with 🔥 Propane Leak Test Solution according to the approved procedure.
    - **IF/THEN:** IF growing bubbles, propane odor, hissing, or frost is present, THEN complete the approved emergency shutdown and keep the effect out of service.

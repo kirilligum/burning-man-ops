@@ -14,6 +14,8 @@
 - 🌐 DJ Recorder — Event stage. Recorder used by the sound team to capture event sets with timestamps.
 - 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
 - 🏕️ Buffer Bush — Common area (see the map). Group massage structure with powered massage buffers, inflated mattresses or pads, fur covers, and lighting.
+- 📋 Serve wine
+- 📋 Serve cheese pairing
 - Sound team
 
 ## Ready before normal use
@@ -30,13 +32,15 @@
    - **IF/THEN:** IF the artist cannot be located, THEN tell the Music Lead, Dominatrix, and sound team and ask the current artist or on-call camp DJ to cover only when the Music Lead approves.
 4. Greet the artist and introduce them to the sound team.
 5. Offer the artist drinking water from 🍳 Drinking Water Dispensers.
-6. Ask the artist whether they need another approved rider item.
-7. Start 🌐 DJ Recorder before the set begins.
-8. Record the actual set start time.
-9. Remain available near the artist without taking a bar assignment.
-10. Locate the next artist before the current set ends.
-11. Record the actual set end time.
-12. Thank the artist and offer water and an optional 🏕️ Buffer Bush visit.
+6. Offer the artist the current wine and cheese pairing.
+   - **IF/THEN:** IF the artist accepts, THEN have the active Bar and Cheese workers complete 📋 Serve wine and 📋 Serve cheese pairing.
+7. Ask the artist whether they need another approved rider item.
+8. Start 🌐 DJ Recorder before the set begins.
+9. Record the actual set start time.
+10. Remain available near the artist without taking a bar assignment.
+11. Locate the next artist before the current set ends.
+12. Record the actual set end time.
+13. Thank the artist and offer water and an optional 🏕️ Buffer Bush visit.
 
 ## PASS when
 
@@ -56,14 +60,14 @@
 - **🌐 Artist Rider:** The current rider is available to the liaison and sound team.
 - **🌐 Sound System:** The system remains in the state set by the sound team and has no reported fault.
 - **🌐 DJ Recorder:** The recorder remains in the operating state set by the Sound Lead.
-- **🍳 Drinking Water Dispensers:** Both dispensers are full of potable water, their lids are closed, and neither dispenser leaks.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **🏕️ Buffer Bush:** The structure is clean, operational, free of personal belongings, and clear of blocked paths. Its lighting is set for the current checklist.
 
 ### If an item is not ready
 
 - **🌐 Sound System:** Tell the Sound Lead. Do not change connections or controls unless authorized.
 - **🌐 DJ Recorder:** Tell the Sound Lead. Do not change recorder settings unless directed.
-- **🍳 Drinking Water Dispensers:** If a dispenser is dirty or leaking, do not fill it. Tell the Dominatrix.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
 - **🏕️ Buffer Bush:** Keep people out of the affected part, turn off a failing buffer, and tell the Dominatrix. Do not improvise an electrical or mechanical repair.
 
 ## Who to ask

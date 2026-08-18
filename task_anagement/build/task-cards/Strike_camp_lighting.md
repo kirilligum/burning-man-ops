@@ -10,7 +10,7 @@
 
 - Power Lead
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
-- 📦 Camp Lighting — Locations shown on 📦 Camp_Map and 📦 Build_Book. Night, path, dance-floor, sign, arch, tower, and structure lighting with cables and controls.
+- 📦 Camp Lighting — Locations shown on 📦 Camp Map and 📦 Build Book. Night, path, dance-floor, sign, arch, tower, and structure lighting with cables and controls.
 - 🔧 Camp Power System — Private infrastructure area (see the map). Camp electrical generation, disconnects, panels, distribution, cords, and connectors.
 
 ## Ready before normal use

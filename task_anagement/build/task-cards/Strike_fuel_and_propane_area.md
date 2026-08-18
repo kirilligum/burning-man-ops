@@ -8,20 +8,26 @@
 
 ## What you need
 
-- Fuel Lead and Flame Lead
+- Fuel Lead, Flame Lead, and Propane Lead
 - 📋 Shut down flame effects
 - 📋 Shut down Zimmer vaporizer
 - 📋 Complete flame effect postcheck
 - 🔥 Flame Effect System — Propane area (see the map). Registered Treble Makers propane flame effect, including its structure, cylinders, hoses, fittings, regulators, valves, pilots, accumulators, controls, and effect heads.
 - 🔥 Zimmer Vaporizer — Propane area (see the map). Camp propane vaporizer identified as Zimmer in the source checklist, including its tank valve, relief valve, voltage display, thermocouples, and effect feeds.
 - 🔥 Kitchen Propane Supply — At the communal kitchen cooking area. Propane cylinder and connections supplying the communal kitchen.
+- 🔥 Kitchen Propane Appliance Manual — At the kitchen propane supply. Manufacturer instructions for the actual camp kitchen propane appliance and regulator.
 - 🔧 Camp Generators — Private infrastructure area (see the map). Camp generators and their built-in fuel gauges.
 - 🔧 Generator Secondary Containment — Under and around the generator fuel-fill area. Generator spill containment approved for the installed fuel system.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 🔧 Fuel Spill Shovel — With the generator service supplies. Dedicated shovel for collecting fuel-contaminated playa.
+- 🔧 Fuel Waste Container — With the generator service supplies. Empty sealable five-gallon container reserved for fuel-contaminated playa and cleanup material.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 
 ## Ready before normal use
 
+- **🔥 Kitchen Propane Appliance Manual:** The manual matches the installed appliance and regulator.
 - **🔧 Generator Secondary Containment:** The containment is intact, empty, and positioned to catch a refueling spill.
+- **🔧 Fuel Spill Shovel:** The shovel has no fuel or contaminated playa on it.
+- **🔧 Fuel Waste Container:** The empty container is intact and its lid seals.
 - **📦 Fire Extinguishers:** The gauge is in the operable range and access is clear.
 
 ## Steps
@@ -30,18 +36,21 @@
 2. Complete 📋 Shut down Zimmer vaporizer.
 3. Complete 📋 Complete flame effect postcheck.
 4. Have the Flame Lead disconnect each flame-system propane cylinder according to the approved operating procedure.
-5. Have the Propane Lead disconnect 🔥 Kitchen Propane Supply according to the appliance manual.
+5. Have the Propane Lead disconnect 🔥 Kitchen Propane Supply according to 🔥 Kitchen Propane Appliance Manual.
 6. Cap, secure upright, and move each disconnected propane cylinder to its approved transport or service position.
 7. Have the Fuel Lead arrange final generator fuel service or approved transport preparation.
-8. Inspect every former fuel position and containment surface for liquid, residue, or stained playa.
+8. Confirm that a visible, unobstructed fire extinguisher with at least a 40-B rating is 8 to 10 feet from the fuel area.
+9. Keep 🔧 Fuel Spill Shovel and empty 🔧 Fuel Waste Container accessible outside the work area.
+10. Inspect every former fuel position and containment surface for liquid, residue, or stained playa.
    - **IF/THEN:** IF fuel or contaminated material is present, THEN keep people away and immediately notify a Black Rock Ranger and the Fuel Lead.
-9. Remove containment and barriers only after the Fuel Lead confirms the area is clean and fuel-free.
+11. Remove containment and barriers only after the Fuel Lead confirms the area is clean and fuel-free.
 
 ## PASS when
 
 - Every flame effect and propane appliance is fully shut down and disconnected by its responsible lead.
 - Every propane cylinder is capped, upright, secured, and in an approved position.
 - The generators are prepared for service or transport by the Fuel Lead.
+- The extinguisher and spill-response tools remained accessible until the area was confirmed fuel-free.
 - No fuel, residue, contaminated material, or unreported playa stain remains.
 
 ## Finish
@@ -55,8 +64,11 @@
 - **🔥 Flame Effect System:** The system is either under continuous licensed operation or fully shut down according to its approved operating procedure.
 - **🔥 Zimmer Vaporizer:** The vaporizer is either under continuous licensed operation or fully shut down according to its approved operating procedure.
 - **🔥 Kitchen Propane Supply:** The supply is not empty, is upright and secured, and has no hissing, propane odor, or frost at a connection.
+- **🔥 Kitchen Propane Appliance Manual:** The manual remains at the kitchen propane supply.
 - **🔧 Camp Generators:** No visible fuel leak is present. Fuel caps remain closed and controls remain in the state set by the authorized operator.
 - **🔧 Generator Secondary Containment:** The containment remains correctly positioned and contains no unreported fuel or contaminated material.
+- **🔧 Fuel Spill Shovel:** The shovel has no unreported fuel or contaminated playa and is stored with the generator service supplies.
+- **🔧 Fuel Waste Container:** The container is sealed; any contents are identified and reported to the Fuel Lead.
 - **📦 Fire Extinguishers:** Each extinguisher is mounted, visible, unobstructed, and in the operable range.
 
 ### If an item is not ready
@@ -64,8 +76,11 @@
 - **🔥 Flame Effect System:** Do not operate the system. Tell the Flame Lead.
 - **🔥 Zimmer Vaporizer:** Do not energize or open fuel to the vaporizer. Tell the Flame Lead.
 - **🔥 Kitchen Propane Supply:** Stop cooking. Do not operate a valve or replace a cylinder unless the Propane Lead authorizes you. Tell the Propane Lead immediately.
-- **🔧 Camp Generators:** Keep people away and immediately tell the Dominatrix and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
+- **🔥 Kitchen Propane Appliance Manual:** Do not replace or connect a cylinder. Tell the Propane Lead.
+- **🔧 Camp Generators:** Keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
 - **🔧 Generator Secondary Containment:** Do not refuel. Tell the Fuel Lead.
+- **🔧 Fuel Spill Shovel:** Do not refuel. Tell the Fuel Lead.
+- **🔧 Fuel Waste Container:** Do not refuel. Tell the Fuel Lead.
 - **📦 Fire Extinguishers:** Tell the Dominatrix immediately.
 
 ## Who to ask

@@ -6,8 +6,11 @@
 treat every tab as current. `task_anagement/README.md` is the system
 specification, `task_anagement/DECISIONS.md` records current accepted decisions,
 and `task_anagement/HISTORICAL_DECISIONS.md` preserves superseded decisions.
+`task_anagement/WORKBOOK_COVERAGE.md` accounts for source instructions and
+exclusions, `task_anagement/SOURCES.md` records operational research, and
 `task_anagement/schema/field-dictionary.md` defines fields. Canonical XML lives
-under `task_anagement/data/`.
+under `task_anagement/data/`; generated cards and checklists live under
+`task_anagement/build/`.
 
 ## Decision Record and Agent Behavior
 
@@ -96,6 +99,7 @@ For every task-system change, run:
 python3 -m unittest discover -s task_anagement/tests -p 'test_*.py'
 python3 task_anagement/scripts/validate.py
 python3 task_anagement/scripts/render-task-card.py --all --check
+python3 task_anagement/scripts/render-checklists.py --check
 git diff --check
 git status --short
 ```

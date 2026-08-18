@@ -11,7 +11,7 @@
 - Food Lead, Water Lead, Propane Lead, and Build Lead
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
 - 📋 Wash communal kitchenware
-- 📦 Communal Kitchen — Kitchen footprint shown on 📦 Camp_Map. Camp kitchen structure, tables, storage, food-service equipment, and ground covering.
+- 📦 Communal Kitchen — Kitchen footprint shown on 📦 Camp Map. Camp kitchen structure, tables, storage, food-service equipment, and ground covering.
 - 📦 Communal Tables — Tables at communal eating area (see the map).
 - 🍳 Kitchenware — Kitchen. Communal plates, bowls, cups, utensils, pots, and pans.
 - 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
@@ -59,7 +59,7 @@
 - **📦 Communal Kitchen:** The kitchen is either assembled and ready for service or clean, dry, inventoried, and packed according to 📦 Build Book.
 - **📦 Communal Tables:** Every table is clean and dry. No MOOP is present on, under, or around the tables.
 - **🍳 Kitchenware:** All communal kitchenware is clean, sanitized, dry, and stored.
-- **🍳 Drinking Water Dispensers:** Both dispensers are full of potable water, their lids are closed, and neither dispenser leaks.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **🔥 Kitchen Propane Supply:** The supply is not empty, is upright and secured, and has no hissing, propane odor, or frost at a connection.
 - **🔧 Camp Sink:** The basin and drain are clear, the water is off, and no water is leaking or pooled around the sink.
 - **📦 Build Hardware Bins:** Hardware is sorted by asset, closed in its bin, and matches the count in 📦 Build Book.
@@ -70,7 +70,7 @@
 - **📦 Build Book:** Do not build, alter, or strike the affected asset. Tell the Build Lead.
 - **📦 Communal Tables:** Clean the table; see task 📋 Clean communal kitchen tables.
 - **🍳 Kitchenware:** Wash it; see task 📋 Wash communal kitchenware.
-- **🍳 Drinking Water Dispensers:** If a dispenser is dirty or leaking, do not fill it. Tell the Dominatrix.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
 - **🔥 Kitchen Propane Supply:** Stop cooking. Do not operate a valve or replace a cylinder unless the Propane Lead authorizes you. Tell the Propane Lead immediately.
 - **🔧 Camp Sink:** Stop using the sink and tell the Dominatrix.
 - **📦 Ratchet Straps:** Remove the strap from service and tell the Build Lead.

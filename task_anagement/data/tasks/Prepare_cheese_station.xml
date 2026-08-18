@@ -18,8 +18,10 @@
     <resource>🍷 Disposable_Aprons</resource>
     <resource>🍷 Disposable_Food_Gloves</resource>
     <resource>🍷 Cheese_Work_Surface</resource>
+    <resource>🍷 Multisurface_Cleaner</resource>
     <resource>🍷 Food_Surface_Sanitizer</resource>
     <resource>🍷 Disposable_Towels</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
     <resource>🍷 Cheese_of_the_Day</resource>
     <resource>🍷 Pairing_List</resource>
     <resource>🍷 Food_Probe_Thermometer</resource>
@@ -50,40 +52,73 @@
       <action>Put on one clean apron from 🍷 Disposable_Aprons.</action>
     </step>
     <step number="6">
-      <action>Remove visible soil from 🍷 Cheese_Work_Surface with 🍷 Food_Surface_Sanitizer and 🍷 Disposable_Towels.</action>
+      <action>Spray 🍷 Cheese_Work_Surface with 🍷 Multisurface_Cleaner.</action>
     </step>
     <step number="7">
-      <action>Spray the work surface until it is visibly wet.</action>
+      <action>Wipe the work surface with 🍷 Disposable_Towels until no visible soil remains.</action>
     </step>
     <step number="8">
-      <action>Leave the work surface visibly wet for 60 seconds.</action>
+      <action>Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.</action>
     </step>
     <step number="9">
-      <action>Allow the work surface to air dry.</action>
+      <action>Wipe every cleaned part of the work surface with the damp towel.</action>
     </step>
     <step number="10">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="11">
+      <action>Spray the work surface with 🍷 Food_Surface_Sanitizer until it is visibly wet.</action>
+    </step>
+    <step number="12">
+      <action>Leave the work surface visibly wet for 60 seconds.</action>
+    </step>
+    <step number="13">
+      <action>Allow the work surface to air dry.</action>
+    </step>
+    <step number="14">
       <action>Measure 🍷 Cheese_of_the_Day with 🍷 Food_Probe_Thermometer.</action>
       <ifThen>IF the cheese is above 41°F, THEN keep it out of service and tell the Food Lead.</ifThen>
     </step>
-    <step number="11">
-      <action>Clean and sanitize the thermometer probe according to the 🍷 Food_Surface_Sanitizer label.</action>
-    </step>
-    <step number="12">
-      <action>Write the cheese name from 🍷 Pairing_List on 🍷 Cheese_Name_Board.</action>
-    </step>
-    <step number="13">
-      <action>Put sealed ice bags from 🍷 Ice_Storage in 🍷 Cheese_Serving_Trays.</action>
-    </step>
-    <step number="14">
-      <action>Place 🍷 Tray_Grids_and_Mats above the ice.</action>
-    </step>
     <step number="15">
-      <action>Complete the opening entries on 🍷 Food_Service_Checklist.</action>
+      <action>Spray the thermometer probe with 🍷 Multisurface_Cleaner.</action>
     </step>
     <step number="16">
-      <action>Wash your hands again at 📦 Handwashing_Station.</action>
+      <action>Wipe the probe with 🍷 Disposable_Towels until no cheese remains.</action>
     </step>
     <step number="17">
+      <action>Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.</action>
+    </step>
+    <step number="18">
+      <action>Wipe every cleaned part of the probe with the damp towel.</action>
+    </step>
+    <step number="19">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="20">
+      <action>Spray the probe with 🍷 Food_Surface_Sanitizer until it is visibly wet.</action>
+    </step>
+    <step number="21">
+      <action>Leave the probe visibly wet for 60 seconds.</action>
+    </step>
+    <step number="22">
+      <action>Allow the probe to air dry.</action>
+    </step>
+    <step number="23">
+      <action>Write the cheese name from 🍷 Pairing_List on 🍷 Cheese_Name_Board.</action>
+    </step>
+    <step number="24">
+      <action>Put sealed ice bags from 🍷 Ice_Storage in 🍷 Cheese_Serving_Trays.</action>
+    </step>
+    <step number="25">
+      <action>Place 🍷 Tray_Grids_and_Mats above the ice.</action>
+    </step>
+    <step number="26">
+      <action>Complete the opening entries on 🍷 Food_Service_Checklist.</action>
+    </step>
+    <step number="27">
+      <action>Wash your hands again at 📦 Handwashing_Station.</action>
+    </step>
+    <step number="28">
       <action>Put on one clean pair from 🍷 Disposable_Food_Gloves.</action>
     </step>
   </steps>
@@ -93,6 +128,7 @@
     <criterion>The worker is healthy, hair is restrained, hands are washed, and apron and gloves are clean.</criterion>
     <criterion>The work surface is sanitized and air-dry.</criterion>
     <criterion>The cheese is at or below 41°F.</criterion>
+    <criterion>The thermometer probe is clean, sanitized, and air-dry.</criterion>
     <criterion>The cheese name is displayed and the trays, ice, grids, and mats are ready.</criterion>
   </passWhen>
 
@@ -101,5 +137,6 @@
 
   <reasoning>
     <entry>Gloves are put on after cleaning and equipment setup so the worker does not contaminate them before touching ready-to-eat food.</entry>
+    <entry>The sanitizer label requires visible soil removal, washing, and a potable-water rinse before the 60-second food-contact sanitizing step.</entry>
   </reasoning>
 </task>

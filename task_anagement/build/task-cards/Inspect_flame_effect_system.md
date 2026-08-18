@@ -19,7 +19,7 @@
 - 🔥 Flame Effect First Aid Kit — At the flame-effect operator station outside the safety perimeter. Flame-effect first-aid kit containing non-petroleum burn cream or aloe gel, 100% cotton gauze rolls and pads, clean water for cooling or flushing, and waterless soap.
 - 🔥 Flame Effect SDS — At the flame-effect operator station. Current safety data sheet for propane and each hazardous chemical at the installation.
 - 🔥 Flame Effect Log — At the flame-effect operator station. On-playa inspection, operation, fuel-use, and maintenance log for the registered effect.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 
 ## Ready before normal use
 

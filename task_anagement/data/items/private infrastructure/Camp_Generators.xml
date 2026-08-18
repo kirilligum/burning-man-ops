@@ -11,11 +11,11 @@
   </readyForNextPerson>
 
   <ifNotReady>
-    Keep people away and immediately tell the Dominatrix and a Black Rock Ranger
-    about any fuel leak or spill. Do not refuel or repair a generator unless
-    authorized.
+    Keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black
+    Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator
+    unless authorized.
   </ifNotReady>
 
-  <responsible>Dominatrix</responsible>
+  <responsible>Fuel Lead</responsible>
   <commonProblems/>
 </item>

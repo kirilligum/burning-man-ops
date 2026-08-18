@@ -13,7 +13,7 @@
 ## Steps
 
 1. Inspect the ground and visible fuel connections around each generator for a leak.
-   - **IF/THEN:** IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Dominatrix and a Black Rock Ranger.
+   - **IF/THEN:** IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger.
 2. Read the fuel gauge on each generator without opening a cap or operating a control.
 3. Tell the Dominatrix each exact gauge reading.
 
@@ -34,7 +34,7 @@
 
 ### If an item is not ready
 
-- **🔧 Camp Generators:** Keep people away and immediately tell the Dominatrix and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
+- **🔧 Camp Generators:** Keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
 
 ## Who to ask
 

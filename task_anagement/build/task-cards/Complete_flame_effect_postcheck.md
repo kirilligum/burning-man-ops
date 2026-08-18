@@ -66,7 +66,7 @@
 - **🔥 Flame Effect Operating Procedure:** Do not operate the flame effect. Tell the Flame Lead.
 - **🔥 Disposable Towels:** Ask the Flame Lead where to find replacement towels.
 - **🔧 Fresh Water Tank:** Stop using the tank and tell the Dominatrix. Do not let leaking water reach the playa.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Who to ask
 

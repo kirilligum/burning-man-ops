@@ -29,7 +29,7 @@
       <action>Confirm that every effect safety valve is closed.</action>
     </step>
     <step number="3">
-      <action>Set the effect regulator to the approved pressure in 🔥 Flame_Effect_Operating_Procedure without exceeding 110 psi.</action>
+      <action>Set the effect regulator to the pressure printed in 🔥 Flame_Effect_Operating_Procedure.</action>
     </step>
     <step number="4">
       <action>Open the effect-feed valve identified in the approved procedure.</action>
@@ -61,4 +61,8 @@
 
   <commonProblems/>
   <expert>Flame Lead</expert>
+
+  <reasoning>
+    <entry>The workbook's less-than-110-psi value is not used until the Flame Lead validates it for the actual rated system and records the approved pressure in the operating procedure.</entry>
+  </reasoning>
 </task>

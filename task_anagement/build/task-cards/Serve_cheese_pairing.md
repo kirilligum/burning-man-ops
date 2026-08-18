@@ -19,8 +19,11 @@
 - 🍷 Food Covers — Cheese-station storage. Clear food-service covers sized for the cheese serving trays.
 - 🍷 Serving Tongs — Cheese-station storage. Small stainless-steel food-service tongs used to hand out cheese servings.
 - 🍷 Food Probe Thermometer — Cheese station. ThermoWorks ThermoPop 2 NSF-certified instant-read thermometer with probe cover.
-- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3.
+- 🍷 Multisurface Cleaner — Bar/Cheese area. Clorox Free & Clear Multi Surface Cleaner, fragrance-free 32 fl oz spray bottle (UPC 044600603346).
+- 🍷 Food Surface Sanitizer — Bar/Cheese area. PURELL Foodservice Surface Sanitizer, 32 fl oz spray bottle, product 3341-06, EPA registration 84150-3. For food-contact surfaces, use it after cleaning and a potable-water rinse; keep the surface visibly wet for 60 seconds and let it air dry without rinsing.
+- 🍷 Disposable Towels — Bar/Cheese area. WypAll PowerClean L40 Extra Absorbent Towels, white, 12 x 12.5 in, 56 count (05701).
 - 🍷 Food Service Checklist — Cheese station. Current CNHD food permit, daily self-inspection checklist, and temperature log.
+- 🍳 Drinking Water Dispensers — Kitchen. Two Igloo-style insulated drinking-water dispensers.
 - 📦 Trash Bins
 
 ## Ready before normal use
@@ -35,8 +38,11 @@
 - **🍷 Food Covers:** Every cover is clean, sanitized, air-dry, intact, and fits its tray.
 - **🍷 Serving Tongs:** Each tong is clean, sanitized, air-dry, and opens and closes freely.
 - **🍷 Food Probe Thermometer:** The probe is clean, sanitized, dry, and the display turns on.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner and sprays.
 - **🍷 Food Surface Sanitizer:** The bottle contains sanitizer, sprays, and is not expired.
+- **🍷 Disposable Towels:** At least one clean, dry towel remains.
 - **🍷 Food Service Checklist:** The current permit is displayed and today's checklist and temperature log are available for the next entry.
+- **🍳 Drinking Water Dispensers:** The interiors and spigots are clean, and neither dispenser leaks.
 - **📦 Trash Bins:** Not full.
 
 ## Steps
@@ -50,14 +56,26 @@
 7. Measure the displayed cheese with 🍷 Food Probe Thermometer when replenishing a tray.
    - **IF/THEN:** IF the cheese is above 41°F, THEN remove it from service and tell the Food Lead.
 8. Record each temperature on 🍷 Food Service Checklist.
-9. Clean and sanitize the thermometer probe according to the 🍷 Food Surface Sanitizer label.
-10. Consolidate the remaining servings onto one tray before replenishing the other tray.
-11. Prepare small batches so the cheese lasts through 8:30 p.m.
+9. Remove the used gloves and put them in 📦 Trash Bins.
+10. Spray the thermometer probe with 🍷 Multisurface Cleaner.
+11. Wipe the probe with 🍷 Disposable Towels until no cheese remains.
+12. Dampen a new disposable towel with potable water from 🍳 Drinking Water Dispensers.
+13. Wipe every cleaned part of the probe with the damp towel.
+14. Put the used towels in 📦 Trash Bins.
+15. Spray the probe with 🍷 Food Surface Sanitizer until it is visibly wet.
+16. Leave the probe visibly wet for 60 seconds.
+17. Allow the probe to air dry.
+18. Wash your hands at 📦 Handwashing Station.
+19. Put on one clean pair from 🍷 Disposable Food Gloves.
+20. Consolidate the remaining servings onto one tray before replenishing the other tray.
+21. Prepare small batches so the cheese lasts through 8:30 p.m.
 
 ## PASS when
 
 - No bare hand or guest contact occurred with ready-to-eat food.
 - Displayed cheese stayed at or below 41°F and temperatures were recorded.
+- The thermometer probe was cleaned, rinsed, sanitized, and air-dried after each reading.
+- Hands were washed and gloves changed after cleaning the thermometer.
 - Prepared food stayed covered between servings.
 - Cheese service continued through 8:30 p.m. or until the approved supply was exhausted.
 
@@ -79,8 +97,11 @@
 - **🍷 Food Covers:** During service, covers protect prepared food between servings. After service, every cover is washed, rinsed, sanitized, air-dry, and stored.
 - **🍷 Serving Tongs:** During service, tongs remain clean and do not touch guests. After service, each tong is washed, rinsed, sanitized, air-dry, and stored.
 - **🍷 Food Probe Thermometer:** During service, the probe is cleaned and sanitized after each reading. After service, it is clean, sanitized, dry, covered, and stored.
+- **🍷 Multisurface Cleaner:** The bottle contains cleaner.
 - **🍷 Food Surface Sanitizer:** The bottle is closed, contains sanitizer, and is stored away from heat or flame.
+- **🍷 Disposable Towels:** At least one clean, dry towel remains.
 - **🍷 Food Service Checklist:** Today's entries are legible and the documents remain at the cheese station.
+- **🍳 Drinking Water Dispensers:** Potable water is available, both lids are closed, and neither dispenser leaks.
 - **📦 Trash Bins:** A trash bag is installed and is not full. No loose trash is present around the bins.
 
 ### If an item is not ready
@@ -95,13 +116,17 @@
 - **🍷 Food Covers:** Do not display uncovered food. Tell the Food Lead.
 - **🍷 Serving Tongs:** Do not serve with a dirty or damaged tong. Tell the Food Lead.
 - **🍷 Food Probe Thermometer:** Do not estimate a food temperature. Ask the Food Lead for a working sanitized thermometer.
+- **🍷 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Put the empty bottle in 📦 Trash Bins.
 - **🍷 Food Surface Sanitizer:** Do not substitute an unlabeled product. Ask the Food Lead for a replacement.
+- **🍷 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
 - **🍷 Food Service Checklist:** Do not open cheese service. Tell the Food Lead.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **🍳 Drinking Water Dispensers:** If no potable water remains, complete 📋 Fill kitchen drinking water dispensers. If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 
 - **🍷 Disposable Food Gloves:** **IF** A glove tears or touches hair, a face, a phone, trash, money, or another unclean surface **THEN** Remove it, wash both hands, and put on new gloves before touching food.
+- **🍷 Multisurface Cleaner:** **IF** The cleaner is not spraying and the nozzle is OFF **THEN** Turn the nozzle to ON.
 - **🍷 Food Surface Sanitizer:** **IF** The bottle is near heat or open flame **THEN** Move it to its cool storage place before use; the product is combustible.
 
 ## Who to ask

@@ -17,6 +17,7 @@
     <resource>🍳 Multisurface_Cleaner</resource>
     <resource>🍳 Food_Surface_Sanitizer</resource>
     <resource>🍳 Disposable_Towels</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
     <resource>📦 Trash_Bins</resource>
   </resources>
 
@@ -34,12 +35,21 @@
       <action>Put used towels in 📦 Trash_Bins.</action>
     </step>
     <step number="5">
-      <action>Spray food-contact areas with 🍳 Food_Surface_Sanitizer.</action>
+      <action>Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.</action>
     </step>
     <step number="6">
-      <action>Leave the sanitized areas wet for the contact time printed on 🍳 Food_Surface_Sanitizer.</action>
+      <action>Wipe every cleaned food-contact area with the damp towel.</action>
     </step>
     <step number="7">
+      <action>Put the used towel in 📦 Trash_Bins.</action>
+    </step>
+    <step number="8">
+      <action>Spray food-contact areas with 🍳 Food_Surface_Sanitizer until visibly wet.</action>
+    </step>
+    <step number="9">
+      <action>Leave the sanitized areas visibly wet for 60 seconds.</action>
+    </step>
+    <step number="10">
       <action>Let the sanitized areas air-dry.</action>
     </step>
   </steps>
@@ -53,6 +63,7 @@
 
   <reasoning>
     <entry>Clean visible soil before sanitizing because sanitizer does not replace cleaning.</entry>
+    <entry>Rinse cleaned food-contact areas with potable water before applying sanitizer because the sanitizer label requires a wash and potable-water rinse.</entry>
     <entry>Air-dry sanitized food-contact areas so a used towel does not contaminate them again.</entry>
   </reasoning>
 </task>

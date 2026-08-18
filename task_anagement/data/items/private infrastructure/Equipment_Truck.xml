@@ -5,11 +5,9 @@
   <description>Truck used to store and transport camp event equipment.</description>
   <location>Private infrastructure area (see the map).</location>
 
-  <readyBeforeUse>The responsible asset lead has identified which equipment may be moved.</readyBeforeUse>
-
   <readyForNextPerson>
-    Assigned equipment is secured inside. The doorway is clear and the door is
-    closed and latched when loading is complete.
+    The doorway is clear and the door is closed and latched when work is
+    complete. Any equipment remaining inside is secured and recorded on 📦 Truck_Load_Plan.
   </readyForNextPerson>
 
   <responsible>Build Lead</responsible>

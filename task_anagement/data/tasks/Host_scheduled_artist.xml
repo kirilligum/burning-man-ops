@@ -18,6 +18,8 @@
     <resource>🌐 DJ_Recorder</resource>
     <resource>🍳 Drinking_Water_Dispensers</resource>
     <resource>🏕️ Buffer_Bush</resource>
+    <resource>📋 Serve_wine</resource>
+    <resource>📋 Serve_cheese_pairing</resource>
     <resource>Sound team</resource>
   </resources>
 
@@ -39,24 +41,28 @@
       <action>Offer the artist drinking water from 🍳 Drinking_Water_Dispensers.</action>
     </step>
     <step number="6">
-      <action>Ask the artist whether they need another approved rider item.</action>
+      <action>Offer the artist the current wine and cheese pairing.</action>
+      <ifThen>IF the artist accepts, THEN have the active Bar and Cheese workers complete 📋 Serve_wine and 📋 Serve_cheese_pairing.</ifThen>
     </step>
     <step number="7">
-      <action>Start 🌐 DJ_Recorder before the set begins.</action>
+      <action>Ask the artist whether they need another approved rider item.</action>
     </step>
     <step number="8">
-      <action>Record the actual set start time.</action>
+      <action>Start 🌐 DJ_Recorder before the set begins.</action>
     </step>
     <step number="9">
-      <action>Remain available near the artist without taking a bar assignment.</action>
+      <action>Record the actual set start time.</action>
     </step>
     <step number="10">
-      <action>Locate the next artist before the current set ends.</action>
+      <action>Remain available near the artist without taking a bar assignment.</action>
     </step>
     <step number="11">
-      <action>Record the actual set end time.</action>
+      <action>Locate the next artist before the current set ends.</action>
     </step>
     <step number="12">
+      <action>Record the actual set end time.</action>
+    </step>
+    <step number="13">
       <action>Thank the artist and offer water and an optional 🏕️ Buffer_Bush visit.</action>
     </step>
   </steps>
@@ -72,6 +78,6 @@
 
   <reasoning>
     <entry>Named people from the source checklist are replaced by stable Music Lead and Dominatrix roles.</entry>
-    <entry>Unspecified wine and cheese gifts are omitted until the camp defines an approved product and service method.</entry>
+    <entry>The pairing gift is routed through the existing age-verification and food-service tasks; the undefined nicer-bottle gift remains omitted until the camp approves a product and handoff method.</entry>
   </reasoning>
 </task>

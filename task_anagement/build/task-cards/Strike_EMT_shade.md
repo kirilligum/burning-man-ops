@@ -4,7 +4,7 @@
 
 - **Checklist types:** Strike
 - **Area:** Common area
-- **When:** During Strike after every shelter and item beneath the shade is removed
+- **When:** During Strike after 📋 Strike camp lighting passes and every shelter and item beneath the shade is removed
 
 ## What you need
 
@@ -25,7 +25,7 @@
 ## Steps
 
 1. Confirm that every shelter, person, and belonging beneath the shade has been removed.
-2. Confirm that the Power Lead released every attached light and cable.
+2. Confirm that 📋 Strike camp lighting passed and the Power Lead released the shade structure.
 3. Confirm the current lowering sequence, crew positions, and packing groups in 📦 Build Book.
 4. Close the work area to people not on the strike crew.
 5. Remove and fold the side coverings while all structural anchors remain installed.

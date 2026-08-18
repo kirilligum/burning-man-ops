@@ -8,7 +8,7 @@
 
   <area>Common area</area>
   <why/>
-  <when>During Strike after every shelter and item beneath the shade is removed</when>
+  <when>During Strike after 📋 Strike_camp_lighting passes and every shelter and item beneath the shade is removed</when>
   <time/>
 
   <resources>
@@ -27,7 +27,7 @@
       <action>Confirm that every shelter, person, and belonging beneath the shade has been removed.</action>
     </step>
     <step number="2">
-      <action>Confirm that the Power Lead released every attached light and cable.</action>
+      <action>Confirm that 📋 Strike_camp_lighting passed and the Power Lead released the shade structure.</action>
     </step>
     <step number="3">
       <action>Confirm the current lowering sequence, crew positions, and packing groups in 📦 Build_Book.</action>

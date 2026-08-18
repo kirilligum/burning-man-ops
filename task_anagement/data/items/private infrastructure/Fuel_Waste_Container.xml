@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fuel_Waste_Container</name>
+
+  <description>
+    Empty sealable five-gallon container reserved for fuel-contaminated playa and cleanup material.
+  </description>
+  <location>With the generator service supplies.</location>
+  <readyBeforeUse>The empty container is intact and its lid seals.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The container is sealed; any contents are identified and reported to the Fuel Lead.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not refuel. Tell the Fuel Lead.</ifNotReady>
+  <responsible>Fuel Lead</responsible>
+  <commonProblems/>
+</item>

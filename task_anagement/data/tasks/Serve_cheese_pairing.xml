@@ -23,8 +23,11 @@
     <resource>🍷 Food_Covers</resource>
     <resource>🍷 Serving_Tongs</resource>
     <resource>🍷 Food_Probe_Thermometer</resource>
+    <resource>🍷 Multisurface_Cleaner</resource>
     <resource>🍷 Food_Surface_Sanitizer</resource>
+    <resource>🍷 Disposable_Towels</resource>
     <resource>🍷 Food_Service_Checklist</resource>
+    <resource>🍳 Drinking_Water_Dispensers</resource>
     <resource>📦 Trash_Bins</resource>
   </resources>
 
@@ -55,12 +58,42 @@
       <action>Record each temperature on 🍷 Food_Service_Checklist.</action>
     </step>
     <step number="9">
-      <action>Clean and sanitize the thermometer probe according to the 🍷 Food_Surface_Sanitizer label.</action>
+      <action>Remove the used gloves and put them in 📦 Trash_Bins.</action>
     </step>
     <step number="10">
-      <action>Consolidate the remaining servings onto one tray before replenishing the other tray.</action>
+      <action>Spray the thermometer probe with 🍷 Multisurface_Cleaner.</action>
     </step>
     <step number="11">
+      <action>Wipe the probe with 🍷 Disposable_Towels until no cheese remains.</action>
+    </step>
+    <step number="12">
+      <action>Dampen a new disposable towel with potable water from 🍳 Drinking_Water_Dispensers.</action>
+    </step>
+    <step number="13">
+      <action>Wipe every cleaned part of the probe with the damp towel.</action>
+    </step>
+    <step number="14">
+      <action>Put the used towels in 📦 Trash_Bins.</action>
+    </step>
+    <step number="15">
+      <action>Spray the probe with 🍷 Food_Surface_Sanitizer until it is visibly wet.</action>
+    </step>
+    <step number="16">
+      <action>Leave the probe visibly wet for 60 seconds.</action>
+    </step>
+    <step number="17">
+      <action>Allow the probe to air dry.</action>
+    </step>
+    <step number="18">
+      <action>Wash your hands at 📦 Handwashing_Station.</action>
+    </step>
+    <step number="19">
+      <action>Put on one clean pair from 🍷 Disposable_Food_Gloves.</action>
+    </step>
+    <step number="20">
+      <action>Consolidate the remaining servings onto one tray before replenishing the other tray.</action>
+    </step>
+    <step number="21">
       <action>Prepare small batches so the cheese lasts through 8:30 p.m.</action>
     </step>
   </steps>
@@ -68,6 +101,8 @@
   <passWhen>
     <criterion>No bare hand or guest contact occurred with ready-to-eat food.</criterion>
     <criterion>Displayed cheese stayed at or below 41°F and temperatures were recorded.</criterion>
+    <criterion>The thermometer probe was cleaned, rinsed, sanitized, and air-dried after each reading.</criterion>
+    <criterion>Hands were washed and gloves changed after cleaning the thermometer.</criterion>
     <criterion>Prepared food stayed covered between servings.</criterion>
     <criterion>Cheese service continued through 8:30 p.m. or until the approved supply was exhausted.</criterion>
   </passWhen>

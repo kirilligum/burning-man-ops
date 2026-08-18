@@ -10,12 +10,13 @@
   </readyBeforeUse>
 
   <readyForNextPerson>
-    Both dispensers are full of potable water, their lids are closed, and
-    neither dispenser leaks.
+    Potable water is available, both lids are closed, and neither dispenser
+    leaks.
   </readyForNextPerson>
 
   <ifNotReady>
-    If a dispenser is dirty or leaking, do not fill it. Tell the Dominatrix.
+    If no potable water remains, complete 📋 Fill_kitchen_drinking_water_dispensers.
+    If a dispenser is dirty or leaking, do not fill it and tell the Dominatrix.
   </ifNotReady>
 
   <responsible>Dominatrix</responsible>

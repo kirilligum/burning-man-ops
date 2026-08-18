@@ -20,7 +20,7 @@
 
   <steps>
     <step number="1">
-      <action>Place the outlet of 🔧 Potable_Water_Hose inside the first 🍳 Drinking_Water_Dispensers dispenser without touching the outlet to the dispenser.</action>
+      <action>Hold the outlet of 🔧 Potable_Water_Hose above the first 🍳 Drinking_Water_Dispensers dispenser without touching either surface.</action>
     </step>
     <step number="2">
       <action>Open 🔧 Fresh_Water_Tank and fill the dispenser to its full line.</action>
@@ -29,7 +29,7 @@
       <action>Close 🔧 Fresh_Water_Tank.</action>
     </step>
     <step number="4">
-      <action>Place the hose outlet inside the second dispenser without touching the outlet to the dispenser.</action>
+      <action>Hold the hose outlet above the second dispenser without touching either surface.</action>
     </step>
     <step number="5">
       <action>Open 🔧 Fresh_Water_Tank and fill the second dispenser to its full line.</action>

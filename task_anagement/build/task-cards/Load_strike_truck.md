@@ -16,7 +16,6 @@
 ## Ready before normal use
 
 - **📦 Truck Load Plan:** The plan matches the truck and current camp inventory.
-- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
 - **📦 Ratchet Straps:** No cut, frayed webbing, bent hook, damaged ratchet, or missing label is present.
 
 ## Steps
@@ -45,8 +44,8 @@
 
 ### Leave items ready
 
-- **📦 Truck Load Plan:** The final loaded inventory and unresolved exceptions are recorded.
-- **🔧 Equipment Truck:** Assigned equipment is secured inside. The doorway is clear and the door is closed and latched when loading is complete.
+- **📦 Truck Load Plan:** The latest loading or unloading inventory and every unresolved exception are recorded.
+- **🔧 Equipment Truck:** The doorway is clear and the door is closed and latched when work is complete. Any equipment remaining inside is secured and recorded on 📦 Truck Load Plan.
 - **📦 Ratchet Straps:** Every strap is dry, released, neatly rolled, and stored.
 
 ### If an item is not ready

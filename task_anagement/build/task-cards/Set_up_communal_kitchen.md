@@ -11,7 +11,7 @@
 - Build Lead and Food Lead
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
 - 📦 Camp Map — Posted in the communal kitchen. Current camp map showing task areas, service lanes, emergency exits, and private infrastructure.
-- 📦 Communal Kitchen — Kitchen footprint shown on 📦 Camp_Map. Camp kitchen structure, tables, storage, food-service equipment, and ground covering.
+- 📦 Communal Kitchen — Kitchen footprint shown on 📦 Camp Map. Camp kitchen structure, tables, storage, food-service equipment, and ground covering.
 - 📦 Communal Tables — Tables at communal eating area (see the map).
 - 📦 Build Hardware Bins — Build storage area. Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.
 - 📦 Ratchet Straps — Build storage area. Structure straps in the sizes and ratings listed in the current Build Book.

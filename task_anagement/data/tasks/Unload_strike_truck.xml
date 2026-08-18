@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <name>Unload_strike_truck</name>
+
+  <checklist_types>
+    <checklist_type>Strike</checklist_type>
+  </checklist_types>
+
+  <area>Private infrastructure</area>
+  <why/>
+  <when>After the equipment truck reaches the approved post-event storage location</when>
+  <time/>
+
+  <resources>
+    <resource>Build Lead and unloading crew</resource>
+    <resource>📦 Truck_Load_Plan</resource>
+    <resource>🔧 Equipment_Truck</resource>
+  </resources>
+
+  <steps>
+    <step number="1">
+      <action>Confirm the unloading sequence, crew positions, and door-opening method in 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="2">
+      <action>Clear the unloading area of people who are not on the unloading crew.</action>
+    </step>
+    <step number="3">
+      <action>Have the Build Lead open and secure the truck door using the method in 📦 Truck_Load_Plan.</action>
+      <ifThen>IF the door is under pressure or does not open normally, THEN stop and have the Build Lead establish a controlled unloading method.</ifThen>
+    </step>
+    <step number="4">
+      <action>Unload each transport group in the sequence printed in 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="5">
+      <action>Move each unloaded group to its assigned storage location.</action>
+    </step>
+    <step number="6">
+      <action>Count each stored group against 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="7">
+      <action>Record every missing or damaged item on 📦 Truck_Load_Plan.</action>
+    </step>
+    <step number="8">
+      <action>Inspect the empty cargo area for equipment, hardware, trash, and MOOP.</action>
+    </step>
+    <step number="9">
+      <action>Close and latch 🔧 Equipment_Truck.</action>
+    </step>
+  </steps>
+
+  <passWhen>
+    <criterion>Every transport group is accounted for at its assigned storage location.</criterion>
+    <criterion>Every missing or damaged item is recorded.</criterion>
+    <criterion>The truck cargo area is empty and the truck is closed and latched.</criterion>
+  </passWhen>
+
+  <commonProblems/>
+  <expert>Build Lead</expert>
+</task>

@@ -3,13 +3,15 @@
   <name>Generated_Checklists</name>
 
   <description>
-    Printed shift checklists generated from the canonical task checklist types.
+    Printed assignment and status checklists generated from canonical task
+    checklist types. Each row links to the task instructions and shows when the
+    task applies; row order is not an execution sequence.
   </description>
   <location>At the Dominatrix station and each applicable work station.</location>
 
   <readyForNextPerson>
-    Each completed line shows status, initials, and completion time; unresolved
-    lines identify the next action.
+    The current generated revision is present. Each completed line shows status,
+    initials, and completion time; unresolved results are copied to 📦 Camp_Issue_Log.
   </readyForNextPerson>
 
   <responsible>Dominatrix</responsible>

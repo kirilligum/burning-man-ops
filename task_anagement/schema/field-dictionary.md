@@ -69,7 +69,7 @@ Each approved checklist has one TSV/Sheet column containing only `TRUE` or
 `FALSE`. Google Sheets displays these as checkboxes. In XML, a `TRUE` value is a
 `<checklist_type>` element inside `<checklist_types>`; absence means `FALSE`.
 
-| Candidate column | XML value when `TRUE` | Meaning |
+| Column | XML value when `TRUE` | Meaning |
 | --- | --- | --- |
 | **Morning Dominatrix** | `Morning Dominatrix` | Include on the Morning Dominatrix checklist. |
 | **Evening Dominatrix** | `Evening Dominatrix` | Include on the Evening Dominatrix checklist. |
@@ -86,8 +86,9 @@ Each approved checklist has one TSV/Sheet column containing only `TRUE` or
 | **Build** | `Build` | Include on the camp Build checklist. |
 | **Strike** | `Strike` | Include on the camp Strike checklist. |
 
-This is a candidate allowlist derived from the archive. The camp must confirm
-which columns remain current before conversion is implemented.
+This is the current allowlist derived from the operational workbook. Add or
+retire a value only by updating this dictionary, the validator, and generated
+outputs together.
 
 ## Step fields
 
@@ -177,6 +178,7 @@ definition fields.
 | --- | --- | --- | --- |
 | **Checklist** | Generated text | No | Checklist that caused this task occurrence to appear. |
 | **Task** | Generated text | No | Exact task name and link to its task card. |
+| **When** | Generated text | No | Task trigger copied from canonical XML. It prevents checklist row order from being mistaken for execution order. |
 | **Status** | Enum | Yes | Blank until worked, then `PASS`, `BLOCKED`, `ESCALATED`, or `NOT APPLICABLE`. |
 | **Initials** | Text | Yes | Initials of the person who worked the task. |
 | **Completion time** | Time | Yes | Time the person finished, blocked, or escalated the task; distinct from task **Time**, which is expected duration. |

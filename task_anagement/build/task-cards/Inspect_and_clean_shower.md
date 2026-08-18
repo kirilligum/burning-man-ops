@@ -70,7 +70,7 @@
 - **🔧 Gray-Water Pump:** Close the shower, display 🔧 Out of Service Sign, and tell the Dominatrix.
 - **🔧 Shower Cleaner:** Ask the Dominatrix where to find a replacement.
 - **🔧 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

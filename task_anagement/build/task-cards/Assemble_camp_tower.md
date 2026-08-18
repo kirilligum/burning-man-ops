@@ -11,7 +11,7 @@
 - Build Lead and the crew count printed in 📦 Build Book
 - 📦 Build Book — At the build station. Current camp-specific build and strike drawings, part counts, connection details, anchor locations, crew requirements, lift sequence, and final-state photographs for each structure.
 - 📦 Camp Map — Posted in the communal kitchen. Current camp map showing task areas, service lanes, emergency exits, and private infrastructure.
-- 📦 Camp Tower — Location shown on 📦 Camp_Map. Camp tower structure, shorter tower sections, LEDs, and approved flame-effect components.
+- 📦 Camp Tower — Location shown on 📦 Camp Map. Camp tower structure, shorter tower sections, LEDs, and approved flame-effect components.
 - 📦 Build Hardware Bins — Build storage area. Bins containing structure-specific fittings, fasteners, anchors, chains, and small hardware.
 - 📦 Ratchet Straps — Build storage area. Structure straps in the sizes and ratings listed in the current Build Book.
 - 🔧 Impact Drivers — Private infrastructure area. Camp cordless impact drivers used during build, operation, and strike.

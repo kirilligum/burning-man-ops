@@ -12,13 +12,19 @@
 - Approved fuel provider or authorized generator operator
 - 🔧 Camp Generators — Private infrastructure area (see the map). Camp generators and their built-in fuel gauges.
 - 🔧 Generator Secondary Containment — Under and around the generator fuel-fill area. Generator spill containment approved for the installed fuel system.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 🔧 Fuel Spill Mat — With the generator service supplies. Fuel-resistant spill mat or fuel-compatible intact tarp sized to cover the generator fuel-transfer point.
+- 🔧 Fuel Spill Shovel — With the generator service supplies. Dedicated shovel for collecting fuel-contaminated playa.
+- 🔧 Fuel Waste Container — With the generator service supplies. Empty sealable five-gallon container reserved for fuel-contaminated playa and cleanup material.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 - 📦 Camp Map — Posted in the communal kitchen. Current camp map showing task areas, service lanes, emergency exits, and private infrastructure.
 - 📦 Camp Issue Log — At the Dominatrix station. On-playa log for unresolved task, supply, safety, and service issues. Do not record private incident or health details.
 
 ## Ready before normal use
 
 - **🔧 Generator Secondary Containment:** The containment is intact, empty, and positioned to catch a refueling spill.
+- **🔧 Fuel Spill Mat:** The mat is dry and has no hole, tear, or retained fuel.
+- **🔧 Fuel Spill Shovel:** The shovel has no fuel or contaminated playa on it.
+- **🔧 Fuel Waste Container:** The empty container is intact and its lid seals.
 - **📦 Fire Extinguishers:** The gauge is in the operable range and access is clear.
 
 ## Steps
@@ -26,18 +32,25 @@
 1. Confirm the exact generator and fuel type with the Fuel Lead.
 2. Inspect the generator and ground for an existing fuel leak.
    - **IF/THEN:** IF a leak or spill is present, THEN keep people away, do not refuel, and immediately notify a Black Rock Ranger and the Fuel Lead.
-3. Confirm that 🔧 Generator Secondary Containment is correctly positioned and empty.
-4. Confirm that an operable fire extinguisher is visible and unobstructed.
-5. Clear the straight service route from the street or fire lane to the generator.
-6. Keep unauthorized people away while the approved provider or operator refuels the generator.
-7. Observe the fill area for overflow, drips, or a spill.
+3. Have the approved provider or operator shut down the generator before its tank is filled.
+4. Confirm that 🔧 Generator Secondary Containment is correctly positioned and empty.
+5. Place 🔧 Fuel Spill Mat under the fuel-transfer point.
+6. Place 🔧 Fuel Spill Shovel outside the transfer area where it remains accessible.
+7. Place empty 🔧 Fuel Waste Container beside the shovel.
+8. Confirm that a visible, unobstructed fire extinguisher with at least a 40-B rating is 8 to 10 feet from the fuel area.
+9. Use 📦 Camp Map to clear the straight service route from the street or fire lane to the generator.
+10. Keep unauthorized people away while the approved provider or operator refuels the generator.
+11. Observe the fill area for overflow, drips, or a spill.
    - **IF/THEN:** IF fuel escapes containment or reaches the playa, THEN stop the operation if it is safe to communicate, keep people away, and immediately notify a Black Rock Ranger and the Fuel Lead.
-8. Read and record the generator fuel gauge after refueling.
+12. Read the generator fuel gauge after refueling.
+13. Record the final gauge reading and service result in 📦 Camp Issue Log.
 
 ## PASS when
 
 - The authorized provider or operator refueled the correct generator with the correct fuel.
+- The generator was shut down while its tank was filled.
 - No fuel escaped containment or reached the playa.
+- The fuel-transfer mat, shovel, and waste container remain ready for spill response.
 - The service route is clear and the final gauge reading is recorded.
 
 ## Finish
@@ -50,15 +63,25 @@
 
 - **🔧 Camp Generators:** No visible fuel leak is present. Fuel caps remain closed and controls remain in the state set by the authorized operator.
 - **🔧 Generator Secondary Containment:** The containment remains correctly positioned and contains no unreported fuel or contaminated material.
+- **🔧 Fuel Spill Mat:** The mat is dry, has no unreported fuel, and is stored with the generator service supplies.
+- **🔧 Fuel Spill Shovel:** The shovel has no unreported fuel or contaminated playa and is stored with the generator service supplies.
+- **🔧 Fuel Waste Container:** The container is sealed; any contents are identified and reported to the Fuel Lead.
 - **📦 Fire Extinguishers:** Each extinguisher is mounted, visible, unobstructed, and in the operable range.
 - **📦 Camp Map:** The current map is posted, readable, and unobstructed.
 - **📦 Camp Issue Log:** Every unresolved operational issue has a current status and next action.
 
 ### If an item is not ready
 
-- **🔧 Camp Generators:** Keep people away and immediately tell the Dominatrix and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
+- **🔧 Camp Generators:** Keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger about any fuel leak or spill. Do not refuel or repair a generator unless authorized.
 - **🔧 Generator Secondary Containment:** Do not refuel. Tell the Fuel Lead.
+- **🔧 Fuel Spill Mat:** Do not refuel. Tell the Fuel Lead.
+- **🔧 Fuel Spill Shovel:** Do not refuel. Tell the Fuel Lead.
+- **🔧 Fuel Waste Container:** Do not refuel. Tell the Fuel Lead.
 - **📦 Fire Extinguishers:** Tell the Dominatrix immediately.
+
+## Common problems
+
+- **🔧 Fuel Spill Mat:** **IF** Fuel reaches the mat **THEN** Stop the transfer if it is safe to communicate, keep people away, and tell the Fuel Lead. Do not fold or store the mat.
 
 ## Who to ask
 

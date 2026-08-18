@@ -23,7 +23,7 @@
   <steps>
     <step number="1">
       <action>Inspect the ground and visible fuel connections around each generator for a leak.</action>
-      <ifThen>IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Dominatrix and a Black Rock Ranger.</ifThen>
+      <ifThen>IF fuel is leaking or has reached the playa, THEN keep people away and immediately tell the Fuel Lead, Dominatrix, and a Black Rock Ranger.</ifThen>
     </step>
     <step number="2">
       <action>Read the fuel gauge on each generator without opening a cap or operating a control.</action>

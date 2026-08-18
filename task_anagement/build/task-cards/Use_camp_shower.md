@@ -32,7 +32,7 @@
 5. Rinse your body.
 6. Direct rinse water over soap remaining on the walls and floor.
 7. Turn off the water before the timer reaches 3 minutes.
-8. Put hair, wipes, razors, and packaging in 📦 Trash Bins.
+8. Put hair, wipes, and packaging in 📦 Trash Bins.
 9. Run 🔧 Gray-Water Pump until the shower basin is empty.
    - **IF/THEN:** IF the pump does not remove the water or you see a leak, THEN close the shower, display 🔧 Out of Service Sign, and tell the Dominatrix.
 
@@ -59,7 +59,7 @@
 
 - **🔧 Camp Shower:** Close the shower, display 🔧 Out of Service Sign, and tell the Dominatrix.
 - **🔧 Gray-Water Pump:** Close the shower, display 🔧 Out of Service Sign, and tell the Dominatrix.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Who to ask
 

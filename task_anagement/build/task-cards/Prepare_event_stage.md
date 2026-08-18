@@ -61,7 +61,7 @@
 
 - **🌐 DJ Gear:** Do not substitute or connect equipment. Ask the Sound Lead.
 - **🌐 DJ Recorder:** Tell the Sound Lead. Do not change recorder settings unless directed.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

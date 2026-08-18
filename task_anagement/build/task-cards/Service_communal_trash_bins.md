@@ -2,7 +2,7 @@
 
 # 📋 Service communal trash bins
 
-- **Checklist types:** Morning, Afternoon
+- **Checklist types:** Morning, Afternoon, Strike
 - **Area:** Common area
 - **When:** Once per shift and whenever a bin is full
 
@@ -43,7 +43,7 @@
 
 ### If an item is not ready
 
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 - **📦 Dumpster:** If the dumpster is full, do not leave trash beside it. Tell the Dominatrix.
 
 ## Who to ask

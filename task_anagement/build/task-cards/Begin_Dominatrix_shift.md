@@ -11,9 +11,9 @@
 - 📦 Camp Issue Log — At the Dominatrix station. On-playa log for unresolved task, supply, safety, and service issues. Do not record private incident or health details.
 - 📦 Black Rock City Map — At the Dominatrix station. Current official Black Rock City map and guide.
 - 📦 Camp Map — Posted in the communal kitchen. Current camp map showing task areas, service lanes, emergency exits, and private infrastructure.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
-- 📦 Fire Blankets — At the locations marked on 📦 Camp_Map. Camp fire blankets in their quick-release containers.
-- 📦 First Aid Kits — At the locations marked on 📦 Camp_Map. Camp first-aid supplies for minor injuries.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
+- 📦 Fire Blankets — At the locations marked on 📦 Camp Map. Camp fire blankets in their quick-release containers.
+- 📦 First Aid Kits — At the locations marked on 📦 Camp Map. Camp first-aid supplies for minor injuries.
 - 📦 Naloxone Nasal Spray — With the camp first-aid supplies. NARCAN naloxone HCl nasal spray, 4 mg single-dose devices, with the current package directions.
 - 🔧 Camp Radios — Private infrastructure area. Rechargeable handheld radios used for camp operations.
 

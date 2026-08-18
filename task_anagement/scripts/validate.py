@@ -55,6 +55,16 @@ REFERENCE = re.compile(
     r"(?P<name>[A-Za-z0-9][A-Za-z0-9_-]*)"
 )
 ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]*$")
+PROTECTED_CONTACT = {
+    "email address": re.compile(
+        r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
+        re.IGNORECASE,
+    ),
+    "phone number": re.compile(
+        r"(?<!\d)(?:\+?1[ .-]?)?(?:\([2-9]\d{2}\)|[2-9]\d{2})"
+        r"[ .-]\d{3}[ .-]\d{4}(?!\d)"
+    ),
+}
 DECISION_HEADING = re.compile(r"^###\s+(D-\d+)\s+—\s+.*$", re.MULTILINE)
 DECISION_STATUS = re.compile(r"^- \*\*Status:\*\*\s+(.+)$", re.MULTILINE)
 
@@ -92,6 +102,38 @@ def normalized_status(value: str) -> str:
     return value
 
 
+def normalized_text(element: ET.Element) -> str:
+    return " ".join(part.strip() for part in element.itertext() if part.strip())
+
+
+def undeclared_operational_references(root: ET.Element) -> set[str]:
+    declared = {
+        normalized_text(resource)
+        for resource in root.findall("./resources/resource")
+    }
+    used: set[str] = set()
+    for field in ("why", "when", "steps", "passWhen", "commonProblems"):
+        element = root.find(field)
+        if element is None:
+            continue
+        used.update(
+            f"{match.group('icon')} {match.group('name')}"
+            for match in REFERENCE.finditer(normalized_text(element))
+        )
+    return used - declared
+
+
+def validate_protected_contact(
+    path: Path,
+    root: ET.Element,
+    check: Validation,
+) -> None:
+    value = normalized_text(root)
+    for label, pattern in PROTECTED_CONTACT.items():
+        if pattern.search(value):
+            check.error(path, f"canonical XML contains a possible protected {label}")
+
+
 def decision_records(path: Path) -> dict[str, str]:
     text = path.read_text(encoding="utf-8")
     headings = list(DECISION_HEADING.finditer(text))
@@ -119,6 +161,7 @@ def validate_item(path: Path, root: ET.Element, check: Validation) -> None:
     for problem in root.findall("./commonProblems/problem"):
         check.require_text(path, problem, "condition")
         check.require_text(path, problem, "response")
+    validate_protected_contact(path, root, check)
 
 
 def validate_task(
@@ -174,15 +217,24 @@ def validate_task(
     ]
     if not criteria or any(not criterion for criterion in criteria):
         check.error(path, "at least one non-empty passWhen criterion is required")
+    if len(criteria) != len(set(criteria)):
+        check.error(path, "duplicate passWhen criterion")
 
     reference_icons = tuple(ITEM_FOLDERS) + ("📋",)
+    resource_values: list[str] = []
     for resource in root.findall("./resources/resource"):
         value = (resource.text or "").strip()
         if not value:
             check.error(path, "empty resource")
             continue
+        resource_values.append(value)
         if value.startswith(reference_icons) and not REFERENCE.fullmatch(value):
             check.error(path, f"malformed resource reference {value!r}")
+    if len(resource_values) != len(set(resource_values)):
+        check.error(path, "duplicate resource")
+
+    for reference in sorted(undeclared_operational_references(root)):
+        check.error(path, f"operational reference {reference} is not a resource")
 
     for problem in root.findall("./commonProblems/problem"):
         check.require_text(path, problem, "condition")
@@ -215,6 +267,8 @@ def validate_task(
             check.require_text(path, decision, field)
         if status not in {"Accepted", "Superseded", "Open"}:
             check.error(path, f"unknown task decision status {status!r}")
+
+    validate_protected_contact(path, root, check)
 
 
 def validate_references(check: Validation) -> None:
@@ -255,6 +309,8 @@ def main() -> int:
         if root is not None:
             validate_task(path, root, check, decisions)
     for path in item_paths:
+        if path.parent not in set(ITEM_FOLDERS.values()):
+            check.error(path, "item is not in an approved area folder or item root")
         root = check.parsed.get(path)
         if root is not None:
             validate_item(path, root, check)
@@ -272,6 +328,7 @@ def main() -> int:
             check.error(global_path, "all global instructions must be non-empty")
         if len(instructions) != len(set(instructions)):
             check.error(global_path, "duplicate global instruction")
+        validate_protected_contact(global_path, global_root, check)
 
     validate_references(check)
 

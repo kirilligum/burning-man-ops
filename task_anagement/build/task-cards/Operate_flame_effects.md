@@ -4,7 +4,7 @@
 
 - **Checklist types:** Flame Effects
 - **Area:** Propane area
-- **When:** Continuously while the flame-effect system is pressurized or lit
+- **When:** After 📋 Start flame effects passes and continuously while the system is pressurized or lit
 
 ## What you need
 
@@ -13,7 +13,7 @@
 - 📋 Start flame effects
 - 🔥 Flame Effect System — Propane area (see the map). Registered Treble Makers propane flame effect, including its structure, cylinders, hoses, fittings, regulators, valves, pilots, accumulators, controls, and effect heads.
 - 🔥 Flame Effect Operating Procedure — At the flame-effect operator station. Current Flame Lead-approved system sheet naming every valve and control and stating the validated voltage, temperature, pressure, timing, startup, shutdown, and emergency-shutdown values for the actual installation.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 
 ## Ready before normal use
 
@@ -22,11 +22,12 @@
 
 ## Steps
 
-1. Keep the licensed operator and trained spotter at the effect continuously.
-2. Keep people and combustible material outside the FAST-approved perimeter.
-3. Continuously observe wind, flame direction, pressure, pilots, hoses, fittings, controls, and the audience boundary.
+1. Confirm that 📋 Start flame effects passed for the current operating session.
+2. Keep the licensed operator and trained spotter at the effect continuously.
+3. Keep people and combustible material outside the FAST-approved perimeter.
+4. Continuously observe wind, flame direction, pressure, pilots, hoses, fittings, controls, and the audience boundary.
    - **IF/THEN:** IF wind picks up, the flame or heat can leave the approved zone, a leak or abnormal condition appears, or any Ranger, FAST, or ESD member requests shutdown, THEN stop firing and complete the approved emergency shutdown.
-4. Fire the effect only on the licensed operator's command and within the approved operating limits.
+5. Fire the effect only on the licensed operator's command and within the approved operating limits.
 
 ## PASS when
 

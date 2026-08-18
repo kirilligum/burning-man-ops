@@ -18,7 +18,7 @@
 - 🔥 Flame Effect Burn License — Physically held by the licensed operator while the effect is operated. Current FAST-issued physical burn license for this flame effect.
 - 🔥 Propane Leak Test Solution — Propane area. EASTMAN 65700B liquid gas leak detector, 2 oz, for LP-gas fittings.
 - 🔥 Flame Effect SDS — At the flame-effect operator station. Current safety data sheet for propane and each hazardous chemical at the installation.
-- 📦 Fire Extinguishers — At the locations marked on 📦 Camp_Map. Camp fire extinguishers mounted near identified fire hazards.
+- 📦 Fire Extinguishers — At the locations marked on 📦 Camp Map. Camp fire extinguishers mounted near identified fire hazards.
 
 ## Ready before normal use
 

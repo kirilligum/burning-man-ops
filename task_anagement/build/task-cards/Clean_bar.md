@@ -59,7 +59,7 @@
 
 - **🍷 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Put the empty bottle in 📦 Trash Bins.
 - **🍷 Disposable Towels:** Ask the Dominatrix where to find replacement towels.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

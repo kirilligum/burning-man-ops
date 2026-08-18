@@ -16,7 +16,6 @@
 ## Ready before normal use
 
 - **🌐 DJ Gear:** The Sound Lead has identified the gear required for the event and its stage position.
-- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
 
 ## Steps
 
@@ -41,7 +40,7 @@
 ### Leave items ready
 
 - **🌐 DJ Gear:** In service, each item is in the position approved by the Sound Lead. After use, each item is in its correct case or cover and assigned truck position.
-- **🔧 Equipment Truck:** Assigned equipment is secured inside. The doorway is clear and the door is closed and latched when loading is complete.
+- **🔧 Equipment Truck:** The doorway is clear and the door is closed and latched when work is complete. Any equipment remaining inside is secured and recorded on 📦 Truck Load Plan.
 
 ### If an item is not ready
 

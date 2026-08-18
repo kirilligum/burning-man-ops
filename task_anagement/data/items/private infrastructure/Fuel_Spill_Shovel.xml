@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+  <name>Fuel_Spill_Shovel</name>
+
+  <description>Dedicated shovel for collecting fuel-contaminated playa.</description>
+  <location>With the generator service supplies.</location>
+  <readyBeforeUse>The shovel has no fuel or contaminated playa on it.</readyBeforeUse>
+
+  <readyForNextPerson>
+    The shovel has no unreported fuel or contaminated playa and is stored with the generator service supplies.
+  </readyForNextPerson>
+
+  <ifNotReady>Do not refuel. Tell the Fuel Lead.</ifNotReady>
+  <responsible>Fuel Lead</responsible>
+  <commonProblems/>
+</item>

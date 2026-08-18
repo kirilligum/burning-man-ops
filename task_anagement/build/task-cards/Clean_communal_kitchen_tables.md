@@ -61,7 +61,7 @@
 - **🍳 Dustpan and Brush:** Empty the dustpan into 📦 Trash Bins. If visible dirt or trash remains, use 🍳 Disposable Towels to collect dry debris from the tables and tell the Dominatrix.
 - **🍳 Multisurface Cleaner:** Ask the Dominatrix where to find a replacement. Turn the old bottle's nozzle to OFF, put the old bottle in 📦 Trash Bins, and get the replacement.
 - **🍳 Disposable Towels:** Ask the Dominatrix where to find a replacement pack. Get the replacement pack.
-- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
+- **📦 Trash Bins:** If the trash bag is full, tie the bag closed and take the bag to the 📦 Dumpster. Ask the Dominatrix where to get a replacement trash bag. Install the replacement bag.
 
 ## Common problems
 

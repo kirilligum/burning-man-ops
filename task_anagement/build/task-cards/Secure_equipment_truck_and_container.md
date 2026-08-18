@@ -11,10 +11,6 @@
 - 🔧 Equipment Truck — Private infrastructure area (see the map). Truck used to store and transport camp event equipment.
 - 🔧 Storage Container — Private infrastructure area (see the map). Camp storage container for operational equipment and supplies.
 
-## Ready before normal use
-
-- **🔧 Equipment Truck:** The responsible asset lead has identified which equipment may be moved.
-
 ## Steps
 
 1. Inspect the equipment-truck doorway for an object blocking closure.
@@ -39,7 +35,7 @@
 
 ### Leave items ready
 
-- **🔧 Equipment Truck:** Assigned equipment is secured inside. The doorway is clear and the door is closed and latched when loading is complete.
+- **🔧 Equipment Truck:** The doorway is clear and the door is closed and latched when work is complete. Any equipment remaining inside is secured and recorded on 📦 Truck Load Plan.
 - **🔧 Storage Container:** Stored items are inside, the doorway is clear, and the door is closed and latched when access is complete.
 
 ## Who to ask
